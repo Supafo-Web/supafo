@@ -1,0 +1,49 @@
+.main {
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: black;
+   padding: 24;
+
+   .card {
+      width: 100%;
+      max-width: 700;
+      background: #fff;
+      border-radius: 16;
+      padding: 32;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      color: black;
+
+      h1 {
+         margin: 0;
+         margin-bottom: 16;
+      }
+
+      p {
+         margin-top: 0;
+         margin-bottom: 24;
+         line-height: 1.6;
+      }
+
+      .list {
+         line-height: 2;
+         padding-left: 18;
+         margin-top: 40;
+         display: flex;
+         justify-content: space-between;
+
+         li {
+            margin-top: 40;
+
+            a {
+               border: 1px solid transparent;
+               border-radius: 10px;
+               padding: 10px 20px;
+               background: rgb(31, 166, 245);
+               color: white;
+            }
+         }
+      }
+   }
+}
