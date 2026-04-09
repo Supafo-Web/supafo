@@ -1,0 +1,19 @@
+$background: #E7EFDF;
+$primary: #82B74C;
+$primary24: rgba(#82B74C, 0.24);
+$textColor: #182F00;
+$fontFamily: var(--font-poppins), sans-serif;
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+   background: $background;
+   font-family: $fontFamily;
+   min-height: 100%;
+}
+
+.privateButton {
+   background-color: $primary;
+}
