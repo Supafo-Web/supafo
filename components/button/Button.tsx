@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { ReactNode } from "react"
+import styles from "@/components/button/button.module.scss"
 
 type ButtonProps = {
    text?: string
@@ -19,10 +20,18 @@ const Button = ({
    className = "",
 }: ButtonProps) => {
    const baseClass =
-      "inline-flex items-center justify-center rounded-[10px] px-4 py-3 text-white transition hover:opacity-90"
+      `inline-flex items-center justify-center rounded-[10px] transition`
 
-   const content = children ?? text
    const notChildren = !children
+   const contentNode = !children ? (
+      <span
+         className={styles.textButton}
+      >
+         {text}
+      </span>
+   ) : (
+      children
+   )
 
    if (href) {
       return (
@@ -31,10 +40,10 @@ const Button = ({
             className={`
                ${baseClass}
                ${className}
-               ${notChildren && 'privateButton'}
+               ${notChildren && styles.privateButton}
             `}
          >
-            {content}
+            {contentNode}
          </Link>
       )
    }
@@ -46,10 +55,10 @@ const Button = ({
          className={`
             ${baseClass}
             ${className}
-            ${notChildren && 'privateButton'}
+            ${notChildren && styles.privateButton}
          `}
       >
-         {content}
+         {contentNode}
       </button>
    )
 }

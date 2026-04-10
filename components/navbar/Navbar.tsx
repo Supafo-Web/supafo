@@ -1,4 +1,4 @@
-import Button from "@/components/Button"
+import Button from "@/components/button/Button"
 import { getTranslations } from "next-intl/server"
 import Image from "next/image"
 
@@ -11,8 +11,8 @@ const Navbar = async ({ locale }: NavbarType) => {
 
 
    return (
-      <div className="container px-[10%] py-6">
-         <div className="grid grid-cols-3">
+      <div className="container-fluid px-[10%] py-6">
+         <div className="flex items-center justify-between">
             <Button
                href={`/${locale}`}
             >
@@ -25,10 +25,10 @@ const Navbar = async ({ locale }: NavbarType) => {
                   style={{ width: 92, height: 79 }}
                />
             </Button>
-            <div className="grid grid-cols-3">
+            <div className="">
 
             </div>
-            <div className="grid grid-cols-2">
+            <div className="">
 
             </div>
             <Button

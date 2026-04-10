@@ -2,7 +2,7 @@ import { NextIntlClientProvider } from "next-intl"
 import { setRequestLocale } from "next-intl/server"
 import { notFound } from "next/navigation"
 import { locales } from "@/i18n"
-import Navbar from "@/components/Navbar"
+import Navbar from "@/components/navbar/Navbar"
 
 export const generateStaticParams = async () => {
    return locales.map((locale) => ({ locale }))
