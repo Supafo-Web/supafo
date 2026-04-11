@@ -14,10 +14,26 @@ const LangSwitch = () => {
    }
 
    return (
-      <div className="flex items-center gap-4">
-         <Link href={redirectedPathname("tr")}>TR</Link>
-         <Link href={redirectedPathname("en")}>EN</Link>
-         <Link href={redirectedPathname("az")}>AZ</Link>
+      <div className="flex flex-col items-center justify-center gap-4">
+         <Link
+            href={redirectedPathname("tr")}
+            className={`text-white`}
+         >
+            TR
+         </Link>
+         <Link
+            href={redirectedPathname("en")}
+            className={`text-white`}
+         >
+            EN
+
+         </Link>
+         <Link
+            href={redirectedPathname("az")}
+            className={`text-white`}
+         >
+            AZ
+         </Link>
       </div>
    )
 }

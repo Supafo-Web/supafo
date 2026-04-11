@@ -1,7 +1,30 @@
 {
    "Navbar": {
-      "home": "Home",
-      "about": "About",
-      "download_app": "Uygulamayı İndir"
+      "home": "Ana səhifə",
+      "about": "Haqqımızda",
+      "how_work": "Necə işləyir",
+      "partner": "Tərəfdaş Girişi",
+      "download_app": "Tətbiqi yüklə"
+   },
+   "Modal": {
+      "download_app_title": "Tətbiqi yüklə və dadlı yeməkləri xilas etməyə başla."
+   },
+   "Footer": {
+      "header_link": {
+         "about_us": "Haqqımızda",
+         "guide": "Bələdçi",
+         "career": "Karyera",
+         "our_team": "Komandamız",
+         "what_is_food_waste": "Qida İsrafı Nədir?",
+         "projects": "Layihələr",
+         "blog": "Supafo Bloqu",
+         "contact": "Bizimlə Əlaqə"
+      },
+      "footer_link": {
+         "faq": "Tez-tez verilən suallar",
+         "terms": "Şərtlər və Qaydalar",
+         "privacy": "Məxfilik Siyasəti",
+         "cookie": "Kuki Siyasəti"
+      }
    }
 }

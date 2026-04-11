@@ -1,0 +1,12 @@
+@use "../../styles/variables" as *;
+
+.dropdownMenu {
+   position: absolute;
+   background-color: $primary;
+   border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+   width: 90px;
+   padding: 20px 0;
+   left: -20px;
+   top: 52px;
+}

@@ -1,0 +1,32 @@
+@use "../../styles/variables" as *;
+
+.footerContainer {
+   background-color: $primary;
+}
+
+// .footerArea {}
+
+.footerHeader {
+   padding: 40px 4%;
+
+   .footerHeaderLinks {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+   }
+}
+
+.footerMain {
+   padding: 40px 4%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.footerBottom {
+   padding: 25px 0;
+   border-top-width: 0.5px;
+   border-top-color: $divider;
+   font-size: 16px;
+   color: white;
+   text-align: center;
+}

@@ -3,6 +3,7 @@ import { setRequestLocale } from "next-intl/server"
 import { notFound } from "next/navigation"
 import { locales } from "@/i18n"
 import Navbar from "@/components/navbar/Navbar"
+import Footer from "@/components/footer/Footer"
 
 export const generateStaticParams = async () => {
    return locales.map((locale) => ({ locale }))
@@ -25,10 +26,21 @@ const LocaleLayout = async ({
 
    return (
       <NextIntlClientProvider>
-         <Navbar
-            locale={locale}
-         />
-         {children}
+         <div
+            className="min-h-screen flex flex-col container-fluid"
+         >
+            <Navbar
+               locale={locale}
+            />
+            <main
+               className="flex-1"
+            >
+               {children}
+            </main>
+            <Footer
+               locale={locale}
+            />
+         </div>
       </NextIntlClientProvider>
    )
 }

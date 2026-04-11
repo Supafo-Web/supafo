@@ -2,6 +2,29 @@
    "Navbar": {
       "home": "Ana Sayfa",
       "about": "Hakkımızda",
+      "how_work": "Nasıl Çalışır",
+      "partner": "Partner Girişi",
       "download_app": "Uygulamayı İndir"
+   },
+   "Modal": {
+      "download_app_title": "Uygulamayı indir ve lezzetli yemekleri kurtarmaya başla."
+   },
+   "Footer": {
+      "header_link": {
+         "about_us": "Hakkımızda",
+         "guide": "Rehber",
+         "career": "Kariyer",
+         "our_team": "Ekibimiz",
+         "what_is_food_waste": "Gıda İsrafı Nedir?",
+         "projects": "Projeler",
+         "blog": "Supafo Blog",
+         "contact": "Bize Ulaşın"
+      },
+      "footer_link": {
+         "faq": "S.S.S",
+         "terms": "Şartlar ve Koşullar",
+         "privacy": "Gizlilik Politikası",
+         "cookie": "Çerez Politikası"
+      }
    }
 }

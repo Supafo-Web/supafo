@@ -11,8 +11,51 @@
 .textButton {
    font-family: $fontFamily;
    font-weight: $medium;
-   font-size: 24px;
+   font-size: 16px;
    text-align: center;
    color: white;
-   padding: 18px 22px;
+   padding: 0 18px;
+   height: 60px;
+   display: flex;
+   align-items: center;
+}
+
+.navbarButton {
+   background-color: transparent;
+   font-family: $fontFamily;
+   font-weight: $medium;
+   font-size: 16px;
+   text-align: center;
+   color: $textColor;
+   transition: color 0.35s ease-in-out;
+
+   &:hover {
+      background-color: transparent;
+      color: $primary;
+   }
+}
+
+.navbarArea {
+   background-color: $primary24;
+   padding: 0 12px;
+   height: 60px;
+   border-radius: 20px;
+}
+
+.footerButton {
+   background-color: transparent;
+   font-family: $fontFamily;
+   font-weight: $regular;
+   font-size: 16px;
+   text-align: center;
+   color: white;
+   text-decoration: underline;
+   text-decoration-color: transparent;
+   text-underline-offset: 2px;
+   transition: text-decoration-color 0.35s ease-in-out;
+
+   &:hover {
+      background-color: transparent;
+      text-decoration-color: white;
+   }
 }

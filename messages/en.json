@@ -2,6 +2,29 @@
    "Navbar": {
       "home": "Home",
       "about": "About",
+      "how_work": "How Does It Work",
+      "partner": "Partner Login",
       "download_app": "Download App"
+   },
+   "Modal": {
+      "download_app_title": "Download the app and start saving delicious food."
+   },
+   "Footer": {
+      "header_link": {
+         "about_us": "About Us",
+         "guide": "Guide",
+         "career": "Careers",
+         "our_team": "Our Team",
+         "what_is_food_waste": "What Is Food Waste?",
+         "projects": "Projects",
+         "blog": "Supafo Blog",
+         "contact": "Contact Us"
+      },
+      "footer_link": {
+         "faq": "FAQ",
+         "terms": "Terms and Conditions",
+         "privacy": "Privacy Policy",
+         "cookie": "Cookie Policy"
+      }
    }
 }

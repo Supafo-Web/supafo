@@ -1,39 +1,79 @@
 import Button from "@/components/button/Button"
 import { getTranslations } from "next-intl/server"
 import Image from "next/image"
+import styles from "@/components/button/button.module.scss"
+import Dropdown from "@/components/dropdown/Dropdown"
+import Login from "@/public/icons/Login"
+import NavbarDownloadButton from "./NavbarDownloadButton"
 
 interface NavbarType {
    locale: string
 }
 
 const Navbar = async ({ locale }: NavbarType) => {
-   const t = await getTranslations('Navbar')
-
+   const t = await getTranslations("Navbar")
+   const modal = await getTranslations("Modal")
 
    return (
-      <div className="container-fluid px-[10%] py-6">
-         <div className="flex items-center justify-between">
+      <div
+         className="container-fluid px-[5%] py-6 static"
+      >
+         <div
+            className="flex items-center justify-between gap-2"
+         >
             <Button
                href={`/${locale}`}
             >
                <Image
                   alt="logo"
                   src="/logo/logo.svg"
-                  width={92}
-                  height={79}
+                  width={80}
+                  height={69}
                   priority
-                  style={{ width: 92, height: 79 }}
+                  style={{ width: 80, height: 69 }}
                />
             </Button>
-            <div className="">
 
+            <div
+               className={`flex flex-2 items-center justify-around ${styles.navbarArea}`}
+            >
+               <Button
+                  href={`/${locale}`}
+                  text={t("home")}
+                  navbar
+               />
+               <Button
+                  href={`/${locale}/about-us`}
+                  text={t("about")}
+                  navbar
+               />
+               <Button
+                  href={`/${locale}/how-does-it-work`}
+                  text={t("how_work")}
+                  navbar
+               />
             </div>
-            <div className="">
 
+            <div
+               className={`flex flex-1 items-center justify-around ${styles.navbarArea}`}
+            >
+               <Button
+                  href={`/${locale}/partner`}
+                  navbar
+                  className="flex gap-0.75"
+               >
+                  <span>
+                     {t("partner")}
+                  </span>
+                  <Login />
+               </Button>
+
+               <Dropdown />
             </div>
-            <Button
-               text={t('download_app')}
-               href="/"
+
+            <NavbarDownloadButton
+               text={t("download_app")}
+               title={modal('download_app_title')}
             />
          </div>
       </div>

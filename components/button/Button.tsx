@@ -9,6 +9,8 @@ type ButtonProps = {
    onClick?: () => void
    type?: "button" | "submit" | "reset"
    className?: string
+   navbar?: boolean
+   footer?: boolean
 }
 
 const Button = ({
@@ -18,14 +20,18 @@ const Button = ({
    onClick,
    type = "button",
    className = "",
+   navbar = false,
+   footer = false
 }: ButtonProps) => {
    const baseClass =
-      `inline-flex items-center justify-center rounded-[10px] transition`
+      `inline-flex items-center justify-center rounded-[20px] transition`
 
    const notChildren = !children
    const contentNode = !children ? (
       <span
-         className={styles.textButton}
+         className={`
+            ${(!navbar && !footer) && styles.textButton}
+         `}
       >
          {text}
       </span>
@@ -38,7 +44,10 @@ const Button = ({
          <Link
             href={href}
             className={`
-               ${baseClass}
+               ${navbar ? styles.navbarButton
+                  : footer ? styles.footerButton
+                     : baseClass
+               }
                ${className}
                ${notChildren && styles.privateButton}
             `}
@@ -53,7 +62,10 @@ const Button = ({
          type={type}
          onClick={onClick}
          className={`
-            ${baseClass}
+            ${navbar ? styles.navbarButton
+               : footer ? styles.footerButton
+                  : baseClass
+            }
             ${className}
             ${notChildren && styles.privateButton}
          `}
