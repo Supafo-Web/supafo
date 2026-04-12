@@ -1,7 +1,7 @@
 import Button from "@/components/button/Button"
 import { getTranslations } from "next-intl/server"
 import Image from "next/image"
-import styles from "@/components/button/button.module.scss"
+import styles from "./navbar.module.scss"
 import Dropdown from "@/components/dropdown/Dropdown"
 import Login from "@/public/icons/Login"
 import NavbarDownloadButton from "./NavbarDownloadButton"
@@ -16,7 +16,7 @@ const Navbar = async ({ locale }: NavbarType) => {
 
    return (
       <div
-         className="container-fluid px-[5%] py-6 static"
+         className={`container-fluid px-[5%] py-6 fixed top-0 left-0 w-full z-50 ${styles.navbarWrapper}`}
       >
          <div
             className="flex items-center justify-between gap-2"

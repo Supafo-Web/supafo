@@ -2,6 +2,8 @@ import type { Metadata } from "next"
 import { Poppins } from "next/font/google"
 import "./globals.css"
 import "./globals.scss"
+import { UIProvider } from "@/components/services/contexts/UIContexts"
+import AppInitializer from "@/components/AppInitializer"
 
 const poppins = Poppins({
    subsets: ["latin"],
@@ -31,7 +33,10 @@ const RootLayout = ({
          <body
             className="min-h-full flex flex-col"
          >
-            {children}
+            <UIProvider>
+               <AppInitializer />
+               {children}
+            </UIProvider>
          </body>
       </html>
    )

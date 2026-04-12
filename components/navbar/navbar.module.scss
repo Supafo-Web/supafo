@@ -1,1 +1,12 @@
 @use "../../styles/variables" as *;
+
+.navbarWrapper {
+   background-color: $background;
+
+   .navbarArea {
+      background-color: $primary24;
+      padding: 0 12px;
+      height: 60px;
+      border-radius: 20px;
+   }
+}

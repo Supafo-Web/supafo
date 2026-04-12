@@ -1,0 +1,156 @@
+@use "../../styles/variables" as *;
+
+.faqContainer {
+   display: flex;
+   flex-direction: column;
+   gap: 32px;
+}
+
+.faqList {
+   display: flex;
+   flex-direction: column;
+   gap: 32px;
+}
+
+.faqItem {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+}
+
+.faqButton {
+   border: 1px solid $primary;
+   padding: 24px 20px;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-family: $fontFamily;
+   font-size: 18px;
+   font-weight: 400;
+   color: $textColor;
+   border-radius: 10px;
+   background-color: white;
+   transition:
+      background-color 0.35s ease,
+      color 0.35s ease,
+      border-color 0.35s ease,
+      box-shadow 0.35s ease,
+      transform 0.25s ease;
+}
+
+.faqButton:hover {
+   cursor: pointer;
+   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.faqButtonActive {
+   background-color: $primary;
+   color: white;
+}
+
+.faqIcon {
+   transition: transform 0.35s ease;
+   flex-shrink: 0;
+}
+
+.faqIconActive {
+   transform: rotate(180deg);
+}
+
+.faqAnswerWrapper {
+   overflow: hidden;
+   max-height: 0;
+   opacity: 0;
+   transition:
+      max-height 0.45s ease,
+      opacity 0.3s ease,
+      margin-top 0.3s ease;
+   margin-top: 0;
+}
+
+.faqAnswerWrapperActive {
+   max-height: 300px;
+   opacity: 1;
+   margin-top: 4px;
+}
+
+.faqAnswer {
+   border: 1px solid $primary;
+   padding: 0 20px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   font-family: $fontFamily;
+   font-size: 18px;
+   font-weight: 400;
+   color: $textColor;
+   border-radius: 10px;
+   background-color: #fff;
+   line-height: 1.6;
+   transform: translateY(-8px);
+   transition:
+      background-color 0.35s ease,
+      color 0.35s ease,
+      padding 0.45s ease,
+      transform 0.45s ease;
+}
+
+.faqAnswerActive {
+   background-color: #F2FFE5;
+   color: $textColor;
+   padding: 28px 20px;
+   transform: translateY(0);
+}
+
+/* 5'ten sonraki faq alanı */
+.moreFaqWrapper {
+   overflow: hidden;
+   max-height: 0;
+   opacity: 0;
+   transform: translateY(-16px);
+   transition:
+      max-height 0.7s ease,
+      opacity 0.45s ease,
+      transform 0.45s ease;
+}
+
+.moreFaqWrapperActive {
+   max-height: 2000px;
+   opacity: 1;
+   transform: translateY(0);
+}
+
+.moreFaqInner {
+   display: flex;
+   flex-direction: column;
+   gap: 32px;
+}
+
+.downArrow {
+   border: 1px solid $primary;
+   background-color: white;
+   border-radius: 999px;
+   padding: 12px;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   align-self: center;
+   transition:
+      transform 0.4s ease,
+      background-color 0.35s ease,
+      box-shadow 0.35s ease;
+}
+
+.downArrow:hover {
+   cursor: pointer;
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.downArrowActive {
+   transform: rotate(180deg);
+}
+
+.downArrowIcon {
+   display: block;
+}

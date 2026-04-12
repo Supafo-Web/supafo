@@ -34,7 +34,7 @@ const DownloadApp = ({ modal }: DownloadType) => {
 
    return (
       <div
-         className={styles.storeArea}
+         className={`${!modal && 'flex-col'} ${styles.storeArea}`}
       >
          {data.map((item, index) => (
             <a

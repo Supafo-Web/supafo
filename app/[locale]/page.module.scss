@@ -7,6 +7,7 @@
    max-height: calc(100dvh - 116px);
    overflow: hidden;
    position: relative;
+   margin-top: 116px;
 }
 
 .grid {
@@ -82,6 +83,42 @@
    top: -20px;
 }
 
+.leftFlower2 {
+   position: absolute;
+   left: 0;
+   top: 90%;
+}
+
+.rightFlower2 {
+   position: absolute;
+   right: 0;
+   top: -20px;
+}
+
+.leftFlower3 {
+   position: absolute;
+   left: 0;
+   top: 82%;
+}
+
+.rightFlower3 {
+   position: absolute;
+   right: 0;
+   top: -90px;
+}
+
+.leftFlower4 {
+   position: absolute;
+   left: 0;
+   top: 82%;
+}
+
+.rightFlower4 {
+   position: absolute;
+   right: 0;
+   top: -90px;
+}
+
 main {
    .whatIsSupafo {
       position: relative;
@@ -131,9 +168,175 @@ main {
          font-weight: $medium;
          color: $primary;
          text-align: center;
+         margin-bottom: 50px;
 
          span {
             color: $textColor;
+         }
+      }
+   }
+
+   .supafoBag {
+      position: relative;
+      padding: 60px 7%;
+
+      h1 {
+         font-family: $fontFamily;
+         font-size: 39px;
+         font-weight: $medium;
+         color: $primary;
+         text-align: center;
+
+         span {
+            color: $textColor;
+         }
+      }
+
+      h6 {
+         font-family: $fontFamily;
+         font-size: 27px;
+         font-weight: $medium;
+         color: $primary;
+      }
+
+      p {
+         font-size: 21px;
+         font-weight: $regular;
+         color: #737373;
+      }
+   }
+
+   .lifeJourney {
+      display: flex;
+      padding: 60px 7%;
+      flex: 1;
+      gap: 80px;
+
+      .textArea {
+         display: flex;
+         flex: 1;
+         flex-direction: column;
+         gap: 40px;
+
+         h1 {
+            font-family: $fontFamily;
+            font-size: 39px;
+            font-weight: $regular;
+            color: $textColor;
+         }
+
+         h6 {
+            font-family: $fontFamily;
+            font-size: 27px;
+            font-weight: $regular;
+            color: $primary;
+
+            p {
+               font-size: 21px;
+               font-weight: $regular;
+               color: #737373;
+               margin-top: 16px;
+            }
+         }
+      }
+   }
+
+   .supafoAI {
+      position: relative;
+      padding: 60px 7%;
+
+      .textArea {
+         display: flex;
+         flex-direction: column;
+         gap: 30px;
+
+         h1 {
+            font-family: $fontFamily;
+            font-size: 39px;
+            font-weight: $regular;
+            color: $textColor;
+         }
+
+         p {
+            font-size: 21px;
+            font-weight: $regular;
+            color: #737373;
+            margin-top: 16px;
+         }
+      }
+
+      .supafoAIImage {
+         border-radius: 50px;
+         border: 3px solid $primary;
+         box-shadow:
+            0 0 30px rgba(130, 183, 76, 0.34),
+            0 0 70px rgba(130, 183, 76, 0.24),
+            0 0 120px rgba(130, 183, 76, 0.16);
+         transition: box-shadow 0.3s ease, transform 0.3s ease;
+      }
+
+      .supafoAIImage:hover {
+         box-shadow:
+            0 0 40px rgba(130, 183, 76, 0.42),
+            0 0 90px rgba(130, 183, 76, 0.3),
+            0 0 140px rgba(130, 183, 76, 0.2);
+         transform: translateY(-4px);
+      }
+   }
+
+   .supafoDonation {
+      position: relative;
+      padding: 60px 7%;
+
+      h1 {
+         font-family: $fontFamily;
+         font-size: 39px;
+         font-weight: $medium;
+         color: $textColor;
+      }
+
+      h6 {
+         font-family: $fontFamily;
+         font-size: 27px;
+         font-weight: $medium;
+         color: $primary;
+
+         p {
+            font-size: 21px;
+            font-weight: $regular;
+            color: #737373;
+            margin-top: 16px;
+         }
+      }
+   }
+
+   .faq {
+      position: relative;
+      padding: 60px 7%;
+
+      h1 {
+         font-family: $fontFamily;
+         font-size: 39px;
+         font-weight: $medium;
+         color: $textColor;
+         text-align: center;
+         margin-bottom: 40px;
+      }
+
+      h6 {
+         font-family: $fontFamily;
+         font-size: 27px;
+         font-weight: $medium;
+         color: $primary;
+
+         p {
+            font-size: 21px;
+            font-weight: $regular;
+            color: #737373;
+
+            span {
+               color: $primary;
+            }
          }
       }
    }

@@ -3,6 +3,7 @@ import styles from './footer.module.scss'
 import Image from 'next/image'
 import DownloadApp from '@/app/download/page'
 import Button from '@/components/button/Button'
+import SocialButtons from '@/components/social-media/SocialMedia'
 
 interface FooterType {
    locale: string
@@ -15,22 +16,22 @@ const Footer = async ({ locale }: FooterType) => {
       {
          id: 1,
          title: t('header_link.about_us'),
-         link: 'awd'
+         link: `/${locale}/about-us`
       },
       {
          id: 2,
          title: t('header_link.guide'),
-         link: 'awd'
+         link: `/${locale}/guide`
       },
       {
          id: 3,
          title: t('header_link.career'),
-         link: 'awdawd'
+         link: `/${locale}/career`
       },
       {
          id: 4,
          title: t('header_link.our_team'),
-         link: 'wadawdawd'
+         link: `/${locale}/our-team`
       }
    ]
 
@@ -38,22 +39,22 @@ const Footer = async ({ locale }: FooterType) => {
       {
          id: 1,
          title: t('header_link.what_is_food_waste'),
-         link: 'awd'
+         link: `/${locale}/what-is-food-waste`
       },
       {
          id: 2,
          title: t('header_link.projects'),
-         link: 'awd'
+         link: `/${locale}/projects`
       },
       {
          id: 3,
          title: t('header_link.blog'),
-         link: 'awdawd'
+         link: `/${locale}/blog`
       },
       {
          id: 4,
          title: t('header_link.contact'),
-         link: 'wadawdawd'
+         link: `/${locale}/contact`
       }
    ]
 
@@ -61,50 +62,22 @@ const Footer = async ({ locale }: FooterType) => {
       {
          id: 1,
          title: t('footer_link.faq'),
-         link: 'awd'
+         link: `/${locale}/faq`
       },
       {
          id: 2,
          title: t('footer_link.terms'),
-         link: 'awd'
+         link: `/${locale}/terms-and-conditions`
       },
       {
          id: 3,
          title: t('footer_link.privacy'),
-         link: 'awdawd'
+         link: `/${locale}/privacy-policy`
       },
       {
          id: 4,
          title: t('footer_link.cookie'),
-         link: 'wadawdawd'
-      }
-   ]
-
-   const socialLink = [
-      {
-         id: 1,
-         icon: '/socials/WhatsApp.svg',
-         link: 'awd'
-      },
-      {
-         id: 2,
-         icon: '/socials/Instagram.svg',
-         link: 'awd'
-      },
-      {
-         id: 3,
-         icon: '/socials/X.svg',
-         link: 'awdawd'
-      },
-      {
-         id: 4,
-         icon: '/socials/Tiktok.svg',
-         link: 'wadawdawd'
-      },
-      {
-         id: 5,
-         icon: '/socials/Discord.svg',
-         link: 'wadawdawd'
+         link: `/${locale}/cookie-policy`
       }
    ]
 
@@ -149,26 +122,9 @@ const Footer = async ({ locale }: FooterType) => {
             </div>
             <DownloadApp />
          </div>
-         <div
-            className={`flex py-8 justify-center gap-16`}
-         >
-            {socialLink.map((item, index) => (
-               <Button
-                  key={item.id || index}
-                  href={item.link}
-                  className={`bg-white p-2.75 rounded-full`}
-               >
-                  <Image
-                     alt="social"
-                     src={item.icon}
-                     width={24}
-                     height={24}
-                     priority
-                     style={{ width: 24, height: 24 }}
-                  />
-               </Button>
-            ))}
-         </div>
+
+         <SocialButtons />
+
          <div
             className={`flex justify-evenly py-10`}
          >
@@ -184,7 +140,7 @@ const Footer = async ({ locale }: FooterType) => {
          <p
             className={styles.footerBottom}
          >
-            © 2026 Supafo. Tüm Hakları Saklıdır.
+            {t('copyright')}
          </p>
       </div>
    )
