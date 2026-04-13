@@ -16,17 +16,17 @@ const Home = async () => {
       },
       {
          id: 2,
-         src: '/videos/1-2.mp4',
+         src: '/videos/2-1.mp4',
          type: 'video/mp4'
       },
       {
          id: 3,
-         src: '/videos/1-3.mp4',
-         type: 'video/mp4'
+         src: '/images/2-3.jpg',
+         type: 'image'
       },
       {
          id: 4,
-         src: '/videos/2-1.mp4',
+         src: '/videos/1-2.mp4',
          type: 'video/mp4'
       },
       {
@@ -36,8 +36,8 @@ const Home = async () => {
       },
       {
          id: 6,
-         src: '/images/2-3.jpg',
-         type: 'image'
+         src: '/videos/1-3.mp4',
+         type: 'video/mp4'
       },
       {
          id: 7,
@@ -51,8 +51,8 @@ const Home = async () => {
       },
       {
          id: 9,
-         src: '/videos/3-3.mp4',
-         type: 'video/mp4'
+         src: '/images/3-3.jpg',
+         type: 'image'
       }
    ]
 
@@ -261,7 +261,7 @@ const Home = async () => {
                   })}
                </h1>
                <div
-                  className="flex flex-col lg:flex-row items-center gap-15 px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 py-20"
+                  className="flex flex-col lg:flex-row items-center gap-15 px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 pt-20"
                >
                   <Image
                      alt="supafo-bag-1"
@@ -284,7 +284,7 @@ const Home = async () => {
                   </h6>
                </div>
                <div
-                  className="flex flex-col lg:flex-row items-center gap-15 px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 py-20"
+                  className="flex flex-col lg:flex-row items-center gap-15 px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 pb-20"
                >
                   <h6
                      className={`text-center lg:text-left`}
@@ -307,7 +307,7 @@ const Home = async () => {
                   />
                </div>
                <div
-                  className="my-30 flex flex-col items-center justify-center px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70"
+                  className="my-20 flex flex-col items-center justify-center px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70"
                >
                   <div className="flex flex-col items-center mb-12">
                      <h6
@@ -316,7 +316,7 @@ const Home = async () => {
                         {t('bag_heading_3')}
                      </h6>
                      <p
-                        className={`text-center mt-10`}
+                        className={`text-center mt-3`}
                      >
                         {t('bag_desc_3')}
                      </p>
@@ -338,7 +338,7 @@ const Home = async () => {
             </section>
 
             <section
-               className={`flex flex-col lg:flex-row items-center lg:items-start px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 py-30 ${styles.lifeJourney}`}
+               className={`flex flex-col lg:flex-row items-center px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 py-30 ${styles.lifeJourney}`}
             >
                <div className="relative w-full md:w-130 h-110 md:h-130 lg:w-80 lg:h-95 xl:w-110 xl:h-110 overflow-hidden rounded-xl mt-4">
                   <video
@@ -432,7 +432,7 @@ const Home = async () => {
                   {t('donation_title')}
                </h1>
                <div
-                  className="flex flex-col lg:flex-row items-center gap-15 px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 py-20"
+                  className="flex flex-col lg:flex-row items-center gap-15 px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 pt-20"
                >
                   <Image
                      alt="supafo-donation"
@@ -455,7 +455,7 @@ const Home = async () => {
                   </h6>
                </div>
                <div
-                  className="flex flex-col lg:flex-row items-center justify-between gap-15 px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 py-20"
+                  className="flex flex-col lg:flex-row items-center justify-between gap-15 px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 pb-20"
                >
                   <h6
                      className={`text-center lg:text-left`}

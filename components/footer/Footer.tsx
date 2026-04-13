@@ -86,7 +86,7 @@ const Footer = async ({ locale }: FooterType) => {
          className={`container-fluid ${styles.footerContainer}`}
       >
          <div
-            className={`flex justify-between items-center ${styles.footerHeader}`}
+            className={`hidden lg:flex justify-between items-center ${styles.footerHeader}`}
          >
             <Image
                alt="logo"
@@ -126,7 +126,7 @@ const Footer = async ({ locale }: FooterType) => {
          <SocialButtons />
 
          <div
-            className={`flex justify-evenly py-10`}
+            className={`flex flex-col md:flex-row justify-evenly gap-6 md:gap-0 py-10`}
          >
             {mainLink.map((item, index) => (
                <Button

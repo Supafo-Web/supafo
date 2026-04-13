@@ -2,9 +2,12 @@
 
 .header {
    width: 100%;
-   height: calc(100dvh - 116px);
-   min-height: calc(100dvh - 116px);
-   max-height: calc(100dvh - 116px);
+   // height: calc(100dvh - 116px);
+   // min-height: calc(100dvh - 116px);
+   // max-height: calc(100dvh - 116px);
+   height: calc(100% - 116px);
+   min-height: calc(100% - 116px);
+   max-height: calc(100% - 116px);
    overflow: hidden;
    position: relative;
    margin-top: 116px;
@@ -338,7 +341,7 @@ main {
    }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 480px) {
    .grid {
       grid-template-columns: 1fr;
    }

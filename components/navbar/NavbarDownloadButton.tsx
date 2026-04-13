@@ -18,7 +18,11 @@ const NavbarDownloadButton = ({
 
    return (
       <>
-         <Button text={text} onClick={() => setOpen(true)} />
+         <Button
+            className={`cursor-pointer`}
+            text={text}
+            onClick={() => setOpen(true)}
+         />
 
          <Modal
             open={open}
