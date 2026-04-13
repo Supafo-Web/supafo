@@ -29,6 +29,7 @@ const DownloadApp = ({ modal }: DownloadType) => {
 
       if (isAndroid) {
          window.location.replace(playStoreUrl)
+         return
       }
    }, [appStoreUrl, playStoreUrl, appGalleryUrl])
 

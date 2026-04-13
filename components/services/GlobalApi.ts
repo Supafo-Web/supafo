@@ -1,10 +1,11 @@
 import axios from 'axios'
 
-export const BASE_URL = process.env.NEXT_PUBLIC_API_URL
+export const BASE_URL = '/api/proxy'
 
 const apiClient = axios.create({
    baseURL: BASE_URL,
    timeout: 15000,
+   withCredentials: false,
    headers: {
       Accept: 'application/json',
       'Content-Type': 'application/json',

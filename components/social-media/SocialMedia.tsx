@@ -44,7 +44,7 @@ const SocialButtons = () => {
             <Button
                key={item.id || index}
                onClick={item.link}
-               className="bg-white p-2.75 rounded-full"
+               className="bg-white p-2.75 rounded-full cursor-pointer"
             >
                <Image
                   alt="social"
