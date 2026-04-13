@@ -24,7 +24,7 @@ const Button = ({
    footer = false
 }: ButtonProps) => {
    const baseClass =
-      `inline-flex items-center justify-center rounded-[20px] transition`
+      `inline-flex items-center justify-center rounded-[10px] transition`
 
    const notChildren = !children
    const contentNode = !children ? (
