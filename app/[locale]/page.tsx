@@ -59,43 +59,43 @@ const Home = async () => {
    const faq = [
       {
          id: 1,
-         question: "Supafo nedir?",
-         answer: "Supafo, israfı azaltmak ve sürdürülebilir tüketime katkı sağlamak amacıyla geliştirilen bir mobil uygulamadır. Kullanıcılar, yakınlarındaki işletmelerden uygun fiyatlı paketleri keşfedebilir, tasarruf edebilir ve çevreye duyarlı bir şekilde tüketim yapabilirler."
+         question: t('faq.q1'),
+         answer: t('faq.a1'),
       },
       {
          id: 2,
-         question: "Supafo nasıl çalışır?",
-         answer: "Supafo, kullanıcıların konumlarına göre yakınlarındaki işletmelerin sunduğu uygun fiyatlı paketleri gösterir. Kullanıcılar, uygulama üzerinden bu paketleri satın alabilir ve işletmeden teslim alabilirler. Bu sayede, satılmamış ürünlerin israfını azaltarak hem tasarruf sağlarlar hem de çevreye katkıda bulunurlar."
+         question: t('faq.q2'),
+         answer: t('faq.a2')
       },
       {
          id: 3,
-         question: "Supafo hangi işletmelerle çalışır?",
-         answer: "Supafo, kafe, restoran, market gibi çeşitli işletmelerle işbirliği yapar. Bu işletmeler, satılmamış ürünlerini uygun fiyatlarla sunarak israfı azaltmaya katkıda bulunurlar."
+         question: t('faq.q3'),
+         answer: t('faq.a3')
       },
       {
          id: 4,
-         question: "Paket içerikleri neden sürprizdir?",
-         answer: "Paket içerikleri, işletmelerin günün sonunda satılmamış ürünlerini içerebilir ve bu nedenle sürpriz olabilir. Bu yaklaşım, israfı azaltmak için esneklik sağlar ve kullanıcıların farklı ürünleri keşfetmesine olanak tanır."
+         question: t('faq.q4'),
+         answer: t('faq.a4')
       },
       {
          id: 5,
-         question: "Supafo'yu kullanmak için herhangi bir ücret ödemem gerekiyor mu?",
-         answer: "Hayır, Supafo uygulamasını indirmek ve kullanmak tamamen ücretsizdir. Ancak, uygulama üzerinden satın aldığınız paketler için ödeme yapmanız gerekmektedir."
+         question: t('faq.q5'),
+         answer: t('faq.a5')
       },
       {
          id: 6,
-         question: "Supafo hangi işletmelerle çalışır?",
-         answer: "Supafo, kafe, restoran, market gibi çeşitli işletmelerle işbirliği yapar. Bu işletmeler, satılmamış ürünlerini uygun fiyatlarla sunarak israfı azaltmaya katkıda bulunurlar."
+         question: t('faq.q6'),
+         answer: t('faq.a6')
       },
       {
          id: 7,
-         question: "Paket içerikleri neden sürprizdir?",
-         answer: "Paket içerikleri, işletmelerin günün sonunda satılmamış ürünlerini içerebilir ve bu nedenle sürpriz olabilir. Bu yaklaşım, israfı azaltmak için esneklik sağlar ve kullanıcıların farklı ürünleri keşfetmesine olanak tanır."
+         question: t('faq.q7'),
+         answer: t('faq.a7')
       },
       {
          id: 8,
-         question: "Supafo'yu kullanmak için herhangi bir ücret ödemem gerekiyor mu?",
-         answer: "Hayır, Supafo uygulamasını indirmek ve kullanmak tamamen ücretsizdir. Ancak, uygulama üzerinden satın aldığınız paketler için ödeme yapmanız gerekmektedir."
+         question: t('faq.q8'),
+         answer: t('faq.a8')
       }
    ]
 
@@ -148,13 +148,12 @@ const Home = async () => {
                   <h1
                      className={styles.title}
                   >
-                     Sürpriz paketlerle israfı azalt
+                     {t('hero_title')}
                   </h1>
                   <p
                      className={styles.desc}
                   >
-                     Yakınındaki işletmelerden uygun fiyatlı paketleri keşfet,
-                     tasarruf et ve sürdürülebilir tüketime katkı sağla.
+                     {t('hero_desc')}
                   </p>
                </div>
             </div>
@@ -189,23 +188,16 @@ const Home = async () => {
                      className={`gap-12.5 ${styles.hero1}`}
                   >
                      <h1>
-                        SUPAFO{' '}
-                        <span>
-                           Nedir?
-                        </span>
+                        {t.rich('what_is_title', {
+                           highlight: (chunks) => <span>{chunks}</span>
+                        })}
                      </h1>
                      <h6>
-                        Günün Lezzetlerini Kurtar!
+                        {t('what_is_heading')}
                         <p>
-                           <span>
-                              Supafo
-                           </span> ile hergün yüzlerce kafe ve restorandan satılmamış, taze ve lezzetli yiyecekleri inanılmaz indirimlerle elde et. Hem cebini düşün, hem de gezegenimiz için büyük etkili bir adım at. Hayata geçirmek istediğin bu güzel misyonda sana eşlik etmek için
-                           {' '}
-                           <span>
-                              Supafo
-                           </span>
-                           {' '}
-                           yanında!
+                           {t.rich('what_is_desc', {
+                              highlight: (chunks) => <span>{chunks}</span>
+                           })}
                         </p>
                      </h6>
                   </div>
@@ -225,10 +217,9 @@ const Home = async () => {
                className={styles.howDoesSupafo}
             >
                <h1>
-                  SUPAFO{' '}
-                  <span>
-                     Nasıl Çalışır?
-                  </span>
+                  {t.rich('how_it_works_title', {
+                     highlight: (chunks) => <span>{chunks}</span>
+                  })}
                </h1>
                <video
                   className={styles.media}
@@ -257,10 +248,9 @@ const Home = async () => {
                   style={{ width: 69, height: 115 }}
                />
                <h1>
-                  SUPAFO{' '}
-                  <span>
-                     Çanta
-                  </span>
+                  {t.rich('bag_title', {
+                     highlight: (chunks) => <span>{chunks}</span>
+                  })}
                </h1>
                <div
                   className="flex items-center gap-25 mt-12.5"
@@ -275,9 +265,9 @@ const Home = async () => {
                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                   <h6>
-                     Supafo Bez Çanta ile Doğaya Dost Ol!
+                     {t('bag_heading_1')}
                      <p>
-                        Plastik poşetlere veda et, doğayı korurken tarzını da yansıt!
+                        {t('bag_desc_1')}
                      </p>
                   </h6>
                </div>
@@ -285,9 +275,9 @@ const Home = async () => {
                   className="flex justify-between items-center gap-25"
                >
                   <h6>
-                     Doğal dokusu ve zarif tasarımıyla her ana uyum sağlar.
+                     {t('bag_heading_2')}
                      <p>
-                        Dayanıklı, şık ve %100 pamuk Supafo bez çantalarla zamansız bir şıklık keşfet.
+                        {t('bag_desc_2')}
                      </p>
                   </h6>
                   <Image
@@ -305,14 +295,14 @@ const Home = async () => {
                >
                   <div className="flex flex-col items-center gap-4 mb-12">
                      <h6>
-                        Harekete Katıl, Fark Yarat – İsrafın Değil, Çözümün Bir Parçası Ol!
+                        {t('bag_heading_3')}
                      </h6>
                      <p>
-                        Her satın aldığın çanta ile bir fidan dikimine katkı sağlıyorsun.
+                        {t('bag_desc_3')}
                      </p>
                   </div>
                   <NavbarDownloadButton
-                     text="Uygulamayı İndir"
+                     text={modal('download_app')}
                      title={modal('download_app_title')}
                   />
                </div>
@@ -345,12 +335,12 @@ const Home = async () => {
                   className={styles.textArea}
                >
                   <h1>
-                     Sağlıklı Yaşam Yolculuğunu Başlat!
+                     {t('journey_title')}
                   </h1>
                   <h6>
-                     Lezzetli Seçim Yap, Sağlıklı Yaşa!
+                     {t('journey_heading')}
                      <p>
-                        “Supafo ile sadece yemek kurtarmıyorsun, aynı zamanda yerel ürünleri destekleyerek daha bilinçli ve sağlıklı bir yaşam tarzı seçiyorsun.”
+                        {t('journey_desc')}
                      </p>
                   </h6>
                </div>
@@ -374,10 +364,10 @@ const Home = async () => {
                      className={styles.textArea}
                   >
                      <h1>
-                        Geleceğin Teknolojisi, Çok Yakında Supafo’da!
+                        {t('ai_title')}
                      </h1>
                      <p>
-                        Gelecek çok yakında burada! Yapay zeka ile güçlendirilmiş yeni özelliklerimiz, size ve gezegenimize daha fazla fayda sağlamak için geliyor. Supafo’nun yapay zeka yolculuğuna adım atmaya hazır olun!
+                        {t('ai_desc')}
                      </p>
                   </div>
 
@@ -409,7 +399,7 @@ const Home = async () => {
                <h1
                   className={`my-10 text-center px-4`}
                >
-                  Supafo ile İyiliğe Katıl – Destek Ver, Değişimi Başlat!
+                  {t('donation_title')}
                </h1>
                <div
                   className="flex items-center justify-between gap-15 mb-20"
@@ -424,9 +414,9 @@ const Home = async () => {
                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                   <h6>
-                     Yakında aktif olacak Bağış Yap alanımızla:
+                     {t('donation_heading_1')}
                      <p>
-                        Supafo Fonu’na Katıl – Biz Senin Adına Ulaştıralım! Bağışın; ihtiyaç sahiplerine, çevre projelerine və sosyal destek çalışmalarına güvenle ulaşsın.
+                        {t('donation_desc_1')}
                      </p>
                   </h6>
                </div>
@@ -434,9 +424,9 @@ const Home = async () => {
                   className="flex justify-between items-center gap-25"
                >
                   <h6>
-                     Supafo ile İyiliğe Dokun!
+                     {t('donation_heading_2')}
                      <p>
-                        Topluma, doğaya ve ihtiyaç sahiplerine destek olmak için harekete geç!
+                        {t('donation_desc_2')}
                      </p>
                   </h6>
                   <Image
@@ -456,7 +446,7 @@ const Home = async () => {
             >
                <div>
                   <h1>
-                     S.S.S
+                     {t('faq_title')}
                   </h1>
                   <FAQ
                      faq={faq}

@@ -7,6 +7,7 @@
       "download_app": "Tətbiqi yüklə"
    },
    "Modal": {
+      "download_app": "Tətbiqi yüklə",
       "download_app_title": "Tətbiqi yüklə və dadlı yeməkləri xilas etməyə başla."
    },
    "Footer": {
@@ -27,5 +28,49 @@
          "cookie": "Kuki Siyasəti"
       },
       "copyright": "© 2026 Supafo. Bütün hüquqlar qorunur."
+   },
+   "Home": {
+      "hero_title": "Sürpriz paketlərlə israfı azalt",
+      "hero_desc": "Yaxınlıqdakı müəssisələrdən sərfəli paketləri kəşf et, qənaət et və dayanıqlı istehlaka töhfə ver.",
+      "what_is_title": "SUPAFO <highlight>Nədir?</highlight>",
+      "what_is_heading": "Günün ləzzətlərini xilas et!",
+      "what_is_desc": "<highlight>Supafo</highlight> ilə hər gün yüzlərlə kafe və restorandan satılmamış, təzə və dadlı yeməkləri inanılmaz endirimlərlə əldə et. Həm büdcəni qoru, həm də planetimiz üçün təsirli bir addım at. Həyata keçirmək istədiyin bu gözəl missiyada <highlight>Supafo</highlight> sənin yanındadır!",
+      "how_it_works_title": "SUPAFO <highlight>Necə İşləyir?</highlight>",
+      "bag_title": "SUPAFO <highlight>Çanta</highlight>",
+      "bag_heading_1": "Supafo bez çantası ilə təbiətə dost ol!",
+      "bag_desc_1": "Plastik paketlərlə vidalaş, təbiəti qoruyarkən üslubunu da göstər!",
+      "bag_heading_2": "Təbii toxuması və zərif dizaynı ilə hər ana uyğundur.",
+      "bag_desc_2": "Davamlı, zövqlü və 100% pambıq Supafo bez çantaları ilə zamansız bir zəriflik kəşf et.",
+      "bag_heading_3": "Hərəkata qoşul, fərq yarat – israfın deyil, həllin bir parçası ol!",
+      "bag_desc_3": "Aldığın hər çanta ilə bir fidanın əkilməsinə töhfə verirsən.",
+      "journey_title": "Sağlam həyat yolçuluğuna başla!",
+      "journey_heading": "Dadlı seçim et, sağlam yaşa!",
+      "journey_desc": "Supafo ilə sən yalnız yeməyi xilas etmirsən, eyni zamanda yerli məhsulları dəstəkləyərək daha şüurlu və daha sağlam həyat tərzi seçirsən.",
+      "ai_title": "Gələcəyin texnologiyası, çox yaxında Supafo-da!",
+      "ai_desc": "Gələcək çox yaxında buradadır! Süni intellektlə gücləndirilmiş yeni xüsusiyyətlərimiz sizə və planetimizə daha çox fayda vermək üçün gəlir. Supafo-nun süni intellekt yolçuluğuna addım atmağa hazır olun!",
+      "donation_title": "Supafo ilə yaxşılığa qoşul – dəstək ol, dəyişikliyə başla!",
+      "donation_heading_1": "Yaxında aktiv olacaq ianə bölməmizlə:",
+      "donation_desc_1": "Supafo Fonduna qoşul – biz sənin adından çatdıraq! İanən ehtiyacı olan insanlara, ekoloji layihələrə və sosial dəstək təşəbbüslərinə təhlükəsiz şəkildə çatsın.",
+      "donation_heading_2": "Supafo ilə yaxşılığa toxun!",
+      "donation_desc_2": "Cəmiyyətə, təbiətə və ehtiyacı olan insanlara dəstək olmaq üçün hərəkətə keç!",
+      "faq_title": "Tez-tez verilən suallar",
+      "faq": {
+         "q1": "Supafo nədir?",
+         "a1": "Supafo israfı azaltmaq və dayanıqlı istehlaka töhfə vermək məqsədilə hazırlanmış mobil tətbiqdir. İstifadəçilər yaxınlıqdakı müəssisələrdən sərfəli paketləri kəşf edə, qənaət edə və ətraf mühitə duyarlı şəkildə istehlak edə bilərlər.",
+         "q2": "Supafo necə işləyir?",
+         "a2": "Supafo istifadəçilərin yerləşdiyi yerə əsasən yaxınlıqdakı müəssisələrin təqdim etdiyi sərfəli paketləri göstərir. İstifadəçilər bu paketləri tətbiq üzərindən ala və müəssisədən təhvil götürə bilərlər. Bu yolla satılmamış məhsulların israfı azalır, həm qənaət edilir, həm də ətraf mühitə töhfə verilir.",
+         "q3": "Supafo hansı müəssisələrlə işləyir?",
+         "a3": "Supafo kafe, restoran, market kimi müxtəlif müəssisələrlə əməkdaşlıq edir. Bu müəssisələr satılmamış məhsullarını sərfəli qiymətlərlə təqdim edərək israfın azalmasına kömək edirlər.",
+         "q4": "Paketlərin içindəkilər niyə sürprizdir?",
+         "a4": "Paketlərin içində günün sonunda satılmamış məhsullar ola bilər və bu səbəbdən sürpriz olur. Bu yanaşma israfı azaltmaq üçün elastiklik yaradır və istifadəçilərə fərqli məhsulları kəşf etmək imkanı verir.",
+         "q5": "Supafo-dan istifadə etmək üçün hər hansı ödəniş etməliyəmmi?",
+         "a5": "Xeyr, Supafo tətbiqini yükləmək və istifadə etmək tamamilə pulsuzdur. Ancaq tətbiq üzərindən aldığınız paketlər üçün ödəniş etməlisiniz.",
+         "q6": "Supafo hansı müəssisələrlə işləyir?",
+         "a6": "Supafo kafe, restoran, market kimi müxtəlif müəssisələrlə əməkdaşlıq edir. Bu müəssisələr satılmamış məhsullarını sərfəli qiymətlərlə təqdim edərək israfın azalmasına kömək edirlər.",
+         "q7": "Paketlərin içindəkilər niyə sürprizdir?",
+         "a7": "Paketlərin içində günün sonunda satılmamış məhsullar ola bilər və bu səbəbdən sürpriz olur. Bu yanaşma israfı azaltmaq üçün elastiklik yaradır və istifadəçilərə fərqli məhsulları kəşf etmək imkanı verir.",
+         "q8": "Supafo-dan istifadə etmək üçün hər hansı ödəniş etməliyəmmi?",
+         "a8": "Xeyr, Supafo tətbiqini yükləmək və istifadə etmək tamamilə pulsuzdur. Ancaq tətbiq üzərindən aldığınız paketlər üçün ödəniş etməlisiniz."
+      }
    }
 }

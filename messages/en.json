@@ -7,6 +7,7 @@
       "download_app": "Download App"
    },
    "Modal": {
+      "download_app": "Download App",
       "download_app_title": "Download the app and start saving delicious food."
    },
    "Footer": {
@@ -27,5 +28,49 @@
          "cookie": "Cookie Policy"
       },
       "copyright": "© 2026 Supafo. All rights reserved."
+   },
+   "Home": {
+      "hero_title": "Reduce waste with surprise packages",
+      "hero_desc": "Discover affordable packages from nearby businesses, save money, and contribute to sustainable consumption.",
+      "what_is_title": "<highlight>What is</highlight> SUPAFO?",
+      "what_is_heading": "Save the Flavors of the Day!",
+      "what_is_desc": "With <highlight>Supafo</highlight>, get unsold, fresh, and delicious food from hundreds of cafes and restaurants every day at incredible discounts. Save money while also taking a meaningful step for our planet. <highlight>Supafo</highlight> is with you in this beautiful mission you want to bring to life!",
+      "how_it_works_title": "<highlight>How Does</highlight> SUPAFO <highlight>Work?</highlight>",
+      "bag_title": "SUPAFO <highlight>Bag</highlight>",
+      "bag_heading_1": "Be Eco-Friendly with the Supafo Tote Bag!",
+      "bag_desc_1": "Say goodbye to plastic bags and show your style while protecting nature!",
+      "bag_heading_2": "Its natural texture and elegant design make it perfect for every moment.",
+      "bag_desc_2": "Discover timeless style with durable, stylish, and 100% cotton Supafo tote bags.",
+      "bag_heading_3": "Join the Movement, Make a Difference – Be Part of the Solution, Not the Waste!",
+      "bag_desc_3": "With every bag you purchase, you contribute to planting a sapling.",
+      "journey_title": "Start Your Healthy Living Journey!",
+      "journey_heading": "Choose Delicious, Live Healthy!",
+      "journey_desc": "With Supafo, you are not only saving food, but also choosing a more conscious and healthier lifestyle by supporting local products.",
+      "ai_title": "The Technology of the Future, Coming Soon to Supafo!",
+      "ai_desc": "The future is almost here! Our new AI-powered features are on the way to bring more benefits to you and the planet. Get ready to step into Supafo’s AI journey!",
+      "donation_title": "Join Goodness with Supafo – Support and Start the Change!",
+      "donation_heading_1": "With our donation area that will be active soon:",
+      "donation_desc_1": "Join the Supafo Fund – Let Us Deliver It on Your Behalf! Your donation will safely reach people in need, environmental projects, and social support initiatives.",
+      "donation_heading_2": "Touch Goodness with Supafo!",
+      "donation_desc_2": "Take action to support society, nature, and people in need!",
+      "faq_title": "F.A.Q",
+      "faq": {
+         "q1": "What is Supafo?",
+         "a1": "Supafo is a mobile application developed to reduce waste and contribute to sustainable consumption. Users can discover affordable packages from nearby businesses, save money, and consume in an environmentally conscious way.",
+         "q2": "How does Supafo work?",
+         "a2": "Based on users’ locations, Supafo shows affordable packages offered by nearby businesses. Users can purchase these packages through the app and pick them up from the business. This helps reduce waste from unsold products while saving money and supporting the environment.",
+         "q3": "What businesses does Supafo work with?",
+         "a3": "Supafo works with various businesses such as cafes, restaurants, and markets. These businesses help reduce waste by offering their unsold products at affordable prices.",
+         "q4": "Why are the package contents a surprise?",
+         "a4": "The package contents may include unsold products remaining at the end of the day, so they can be a surprise. This approach provides flexibility in reducing waste and allows users to discover different products.",
+         "q5": "Do I need to pay any fee to use Supafo?",
+         "a5": "No, downloading and using the Supafo app is completely free. However, you need to pay for the packages you purchase through the app.",
+         "q6": "What businesses does Supafo work with?",
+         "a6": "Supafo works with various businesses such as cafes, restaurants, and markets. These businesses help reduce waste by offering their unsold products at affordable prices.",
+         "q7": "Why are the package contents a surprise?",
+         "a7": "The package contents may include unsold products remaining at the end of the day, so they can be a surprise. This approach provides flexibility in reducing waste and allows users to discover different products.",
+         "q8": "Do I need to pay any fee to use Supafo?",
+         "a8": "No, downloading and using the Supafo app is completely free. However, you need to pay for the packages you purchase through the app."
+      }
    }
 }
