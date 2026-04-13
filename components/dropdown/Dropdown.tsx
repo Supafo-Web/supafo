@@ -3,13 +3,32 @@
 import styles from "@/components/dropdown/dropdown.module.scss"
 import LangSwitch from "@/components/lang/LangSwitch"
 import Image from "next/image"
-import { useState } from "react"
+import { useEffect, useRef, useState } from "react"
 
 const Dropdown = () => {
    const [open, setOpen] = useState<boolean>(false)
+   const dropdownRef = useRef<HTMLDivElement | null>(null)
+
+   useEffect(() => {
+      const handleClickOutside = (event: MouseEvent) => {
+         if (
+            dropdownRef.current &&
+            !dropdownRef.current.contains(event.target as Node)
+         ) {
+            setOpen(false)
+         }
+      }
+
+      document.addEventListener("mousedown", handleClickOutside)
+
+      return () => {
+         document.removeEventListener("mousedown", handleClickOutside)
+      }
+   }, [])
 
    return (
       <div
+         ref={dropdownRef}
          className={`relative`}
       >
          <button

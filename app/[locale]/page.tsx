@@ -161,7 +161,7 @@ const Home = async () => {
 
          <main>
             <section
-               className={styles.whatIsSupafo}
+               className={`px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 py-40 ${styles.whatIsSupafo}`}
             >
                <Image
                   alt='flower'
@@ -173,28 +173,34 @@ const Home = async () => {
                   style={{ width: 69, height: 115 }}
                />
                <div
-                  className="flex justify-between gap-15"
+                  className="flex flex-col lg:flex-row items-center gap-15"
                >
                   <Image
                      alt="what-is-supafo"
                      src="/home/1.svg"
                      width={350}
                      height={335}
-                     className="w-full h-auto max-w-87.5 mb-30"
+                     className="w-full h-auto sm:w-112.5 md:w-87.5"
                      priority
                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                   <div
                      className={`gap-12.5 ${styles.hero1}`}
                   >
-                     <h1>
+                     <h1
+                        className={`text-center lg:text-left`}
+                     >
                         {t.rich('what_is_title', {
                            highlight: (chunks) => <span>{chunks}</span>
                         })}
                      </h1>
-                     <h6>
+                     <h6
+                        className={`text-center lg:text-left`}
+                     >
                         {t('what_is_heading')}
-                        <p>
+                        <p
+                           className={`text-center mt-5 lg:text-left`}
+                        >
                            {t.rich('what_is_desc', {
                               highlight: (chunks) => <span>{chunks}</span>
                            })}
@@ -236,7 +242,7 @@ const Home = async () => {
             </section>
 
             <section
-               className={styles.supafoBag}
+               className={`${styles.supafoBag}`}
             >
                <Image
                   alt='flower'
@@ -247,36 +253,46 @@ const Home = async () => {
                   priority
                   style={{ width: 69, height: 115 }}
                />
-               <h1>
+               <h1
+                  className={`pt-20`}
+               >
                   {t.rich('bag_title', {
                      highlight: (chunks) => <span>{chunks}</span>
                   })}
                </h1>
                <div
-                  className="flex items-center gap-25 mt-12.5"
+                  className="flex flex-col lg:flex-row items-center gap-15 px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 py-20"
                >
                   <Image
                      alt="supafo-bag-1"
                      src="/home/2.svg"
                      width={305}
                      height={320}
-                     className="w-full h-auto max-w-76.25"
+                     className="w-full h-auto sm:w-112.5 md:w-87.5"
                      priority
                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
-                  <h6>
+                  <h6
+                     className={`text-center lg:text-left`}
+                  >
                      {t('bag_heading_1')}
-                     <p>
+                     <p
+                        className={`text-center mt-10 lg:text-left`}
+                     >
                         {t('bag_desc_1')}
                      </p>
                   </h6>
                </div>
                <div
-                  className="flex justify-between items-center gap-25"
+                  className="flex flex-col lg:flex-row items-center gap-15 px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 py-20"
                >
-                  <h6>
+                  <h6
+                     className={`text-center lg:text-left`}
+                  >
                      {t('bag_heading_2')}
-                     <p>
+                     <p
+                        className={`text-center mt-10 lg:text-left`}
+                     >
                         {t('bag_desc_2')}
                      </p>
                   </h6>
@@ -285,19 +301,23 @@ const Home = async () => {
                      src="/home/3.svg"
                      width={357}
                      height={344}
-                     className="w-full h-auto max-w-89.25"
+                     className="w-full h-auto sm:w-112.5 md:w-87.5"
                      priority
                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                </div>
                <div
-                  className="my-30 flex flex-col items-center justify-center"
+                  className="my-30 flex flex-col items-center justify-center px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70"
                >
-                  <div className="flex flex-col items-center gap-4 mb-12">
-                     <h6>
+                  <div className="flex flex-col items-center mb-12">
+                     <h6
+                        className={`text-center`}
+                     >
                         {t('bag_heading_3')}
                      </h6>
-                     <p>
+                     <p
+                        className={`text-center mt-10`}
+                     >
                         {t('bag_desc_3')}
                      </p>
                   </div>
@@ -318,9 +338,9 @@ const Home = async () => {
             </section>
 
             <section
-               className={styles.lifeJourney}
+               className={`flex flex-col lg:flex-row items-center lg:items-start px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 py-30 ${styles.lifeJourney}`}
             >
-               <div className="relative w-75 h-62.5 overflow-hidden rounded-xl mt-4">
+               <div className="relative w-full md:w-130 h-110 md:h-130 lg:w-80 lg:h-95 xl:w-110 xl:h-110 overflow-hidden rounded-xl mt-4">
                   <video
                      autoPlay
                      muted
@@ -334,12 +354,18 @@ const Home = async () => {
                <div
                   className={styles.textArea}
                >
-                  <h1>
+                  <h1
+                     className={`text-center lg:text-left`}
+                  >
                      {t('journey_title')}
                   </h1>
-                  <h6>
+                  <h6
+                     className={`text-center lg:text-left`}
+                  >
                      {t('journey_heading')}
-                     <p>
+                     <p
+                        className={`text-center mt-7 lg:text-left`}
+                     >
                         {t('journey_desc')}
                      </p>
                   </h6>
@@ -347,7 +373,7 @@ const Home = async () => {
             </section>
 
             <section
-               className={styles.supafoAI}
+               className={`px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 py-20 ${styles.supafoAI}`}
             >
                <Image
                   alt='flower'
@@ -359,14 +385,18 @@ const Home = async () => {
                   style={{ width: 69, height: 115 }}
                />
 
-               <div className="flex items-center justify-between gap-25">
+               <div className="flex flex-col lg:flex-row items-center gap-15">
                   <div
                      className={styles.textArea}
                   >
-                     <h1>
+                     <h1
+                        className={`text-center lg:text-left`}
+                     >
                         {t('ai_title')}
                      </h1>
-                     <p>
+                     <p
+                        className={`text-center mt-7 lg:text-left`}
+                     >
                         {t('ai_desc')}
                      </p>
                   </div>
@@ -376,7 +406,7 @@ const Home = async () => {
                      src="/home/AI.jpeg"
                      width={265}
                      height={344}
-                     className={`w-full h-auto max-w-66.25 ${styles.supafoAIImage}`}
+                     className={`w-full h-auto sm:w-112.5 md:w-87.5 ${styles.supafoAIImage}`}
                      priority
                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
@@ -394,38 +424,46 @@ const Home = async () => {
             </section>
 
             <section
-               className={styles.supafoDonation}
+               className={`${styles.supafoDonation}`}
             >
                <h1
-                  className={`my-10 text-center px-4`}
+                  className={`mt-20 text-center px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70`}
                >
                   {t('donation_title')}
                </h1>
                <div
-                  className="flex items-center justify-between gap-15 mb-20"
+                  className="flex flex-col lg:flex-row items-center gap-15 px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 py-20"
                >
                   <Image
                      alt="supafo-donation"
                      src="/home/Donation.svg"
                      width={320}
                      height={264}
-                     className="w-full h-auto max-w-[320px]"
+                     className="w-full h-auto sm:w-112.5 md:w-87.5"
                      priority
                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
-                  <h6>
+                  <h6
+                     className={`text-center lg:text-left`}
+                  >
                      {t('donation_heading_1')}
-                     <p>
+                     <p
+                        className={`text-center mt-7 lg:text-left`}
+                     >
                         {t('donation_desc_1')}
                      </p>
                   </h6>
                </div>
                <div
-                  className="flex justify-between items-center gap-25"
+                  className="flex flex-col lg:flex-row items-center justify-between gap-15 px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 py-20"
                >
-                  <h6>
+                  <h6
+                     className={`text-center lg:text-left`}
+                  >
                      {t('donation_heading_2')}
-                     <p>
+                     <p
+                        className={`text-center mt-7 lg:text-left`}
+                     >
                         {t('donation_desc_2')}
                      </p>
                   </h6>
@@ -434,7 +472,7 @@ const Home = async () => {
                      src="/home/6.svg"
                      width={332}
                      height={245}
-                     className="w-full h-auto max-w-83"
+                     className="w-full h-auto sm:w-112.5 md:w-87.5"
                      priority
                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
@@ -442,16 +480,14 @@ const Home = async () => {
             </section>
 
             <section
-               className={styles.faq}
+               className={`px-10 sm:px-30 lg:px-50 xl:px-70 2xl:px-100 py-20 ${styles.faq}`}
             >
-               <div>
-                  <h1>
-                     {t('faq_title')}
-                  </h1>
-                  <FAQ
-                     faq={faq}
-                  />
-               </div>
+               <h1>
+                  {t('faq_title')}
+               </h1>
+               <FAQ
+                  faq={faq}
+               />
                <Image
                   alt='flower'
                   src='/images/RightFlower.svg'
@@ -462,7 +498,7 @@ const Home = async () => {
                   style={{ width: 69, height: 115 }}
                />
             </section>
-         </main>
+         </main >
       </>
    )
 }

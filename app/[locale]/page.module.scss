@@ -74,7 +74,7 @@
 .leftFlower {
    position: absolute;
    left: 0;
-   top: 80%;
+   top: 85%;
 }
 
 .rightFlower {
@@ -86,19 +86,19 @@
 .leftFlower2 {
    position: absolute;
    left: 0;
-   top: 90%;
+   top: 100%;
 }
 
 .rightFlower2 {
    position: absolute;
    right: 0;
-   top: -20px;
+   top: -70px;
 }
 
 .leftFlower3 {
    position: absolute;
    left: 0;
-   top: 82%;
+   top: 95%;
 }
 
 .rightFlower3 {
@@ -122,12 +122,10 @@
 main {
    .whatIsSupafo {
       position: relative;
-      padding: 60px 7%;
 
       .hero1 {
          display: flex;
          flex-direction: column;
-         gap: 50px;
 
          h1 {
             font-family: $fontFamily;
@@ -178,7 +176,6 @@ main {
 
    .supafoBag {
       position: relative;
-      padding: 60px 7%;
 
       h1 {
          font-family: $fontFamily;
@@ -208,9 +205,8 @@ main {
 
    .lifeJourney {
       display: flex;
-      padding: 60px 7%;
       flex: 1;
-      gap: 80px;
+      gap: 50px;
 
       .textArea {
          display: flex;
@@ -235,7 +231,6 @@ main {
                font-size: 21px;
                font-weight: $regular;
                color: #737373;
-               margin-top: 16px;
             }
          }
       }
@@ -243,7 +238,6 @@ main {
 
    .supafoAI {
       position: relative;
-      padding: 60px 7%;
 
       .textArea {
          display: flex;
@@ -261,7 +255,6 @@ main {
             font-size: 21px;
             font-weight: $regular;
             color: #737373;
-            margin-top: 16px;
          }
       }
 
@@ -286,7 +279,6 @@ main {
 
    .supafoDonation {
       position: relative;
-      padding: 60px 7%;
 
       h1 {
          font-family: $fontFamily;
@@ -305,14 +297,12 @@ main {
             font-size: 21px;
             font-weight: $regular;
             color: #737373;
-            margin-top: 16px;
          }
       }
    }
 
    .faq {
       position: relative;
-      padding: 60px 7%;
 
       h1 {
          font-family: $fontFamily;
@@ -344,11 +334,11 @@ main {
 
 @media (max-width: 768px) {
    .grid {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
    }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 540px) {
    .grid {
       grid-template-columns: 1fr;
    }

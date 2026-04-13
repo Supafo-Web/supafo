@@ -48,7 +48,11 @@ const FAQ = ({ faq }: { faq: FAQItem[] }) => {
                            ${isOpen ? styles.faqButtonActive : ''}
                         `}
                      >
-                        <span>{item.question}</span>
+                        <span
+                           className={`text-left`}
+                        >
+                           {item.question}
+                        </span>
 
                         <Image
                            alt={isOpen ? "minus-button" : "plus-button"}

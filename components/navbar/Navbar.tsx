@@ -5,6 +5,7 @@ import styles from "./navbar.module.scss"
 import Dropdown from "@/components/dropdown/Dropdown"
 import Login from "@/public/icons/Login"
 import NavbarDownloadButton from "./NavbarDownloadButton"
+import Hamburger from "@/components/navbar/Hamburger"
 
 interface NavbarType {
    locale: string
@@ -19,7 +20,7 @@ const Navbar = async ({ locale }: NavbarType) => {
          className={`container-fluid px-[5%] py-6 fixed top-0 left-0 w-full z-50 ${styles.navbarWrapper}`}
       >
          <div
-            className="flex items-center justify-between gap-2"
+            className="hidden lg:flex items-center justify-between gap-2"
          >
             <Button
                href={`/${locale}`}
@@ -55,9 +56,9 @@ const Navbar = async ({ locale }: NavbarType) => {
             </div>
 
             <div
-               className={`flex flex-1 items-center justify-around ${styles.navbarArea}`}
+               className={`flex items-center justify-around ${styles.navbarArea}`}
             >
-               <Button
+               {/* <Button
                   href={`/${locale}/partner`}
                   navbar
                   className="flex gap-0.75"
@@ -66,7 +67,7 @@ const Navbar = async ({ locale }: NavbarType) => {
                      {t("partner")}
                   </span>
                   <Login />
-               </Button>
+               </Button> */}
 
                <Dropdown />
             </div>
@@ -75,6 +76,35 @@ const Navbar = async ({ locale }: NavbarType) => {
                text={t("download_app")}
                title={modal('download_app_title')}
             />
+         </div>
+
+
+         <div
+            className="flex lg:hidden items-center justify-between gap-2"
+         >
+            <Button
+               href={`/${locale}`}
+            >
+               <Image
+                  alt="logo"
+                  src="/logo/logo.svg"
+                  width={80}
+                  height={69}
+                  priority
+                  style={{ width: 80, height: 69 }}
+               />
+            </Button>
+
+            <NavbarDownloadButton
+               text={t("download_app")}
+               title={modal('download_app_title')}
+            />
+
+            <div
+               className={`flex items-center justify-around ${styles.navbarArea}`}
+            >
+               <Hamburger />
+            </div>
          </div>
       </div>
    )

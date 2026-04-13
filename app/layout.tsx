@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import { Poppins } from "next/font/google"
 import "./globals.css"
 import "./globals.scss"
@@ -20,6 +20,11 @@ export const metadata: Metadata = {
       apple: "/favicon.ico",
    },
 }
+
+export const viewport: Viewport = {
+   width: "device-width",
+   initialScale: 1,
+};
 
 const RootLayout = ({
    children,
