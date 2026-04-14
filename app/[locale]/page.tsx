@@ -96,6 +96,16 @@ const Home = async () => {
          id: 8,
          question: t('faq.q8'),
          answer: t('faq.a8')
+      },
+      {
+         id: 9,
+         question: t('faq.q9'),
+         answer: t('faq.a9')
+      },
+      {
+         id: 10,
+         question: t('faq.q10'),
+         answer: t('faq.a10')
       }
    ]
 
@@ -183,6 +193,7 @@ const Home = async () => {
                      className="w-full h-auto sm:w-112.5 md:w-87.5"
                      priority
                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                     style={{ width: '100%', height: 'auto' }}
                   />
                   <div
                      className={`gap-12.5 ${styles.hero1}`}
@@ -480,7 +491,8 @@ const Home = async () => {
             </section>
 
             <section
-               className={`px-10 sm:px-30 lg:px-50 xl:px-70 2xl:px-100 py-20 ${styles.faq}`}
+               id="faq"
+               className={`px-10 sm:px-30 lg:px-50 xl:px-70 2xl:px-100 py-20 scroll-mt-24 ${styles.faq}`}
             >
                <h1>
                   {t('faq_title')}

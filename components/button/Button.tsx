@@ -6,7 +6,7 @@ type ButtonProps = {
    text?: string
    children?: ReactNode
    href?: string
-   onClick?: () => void
+   onClick?: (e: React.MouseEvent<HTMLElement>) => void
    type?: "button" | "submit" | "reset"
    className?: string
    navbar?: boolean

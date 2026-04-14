@@ -62,7 +62,7 @@ const Footer = async ({ locale }: FooterType) => {
       {
          id: 1,
          title: t('footer_link.faq'),
-         link: `/${locale}/faq`
+         link: `/${locale}#faq`
       },
       {
          id: 2,
@@ -80,6 +80,21 @@ const Footer = async ({ locale }: FooterType) => {
          link: `/${locale}/cookie-policy`
       }
    ]
+
+   const handleFaqClick = (e: React.MouseEvent<HTMLElement>) => {
+      e.preventDefault()
+
+      if (window.location.pathname !== `/${locale}`) {
+         window.location.href = `/${locale}#faq`
+         return
+      }
+
+      const el = document.getElementById('faq')
+      if (el) {
+         el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+         window.history.replaceState(null, '', `/${locale}#faq`)
+      }
+   }
 
    return (
       <div
@@ -128,14 +143,19 @@ const Footer = async ({ locale }: FooterType) => {
          <div
             className={`flex flex-col md:flex-row justify-evenly gap-6 md:gap-0 py-10`}
          >
-            {mainLink.map((item, index) => (
-               <Button
-                  key={item.id || index}
-                  text={item.title}
-                  href={item.link}
-                  footer
-               />
-            ))}
+            {mainLink.map((item, index) => {
+               const isFaq = item.id === 1
+
+               return (
+                  <Button
+                     key={item.id || index}
+                     text={item.title}
+                     href={item.link}
+                     footer
+                     onClick={isFaq ? handleFaqClick : undefined}
+                  />
+               )
+            })}
          </div>
          <p
             className={styles.footerBottom}

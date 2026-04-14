@@ -1,18 +1,32 @@
-import type { NextConfig } from 'next'
-import createNextIntlPlugin from 'next-intl/plugin'
+import type { NextConfig } from "next"
+import createNextIntlPlugin from "next-intl/plugin"
 
 const withNextIntl = createNextIntlPlugin()
+const isProd = process.env.NODE_ENV === "production"
 
 const nextConfig: NextConfig = {
    reactStrictMode: true,
+   poweredByHeader: false,
+
+   compiler: isProd
+      ? {
+         removeConsole: {
+            exclude: ["error", "warn"],
+         },
+      }
+      : undefined,
 
    async rewrites() {
-      return [
-         {
-            source: '/backend/:path*',
-            destination: 'https://poplared-breathed-roosevelt.ngrok-free.dev/api/v1/:path*',
-         },
-      ]
+      if (!isProd) {
+         return [
+            {
+               source: "/backend/:path*",
+               destination: "https://poplared-breathed-roosevelt.ngrok-free.dev/api/v1/:path*",
+            },
+         ]
+      }
+
+      return []
    },
 }
 
