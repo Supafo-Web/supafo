@@ -21,7 +21,7 @@ const TeamMembers = () => {
                width={400}
                height={400}
                className="w-70 h-70 rounded-2xl"
-               priority
+
             />
             <div
                className={`mt-6 ${styles.teamInfo}`}

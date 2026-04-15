@@ -7,6 +7,7 @@ const isProd = process.env.NODE_ENV === "production"
 const nextConfig: NextConfig = {
    reactStrictMode: true,
    poweredByHeader: false,
+   productionBrowserSourceMaps: false,
 
    images: {
       remotePatterns: [

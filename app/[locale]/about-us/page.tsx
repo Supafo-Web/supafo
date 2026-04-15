@@ -19,7 +19,7 @@ const AboutUs = async () => {
                width={69}
                height={115}
                className={`w-full h-auto max-w-12 lg:max-w-17.5 ${styles.leftFlower4}`}
-               priority
+
                style={{ width: 69, height: 115 }}
             />
             <div
@@ -37,7 +37,7 @@ const AboutUs = async () => {
                   width={283}
                   height={40}
                   className="w-80 h-auto md:w-100 lg:w-56"
-                  priority
+
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                />
             </div>
@@ -72,7 +72,7 @@ const AboutUs = async () => {
                width={69}
                height={115}
                className={`w-full h-auto max-w-12 lg:max-w-17.5 ${styles.rightFlower4}`}
-               priority
+
                style={{ width: 69, height: 115 }}
             />
          </section>
@@ -95,7 +95,7 @@ const AboutUs = async () => {
                   width={283}
                   height={40}
                   className="w-80 h-auto md:w-100 lg:w-56"
-                  priority
+
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                />
             </div>
@@ -108,7 +108,7 @@ const AboutUs = async () => {
                   width={379}
                   height={398}
                   className="w-36 h-auto sm:w-40 md:w-48 lg:w-74"
-                  priority
+
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                />
                <div className="flex flex-col gap-10">
@@ -153,7 +153,7 @@ const AboutUs = async () => {
                      width={98}
                      height={105}
                      className="w-60 h-auto sm:w-40 md:w-48"
-                     priority
+
                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                   <p
@@ -175,7 +175,7 @@ const AboutUs = async () => {
                      width={98}
                      height={105}
                      className="w-60 h-auto sm:w-40 md:w-48"
-                     priority
+
                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                   <p
@@ -198,7 +198,7 @@ const AboutUs = async () => {
                width={69}
                height={115}
                className={`w-full h-auto max-w-12 lg:max-w-17.5 ${styles.leftFlower3}`}
-               priority
+
                style={{ width: 69, height: 115 }}
             />
             <div
@@ -216,7 +216,7 @@ const AboutUs = async () => {
                   width={283}
                   height={40}
                   className="w-80 h-auto md:w-100 lg:w-56"
-                  priority
+
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                />
             </div>
@@ -259,7 +259,7 @@ const AboutUs = async () => {
                      width={452}
                      height={494}
                      className="w-full h-auto"
-                     priority
+
                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                </div>
@@ -271,7 +271,7 @@ const AboutUs = async () => {
                   width={98}
                   height={105}
                   className="w-30 h-auto sm:w-40 md:w-48"
-                  priority
+
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                />
                <Image
@@ -280,7 +280,7 @@ const AboutUs = async () => {
                   width={98}
                   height={105}
                   className="w-30 h-auto sm:w-40 md:w-48"
-                  priority
+
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                />
                <Image
@@ -289,7 +289,7 @@ const AboutUs = async () => {
                   width={98}
                   height={105}
                   className="w-30 h-auto sm:w-40 md:w-48"
-                  priority
+
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                />
             </div>
@@ -299,7 +299,7 @@ const AboutUs = async () => {
                width={69}
                height={115}
                className={`w-full h-auto max-w-12 lg:max-w-17.5 ${styles.rightFlower3}`}
-               priority
+
                style={{ width: 69, height: 115 }}
             />
          </section>
@@ -322,7 +322,7 @@ const AboutUs = async () => {
                   width={283}
                   height={40}
                   className="w-80 h-auto md:w-100 lg:w-56"
-                  priority
+
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                />
             </div>
@@ -334,7 +334,7 @@ const AboutUs = async () => {
                   width={98}
                   height={105}
                   className="w-60 h-auto sm:w-80 lg:w-200"
-                  priority
+
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                />
                <div className="flex flex-col items-center lg:items-start gap-10">
@@ -360,7 +360,7 @@ const AboutUs = async () => {
                width={69}
                height={115}
                className={`w-full h-auto max-w-12 lg:max-w-17.5 ${styles.leftFlower5}`}
-               priority
+
                style={{ width: 69, height: 115 }}
             />
             <div
@@ -378,7 +378,7 @@ const AboutUs = async () => {
                   width={283}
                   height={40}
                   className="w-80 h-auto md:w-100 lg:w-56"
-                  priority
+
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                />
             </div>
@@ -393,7 +393,7 @@ const AboutUs = async () => {
                width={69}
                height={115}
                className={`w-full h-auto max-w-12 lg:max-w-17.5 ${styles.rightFlower5}`}
-               priority
+
                style={{ width: 69, height: 115 }}
             />
          </section>

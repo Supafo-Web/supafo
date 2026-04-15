@@ -63,7 +63,7 @@ const Modal = ({
                      src="/icons/Close.svg"
                      width={30}
                      height={30}
-                     priority
+
                      style={{ width: 30, height: 30 }}
                   />
                </button>

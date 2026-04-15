@@ -30,7 +30,7 @@ const Navbar = async ({ locale }: NavbarType) => {
                   src="/logo/logo.svg"
                   width={94}
                   height={81}
-                  priority
+
                   style={{ width: 94, height: 81 }}
                />
             </Button>
@@ -95,7 +95,7 @@ const Navbar = async ({ locale }: NavbarType) => {
                   src="/logo/logo.svg"
                   width={80}
                   height={69}
-                  priority
+
                   style={{ width: 80, height: 69 }}
                />
             </Button>

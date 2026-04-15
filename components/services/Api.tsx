@@ -7,3 +7,7 @@ export const getSettings = async () => {
 export const getTeamMembers = async () => {
    return await api.get('/team-members')
 }
+
+export const getOpenPositions = async () => {
+   return await api.get('/open-positions')
+}

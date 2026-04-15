@@ -12,71 +12,19 @@ type StaticRoute = {
 }
 
 const staticRoutes: StaticRoute[] = [
-   {
-      path: "",
-      priority: 1,
-      changeFrequency: "daily",
-   },
-   {
-      path: "/about-us",
-      priority: 0.8,
-      changeFrequency: "monthly",
-   },
-   {
-      path: "/how-does-it-work",
-      priority: 0.8,
-      changeFrequency: "monthly",
-   },
-   {
-      path: "/guide",
-      priority: 0.8,
-      changeFrequency: "monthly",
-   },
-   {
-      path: "/career",
-      priority: 0.8,
-      changeFrequency: "monthly",
-   },
-   {
-      path: "/our-team",
-      priority: 0.8,
-      changeFrequency: "monthly",
-   },
-   {
-      path: "/what-is-food-waste",
-      priority: 0.8,
-      changeFrequency: "monthly",
-   },
-   {
-      path: "/projects",
-      priority: 0.8,
-      changeFrequency: "monthly",
-   },
-   {
-      path: "/blog",
-      priority: 0.8,
-      changeFrequency: "monthly",
-   },
-   {
-      path: "/contact",
-      priority: 0.8,
-      changeFrequency: "monthly",
-   },
-   {
-      path: "/terms-and-conditions",
-      priority: 0.8,
-      changeFrequency: "monthly",
-   },
-   {
-      path: "/privacy-policy",
-      priority: 0.8,
-      changeFrequency: "monthly",
-   },
-   {
-      path: "/cookie-policy",
-      priority: 0.8,
-      changeFrequency: "monthly",
-   },
+   { path: "", priority: 1, changeFrequency: "daily" },
+   { path: "/about-us", priority: 0.8, changeFrequency: "monthly" },
+   { path: "/how-does-it-work", priority: 0.8, changeFrequency: "monthly" },
+   { path: "/guide", priority: 0.7, changeFrequency: "monthly" },
+   { path: "/career", priority: 0.6, changeFrequency: "monthly" },
+   { path: "/our-team", priority: 0.7, changeFrequency: "monthly" },
+   { path: "/what-is-food-waste", priority: 0.7, changeFrequency: "monthly" },
+   { path: "/projects", priority: 0.7, changeFrequency: "weekly" },
+   { path: "/blog", priority: 0.8, changeFrequency: "weekly" },
+   { path: "/contact", priority: 0.7, changeFrequency: "monthly" },
+   { path: "/terms-and-conditions", priority: 0.4, changeFrequency: "yearly" },
+   { path: "/privacy-policy", priority: 0.4, changeFrequency: "yearly" },
+   { path: "/cookie-policy", priority: 0.4, changeFrequency: "yearly" },
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {

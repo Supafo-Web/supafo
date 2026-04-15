@@ -22,7 +22,7 @@ const Hamburger = () => {
                src="/icons/HamburgerMenu.svg"
                width={36}
                height={36}
-               priority
+
                style={{ width: 36, height: 36 }}
             />
          </Button>

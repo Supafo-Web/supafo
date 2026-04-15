@@ -59,7 +59,7 @@ const FAQ = ({ faq }: { faq: FAQItem[] }) => {
                            src={isOpen ? "/icons/Minus.svg" : "/icons/Plus.svg"}
                            width={28}
                            height={28}
-                           priority
+
                            className={`
                               ${styles.faqIcon}
                               ${isOpen ? styles.faqIconActive : ''}
@@ -118,7 +118,7 @@ const FAQ = ({ faq }: { faq: FAQItem[] }) => {
                                     src={isOpen ? "/icons/Minus.svg" : "/icons/Plus.svg"}
                                     width={28}
                                     height={28}
-                                    priority
+
                                     className={`
                                        ${styles.faqIcon}
                                        ${isOpen ? styles.faqIconActive : ''}
@@ -160,7 +160,7 @@ const FAQ = ({ faq }: { faq: FAQItem[] }) => {
                   src="/icons/DownArrowGreen.svg"
                   width={24}
                   height={24}
-                  priority
+
                   className={styles.downArrowIcon}
                />
             </Button>

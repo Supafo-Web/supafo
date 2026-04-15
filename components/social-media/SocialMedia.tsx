@@ -62,7 +62,7 @@ const SocialButtons = () => {
                      src={item.icon}
                      width={24}
                      height={24}
-                     priority
+
                      className="absolute inset-0 opacity-100 transition-opacity duration-500 ease-in-out group-hover:opacity-0"
                   />
                   <Image
@@ -70,7 +70,7 @@ const SocialButtons = () => {
                      src={item.icon2}
                      width={24}
                      height={24}
-                     priority
+
                      className="absolute inset-0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100"
                   />
                </div>

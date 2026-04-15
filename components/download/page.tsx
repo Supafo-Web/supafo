@@ -45,7 +45,7 @@ const DownloadApp = ({ modal, footer }: DownloadType) => {
                   src={item.src}
                   width={20}
                   height={20}
-                  priority
+
                   style={{ width: 20, height: 20 }}
                />
                <p

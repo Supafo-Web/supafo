@@ -141,7 +141,7 @@ const Home = async () => {
                            alt={`media-${item.id}`}
                            src={item.src}
                            fill
-                           priority
+
                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         />
                      )}
@@ -179,7 +179,7 @@ const Home = async () => {
                   width={69}
                   height={115}
                   className={`w-full h-auto max-w-17.25 ${styles.leftFlower}`}
-                  priority
+
                   style={{ width: 69, height: 115 }}
                />
                <div
@@ -191,7 +191,7 @@ const Home = async () => {
                      width={350}
                      height={335}
                      className="w-full h-auto sm:w-112.5 md:w-87.5"
-                     priority
+
                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                      style={{ width: '100%', height: 'auto' }}
                   />
@@ -225,7 +225,7 @@ const Home = async () => {
                   width={69}
                   height={115}
                   className={`w-full h-auto max-w-17.25 ${styles.rightFlower}`}
-                  priority
+
                   style={{ width: 69, height: 115 }}
                />
             </section>
@@ -261,7 +261,7 @@ const Home = async () => {
                   width={69}
                   height={115}
                   className={`w-full h-auto max-w-17.25 ${styles.rightFlower2}`}
-                  priority
+
                   style={{ width: 69, height: 115 }}
                />
                <h1
@@ -280,7 +280,7 @@ const Home = async () => {
                      width={305}
                      height={320}
                      className="w-full h-auto sm:w-112.5 md:w-87.5"
-                     priority
+
                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                   <h6
@@ -313,7 +313,7 @@ const Home = async () => {
                      width={357}
                      height={344}
                      className="w-full h-auto sm:w-112.5 md:w-87.5"
-                     priority
+
                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                </div>
@@ -343,7 +343,7 @@ const Home = async () => {
                   width={69}
                   height={115}
                   className={`w-full h-auto max-w-17.25 ${styles.leftFlower2}`}
-                  priority
+
                   style={{ width: 69, height: 115 }}
                />
             </section>
@@ -392,7 +392,7 @@ const Home = async () => {
                   width={69}
                   height={115}
                   className={`w-full h-auto max-w-17.25 ${styles.rightFlower3}`}
-                  priority
+
                   style={{ width: 69, height: 115 }}
                />
 
@@ -418,7 +418,7 @@ const Home = async () => {
                      width={265}
                      height={344}
                      className={`w-full h-auto sm:w-112.5 md:w-80 ${styles.supafoAIImage}`}
-                     priority
+
                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                </div>
@@ -429,7 +429,7 @@ const Home = async () => {
                   width={69}
                   height={115}
                   className={`w-full h-auto max-w-17.25 ${styles.leftFlower3}`}
-                  priority
+
                   style={{ width: 69, height: 115 }}
                />
             </section>
@@ -451,7 +451,7 @@ const Home = async () => {
                      width={320}
                      height={264}
                      className="w-full h-auto sm:w-112.5 md:w-87.5"
-                     priority
+
                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                   <h6
@@ -484,7 +484,7 @@ const Home = async () => {
                      width={332}
                      height={245}
                      className="w-full h-auto sm:w-112.5 md:w-87.5"
-                     priority
+
                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                </div>
@@ -506,7 +506,7 @@ const Home = async () => {
                   width={69}
                   height={115}
                   className={`w-full h-auto max-w-17.25 ${styles.rightFlower4}`}
-                  priority
+
                   style={{ width: 69, height: 115 }}
                />
             </section>

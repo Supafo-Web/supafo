@@ -19,19 +19,11 @@ export const config = {
       process.env.NEXT_PUBLIC_TERMS_URL,
       "NEXT_PUBLIC_TERMS_URL"
    ),
-   dataDeletionUrl: required(
-      process.env.NEXT_PUBLIC_DATA_DELETION_URL,
-      "NEXT_PUBLIC_DATA_DELETION_URL"
-   ),
    appName: required(process.env.NEXT_PUBLIC_APP_NAME, "NEXT_PUBLIC_APP_NAME"),
    iosAppId: required(process.env.NEXT_PUBLIC_IOS_APP_ID, "NEXT_PUBLIC_IOS_APP_ID"),
    androidPackage: required(
       process.env.NEXT_PUBLIC_ANDROID_PACKAGE,
       "NEXT_PUBLIC_ANDROID_PACKAGE"
-   ),
-   huaweiAppGallery: required(
-      process.env.NEXT_PUBLIC_HUAWEI_GALLERY,
-      "NEXT_PUBLIC_HUAWEI_GALLERY"
    ),
    apiUrl: required(
       process.env.NEXT_PUBLIC_API_URL,

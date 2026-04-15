@@ -36,3 +36,16 @@ export interface TeamMembers {
    title?: string
    fullName?: string
 }
+
+export interface OpenPositions {
+   id?: number
+   icon?: string
+   title?: string
+   subTitle?: string
+   city?: string
+   country?: string
+   keywords?: string
+   description?: string
+   currency?: string
+   price?: string
+}

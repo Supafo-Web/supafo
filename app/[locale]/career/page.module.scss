@@ -1,1 +1,64 @@
 @use "../../../styles/variables" as *;
+@use "../../../styles/breakpoints" as *;
+
+.leftFlower {
+   position: absolute;
+   left: 0;
+   top: -25px;
+
+   @include respond-up(lg) {
+      top: -10px;
+   }
+}
+
+.rightFlower {
+   position: absolute;
+   right: 0;
+   top: 94%;
+
+   @include respond-up(lg) {
+      top: 88%;
+   }
+}
+
+.brand {
+   color: $primary;
+}
+
+.title {
+   font-family: $fontFamily;
+   font-size: clamp(32px, 5vw, 48px);
+   font-weight: $semiBold;
+   color: $textColor;
+   margin-bottom: 5px;
+}
+
+.subtitle {
+   font-family: $fontFamily;
+   font-size: clamp(18px, 5vw, 27px);
+   font-weight: $semiBold;
+   color: $primary;
+}
+
+.paragraph {
+   font-family: $fontFamily;
+   font-size: clamp(14px, 5vw, 21px);
+   font-weight: $regular;
+   color: $placeholder;
+}
+
+.whySupafoArea {
+   background-color: $primary22;
+   width: 270px;
+   height: 270px;
+   box-shadow: 0 5px 10px $primary;
+
+   .whySupafoTitle {
+      font-family: $fontFamily;
+      font-size: 30px;
+      font-weight: $medium;
+      color: $textColor;
+      font-style: italic;
+      text-align: center;
+   }
+}
