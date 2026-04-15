@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import styles from './lang.module.scss'
 
 const LangSwitch = () => {
    const pathname = usePathname()
@@ -14,25 +15,25 @@ const LangSwitch = () => {
    }
 
    return (
-      <div className="flex flex-col items-center justify-center gap-4">
+      <div className="flex flex-col items-center h-full justify-center gap-12 pt-16">
          <Link
             href={redirectedPathname("tr")}
-            className={`text-white`}
+            className={`${styles.lang}`}
          >
-            TR
+            Türkçe
          </Link>
          <Link
             href={redirectedPathname("en")}
-            className={`text-white`}
+            className={`${styles.lang}`}
          >
-            EN
+            English
 
          </Link>
          <Link
             href={redirectedPathname("az")}
-            className={`text-white`}
+            className={`${styles.lang}`}
          >
-            AZ
+            Azərbaycan dili
          </Link>
       </div>
    )

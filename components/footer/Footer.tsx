@@ -1,7 +1,7 @@
 import { getTranslations } from 'next-intl/server'
 import styles from './footer.module.scss'
 import Image from 'next/image'
-import DownloadApp from '@/app/download/page'
+import DownloadApp from '@/components/download/page'
 import Button from '@/components/button/Button'
 import SocialButtons from '@/components/social-media/SocialMedia'
 
@@ -101,16 +101,8 @@ const Footer = async ({ locale }: FooterType) => {
          className={`container-fluid ${styles.footerContainer}`}
       >
          <div
-            className={`hidden lg:flex justify-between items-center ${styles.footerHeader}`}
+            className={`flex flex-col items-center gap-7.5 mb-7.5 ${styles.footerHeader}`}
          >
-            <Image
-               alt="logo"
-               src="/logo/logo-white.svg"
-               width={150}
-               height={129}
-               priority
-               style={{ width: 150, height: 129 }}
-            />
             <div
                className={styles.footerHeaderLinks}
             >
@@ -120,6 +112,7 @@ const Footer = async ({ locale }: FooterType) => {
                      text={item.title}
                      href={item.link}
                      footer
+                     className={styles.footerButtons}
                   />
                ))}
             </div>
@@ -132,31 +125,36 @@ const Footer = async ({ locale }: FooterType) => {
                      text={item.title}
                      href={item.link}
                      footer
+                     className={styles.footerButtons}
                   />
                ))}
             </div>
-            <DownloadApp />
+            <div
+               className={styles.footerHeaderLinks}
+            >
+               {mainLink.map((item, index) => {
+                  const isFaq = item.id === 1
+
+                  return (
+                     <Button
+                        key={item.id || index}
+                        text={item.title}
+                        href={item.link}
+                        footer
+                        onClick={isFaq ? handleFaqClick : undefined}
+                        className={styles.footerButtons}
+                     />
+                  )
+               })}
+            </div>
          </div>
+
+         <DownloadApp
+            footer
+         />
 
          <SocialButtons />
 
-         <div
-            className={`flex flex-col md:flex-row justify-evenly gap-6 md:gap-0 py-10`}
-         >
-            {mainLink.map((item, index) => {
-               const isFaq = item.id === 1
-
-               return (
-                  <Button
-                     key={item.id || index}
-                     text={item.title}
-                     href={item.link}
-                     footer
-                     onClick={isFaq ? handleFaqClick : undefined}
-                  />
-               )
-            })}
-         </div>
          <p
             className={styles.footerBottom}
          >

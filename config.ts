@@ -33,4 +33,12 @@ export const config = {
       process.env.NEXT_PUBLIC_HUAWEI_GALLERY,
       "NEXT_PUBLIC_HUAWEI_GALLERY"
    ),
+   apiUrl: required(
+      process.env.NEXT_PUBLIC_API_URL,
+      "NEXT_PUBLIC_API_URL"
+   ),
+   fileUrl: required(
+      process.env.NEXT_PUBLIC_FILE_URL,
+      "NEXT_PUBLIC_FILE_URL"
+   ),
 }

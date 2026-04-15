@@ -1,18 +1,31 @@
 @use "../../styles/variables" as *;
+@use "../../styles/breakpoints" as *;
 
 .footerContainer {
    background-color: $primary;
 }
 
-// .footerArea {}
-
 .footerHeader {
-   padding: 40px 4%;
+   padding-top: 50px;
 
    .footerHeaderLinks {
       display: flex;
-      flex-direction: column;
-      gap: 20px;
+      gap: 5px;
+
+      @include respond-down(md) {
+         flex-direction: column;
+      }
+
+      .footerButtons {
+         padding: 4px 15px;
+         border-radius: 15px;
+         transition: background-color 0.75s ease, transform 0.75s ease, color 0.75s ease;
+
+         &:hover {
+            color: $primary;
+            background-color: white;
+         }
+      }
    }
 }
 

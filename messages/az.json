@@ -8,7 +8,7 @@
    },
    "Modal": {
       "download_app": "Tətbiqi yüklə",
-      "download_app_title": "Tətbiqi yüklə və dadlı yeməkləri xilas etməyə başla."
+      "download_app_title": "Tətbiqi yüklə və dadlı yeməkləri xilas etməyə başla"
    },
    "Footer": {
       "header_link": {
@@ -76,5 +76,27 @@
          "q10": "Supafo dəstək komandası ilə necə əlaqə saxlaya bilərəm?",
          "a10": "Tətbiqdəki 'Profilim' > 'Dəstək Komandamız' bölməsi vasitəsilə bizə zəng edə və ya birbaşa support@supafo.com ünvanına e-poçt göndərə bilərsən."
       }
+   },
+   "AboutUs": {
+      "title_1": "Biz kimik",
+      "subtitle_1": "Ləzzəti xilas edən hərəkat",
+      "desc_1": "Biz, <brand>Supafo</brand> olaraq, sadə bir həqiqətlə yola çıxdıq: qida israf ediləcək qədər dəyərsiz deyil. Hər gün tonlarla təzə və dadlı yemək — şirniyyat məhsullarından restoran yeməklərinə qədər — heç bir səbəb olmadan tullantıya çevrilir. Bu israf yalnız iqtisadi itki deyil, eyni zamanda təbiətə vurulan böyük bir zərərdir.",
+      "desc_2": "<brand>Supafo</brand> bu problemin texnologiya ilə həll olunmuş formasıdır. Restoran və kafelərin gün sonunda qalan yeməkləri böyük endirimlərlə sənə çatdırmasına kömək edərək; müəssisələr, planetimiz və sənin üçün əsl qazanc modeli yaradırıq.",
+      "title_2": "Missiyamız və vizyonumuz",
+      "mission_title": "Missiyamız:",
+      "mission_desc": "Missiyamız, qida israfının olmadığı və hər kəsin keyfiyyətli, sərfəli qidaya asanlıqla çata bildiyi bir dünya qurmaqdır. Biz sadəcə bir tətbiq deyilik; etdiyin hər alışla daha dayanıqlı gələcəyə töhfə verməyinə imkan yaradan bir hərəkatıq.",
+      "vision_title": "Vizyonumuz:",
+      "vision_desc": "Vizyonumuz, <brand>Supafo</brand>-nu qida israfına qarşı qlobal mübarizənin ən güclü vasitələrindən birinə çevirmək və hər kəsi daha məsuliyyətli seçimlər etməyə təşviq etməkdir.",
+      "title_3": "Bizi fərqli edən nədir?",
+      "principles_title": "<brand>Supafo</brand>-nu yönləndirən prinsiplər sadədir, amma güclüdür:",
+      "principle_1_title": "Dayanıqlı təsir:",
+      "principle_1_desc": "Hər gün tonlarla CO₂e emissiyasının qarşısını alaraq planetimizi qoruyuruq.",
+      "principle_2_title": "Ağıllı texnologiya:",
+      "principle_2_desc": "Süni intellektdən istifadə edərək ən yaxşı imkanları tapır, həm sənin daha çox qənaət etməyinə, həm də tərəfdaşlarımızın inkişafına dəstək oluruq.",
+      "principle_3_title": "İcma gücü:",
+      "principle_3_desc": "Biz sadəcə bir tətbiq deyilik; qida israfına qarşı birlikdə addım atan böyük bir icmayıq.",
+      "title_4": "Mübarizəmizə qoşul",
+      "join_desc": "Sən də bu hərəkatın bir parçası ol. Tətbiqi yüklə, dadlı yeməkləri xilas et və dəyişikliyi özündən başlat!",
+      "title_5": "Komandamız"
    }
 }

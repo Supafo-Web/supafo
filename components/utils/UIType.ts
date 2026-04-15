@@ -29,3 +29,10 @@ export default interface Settings {
    maintenance_message?: string
    footer_copyright?: string
 }
+
+export interface TeamMembers {
+   id?: number
+   image?: string
+   title?: string
+   fullName?: string
+}

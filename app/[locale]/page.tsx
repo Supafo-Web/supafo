@@ -414,10 +414,10 @@ const Home = async () => {
 
                   <Image
                      alt="supafoAI"
-                     src="/home/AI.jpeg"
+                     src="/home/AI.jpg"
                      width={265}
                      height={344}
-                     className={`w-full h-auto sm:w-112.5 md:w-87.5 ${styles.supafoAIImage}`}
+                     className={`w-full h-auto sm:w-112.5 md:w-80 ${styles.supafoAIImage}`}
                      priority
                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />

@@ -8,6 +8,16 @@ const nextConfig: NextConfig = {
    reactStrictMode: true,
    poweredByHeader: false,
 
+   images: {
+      remotePatterns: [
+         {
+            protocol: "https",
+            hostname: "poplared-breathed-roosevelt.ngrok-free.dev",
+            pathname: "/storage/**",
+         },
+      ],
+   },
+
    compiler: isProd
       ? {
          removeConsole: {

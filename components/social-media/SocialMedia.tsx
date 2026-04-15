@@ -38,7 +38,7 @@ const SocialButtons = () => {
 
    return (
       <div
-         className="flex py-8 justify-center gap-16"
+         className="flex my-7.5 justify-center gap-6 md:gap-10"
       >
          {socialLink.map((item, index) => (
             <Button

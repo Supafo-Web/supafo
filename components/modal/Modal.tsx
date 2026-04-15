@@ -3,6 +3,7 @@
 import { ReactNode, useEffect, useState } from "react"
 import { createPortal } from "react-dom"
 import styles from './modal.module.scss'
+import Image from "next/image"
 
 interface ModalProps {
    open: boolean
@@ -44,27 +45,34 @@ const Modal = ({
    return createPortal(
       <div
          className="fixed inset-0 z-9999 flex items-center justify-center bg-black/50 p-4"
-         onClick={onClose}
+         onClick={(e) => e.stopPropagation()}
       >
          <div
-            className={`w-full max-w-2xl rounded-2xl p-6 shadow-2xl ${styles.modalArea}`}
+            className={`relative w-full max-w-3xl rounded-[60px] py-30 md:py-38.75 shadow-2xl ${styles.modalArea}`}
             onClick={(e) => e.stopPropagation()}
          >
             <div
-               className="mb-12 flex items-center justify-between"
+               className="absolute top-10 right-15 w-full flex items-center justify-end"
             >
-               <h3
-                  className="text-xl text-white w-[80%] font-semibold"
-               >
-                  {title}
-               </h3>
                <button
                   onClick={onClose}
-                  className="rounded text-2xl text-white cursor-pointer pe-2"
+                  className="rounded-full p-2.5 cursor-pointer"
                >
-                  ✕
+                  <Image
+                     alt="close"
+                     src="/icons/Close.svg"
+                     width={30}
+                     height={30}
+                     priority
+                     style={{ width: 30, height: 30 }}
+                  />
                </button>
             </div>
+            <h3
+               className={`px-12 lg:px-35`}
+            >
+               {title}
+            </h3>
 
             {children}
          </div>

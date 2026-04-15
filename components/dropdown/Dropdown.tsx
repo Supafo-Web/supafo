@@ -26,6 +26,14 @@ const Dropdown = () => {
       }
    }, [])
 
+   const handleOpen = () => {
+      setOpen(true)
+   }
+
+   const handleClose = () => {
+      setOpen(false)
+   }
+
    return (
       <div
          ref={dropdownRef}
@@ -33,35 +41,30 @@ const Dropdown = () => {
       >
          <button
             type="button"
-            className={`flex items-center justify-center hover:cursor-pointer`}
-            onClick={() => setOpen(!open)}
+            className={`flex items-center justify-center hover:cursor-pointer bg-white p-2.5 rounded-full`}
+            onMouseEnter={handleOpen}
+            onClick={handleOpen}
          >
             <Image
                alt="language"
                src="/icons/Language.svg"
-               width={33}
-               height={33}
+               width={30}
+               height={30}
                priority
-               style={{ width: 33, height: 33 }}
-            />
-            <Image
-               alt="down arrow"
-               src="/icons/DownArrow.svg"
-               width={24}
-               height={24}
-               priority
-               style={{ width: 24, height: 24 }}
+               style={{ width: 30, height: 30 }}
             />
          </button>
-         {open && (
+         <div
+            className={`${styles.dropdownArea} ${open ? styles.open : ""}`}
+         >
             <div
-               className={`
-                  ${styles.dropdownMenu}
-               `}
+               className={`${styles.dropdownMenu}`}
+               onMouseEnter={handleOpen}
+               onMouseLeave={handleClose}
             >
                <LangSwitch />
             </div>
-         )}
+         </div>
       </div>
    )
 }

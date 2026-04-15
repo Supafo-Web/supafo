@@ -17,10 +17,10 @@ const Navbar = async ({ locale }: NavbarType) => {
 
    return (
       <div
-         className={`container-fluid px-[5%] py-6 fixed top-0 left-0 w-full z-50 ${styles.navbarWrapper}`}
+         className={`container-fluid px-[2%] py-2 fixed top-0 left-0 w-full z-50 ${styles.navbarWrapper}`}
       >
          <div
-            className="hidden lg:flex items-center justify-between gap-2"
+            className="hidden md:flex items-center justify-between"
          >
             <Button
                href={`/${locale}`}
@@ -28,35 +28,38 @@ const Navbar = async ({ locale }: NavbarType) => {
                <Image
                   alt="logo"
                   src="/logo/logo.svg"
-                  width={80}
-                  height={69}
+                  width={94}
+                  height={81}
                   priority
-                  style={{ width: 80, height: 69 }}
+                  style={{ width: 94, height: 81 }}
                />
             </Button>
 
             <div
-               className={`flex flex-2 items-center justify-around ${styles.navbarArea}`}
+               className={`flex items-center justify-center ${styles.navbarArea}`}
             >
                <Button
                   href={`/${locale}`}
                   text={t("home")}
                   navbar
+                  className={`${styles.textButton}`}
                />
                <Button
                   href={`/${locale}/about-us`}
                   text={t("about")}
                   navbar
+                  className={`${styles.textButton}`}
                />
                <Button
                   href={`/${locale}/how-does-it-work`}
                   text={t("how_work")}
                   navbar
+                  className={`${styles.textButton}`}
                />
             </div>
 
             <div
-               className={`flex items-center justify-around ${styles.navbarArea}`}
+               className={`flex gap-2`}
             >
                {/* <Button
                   href={`/${locale}/partner`}
@@ -69,18 +72,20 @@ const Navbar = async ({ locale }: NavbarType) => {
                   <Login />
                </Button> */}
 
+               <NavbarDownloadButton
+                  text={t("download_app")}
+                  title={modal('download_app_title')}
+                  modal
+                  navbar
+               />
+
                <Dropdown />
             </div>
-
-            <NavbarDownloadButton
-               text={t("download_app")}
-               title={modal('download_app_title')}
-            />
          </div>
 
 
          <div
-            className="flex lg:hidden items-center justify-between gap-2"
+            className="flex md:hidden items-center justify-between gap-2"
          >
             <Button
                href={`/${locale}`}
@@ -95,10 +100,16 @@ const Navbar = async ({ locale }: NavbarType) => {
                />
             </Button>
 
-            <NavbarDownloadButton
-               text={t("download_app")}
-               title={modal('download_app_title')}
-            />
+            <div className="flex gap-4">
+               <NavbarDownloadButton
+                  text={t("download_app")}
+                  title={modal('download_app_title')}
+                  modal
+                  navbar
+               />
+
+               <Dropdown />
+            </div>
 
             <div
                className={`flex items-center justify-around ${styles.navbarArea}`}

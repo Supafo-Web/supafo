@@ -8,7 +8,7 @@
    },
    "Modal": {
       "download_app": "Uygulamayı İndir",
-      "download_app_title": "Uygulamayı indir ve lezzetli yemekleri kurtarmaya başla."
+      "download_app_title": "Uygulamayı hemen indir ve lezzetli yemekleri kurtarmaya başla"
    },
    "Footer": {
       "header_link": {
@@ -76,5 +76,27 @@
          "q10": "Supafo destek ekibine nasıl ulaşabilirim?",
          "a10": "Uygulamadaki 'Profilim' > 'Destek Ekibimiz' sekmesi aracılığıyla bizi arayabilir veya support@supafo.com adresine doğrudan e-posta gönderebilirsin."
       }
+   },
+   "AboutUs": {
+      "title_1": "Biz Kimiz",
+      "subtitle_1": "Lezzeti Kurtaran Hareket",
+      "desc_1": "Biz, <brand>Supafo</brand> olarak, basit bir gerçekle yola çıktık: Gıda israf edilmeyecek kadar değerli. Her gün tonlarca taze ve lezzetli yemek — pastane ürünlerinden restoran yemeklerine kadar — hiçbir sebep olmadan çöpe gidiyor. Bu israf sadece ekonomik bir kayıp değil, aynı zamanda doğaya verilen büyük bir zarar.",
+      "desc_2": "<brand>Supafo</brand>, bu sorunun teknolojiyle çözülmüş hali. Restoranları ve kafeleri, gün sonunda kalan bu yemekleri inanılmaz indirimlerle sana ulaştırarak; işletmeler, gezegenimiz ve senin için gerçek bir kazan-kazan modeli oluşturuyoruz.",
+      "title_2": "Misyonumuz ve Vizyonumuz",
+      "mission_title": "Misyonumuz:",
+      "mission_desc": "Misyonumuz, gıda israfının olmadığı ve herkesin kaliteli, uygun fiyatlı gıdaya kolayca ulaşabildiği bir dünya kurmak. Biz sadece bir uygulama değiliz; yaptığın her alışverişle daha sürdürülebilir bir geleceğe katkı sağlayan bir hareketiz.",
+      "vision_title": "Vizyonumuz:",
+      "vision_desc": "Vizyonumuz, <brand>Supafo</brand>'yu küresel çapta gıda israfına karşı mücadelenin en güçlü araçlarından biri haline getirmek ve herkesi daha sorumlu tüketime yönlendirmek.",
+      "title_3": "Bizi Farklı Kılan Ne?",
+      "principles_title": "<brand>Supafo</brand>'yu yönlendiren prensipler basit ama güçlü:",
+      "principle_1_title": "Sürdürülebilir Etki:",
+      "principle_1_desc": "Her gün tonlarca CO₂e salınımının önüne geçerek gezegenimizi koruyoruz.",
+      "principle_2_title": "Akıllı Teknoloji:",
+      "principle_2_desc": "Yapay zeka kullanarak en iyi fırsatları buluyor, hem senin tasarruf etmeni hem de iş ortaklarımızın daha verimli çalışmasını sağlıyoruz.",
+      "principle_3_title": "Topluluk Gücü:",
+      "principle_3_desc": "Biz sadece bir uygulama değiliz; gıda israfına karşı birlikte harekete geçen büyük bir topluluğuz.",
+      "title_4": "Mücadelemize Katıl",
+      "join_desc": "Sen de bu hareketin bir parçası ol. Uygulamayı indir, lezzetli yemekleri kurtar ve değişimi kendinden başlat!",
+      "title_5": "Ekibimiz"
    }
 }

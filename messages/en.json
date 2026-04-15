@@ -8,7 +8,7 @@
    },
    "Modal": {
       "download_app": "Download App",
-      "download_app_title": "Download the app and start saving delicious food."
+      "download_app_title": "Download the app and start saving delicious food"
    },
    "Footer": {
       "header_link": {
@@ -76,5 +76,27 @@
          "q10": "How can I contact the Supafo support team?",
          "a10": "You can call us through the 'My Profile' > 'Our Support Team' tab in the app or send an email directly to support@supafo.com."
       }
+   },
+   "AboutUs": {
+      "title_1": "Who We Are",
+      "subtitle_1": "The Movement That Saves Flavor",
+      "desc_1": "At <brand>Supafo</brand>, we started with a simple truth: food is too valuable to be wasted. Every day, tons of fresh and delicious food — from bakery items to restaurant meals — are thrown away for no good reason. This waste is not only an economic loss, but also a serious harm to the planet.",
+      "desc_2": "<brand>Supafo</brand> is a technology-driven solution to this problem. By helping restaurants and cafes offer their surplus food at incredible discounts, we create a true win-win for businesses, the planet, and you.",
+      "title_2": "Our Mission and Vision",
+      "mission_title": "Our Mission:",
+      "mission_desc": "Our mission is to build a world where food waste no longer exists and where everyone can easily access quality food at affordable prices. We are not just an app; we are a movement that lets you contribute to a more sustainable future with every purchase you make.",
+      "vision_title": "Our Vision:",
+      "vision_desc": "Our vision is to make <brand>Supafo</brand> one of the strongest tools in the global fight against food waste and inspire everyone to make more responsible choices.",
+      "title_3": "What Makes Us Different?",
+      "principles_title": "The principles behind <brand>Supafo</brand> are simple, but powerful:",
+      "principle_1_title": "Sustainable Impact:",
+      "principle_1_desc": "We help protect the planet by preventing tons of CO₂e emissions every day.",
+      "principle_2_title": "Smart Technology:",
+      "principle_2_desc": "Using AI, we find the best opportunities and help you save more while also supporting our partners’ growth.",
+      "principle_3_title": "Community Power:",
+      "principle_3_desc": "We are more than an app; we are a growing community taking action together against food waste.",
+      "title_4": "Join the Movement",
+      "join_desc": "Be part of this movement. Download the app, save delicious meals, and start the change with yourself!",
+      "title_5": "Our Team"
    }
 }
