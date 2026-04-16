@@ -1,0 +1,143 @@
+@use "../../styles/variables" as *;
+@use "../../styles/breakpoints" as *;
+
+.leftFlower {
+   position: absolute;
+   left: 0;
+   top: -25px;
+}
+
+.rightFlower {
+   position: absolute;
+   right: 0;
+   top: 88%;
+}
+
+.leftFlower2 {
+   position: absolute;
+   left: 0;
+   top: -10px;
+}
+
+.rightFlower2 {
+   position: absolute;
+   right: 0;
+   top: 85%;
+}
+
+.leftFlower3 {
+   position: absolute;
+   left: 0;
+   top: -120px;
+}
+
+.rightFlower3 {
+   position: absolute;
+   right: 0;
+   top: 82%;
+}
+
+.leftFlower4 {
+   position: absolute;
+   left: 0;
+   top: -25px;
+
+   @include respond-up(lg) {
+      top: -10px;
+   }
+}
+
+.rightFlower4 {
+   position: absolute;
+   right: 0;
+   top: 88%;
+
+   @include respond-up(lg) {
+      top: 86%;
+   }
+}
+
+.leftFlower5 {
+   position: absolute;
+   left: 0;
+   top: -25px;
+
+   @include respond-up(lg) {
+      top: 5px;
+   }
+}
+
+.rightFlower5 {
+   position: absolute;
+   right: 0;
+   top: 94%;
+
+   @include respond-up(lg) {
+      top: 92%;
+   }
+}
+
+.brand {
+   color: $primary;
+}
+
+.title {
+   font-family: $fontFamily;
+   font-size: clamp(32px, 5vw, 48px);
+   font-weight: $semiBold;
+   color: $textColor;
+   margin-bottom: 5px;
+}
+
+.subtitle {
+   font-family: $fontFamily;
+   font-size: clamp(18px, 5vw, 27px);
+   font-weight: $semiBold;
+   color: $primary;
+}
+
+.paragraph {
+   font-family: $fontFamily;
+   font-size: clamp(14px, 5vw, 21px);
+   font-weight: $regular;
+   color: $placeholder;
+}
+
+.articleTitle {
+   font-family: $fontFamily;
+   font-size: 16px;
+   font-weight: $regular;
+   color: $placeholder;
+}
+
+.articleSubTitle {
+   font-family: $fontFamily;
+   font-size: 16px;
+   font-weight: $regular;
+   color: $placeholder;
+
+   li {
+      span {
+         font-style: italic;
+         font-weight: $semiBold;
+      }
+   }
+}
+
+.teamInfo {
+   h6 {
+      font-family: $fontFamily;
+      font-size: 20px;
+      font-weight: $semiBold;
+      color: $textColor;
+      text-align: center;
+   }
+
+   p {
+      font-family: $fontFamily;
+      font-size: 20px;
+      font-weight: $medium;
+      color: $textColor;
+      text-align: center;
+   }
+}

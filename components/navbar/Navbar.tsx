@@ -1,9 +1,8 @@
 import Button from "@/components/button/Button"
 import { getLocale, getTranslations } from "next-intl/server"
 import Image from "next/image"
-import styles from "./navbar.module.scss"
+import styles from "@/components/modules/navbar.module.scss"
 import Dropdown from "@/components/dropdown/Dropdown"
-import Login from "@/public/icons/Login"
 import NavbarDownloadButton from "./NavbarDownloadButton"
 import Hamburger from "@/components/navbar/Hamburger"
 
@@ -58,17 +57,6 @@ const Navbar = async () => {
             <div
                className={`flex gap-2`}
             >
-               {/* <Button
-                  href={`/${locale}/partner`}
-                  navbar
-                  className="flex gap-0.75"
-               >
-                  <span>
-                     {t("partner")}
-                  </span>
-                  <Login />
-               </Button> */}
-
                <NavbarDownloadButton
                   text={t("download_app")}
                   title={modal('download_app_title')}

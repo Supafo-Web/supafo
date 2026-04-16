@@ -1,6 +1,6 @@
 "use client"
 
-import styles from "@/components/dropdown/dropdown.module.scss"
+import styles from "@/components/modules/dropdown.module.scss"
 import LangSwitch from "@/components/lang/LangSwitch"
 import Image from "next/image"
 import { useEffect, useRef, useState } from "react"

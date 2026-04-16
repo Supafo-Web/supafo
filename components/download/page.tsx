@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect } from "react"
-import styles from './download.module.scss'
+import styles from '@/components/modules/download.module.scss'
 import Image from "next/image"
 import { appStoreUrl, data, playStoreUrl } from "@/components/store/AppStore"
 

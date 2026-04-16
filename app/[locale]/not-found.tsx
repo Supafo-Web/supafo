@@ -1,7 +1,7 @@
-import NotFoundClient from './not-found-client'
+import NotFoundClient from '../../components/not-found/not-found-client'
 import { getLocale, getTranslations } from 'next-intl/server'
 import Image from 'next/image'
-import styles from './not-found.module.scss'
+import styles from '@/components/modules/not-found.module.scss'
 import Button from '@/components/button/Button'
 
 const NotFoundPage = async () => {

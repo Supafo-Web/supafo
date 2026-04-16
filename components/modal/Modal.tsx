@@ -2,7 +2,7 @@
 
 import { ReactNode, useEffect, useState } from "react"
 import { createPortal } from "react-dom"
-import styles from './modal.module.scss'
+import styles from '@/components/modules/modal.module.scss'
 import Image from "next/image"
 
 interface ModalProps {

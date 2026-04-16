@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import styles from './lang.module.scss'
+import styles from '@/components/modules/lang.module.scss'
 
 const LangSwitch = () => {
    const pathname = usePathname()

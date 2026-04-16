@@ -1,0 +1,17 @@
+@use "../../styles/variables" as *;
+@use "../../styles/breakpoints" as *;
+
+.lang {
+   font-family: $fontFamily;
+   font-weight: $medium;
+   color: $textColor;
+
+   padding: 4px 15px;
+   border-radius: 15px;
+   transition: background-color 0.75s ease, transform 0.75s ease, color 0.75s ease;
+
+   &:hover {
+      color: $primary;
+      background-color: white;
+   }
+}

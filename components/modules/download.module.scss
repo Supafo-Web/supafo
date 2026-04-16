@@ -1,0 +1,30 @@
+@use "../../styles/variables" as *;
+@use "../../styles/breakpoints" as *;
+
+.storeArea {
+   display: flex;
+   gap: 20px;
+   justify-content: center;
+
+   .generalAppStore {
+      display: flex;
+      background-color: $secondary;
+      align-items: center;
+      border-radius: 10px;
+      padding: 17px 20px;
+      gap: 8px;
+      font-weight: $medium;
+      color: white;
+   }
+
+   .footerAppStore {
+      display: flex;
+      align-items: center;
+      border-radius: 10px;
+      border: 1px solid white;
+      padding: 12 20;
+      gap: 8px;
+      font-weight: $medium;
+      color: white;
+   }
+}

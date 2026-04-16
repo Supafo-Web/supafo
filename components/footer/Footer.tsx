@@ -1,5 +1,5 @@
 import { getLocale, getTranslations } from 'next-intl/server'
-import styles from './footer.module.scss'
+import styles from '@/components/modules/footer.module.scss'
 import DownloadApp from '@/components/download/page'
 import Button from '@/components/button/Button'
 import SocialButtons from '@/components/social-media/SocialMedia'

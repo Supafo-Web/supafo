@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { ReactNode } from "react"
-import styles from "@/components/button/button.module.scss"
+import styles from "@/components/modules/button.module.scss"
 
 type ButtonProps = {
    text?: string

@@ -3,9 +3,6 @@ import { NextIntlClientProvider } from "next-intl"
 import { getMessages, setRequestLocale } from "next-intl/server"
 import { notFound } from "next/navigation"
 import { locales } from "@/i18n"
-import Navbar from "@/components/navbar/Navbar"
-import Footer from "@/components/footer/Footer"
-import styles from "./page.module.scss"
 
 type Locale = "tr" | "en" | "az"
 
@@ -157,17 +154,7 @@ const LocaleLayout = async ({
          messages={messages}
          locale={locale}
       >
-         <div
-            className="min-h-screen flex flex-col container-fluid"
-         >
-            <Navbar />
-            <main
-               className={`flex-1 ${styles.layout}`}
-            >
-               {children}
-            </main>
-            <Footer />
-         </div>
+         {children}
       </NextIntlClientProvider>
    )
 }
