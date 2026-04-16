@@ -18,8 +18,7 @@ const AboutUs = async () => {
                width={69}
                height={115}
                className={`w-full h-auto max-w-12 lg:max-w-17.5 ${styles.leftFlower4}`}
-
-               style={{ width: 69, height: 115 }}
+               style={{ height: 'auto' }}
             />
             <div
                className="flex flex-col items-center mb-12.5 gap-3"
@@ -36,8 +35,8 @@ const AboutUs = async () => {
                   width={283}
                   height={40}
                   className="w-80 h-auto md:w-100 lg:w-56"
-
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  style={{ height: 'auto' }}
                />
             </div>
             <div
@@ -71,8 +70,7 @@ const AboutUs = async () => {
                width={69}
                height={115}
                className={`w-full h-auto max-w-12 lg:max-w-17.5 ${styles.rightFlower4}`}
-
-               style={{ width: 69, height: 115 }}
+               style={{ width: 69, height: 'auto' }}
             />
          </section>
 
@@ -94,8 +92,8 @@ const AboutUs = async () => {
                   width={283}
                   height={40}
                   className="w-80 h-auto md:w-100 lg:w-56"
-
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  style={{ height: 'auto' }}
                />
             </div>
             <div
@@ -107,8 +105,8 @@ const AboutUs = async () => {
                   width={379}
                   height={398}
                   className="w-36 h-auto sm:w-40 md:w-48 lg:w-74"
-
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  style={{ height: 'auto' }}
                />
                <div className="flex flex-col gap-10">
                   <h6
@@ -152,8 +150,8 @@ const AboutUs = async () => {
                      width={98}
                      height={105}
                      className="w-60 h-auto sm:w-40 md:w-48"
-
                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                     style={{ height: 'auto' }}
                   />
                   <p
                      className={`leading-10 text-center ${styles.paragraph}`}
@@ -174,8 +172,8 @@ const AboutUs = async () => {
                      width={98}
                      height={105}
                      className="w-60 h-auto sm:w-40 md:w-48"
-
                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                     style={{ height: 'auto' }}
                   />
                   <p
                      className={`leading-10 text-center ${styles.paragraph}`}
@@ -197,8 +195,7 @@ const AboutUs = async () => {
                width={69}
                height={115}
                className={`w-full h-auto max-w-12 lg:max-w-17.5 ${styles.leftFlower3}`}
-
-               style={{ width: 69, height: 115 }}
+               style={{ height: 'auto' }}
             />
             <div
                className="flex flex-col items-center mb-12.5 gap-3"
@@ -215,8 +212,8 @@ const AboutUs = async () => {
                   width={283}
                   height={40}
                   className="w-80 h-auto md:w-100 lg:w-56"
-
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  style={{ height: 'auto' }}
                />
             </div>
             <div className="flex items-center gap-12.5">
@@ -258,8 +255,8 @@ const AboutUs = async () => {
                      width={452}
                      height={494}
                      className="w-full h-auto"
-
                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                     style={{ height: 'auto' }}
                   />
                </div>
             </div>
@@ -270,8 +267,8 @@ const AboutUs = async () => {
                   width={98}
                   height={105}
                   className="w-30 h-auto sm:w-40 md:w-48"
-
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  style={{ height: 'auto' }}
                />
                <Image
                   alt="about-us-small-group"
@@ -279,8 +276,8 @@ const AboutUs = async () => {
                   width={98}
                   height={105}
                   className="w-30 h-auto sm:w-40 md:w-48"
-
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  style={{ height: 'auto' }}
                />
                <Image
                   alt="about-us-small-group"
@@ -288,8 +285,8 @@ const AboutUs = async () => {
                   width={98}
                   height={105}
                   className="w-30 h-auto sm:w-40 md:w-48"
-
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  style={{ height: 'auto' }}
                />
             </div>
             <Image
@@ -298,13 +295,12 @@ const AboutUs = async () => {
                width={69}
                height={115}
                className={`w-full h-auto max-w-12 lg:max-w-17.5 ${styles.rightFlower3}`}
-
-               style={{ width: 69, height: 115 }}
+               style={{ width: 69, height: 'auto' }}
             />
          </section>
 
          <section
-            className={`px-10 sm:px-30 lg:px-40 xl:px-50 2xl:px-80 pb-10`}
+            className={`px-10 sm:px-30 lg:px-40 xl:px-50 2xl:px-80 pb-30`}
          >
             <div
                className="flex flex-col items-center mb-12.5 gap-3"
@@ -321,8 +317,8 @@ const AboutUs = async () => {
                   width={283}
                   height={40}
                   className="w-80 h-auto md:w-100 lg:w-56"
-
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  style={{ height: 'auto' }}
                />
             </div>
 
@@ -333,8 +329,8 @@ const AboutUs = async () => {
                   width={98}
                   height={105}
                   className="w-60 h-auto sm:w-80 lg:w-200"
-
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  style={{ height: 'auto' }}
                />
                <div className="flex flex-col items-center lg:items-start gap-10">
                   <p
@@ -348,48 +344,6 @@ const AboutUs = async () => {
                   />
                </div>
             </div>
-         </section>
-
-         <section
-            className={`px-10 sm:px-30 lg:px-40 xl:px-50 2xl:px-80 py-20 mb-30 relative`}
-         >
-            <Image
-               alt='flower'
-               src='/images/LeftFlower.svg'
-               width={69}
-               height={115}
-               className={`w-full h-auto max-w-12 lg:max-w-17.5 ${styles.leftFlower5}`}
-
-               style={{ width: 69, height: 115 }}
-            />
-            <div
-               className="flex flex-col items-center mb-12.5 gap-3"
-            >
-               <h1
-                  className={`text-center ${styles.title}`}
-               >
-                  {t('title_5')}
-               </h1>
-
-               <Image
-                  alt="title-under"
-                  src="/icons/about-us/Title-Under.svg"
-                  width={283}
-                  height={40}
-                  className="w-80 h-auto md:w-100 lg:w-56"
-
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-               />
-            </div>
-            <Image
-               alt='flower'
-               src='/images/RightFlower.svg'
-               width={69}
-               height={115}
-               className={`w-full h-auto max-w-12 lg:max-w-17.5 ${styles.rightFlower5}`}
-
-               style={{ width: 69, height: 115 }}
-            />
          </section>
       </main>
    )

@@ -20,14 +20,14 @@ const Navbar = async () => {
          >
             <Button
                href={`/${locale}`}
+               className={`js-close-lang-dropdown`}
             >
                <Image
                   alt="logo"
                   src="/logo/logo.svg"
                   width={94}
                   height={81}
-
-                  style={{ width: 94, height: 81 }}
+                  style={{ height: 'auto' }}
                />
             </Button>
 
@@ -38,19 +38,19 @@ const Navbar = async () => {
                   href={`/${locale}`}
                   text={t("home")}
                   navbar
-                  className={`${styles.textButton}`}
+                  className={`${styles.textButton} js-close-lang-dropdown`}
                />
                <Button
                   href={`/${locale}/about-us`}
                   text={t("about")}
                   navbar
-                  className={`${styles.textButton}`}
+                  className={`${styles.textButton} js-close-lang-dropdown`}
                />
                <Button
                   href={`/${locale}/how-does-it-work`}
                   text={t("how_work")}
                   navbar
-                  className={`${styles.textButton}`}
+                  className={`${styles.textButton} js-close-lang-dropdown`}
                />
             </div>
 
@@ -80,8 +80,7 @@ const Navbar = async () => {
                   src="/logo/logo.svg"
                   width={80}
                   height={69}
-
-                  style={{ width: 80, height: 69 }}
+                  style={{ height: 'auto' }}
                />
             </Button>
 

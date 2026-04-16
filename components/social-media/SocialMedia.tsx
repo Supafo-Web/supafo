@@ -54,24 +54,43 @@ const SocialButtons = () => {
             <Button
                key={item.id || index}
                onClick={item.link}
-               className="group cursor-pointer rounded-full bg-white p-2.75 transition-all duration-300 ease-in-out hover:bg-[#578B23] hover:scale-105"
+               className="
+                  group cursor-pointer rounded-full bg-white p-2.75
+                  shadow-[0_6px_18px_rgba(0,0,0,0.12)]
+                  transition-all duration-300 ease-in-out
+                  hover:bg-[#578B23] hover:scale-105
+                  hover:shadow-[0_10px_24px_rgba(87,139,35,0.28)]
+                  perspective-1000px
+               "
             >
-               <div className="relative h-6 w-6">
+               <div
+                  className="
+                     relative h-6 w-6
+                     transition-transform duration-700 ease-in-out
+                     transform-3d
+                     group-hover:transform-[rotateY(180deg)]
+                  "
+               >
                   <Image
                      alt="social"
                      src={item.icon}
                      width={24}
                      height={24}
-
-                     className="absolute inset-0 opacity-100 transition-opacity duration-500 ease-in-out group-hover:opacity-0"
+                     className="
+                        absolute inset-0
+                        backface-hidden
+                     "
                   />
                   <Image
                      alt="social hover"
                      src={item.icon2}
                      width={24}
                      height={24}
-
-                     className="absolute inset-0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100"
+                     className="
+                        absolute inset-0
+                        transform-[rotateY(180deg)]
+                        backface-hidden
+                     "
                   />
                </div>
             </Button>

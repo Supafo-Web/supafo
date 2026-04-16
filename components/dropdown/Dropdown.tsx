@@ -19,10 +19,29 @@ const Dropdown = () => {
          }
       }
 
+      const handleCloseFromNavbarHover = (event: Event) => {
+         const target = event.currentTarget as HTMLElement
+
+         if (dropdownRef.current && dropdownRef.current.contains(target)) {
+            return
+         }
+
+         setOpen(false)
+      }
+
       document.addEventListener("mousedown", handleClickOutside)
+
+      const closeTargets = document.querySelectorAll(".js-close-lang-dropdown")
+      closeTargets.forEach((item) => {
+         item.addEventListener("mouseenter", handleCloseFromNavbarHover)
+      })
 
       return () => {
          document.removeEventListener("mousedown", handleClickOutside)
+
+         closeTargets.forEach((item) => {
+            item.removeEventListener("mouseenter", handleCloseFromNavbarHover)
+         })
       }
    }, [])
 
@@ -41,18 +60,26 @@ const Dropdown = () => {
       >
          <button
             type="button"
-            className={`flex items-center justify-center hover:cursor-pointer bg-white p-2.5 rounded-full`}
+            className="group cursor-pointer rounded-full bg-white p-2.5 transition-all duration-300 ease-in-out hover:bg-[#578B23]"
             onMouseEnter={handleOpen}
             onClick={handleOpen}
          >
-            <Image
-               alt="language"
-               src="/icons/Language.svg"
-               width={30}
-               height={30}
-
-               style={{ width: 30, height: 30 }}
-            />
+            <div className="relative h-7.5 w-7.5">
+               <Image
+                  alt="language"
+                  src="/icons/Language.svg"
+                  width={30}
+                  height={30}
+                  className="absolute inset-0 opacity-100 transition-opacity duration-500 ease-in-out group-hover:opacity-0"
+               />
+               <Image
+                  alt="language hover"
+                  src="/icons/Language-white.svg"
+                  width={30}
+                  height={30}
+                  className="absolute inset-0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100"
+               />
+            </div>
          </button>
          <div
             className={`${styles.dropdownArea} ${open ? styles.open : ""}`}

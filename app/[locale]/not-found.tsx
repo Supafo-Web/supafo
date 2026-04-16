@@ -18,7 +18,7 @@ const NotFoundPage = async () => {
             width={69}
             height={115}
             className={`w-full h-auto max-w-12 lg:max-w-17.5 ${styles.leftFlower}`}
-            style={{ width: 69, height: 115 }}
+            style={{ height: 'auto' }}
          />
          <NotFoundClient />
          <div

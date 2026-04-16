@@ -44,10 +44,10 @@
 .leftFlower3 {
    position: absolute;
    left: 0;
-   top: 83%;
+   top: 90%;
 
    @include respond-up(lg) {
-      top: -80px;
+      top: 86%;
    }
 }
 
@@ -80,7 +80,7 @@
 .whySupafoArea {
    background-color: $primary22;
    width: 270px;
-   height: 270px;
+   height: auto;
    box-shadow: 0 5px 10px $primary;
 
    .whySupafoTitle {
@@ -229,11 +229,4 @@
    &:hover span {
       color: white;
    }
-}
-
-.buttonText2 {
-   font-family: $fontFamily;
-   font-size: 16px;
-   font-weight: $semiBold;
-   color: white;
 }

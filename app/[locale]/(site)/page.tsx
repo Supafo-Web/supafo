@@ -26,33 +26,33 @@ const Home = async () => {
       },
       {
          id: 4,
-         src: '/videos/1-2.mp4',
-         type: 'video/mp4'
-      },
-      {
-         id: 5,
-         src: '/videos/2-2.mp4',
-         type: 'video/mp4'
-      },
-      {
-         id: 6,
-         src: '/videos/1-3.mp4',
-         type: 'video/mp4'
-      },
-      {
-         id: 7,
          src: '/images/3-1.jpg',
          type: 'image'
       },
       {
-         id: 8,
+         id: 5,
          src: '/videos/3-2.mp4',
          type: 'video/mp4'
       },
       {
-         id: 9,
+         id: 6,
          src: '/images/3-3.jpg',
          type: 'image'
+      },
+      {
+         id: 7,
+         src: '/videos/1-2.mp4',
+         type: 'video/mp4'
+      },
+      {
+         id: 8,
+         src: '/videos/2-2.mp4',
+         type: 'video/mp4'
+      },
+      {
+         id: 9,
+         src: '/videos/1-3.mp4',
+         type: 'video/mp4'
       }
    ]
 
@@ -141,7 +141,7 @@ const Home = async () => {
                            alt={`media-${item.id}`}
                            src={item.src}
                            fill
-
+                           priority={item.id === 1}
                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         />
                      )}
@@ -179,8 +179,7 @@ const Home = async () => {
                   width={69}
                   height={115}
                   className={`w-full h-auto max-w-17.25 ${styles.leftFlower}`}
-
-                  style={{ width: 69, height: 115 }}
+                  style={{ height: 'auto' }}
                />
                <div
                   className="flex flex-col lg:flex-row items-center gap-15"
@@ -191,9 +190,8 @@ const Home = async () => {
                      width={350}
                      height={335}
                      className="w-full h-auto sm:w-112.5 md:w-87.5"
-
                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                     style={{ width: '100%', height: 'auto' }}
+                     style={{ height: 'auto' }}
                   />
                   <div
                      className={`gap-12.5 ${styles.hero1}`}
@@ -225,8 +223,7 @@ const Home = async () => {
                   width={69}
                   height={115}
                   className={`w-full h-auto max-w-17.25 ${styles.rightFlower}`}
-
-                  style={{ width: 69, height: 115 }}
+                  style={{ width: 69, height: 'auto' }}
                />
             </section>
 
@@ -261,8 +258,7 @@ const Home = async () => {
                   width={69}
                   height={115}
                   className={`w-full h-auto max-w-17.25 ${styles.rightFlower2}`}
-
-                  style={{ width: 69, height: 115 }}
+                  style={{ width: 69, height: 'auto' }}
                />
                <h1
                   className={`pt-20`}
@@ -280,8 +276,8 @@ const Home = async () => {
                      width={305}
                      height={320}
                      className="w-full h-auto sm:w-112.5 md:w-87.5"
-
                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                     style={{ height: 'auto' }}
                   />
                   <h6
                      className={`text-center lg:text-left`}
@@ -313,8 +309,8 @@ const Home = async () => {
                      width={357}
                      height={344}
                      className="w-full h-auto sm:w-112.5 md:w-87.5"
-
                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                     style={{ height: 'auto' }}
                   />
                </div>
                <div
@@ -343,8 +339,7 @@ const Home = async () => {
                   width={69}
                   height={115}
                   className={`w-full h-auto max-w-17.25 ${styles.leftFlower2}`}
-
-                  style={{ width: 69, height: 115 }}
+                  style={{ height: 'auto' }}
                />
             </section>
 
@@ -392,8 +387,7 @@ const Home = async () => {
                   width={69}
                   height={115}
                   className={`w-full h-auto max-w-17.25 ${styles.rightFlower3}`}
-
-                  style={{ width: 69, height: 115 }}
+                  style={{ width: 69, height: 'auto' }}
                />
 
                <div className="flex flex-col lg:flex-row items-center gap-15">
@@ -418,8 +412,8 @@ const Home = async () => {
                      width={265}
                      height={344}
                      className={`w-full h-auto sm:w-112.5 md:w-80 ${styles.supafoAIImage}`}
-
                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                     style={{ height: 'auto' }}
                   />
                </div>
 
@@ -429,8 +423,7 @@ const Home = async () => {
                   width={69}
                   height={115}
                   className={`w-full h-auto max-w-17.25 ${styles.leftFlower3}`}
-
-                  style={{ width: 69, height: 115 }}
+                  style={{ height: 'auto' }}
                />
             </section>
 
@@ -451,8 +444,8 @@ const Home = async () => {
                      width={320}
                      height={264}
                      className="w-full h-auto sm:w-112.5 md:w-87.5"
-
                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                     style={{ height: 'auto' }}
                   />
                   <h6
                      className={`text-center lg:text-left`}
@@ -484,15 +477,15 @@ const Home = async () => {
                      width={332}
                      height={245}
                      className="w-full h-auto sm:w-112.5 md:w-87.5"
-
                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                     style={{ height: 'auto' }}
                   />
                </div>
             </section>
 
             <section
                id="faq"
-               className={`px-10 sm:px-30 lg:px-50 xl:px-70 2xl:px-100 py-20 scroll-mt-24 ${styles.faq}`}
+               className={`px-10 sm:px-30 lg:px-50 xl:px-70 2xl:px-100 py-20 scroll-mt-24 mb-20 ${styles.faq}`}
             >
                <h1>
                   {t('faq_title')}
@@ -506,8 +499,15 @@ const Home = async () => {
                   width={69}
                   height={115}
                   className={`w-full h-auto max-w-17.25 ${styles.rightFlower4}`}
-
-                  style={{ width: 69, height: 115 }}
+                  style={{ width: 69, height: 'auto' }}
+               />
+               <Image
+                  alt='flower'
+                  src='/images/LeftFlower.svg'
+                  width={69}
+                  height={115}
+                  className={`w-full h-auto max-w-17.25 ${styles.leftFlower4}`}
+                  style={{ height: 'auto' }}
                />
             </section>
          </main >

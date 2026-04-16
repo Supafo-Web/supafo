@@ -26,31 +26,43 @@ const DownloadApp = ({ modal, footer }: DownloadType) => {
          window.location.replace(playStoreUrl)
          return
       }
-   }, [appStoreUrl, playStoreUrl])
+   }, [])
 
    return (
-      <div
-         className={`${modal && 'flex-col md:flex-row'} ${styles.storeArea}`}
-      >
+      <div className={`${modal ? 'flex-col md:flex-row' : ''} ${styles.storeArea}`}>
          {data.map((item, index) => (
             <a
                key={item.id || index}
                href={item.href}
                target="_blank"
                rel="noreferrer"
-               className={`${footer ? styles.footerAppStore : styles.generalAppStore}`}
+               className={`
+                  ${footer ? styles.footerAppStore : styles.generalAppStore}
+                  ${styles.storeButton}
+               `}
             >
-               <Image
-                  alt={item.alt}
-                  src={item.src}
-                  width={20}
-                  height={20}
+               <div className={styles.iconFlip}>
+                  <div className={styles.iconFlipInner}>
+                     <Image
+                        alt={item.alt}
+                        src={item.icon}
+                        width={20}
+                        height={20}
+                        className={styles.iconFront}
+                        style={{ width: 20, height: 20 }}
+                     />
+                     <Image
+                        alt={`${item.alt} hover`}
+                        src={item.src}
+                        width={20}
+                        height={20}
+                        className={styles.iconBack}
+                        style={{ width: 20, height: 20 }}
+                     />
+                  </div>
+               </div>
 
-                  style={{ width: 20, height: 20 }}
-               />
-               <p
-                  className={styles.title}
-               >
+               <p className={styles.title}>
                   {item.title}
                </p>
             </a>

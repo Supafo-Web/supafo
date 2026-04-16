@@ -99,6 +99,25 @@
       "join_desc": "Sen de bu hareketin bir parçası ol. Uygulamayı indir, lezzetli yemekleri kurtar ve değişimi kendinden başlat!",
       "title_5": "Ekibimiz"
    },
-   "Career": {},
+   "Career": {
+      "title": "Kariyer",
+      "subtitle": "Fark Yaratmak İsteyenlerin Adresi",
+      "desc_1": "Biz sadece bir iş yapmıyoruz; gıda israfına karşı mücadele ederek gezegenin geleceğine yatırım yapıyoruz. Bizim için her çalışan, sadece ekibin bir üyesi değil, aynı zamanda bu misyonun gücüdür. Supafo'da attığın her adım, yüz binlerce taze ürünün çöpe gitmesini engeller ve gezegenimize somut bir nefes olur.",
+      "desc_2": "Burada bilgin ve emeğin doğrudan fark edilir, hak ettiğin hızlı gelişimle karşılık bulur. Eğer anlam odaklı bir kariyer arıyorsan, teknolojiyi kullanarak dünyayı daha yaşanılır bir yer haline getirme hedefimize sen de ortak ol.",
+      "why_title": "Neden <brand>Supafo</brand>?",
+      "why_1": "Çevik çalışma saatleri",
+      "why_2": "Ekolojik hediyeler ve bonuslar",
+      "why_3": "Eğitim imkanları",
+      "why_4": "Global bakış, uluslararası etki",
+      "positions_title": "Açık Pozisyonlar",
+      "intern_1_title": "Keşfet",
+      "intern_1_subtitle": "Yeni fırsatlar seni bekliyor!",
+      "intern_2_title": "Öğren",
+      "intern_2_subtitle": "Bilgini artır, yeteneklerini geliştir!",
+      "intern_3_title": "Fark Yarat",
+      "intern_3_subtitle": "Değişim senden başlar!",
+      "button_intern": "Staj macerana başla",
+      "button_team": "İlham veren ekibe katıl"
+   },
    "NotFound": {}
 }

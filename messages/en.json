@@ -99,6 +99,25 @@
       "join_desc": "Be part of this movement. Download the app, save delicious meals, and start the change with yourself!",
       "title_5": "Our Team"
    },
-   "Career": {},
+   "Career": {
+      "title": "Career",
+      "subtitle": "The Place for People Who Want to Make a Difference",
+      "desc_1": "We are not just doing a job; we are investing in the future of the planet by fighting food waste. For us, every team member is not just part of the team, but also a source of strength behind this mission. Every step you take at Supafo helps prevent hundreds of thousands of fresh products from going to waste and gives our planet real breathing room.",
+      "desc_2": "Here, your knowledge and dedication are noticed directly and rewarded with the fast growth you deserve. If you are looking for a purpose-driven career, join us in our mission to make the world a more livable place through technology.",
+      "why_title": "Why <brand>Supafo</brand>?",
+      "why_1": "Flexible working hours",
+      "why_2": "Eco-friendly gifts and bonuses",
+      "why_3": "Learning opportunities",
+      "why_4": "Global perspective, international impact",
+      "positions_title": "Open Positions",
+      "intern_1_title": "Explore",
+      "intern_1_subtitle": "New opportunities are waiting for you!",
+      "intern_2_title": "Learn",
+      "intern_2_subtitle": "Grow your knowledge and develop your skills!",
+      "intern_3_title": "Make a Difference",
+      "intern_3_subtitle": "Change starts with you!",
+      "button_intern": "Start your internship journey",
+      "button_team": "Join an inspiring team"
+   },
    "NotFound": {}
 }

@@ -12,6 +12,7 @@ export const data = [
       title: 'App Store',
       alt: 'app store',
       src: '/icons/apple/AppStore.svg',
+      icon: '/icons/apple/Apple.svg',
       href: appStoreUrl
    },
    {
@@ -19,6 +20,7 @@ export const data = [
       title: 'Google Play',
       alt: 'google play',
       src: '/icons/google/PlayStore.svg',
+      icon: '/icons/google/PlayStore.svg',
       href: playStoreUrl
    }
 ]
