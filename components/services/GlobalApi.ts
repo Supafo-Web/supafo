@@ -1,6 +1,10 @@
 import axios from 'axios'
 
-export const BASE_URL = '/api/proxy'
+const isServer = typeof window === 'undefined'
+
+const BASE_URL = isServer
+   ? `${process.env.INTERNAL_APP_URL}/api/proxy`
+   : '/api/proxy'
 
 const apiClient = axios.create({
    baseURL: BASE_URL,
@@ -13,8 +17,7 @@ const apiClient = axios.create({
 })
 
 export const api = {
-   get: async <T = any>(url: string) =>
-      (await apiClient.get<T>(url)).data,
+   get: async <T = any>(url: string) => (await apiClient.get<T>(url)).data,
 
    post: async <T = any, B = any>(url: string, data?: B) =>
       (await apiClient.post<T>(url, data)).data,
