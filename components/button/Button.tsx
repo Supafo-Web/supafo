@@ -11,6 +11,7 @@ type ButtonProps = {
    className?: string
    navbar?: boolean
    footer?: boolean
+   textClass?: string
 }
 
 const Button = ({
@@ -21,16 +22,18 @@ const Button = ({
    type = "button",
    className = "",
    navbar = false,
-   footer = false
+   footer = false,
+   textClass = ""
 }: ButtonProps) => {
    const baseClass =
-      `inline-flex items-center justify-center rounded-[10px] transition`
+      `inline-flex items-center justify-center rounded-[10px] transition cursor-pointer`
 
    const notChildren = !children
    const contentNode = !children ? (
       <span
          className={`
             ${(!navbar && !footer) && styles.textButton}
+            ${textClass}
          `}
       >
          {text}

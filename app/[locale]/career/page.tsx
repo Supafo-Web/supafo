@@ -2,9 +2,10 @@ import { getTranslations } from 'next-intl/server'
 import styles from './page.module.scss'
 import Image from 'next/image'
 import OpenPositions from '@/app/[locale]/career/OpenPositions'
+import Button from '@/components/button/Button'
 
 const Career = async () => {
-   const t = await getTranslations("AboutUs")
+   const t = await getTranslations("Career")
 
    const whySupafo = [
       {
@@ -31,6 +32,27 @@ const Career = async () => {
          title: 'Global bakış, uluslararası etki',
          alt: 'global'
       },
+   ]
+
+   const staj = [
+      {
+         id: 1,
+         icon: '/career/Rocket.svg',
+         title: 'Keşfet',
+         subTitle: 'Yeni fırsatlar seni bekliyor!'
+      },
+      {
+         id: 2,
+         icon: '/career/Book2.svg',
+         title: 'Öğren',
+         subTitle: 'Bilgilerini artır, yeteneklerini geliştir!'
+      },
+      {
+         id: 3,
+         icon: '/career/Star.svg',
+         title: 'Fark Yarat',
+         subTitle: 'Değişim senden başlar!'
+      }
    ]
 
    return (
@@ -147,8 +169,17 @@ const Career = async () => {
          </section>
 
          <section
-            className={`px-10 pb-30`}
+            className={`px-10 pb-30 relative`}
          >
+            <Image
+               alt='flower'
+               src='/images/LeftFlower.svg'
+               width={69}
+               height={115}
+               className={`w-full h-auto max-w-12 lg:max-w-17.5 ${styles.leftFlower2}`}
+
+               style={{ width: 69, height: 115 }}
+            />
             <div
                className="flex flex-col items-center mb-12.5 gap-3"
             >
@@ -164,13 +195,80 @@ const Career = async () => {
                   width={283}
                   height={40}
                   className="w-80 h-auto md:w-100 lg:w-56"
-
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                />
             </div>
-            <div className="flex">
+            <div
+               className="flex"
+            >
                <OpenPositions />
             </div>
+            <Image
+               alt='flower'
+               src='/images/RightFlower.svg'
+               width={69}
+               height={115}
+               className={`w-full h-auto max-w-12 lg:max-w-17.5 ${styles.rightFlower2}`}
+
+               style={{ width: 69, height: 115 }}
+            />
+         </section>
+
+         <section
+            className="px-10 pb-30 relative"
+         >
+            <div
+               className="grid grid-cols-1 md:grid-cols-2 gap-12"
+            >
+               {staj.map((item, index) => {
+                  const isLastOddItem =
+                     staj.length % 2 !== 0 && index === staj.length - 1
+
+                  return (
+                     <div
+                        key={item.id || index}
+                        className={`
+                  flex flex-col items-center
+                  ${styles.lastSection}
+                  ${isLastOddItem ? "md:col-span-2" : ""}
+               `}
+                     >
+                        <Image
+                           alt={item.title}
+                           src={item.icon}
+                           width={110}
+                           height={110}
+                           style={{ width: 110, height: 110 }}
+                        />
+                        <h5>{item.title}</h5>
+                        <p>{item.subTitle}</p>
+                     </div>
+                  )
+               })}
+            </div>
+
+            <div
+               className="flex justify-around items-center mt-25"
+            >
+               <Button
+                  text='Staj macerana başla'
+                  className={`${styles.button}`}
+                  textClass={`${styles.buttonText}`}
+               />
+               <Button
+                  text='İlham veren ekibe katıl'
+                  textClass={`${styles.buttonText2}`}
+               />
+            </div>
+
+            <Image
+               alt="flower"
+               src="/images/LeftFlower.svg"
+               width={69}
+               height={115}
+               className={`w-full h-auto max-w-12 lg:max-w-17.5 ${styles.leftFlower3}`}
+               style={{ width: 69, height: 115 }}
+            />
          </section>
       </main>
    )

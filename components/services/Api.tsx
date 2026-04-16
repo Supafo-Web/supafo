@@ -11,3 +11,7 @@ export const getTeamMembers = async () => {
 export const getOpenPositions = async () => {
    return await api.get('/open-positions')
 }
+
+export const getCareerDetails = async (id: number) => {
+   return await api.get(`/career/details/${id}`)
+}

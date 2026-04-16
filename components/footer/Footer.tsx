@@ -1,16 +1,12 @@
-import { getTranslations } from 'next-intl/server'
+import { getLocale, getTranslations } from 'next-intl/server'
 import styles from './footer.module.scss'
-import Image from 'next/image'
 import DownloadApp from '@/components/download/page'
 import Button from '@/components/button/Button'
 import SocialButtons from '@/components/social-media/SocialMedia'
 
-interface FooterType {
-   locale: string
-}
-
-const Footer = async ({ locale }: FooterType) => {
+const Footer = async () => {
    const t = await getTranslations('Footer')
+   const locale = await getLocale()
 
    const headerLeftLink = [
       {

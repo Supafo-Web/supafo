@@ -1,0 +1,45 @@
+@use "../../styles/variables" as *;
+@use "../../styles/breakpoints" as *;
+
+.notFoundBody {
+   background-color: $background2;
+}
+
+.leftFlower {
+   position: absolute;
+   left: 0;
+   top: -25px;
+
+   @include respond-up(lg) {
+      top: -10px;
+   }
+}
+
+.rightFlower {
+   position: absolute;
+   right: 0;
+   top: 86%;
+
+   @include respond-up(lg) {
+      top: 86%;
+   }
+}
+
+.title {
+   font-family: $fontFamily;
+   font-size: clamp(32px, 5vw, 48px);
+   font-weight: $semiBold;
+   color: $textColor;
+   margin-bottom: 5px;
+}
+
+.smallText {
+   font-family: $fontFamily;
+   font-size: 14px;
+   font-weight: $regular;
+   color: $placeholder;
+}
+
+.notFoundButton {
+   padding: 0 40px;
+}

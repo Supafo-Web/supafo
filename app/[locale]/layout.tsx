@@ -160,17 +160,13 @@ const LocaleLayout = async ({
          <div
             className="min-h-screen flex flex-col container-fluid"
          >
-            <Navbar
-               locale={locale}
-            />
+            <Navbar />
             <main
                className={`flex-1 ${styles.layout}`}
             >
                {children}
             </main>
-            <Footer
-               locale={locale}
-            />
+            <Footer />
          </div>
       </NextIntlClientProvider>
    )

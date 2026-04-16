@@ -363,6 +363,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@heroicons/react@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "@heroicons/react@npm:2.2.0"
+  peerDependencies:
+    react: ">= 16 || ^19.0.0-rc"
+  checksum: 10c0/f8d3cf689b56716339c91df3542f3948115042d1e70e6bc940a3f3e347c0bc78b56aa563917fbd7ce097fe2f38ebb21bffb0db39be914cbc545a754bddae9ab4
+  languageName: node
+  linkType: hard
+
 "@humanfs/core@npm:^0.19.1":
   version: 0.19.1
   resolution: "@humanfs/core@npm:0.19.1"
@@ -2229,6 +2238,34 @@ __metadata:
   languageName: node
   linkType: hard
 
+"embla-carousel-react@npm:^8.6.0":
+  version: 8.6.0
+  resolution: "embla-carousel-react@npm:8.6.0"
+  dependencies:
+    embla-carousel: "npm:8.6.0"
+    embla-carousel-reactive-utils: "npm:8.6.0"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.1 || ^18.0.0 || ^19.0.0 || ^19.0.0-rc
+  checksum: 10c0/461b0c427a6fca62e730c7b39d08e9c55b01a2138c173d5b9ebf77ec92092a900b45ac384731c77382b48d5d65946994d3abba6e9899a66d6e16f8ddf191ed1c
+  languageName: node
+  linkType: hard
+
+"embla-carousel-reactive-utils@npm:8.6.0":
+  version: 8.6.0
+  resolution: "embla-carousel-reactive-utils@npm:8.6.0"
+  peerDependencies:
+    embla-carousel: 8.6.0
+  checksum: 10c0/33d07e6df4d8dec9b4fc95858838ea2d5e5df078039c05b2a342c05ba4979d8d18564a1c607da445fed744daf969a0b5a90124ce487a854e86ced6f0458b51e9
+  languageName: node
+  linkType: hard
+
+"embla-carousel@npm:8.6.0":
+  version: 8.6.0
+  resolution: "embla-carousel@npm:8.6.0"
+  checksum: 10c0/f4c598e7be28b70340d31ffd2bebb2472db370b0c81d9b089bf9555cf618695f35dc4a0694565c994c9ab972731123063f945aa09ff485df0df761d79c6a08ef
+  languageName: node
+  linkType: hard
+
 "emoji-regex@npm:^9.2.2":
   version: 9.2.2
   resolution: "emoji-regex@npm:9.2.2"
@@ -2842,11 +2879,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "frontend@workspace:."
   dependencies:
+    "@heroicons/react": "npm:^2.2.0"
     "@tailwindcss/postcss": "npm:^4"
     "@types/node": "npm:^20"
     "@types/react": "npm:^19"
     "@types/react-dom": "npm:^19"
     axios: "npm:^1.15.0"
+    embla-carousel-react: "npm:^8.6.0"
     eslint: "npm:^9"
     eslint-config-next: "npm:16.2.1"
     lottie-react: "npm:^2.4.1"

@@ -1,5 +1,5 @@
 import Button from "@/components/button/Button"
-import { getTranslations } from "next-intl/server"
+import { getLocale, getTranslations } from "next-intl/server"
 import Image from "next/image"
 import styles from "./navbar.module.scss"
 import Dropdown from "@/components/dropdown/Dropdown"
@@ -7,13 +7,10 @@ import Login from "@/public/icons/Login"
 import NavbarDownloadButton from "./NavbarDownloadButton"
 import Hamburger from "@/components/navbar/Hamburger"
 
-interface NavbarType {
-   locale: string
-}
-
-const Navbar = async ({ locale }: NavbarType) => {
+const Navbar = async () => {
    const t = await getTranslations("Navbar")
    const modal = await getTranslations("Modal")
+   const locale = await getLocale()
 
    return (
       <div
