@@ -1,12 +1,13 @@
 'use client'
 
-import { getSettings } from '@/components/services/Api'
+import { getCountries, getSettings } from '@/components/services/Api'
 import { useUI } from '@/components/services/contexts/UIContexts'
 import { useEffect } from 'react'
 
 export default function AppInitializer() {
    const {
-      setSettings
+      setSettings,
+      setCountries
    } = useUI()
 
    useEffect(() => {
@@ -15,6 +16,11 @@ export default function AppInitializer() {
             const settingsResponse = await getSettings()
             if (settingsResponse) {
                setSettings(settingsResponse?.settings)
+            }
+
+            const countriesResponse = await getCountries()
+            if (countriesResponse) {
+               setCountries(countriesResponse?.result)
             }
          } catch (error) {
             if (process.env.NODE_ENV === 'development') {

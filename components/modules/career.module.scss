@@ -4,20 +4,24 @@
 .leftFlower {
    position: absolute;
    left: 0;
-   top: -25px;
+   top: 10px;
 
    @include respond-up(lg) {
-      top: -10px;
+      top: 5px;
    }
 }
 
 .rightFlower {
    position: absolute;
    right: 0;
-   top: 94%;
+   top: 95%;
 
    @include respond-up(lg) {
-      top: 88%;
+      top: 94%;
+   }
+
+   @include respond-up(xl) {
+      top: 91%;
    }
 }
 
@@ -145,7 +149,7 @@
                      font-size: 30px;
                      font-weight: $medium;
                      color: $textColor;
-                     margin-bottom: 20px;
+                     margin-bottom: 45px;
                   }
 
                   .smallText {
@@ -229,4 +233,140 @@
    &:hover span {
       color: white;
    }
+}
+
+.careerDetailArea {
+   border-radius: 30px;
+   background-color: white;
+   box-shadow: 0 5px 10px $primary;
+   overflow: hidden;
+
+   .header {
+      .icon {
+         color: $primary;
+      }
+
+      .title {
+         font-family: $fontFamily;
+         font-size: 30px;
+         font-weight: $medium;
+         color: $textColor;
+      }
+
+      .smallText {
+         font-family: $fontFamily;
+         font-size: 12px;
+         font-weight: $medium;
+         color: $primary;
+      }
+
+      .subTitle {
+         font-family: $fontFamily;
+         font-size: 14px;
+         font-weight: $semiBold;
+         color: $primary;
+         border-radius: 10px;
+         background-color: $primary;
+         color: white;
+      }
+
+      .keyword {
+         border: 1px solid $primary;
+         font-family: $fontFamily;
+         font-size: 14px;
+         font-weight: $semiBold;
+         color: $primary;
+      }
+
+      .priceArea {
+         font-family: $fontFamily;
+         font-size: 14px;
+         font-weight: $semiBold;
+         color: $primary;
+         border: 1px solid $primary;
+         border-top-left-radius: 10px;
+         border-bottom-left-radius: 10px;
+         border-right: 0px;
+         margin-right: -20px;
+      }
+   }
+}
+
+
+.formError,
+.formSuccess {
+   width: 100%;
+   border-radius: 12px;
+   padding: 16px;
+   font-size: 14px;
+   line-height: 1.5;
+   font-weight: 500;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   margin-top: -8px;
+   animation: fadeInUp 0.25s ease;
+}
+
+.formError {
+   color: #b42318;
+   background: #fef3f2;
+   border: 1px solid #fecdca;
+   box-shadow: 0 4px 12px rgba(180, 35, 24, 0.08);
+
+   &::before {
+      content: "!";
+      width: 22px;
+      height: 22px;
+      min-width: 22px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #d92d20;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+   }
+}
+
+.formSuccess {
+   color: white;
+   background: $primary;
+   box-shadow: 0 4px 12px rgba(2, 122, 72, 0.08);
+
+   &::before {
+      content: "✓";
+      width: 22px;
+      height: 22px;
+      min-width: 22px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: white;
+      color: $primary;
+      font-size: 13px;
+      font-weight: 700;
+   }
+}
+
+@keyframes fadeInUp {
+   from {
+      opacity: 0;
+      transform: translateY(6px);
+   }
+
+   to {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+.smallInfoText {
+   font-family: $fontFamily;
+   font-size: 12px;
+   font-weight: $medium;
+   color: $placeholder;
+   margin-top: 10px;
 }

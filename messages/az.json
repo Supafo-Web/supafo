@@ -3,7 +3,7 @@
       "home": "Ana səhifə",
       "about": "Haqqımızda",
       "how_work": "Necə işləyir",
-      "partner": "Tərəfdaş Girişi",
+      "partner": "Tərəfdaş",
       "download_app": "Tətbiqi yüklə"
    },
    "Modal": {
@@ -117,7 +117,16 @@
       "intern_3_title": "Fərq yarat",
       "intern_3_subtitle": "Dəyişiklik səndən başlayır!",
       "button_intern": "Staj yoluna başla",
-      "button_team": "İlhamverici komandaya qoşul"
+      "button_team": "İlhamverici komandaya qoşul",
+      "apply": "Müraciət et"
    },
-   "NotFound": {}
+   "NotFound": {
+      "description": "Axtardığın səhifə mövcud deyil və ya silinmiş ola bilər",
+      "home": "Ana Səhifə"
+   },
+   "Languages": {
+      "tr": "Türkcə",
+      "en": "İngilis dili",
+      "az": "Azərbaycan dili"
+   }
 }

@@ -44,6 +44,7 @@ export interface OpenPositions {
    subTitle?: string
    city?: string
    country?: string
+   country_name?: string
    keywords?: string
    description?: string
    currency?: string

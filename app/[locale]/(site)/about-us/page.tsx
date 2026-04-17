@@ -70,7 +70,7 @@ const AboutUs = async () => {
                width={69}
                height={115}
                className={`w-full h-auto max-w-12 lg:max-w-17.5 ${styles.rightFlower4}`}
-               style={{ width: 69, height: 'auto' }}
+               style={{ width: 69, height: 115 }}
             />
          </section>
 
@@ -295,13 +295,21 @@ const AboutUs = async () => {
                width={69}
                height={115}
                className={`w-full h-auto max-w-12 lg:max-w-17.5 ${styles.rightFlower3}`}
-               style={{ width: 69, height: 'auto' }}
+               style={{ height: 'auto' }}
             />
          </section>
 
          <section
-            className={`px-10 sm:px-30 lg:px-40 xl:px-50 2xl:px-80 pb-30`}
+            className={`px-10 sm:px-30 lg:px-40 xl:px-50 2xl:px-80 pb-30 relative`}
          >
+            <Image
+               alt='flower'
+               src='/images/LeftFlower.svg'
+               width={69}
+               height={115}
+               className={`w-full h-auto max-w-12 lg:max-w-17.5 ${styles.leftFlower5}`}
+               style={{ height: 'auto' }}
+            />
             <div
                className="flex flex-col items-center mb-12.5 gap-3"
             >

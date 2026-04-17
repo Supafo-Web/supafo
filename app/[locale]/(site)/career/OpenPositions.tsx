@@ -19,9 +19,9 @@ import { useEffect, type ComponentType, type SVGProps } from "react"
 import styles from "@/components/modules/career.module.scss"
 import Image from "next/image"
 import Button from "@/components/button/Button"
-import { formatPrice } from "@/components/utils/Price"
-import { useLocale } from "next-intl"
+import { useLocale, useTranslations } from "next-intl"
 import { getOpenPositions } from "@/components/services/Api"
+import { formatPrice } from "@/components/utils/Utils"
 
 type HeroIcon = ComponentType<SVGProps<SVGSVGElement>>
 
@@ -42,6 +42,7 @@ const iconMap: Record<string, HeroIcon> = {
 const OpenPositions = () => {
    const { openPositions, setOpenPositions } = useUI()
    const locale = useLocale()
+   const t = useTranslations('Career')
 
    useEffect(() => {
       const fetchData = async () => {
@@ -110,7 +111,7 @@ const OpenPositions = () => {
                               </div>
 
                               <h3
-                                 className={`truncate ${styles.title}`}
+                                 className={`truncate mb-10 ${styles.title}`}
                               >
                                  {item.title}
                               </h3>
@@ -128,7 +129,7 @@ const OpenPositions = () => {
                                  <div
                                     className={styles.smallText}
                                  >
-                                    {item.city}, {item.country}
+                                    {item.city}, {item.country_name}
                                  </div>
                               </small>
                            </div>
@@ -175,7 +176,7 @@ const OpenPositions = () => {
                               >
                                  <Button
                                     href={`/${locale}/career/${item.id}`}
-                                    text="Başvur"
+                                    text={t('apply')}
                                     className="flex flex-1"
                                  />
                               </div>

@@ -3,7 +3,7 @@
       "home": "Home",
       "about": "About",
       "how_work": "How Does It Work",
-      "partner": "Partner Login",
+      "partner": "Partner",
       "download_app": "Download App"
    },
    "Modal": {
@@ -117,7 +117,16 @@
       "intern_3_title": "Make a Difference",
       "intern_3_subtitle": "Change starts with you!",
       "button_intern": "Start your internship journey",
-      "button_team": "Join an inspiring team"
+      "button_team": "Join an inspiring team",
+      "apply": "Apply"
    },
-   "NotFound": {}
+   "NotFound": {
+      "description": "The page you are looking for may not exist or may have been removed",
+      "home": "Home"
+   },
+   "Languages": {
+      "tr": "Turkish",
+      "en": "English",
+      "az": "Azerbaijani"
+   }
 }

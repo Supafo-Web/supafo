@@ -9,20 +9,25 @@ async function forward(req: NextRequest, path: string[]) {
    headers.set('Accept', 'application/json')
    headers.set('Ngrok-Skip-Browser-Warning', 'true')
 
-   const contentType = req.headers.get('content-type')
-   if (contentType) {
-      headers.set('Content-Type', contentType)
-   }
-
    const auth = req.headers.get('authorization')
    if (auth) {
       headers.set('Authorization', auth)
    }
 
+   const contentType = req.headers.get('content-type') || ''
+
    let body: BodyInit | undefined = undefined
 
    if (req.method !== 'GET' && req.method !== 'HEAD') {
-      body = await req.text()
+      if (contentType.includes('multipart/form-data')) {
+         body = await req.formData()
+      } else if (contentType.includes('application/json')) {
+         body = await req.text()
+         headers.set('Content-Type', 'application/json')
+      } else {
+         body = await req.text()
+         if (contentType) headers.set('Content-Type', contentType)
+      }
    }
 
    const response = await fetch(targetUrl, {

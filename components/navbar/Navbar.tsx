@@ -52,6 +52,12 @@ const Navbar = async () => {
                   navbar
                   className={`${styles.textButton} js-close-lang-dropdown`}
                />
+               <Button
+                  href={`/${locale}/partner`}
+                  text={t("partner")}
+                  navbar
+                  className={`${styles.textButton} js-close-lang-dropdown`}
+               />
             </div>
 
             <div

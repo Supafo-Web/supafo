@@ -1,3 +1,4 @@
+import { CareerForm } from '@/app/[locale]/(site)/career/[id]/CareerApplyForm'
 import { api } from '@/components/services/GlobalApi'
 
 export const getSettings = async () => {
@@ -14,4 +15,12 @@ export const getOpenPositions = async () => {
 
 export const getCareerDetails = async (id: number) => {
    return await api.get(`/career/details/${id}`)
+}
+
+export const getCountries = async () => {
+   return await api.get('/countries/phone-codes')
+}
+
+export const setCareerApply = async (formData: FormData) => {
+   return api.post('/career/apply', formData)
 }

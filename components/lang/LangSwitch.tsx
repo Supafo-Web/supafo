@@ -3,9 +3,11 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import styles from '@/components/modules/lang.module.scss'
+import { useTranslations } from "next-intl"
 
 const LangSwitch = () => {
    const pathname = usePathname()
+   const t = useTranslations('Languages')
 
    const redirectedPathname = (locale: string) => {
       const segments = pathname.split("/")
@@ -20,20 +22,19 @@ const LangSwitch = () => {
             href={redirectedPathname("tr")}
             className={`${styles.lang}`}
          >
-            Türkçe
+            {t('tr')}
          </Link>
          <Link
             href={redirectedPathname("en")}
             className={`${styles.lang}`}
          >
-            English
-
+            {t('en')}
          </Link>
          <Link
             href={redirectedPathname("az")}
             className={`${styles.lang}`}
          >
-            Azərbaycan dili
+            {t('az')}
          </Link>
       </div>
    )

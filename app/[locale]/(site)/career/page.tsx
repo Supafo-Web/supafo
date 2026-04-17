@@ -182,7 +182,7 @@ const Career = async () => {
          </section>
 
          <section className="px-10 pb-30 relative">
-            <div className="w-full max-w-[70rem] mx-auto">
+            <div className="w-full max-w-280 mx-auto">
                <div
                   className="grid grid-cols-1 md:grid-cols-2 gap-12"
                >

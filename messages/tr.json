@@ -3,7 +3,7 @@
       "home": "Ana Sayfa",
       "about": "Hakkımızda",
       "how_work": "Nasıl Çalışır",
-      "partner": "Partner Girişi",
+      "partner": "Partner",
       "download_app": "Uygulamayı İndir"
    },
    "Modal": {
@@ -117,7 +117,16 @@
       "intern_3_title": "Fark Yarat",
       "intern_3_subtitle": "Değişim senden başlar!",
       "button_intern": "Staj macerana başla",
-      "button_team": "İlham veren ekibe katıl"
+      "button_team": "İlham veren ekibe katıl",
+      "apply": "Başvur"
    },
-   "NotFound": {}
+   "NotFound": {
+      "description": "Aradığın sayfa mevcut değil veya kaldırılmış olabilir",
+      "home": "Ana Sayfa"
+   },
+   "Languages": {
+      "tr": "Türkçe",
+      "en": "İngilizce",
+      "az": "Azerbaycan dili"
+   }
 }
