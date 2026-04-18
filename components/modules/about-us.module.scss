@@ -1,50 +1,30 @@
 @use "../../styles/variables" as *;
 @use "../../styles/breakpoints" as *;
 
-.leftFlower {
-   position: absolute;
-   left: 0;
-   top: -25px;
-}
-
-.rightFlower {
-   position: absolute;
-   right: 0;
-   top: 88%;
-}
-
-.leftFlower2 {
-   position: absolute;
-   left: 0;
-   top: -10px;
-}
-
-.rightFlower2 {
-   position: absolute;
-   right: 0;
-   top: 85%;
-}
-
 .leftFlower3 {
    position: absolute;
    left: 0;
-   top: -120px;
+   top: -90px;
+
+   @include respond-up(lg) {
+      top: -110px;
+   }
 }
 
 .rightFlower3 {
    position: absolute;
    right: 0;
-   top: 82%;
+   top: 88%;
+
+   @include respond-up(lg) {
+      top: 82%;
+   }
 }
 
 .leftFlower4 {
    position: absolute;
    left: 0;
-   top: 10px;
-
-   @include respond-up(lg) {
-      top: 10px;
-   }
+   top: -5px;
 }
 
 .rightFlower4 {
@@ -62,18 +42,16 @@
    left: 0;
    top: 90%;
 
-   @include respond-up(lg) {
-      top: 82%;
+   @include respond-up(sm) {
+      top: 89%;
    }
-}
-
-.rightFlower5 {
-   position: absolute;
-   right: 0;
-   top: 94%;
 
    @include respond-up(lg) {
-      top: 92%;
+      top: 79%;
+   }
+
+   @include respond-up(xl) {
+      top: 83%;
    }
 }
 
@@ -83,37 +61,41 @@
 
 .title {
    font-family: $fontFamily;
-   font-size: clamp(32px, 5vw, 48px);
+   font-size: clamp(1.9rem, 3.6vw, 3rem);
    font-weight: $semiBold;
+   letter-spacing: -0.02em;
    color: $textColor;
-   margin-bottom: 5px;
+   margin-bottom: 8px;
 }
 
 .subtitle {
    font-family: $fontFamily;
-   font-size: clamp(18px, 5vw, 27px);
+   font-size: clamp(1.1rem, 2.2vw, 1.6875rem);
    font-weight: $semiBold;
    color: $primary;
 }
 
 .paragraph {
    font-family: $fontFamily;
-   font-size: clamp(14px, 5vw, 21px);
+   font-size: clamp(0.95rem, 1.35vw, 1.3125rem);
    font-weight: $regular;
+   line-height: 1.7;
    color: $placeholder;
 }
 
 .articleTitle {
    font-family: $fontFamily;
-   font-size: 16px;
+   font-size: clamp(0.95rem, 1.05vw, 1.05rem);
    font-weight: $regular;
+   line-height: 1.6;
    color: $placeholder;
 }
 
 .articleSubTitle {
    font-family: $fontFamily;
-   font-size: 16px;
+   font-size: clamp(0.95rem, 1.05vw, 1.05rem);
    font-weight: $regular;
+   line-height: 1.65;
    color: $placeholder;
 
    li {
@@ -127,17 +109,33 @@
 .teamInfo {
    h6 {
       font-family: $fontFamily;
-      font-size: 20px;
+      font-size: clamp(1rem, 1.4vw, 1.25rem);
       font-weight: $semiBold;
+      line-height: 1.35;
       color: $textColor;
       text-align: center;
    }
 
    p {
       font-family: $fontFamily;
-      font-size: 20px;
+      font-size: clamp(0.95rem, 1.3vw, 1.25rem);
       font-weight: $medium;
+      line-height: 1.6;
       color: $textColor;
       text-align: center;
+   }
+}
+
+@include respond-down(sm) {
+   .title {
+      margin-bottom: 10px;
+   }
+
+   .teamInfo {
+
+      h6,
+      p {
+         padding-inline: 8px;
+      }
    }
 }

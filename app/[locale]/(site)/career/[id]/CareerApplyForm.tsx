@@ -83,7 +83,7 @@ const CareerApplyForm = ({ id }: CareerId) => {
             setError("Başvuru gönderilemedi. Tekrar dene.")
          }
 
-         setSuccess("Başvurunuz başarıyla gönderildi.")
+         setSuccess("Başvurun başarıyla gönderildi.")
          setForm({
             full_name: "",
             email: "",

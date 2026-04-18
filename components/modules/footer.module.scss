@@ -6,20 +6,25 @@
 }
 
 .footerHeader {
-   padding-top: 50px;
+   padding-top: clamp(32px, 4vw, 50px);
 
    .footerHeaderLinks {
       display: flex;
-      gap: 5px;
+      gap: 8px;
+      flex-wrap: wrap;
 
       @include respond-down(md) {
          flex-direction: column;
+         gap: 10px;
       }
 
       .footerButtons {
-         padding: 4px 15px;
+         padding: clamp(6px, 0.8vw, 8px) clamp(12px, 1.4vw, 15px);
          border-radius: 15px;
-         transition: background-color 0.75s ease, transform 0.75s ease, color 0.75s ease;
+         transition:
+            background-color 0.75s ease,
+            transform 0.75s ease,
+            color 0.75s ease;
 
          &:hover {
             color: $primary;
@@ -30,16 +35,24 @@
 }
 
 .footerMain {
-   padding: 40px 4%;
+   padding: clamp(28px, 3vw, 40px) 4%;
    display: flex;
    justify-content: space-between;
+   gap: 24px;
+
+   @include respond-down(md) {
+      flex-direction: column;
+      gap: 28px;
+   }
 }
 
 .footerBottom {
-   padding: 25px 0;
+   padding: clamp(18px, 2vw, 25px) 12px;
    border-top-width: 0.5px;
    border-top-color: $divider;
-   font-size: 16px;
+   font-family: $fontFamily;
+   font-size: clamp(0.875rem, 0.95vw, 1rem);
+   line-height: 1.5;
    color: white;
    text-align: center;
 }

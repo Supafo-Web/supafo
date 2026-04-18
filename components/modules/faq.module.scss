@@ -21,14 +21,15 @@
 
 .faqButton {
    border: 1px solid $primary;
-   padding: 18px 20px;
+   padding: clamp(14px, 1.4vw, 18px) clamp(16px, 1.8vw, 20px);
    width: 100%;
    display: flex;
    justify-content: space-between;
    align-items: center;
    font-family: $fontFamily;
-   font-size: 18px;
+   font-size: clamp(0.95rem, 1.2vw, 1.125rem);
    font-weight: 400;
+   line-height: 1.45;
    color: $textColor;
    border-radius: 10px;
    background-color: white;
@@ -78,17 +79,17 @@
 
 .faqAnswer {
    border: 1px solid $primary;
-   padding: 0 20px;
+   padding: 0 clamp(16px, 1.8vw, 20px);
    width: 100%;
    display: flex;
    align-items: center;
    font-family: $fontFamily;
-   font-size: 18px;
+   font-size: clamp(0.95rem, 1.15vw, 1.125rem);
    font-weight: 400;
+   line-height: 1.7;
    color: $textColor;
    border-radius: 10px;
    background-color: #fff;
-   line-height: 1.6;
    transform: translateY(-8px);
    transition:
       background-color 0.35s ease,
@@ -100,11 +101,10 @@
 .faqAnswerActive {
    background-color: #F2FFE5;
    color: $textColor;
-   padding: 28px 20px;
+   padding: clamp(20px, 2.2vw, 28px) clamp(16px, 1.8vw, 20px);
    transform: translateY(0);
 }
 
-/* 5'ten sonraki faq alanı */
 .moreFaqWrapper {
    overflow: hidden;
    max-height: 0;
@@ -154,4 +154,33 @@
 
 .downArrowIcon {
    display: block;
+}
+
+@include respond-down(sm) {
+
+   .faqContainer,
+   .faqList,
+   .moreFaqInner {
+      gap: 12px;
+   }
+
+   .faqItem {
+      gap: 10px;
+   }
+
+   .faqButton {
+      font-size: 0.95rem;
+      padding: 14px 16px;
+      align-items: flex-start;
+      gap: 12px;
+   }
+
+   .faqAnswer {
+      font-size: 0.95rem;
+      line-height: 1.65;
+   }
+
+   .faqAnswerActive {
+      padding: 18px 16px;
+   }
 }

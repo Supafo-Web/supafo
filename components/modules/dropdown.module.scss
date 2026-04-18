@@ -22,7 +22,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 45%;
+      height: clamp(320px, 45vh, 520px);
       z-index: 41;
       background-color: $background2;
 
@@ -45,3 +45,11 @@
       opacity: 1;
    }
 }
+
+// @include respond-down(sm) {
+//    .dropdownArea {
+//       .dropdownMenu {
+//          height: min(70vh, 560px);
+//       }
+//    }
+// }

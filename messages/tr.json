@@ -128,5 +128,11 @@
       "tr": "Türkçe",
       "en": "İngilizce",
       "az": "Azerbaycan dili"
+   },
+   "Partner": {
+      "title": "Partner Portalı",
+      "subtitle": "Yakında aktif olacak",
+      "description": "Partner portalına giriş henüz hazır değil. Yakında tüm partnerlerimiz için kullanıma hazır olacak.",
+      "notice": "Otomatik olarak bildirileceksin"
    }
 }

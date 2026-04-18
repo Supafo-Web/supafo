@@ -1,0 +1,65 @@
+@use "../../styles/variables" as *;
+@use "../../styles/breakpoints" as *;
+
+.logoImage {
+   z-index: -999;
+}
+
+.container {
+   background-color: $background2;
+   padding: clamp(12px, 2vw, 15px) clamp(16px, 3vw, 30px);
+   z-index: 1;
+}
+
+.partnerPortalContainer {
+   border-radius: 30px;
+   background-color: white;
+   box-shadow: 0 5px 10px $primary;
+   overflow: hidden;
+   margin: 0 clamp(40px, 2vw, 20px);
+   padding: clamp(24px, 4vw, 40px) clamp(20px, 5vw, 60px);
+   position: absolute;
+   z-index: -10;
+
+   h1 {
+      font-family: $fontFamily;
+      font-size: clamp(1.375rem, 2vw, 1.5rem);
+      font-weight: $semiBold;
+      line-height: 1.2;
+      color: $textColor;
+      text-align: center;
+   }
+
+   h6 {
+      font-family: $fontFamily;
+      font-size: clamp(1rem, 1.4vw, 1.125rem);
+      font-weight: $medium;
+      line-height: 1.35;
+      color: $placeholder;
+      text-align: center;
+   }
+
+   p {
+      font-family: $fontFamily;
+      font-size: clamp(0.95rem, 1.05vw, 1rem);
+      font-weight: $regular;
+      line-height: 1.75;
+      color: $textColor;
+      text-align: center;
+   }
+
+   small {
+      font-family: $fontFamily;
+      font-size: clamp(0.9rem, 1.1vw, 1rem);
+      font-weight: $medium;
+      line-height: 1.45;
+      color: $placeholder;
+      text-align: center;
+   }
+}
+
+@include respond-down(sm) {
+   .partnerPortalContainer {
+      border-radius: 22px;
+   }
+}

@@ -128,5 +128,11 @@
       "tr": "Turkish",
       "en": "English",
       "az": "Azerbaijani"
+   },
+   "Partner": {
+      "title": "Partner Portal",
+      "subtitle": "Coming soon",
+      "description": "Access to the partner portal is not ready yet. It will soon be available for all our partners.",
+      "notice": "You will be notified automatically"
    }
 }

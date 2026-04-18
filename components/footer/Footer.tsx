@@ -24,11 +24,11 @@ const Footer = async () => {
          title: t('header_link.career'),
          link: `/${locale}/career`
       },
-      {
-         id: 4,
-         title: t('header_link.our_team'),
-         link: `/${locale}/our-team`
-      }
+      // {
+      //    id: 4,
+      //    title: t('header_link.our_team'),
+      //    link: `/${locale}/about-us#our-team`
+      // }
    ]
 
    const headerRightLink = [

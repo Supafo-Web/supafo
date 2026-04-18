@@ -56,7 +56,7 @@ const CareerDetail = async ({ params }: PageProps) => {
                style={{ height: 'auto' }}
             />
             <div
-               className="flex flex-col xl:flex-row gap-7.5"
+               className="flex flex-col lg:flex-row gap-7.5"
             >
                <div
                   className={`w-full px-5 py-10 ${styles.careerDetailArea}`}

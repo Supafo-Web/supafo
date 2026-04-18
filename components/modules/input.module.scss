@@ -13,12 +13,13 @@
    display: flex;
    align-items: stretch;
    gap: 10px;
+   width: 100%;
 }
 
 .inputArea {
    border-radius: 10px;
    border: 1px solid $primary;
-   padding: 0 10px;
+   padding: 0 12px;
    min-height: 44px;
    display: flex;
    align-items: center;
@@ -34,7 +35,8 @@
 
 .input {
    flex: 1;
-   font-size: 14px;
+   font-size: clamp(0.875rem, 0.95vw, 1rem);
+   line-height: 1.45;
    color: black;
    border: none;
    outline: none;
@@ -55,7 +57,7 @@
 
 .errorIcon {
    color: red;
-   font-size: 18px;
+   font-size: clamp(1rem, 1.1vw, 1.125rem);
    font-weight: 700;
    line-height: 1;
    display: flex;
@@ -66,7 +68,8 @@
 
 .errorText {
    margin-top: 6px;
-   font-size: 12px;
+   font-size: clamp(0.75rem, 0.85vw, 0.8125rem);
+   line-height: 1.45;
    color: red;
    font-family: $fontFamily;
 }
@@ -77,24 +80,16 @@
    align-items: center;
 }
 
-.countryRoot {
-   display: flex;
-   align-items: stretch;
-   gap: 10px;
-   width: 100%;
-}
-
 .countrySelect {
-   // min-width: 120px;
    height: 44px;
    padding: 0 38px 0 14px;
    border: 1px solid #8bbc4a;
    border-radius: 12px;
    background-color: #fff;
    color: #2f3b1f;
-   font-size: 14px;
+   font-size: clamp(0.875rem, 0.95vw, 1rem);
    font-weight: 500;
-   font-family: inherit;
+   font-family: $fontFamily;
    line-height: 1;
    outline: none;
    cursor: pointer;
@@ -139,9 +134,11 @@
 .fileInputLabel {
    display: inline-block;
    margin-bottom: 8px;
-   font-size: 14px;
+   font-size: clamp(0.875rem, 0.95vw, 1rem);
+   line-height: 1.35;
    font-weight: 500;
    color: #2f3b1f;
+   font-family: $fontFamily;
 }
 
 .fileInputArea {
@@ -187,18 +184,22 @@
    display: inline-flex;
    align-items: center;
    justify-content: center;
-   font-size: 13px;
+   font-size: clamp(0.8125rem, 0.9vw, 0.9375rem);
+   line-height: 1.2;
    font-weight: 600;
    white-space: nowrap;
    flex-shrink: 0;
+   font-family: $fontFamily;
 }
 
 .fileInputText {
    color: #a7a7a7;
-   font-size: 14px;
+   font-size: clamp(0.875rem, 0.95vw, 1rem);
+   line-height: 1.45;
    overflow: hidden;
    text-overflow: ellipsis;
    white-space: nowrap;
+   font-family: $fontFamily;
 }
 
 .fileInputSelected {
@@ -208,7 +209,7 @@
 
 .fileInputIcon {
    flex-shrink: 0;
-   font-size: 18px;
+   font-size: clamp(1rem, 1.1vw, 1.125rem);
    line-height: 1;
 }
 
@@ -224,7 +225,8 @@
 
 .subText {
    font-family: $fontFamily;
-   font-size: 12px;
+   font-size: clamp(0.75rem, 0.85vw, 0.8125rem);
+   line-height: 1.45;
    color: $placeholder;
    margin-top: 4px;
 }
@@ -242,4 +244,28 @@ textarea.input {
    min-height: 140px;
    height: auto;
    align-items: flex-start;
+}
+
+@include respond-down(sm) {
+   .countryRoot {
+      gap: 8px;
+   }
+
+   .input,
+   .countrySelect,
+   .fileInputLabel,
+   .fileInputText {
+      font-size: 0.875rem;
+   }
+
+   .fileInputButton {
+      font-size: 0.8125rem;
+      min-width: 96px;
+      padding: 0 12px;
+   }
+
+   .errorText,
+   .subText {
+      font-size: 0.75rem;
+   }
 }

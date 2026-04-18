@@ -4,14 +4,26 @@
 .lang {
    font-family: $fontFamily;
    font-weight: $medium;
+   font-size: clamp(0.875rem, 0.95vw, 1rem);
+   line-height: 1.2;
    color: $textColor;
 
-   padding: 4px 15px;
+   padding: clamp(6px, 0.8vw, 8px) clamp(12px, 1.4vw, 15px);
    border-radius: 15px;
-   transition: background-color 0.75s ease, transform 0.75s ease, color 0.75s ease;
+   transition:
+      background-color 0.75s ease,
+      transform 0.75s ease,
+      color 0.75s ease;
 
    &:hover {
       color: $primary;
       background-color: white;
+   }
+}
+
+@include respond-down(sm) {
+   .lang {
+      font-size: 0.875rem;
+      padding: 6px 12px;
    }
 }

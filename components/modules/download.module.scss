@@ -8,12 +8,14 @@
 
    .generalAppStore,
    .footerAppStore {
-      display: inline-flex;
+      display: flex;
       align-items: center;
       gap: 8px;
       border-radius: 10px;
-      padding: 17px 0 17px 20px;
-      width: 170px;
+      padding: clamp(12px, 1.2vw, 17px) 0 clamp(12px, 1.2vw, 17px) clamp(14px, 1.5vw, 20px);
+      width: clamp(148px, 16vw, 170px);
+      font-family: $fontFamily;
+      font-size: clamp(0.875rem, 0.95vw, 1rem);
       font-weight: $medium;
 
       background-color: white;
@@ -50,7 +52,7 @@
    }
 
    .footerAppStore {
-      padding: 12px 20px;
+      padding: clamp(10px, 1vw, 12px) clamp(14px, 1.5vw, 20px);
    }
 }
 
@@ -59,21 +61,23 @@
 }
 
 .title {
+   font-family: $fontFamily;
+   font-size: clamp(0.875rem, 0.95vw, 1rem);
    transition: color 0.35s ease;
    color: inherit;
 }
 
 .iconFlip {
-   width: 20px;
-   height: 20px;
+   width: clamp(18px, 1.2vw, 20px);
+   height: clamp(18px, 1.2vw, 20px);
    perspective: 1000px;
    flex-shrink: 0;
 }
 
 .iconFlipInner {
    position: relative;
-   width: 20px;
-   height: 20px;
+   width: 100%;
+   height: 100%;
    transform-style: preserve-3d;
    transition: transform 0.7s ease;
 }
@@ -88,4 +92,24 @@
 
 .iconBack {
    transform: rotateY(180deg);
+}
+
+@include respond-down(sm) {
+   .storeArea {
+      gap: 12px;
+      flex-wrap: wrap;
+
+      .generalAppStore,
+      .footerAppStore {
+         width: 100%;
+         max-width: 220px;
+         align-items: center;
+         padding: 12px 16px;
+         font-size: 0.875rem;
+      }
+   }
+
+   .title {
+      font-size: 0.875rem;
+   }
 }

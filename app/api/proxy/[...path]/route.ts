@@ -14,6 +14,11 @@ async function forward(req: NextRequest, path: string[]) {
       headers.set('Authorization', auth)
    }
 
+   const locale = req.headers.get('x-locale')
+   if (locale) {
+      headers.set('X-Locale', locale)
+   }
+
    const contentType = req.headers.get('content-type') || ''
 
    let body: BodyInit | undefined = undefined

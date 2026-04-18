@@ -6,13 +6,57 @@
 
    .navbarArea {
       .textButton {
-         padding: 4px 15px;
+         font-family: $fontFamily;
+         font-size: clamp(0.875rem, 0.95vw, 1rem);
+         font-weight: $medium;
+         line-height: 1.2;
+         color: $textColor;
+         padding: clamp(6px, 0.8vw, 8px) clamp(12px, 1.4vw, 15px);
          border-radius: 15px;
-         transition: background-color 0.75s ease, transform 0.75s ease, color 0.75s ease;
+         transition:
+            background-color 0.75s ease,
+            transform 0.75s ease,
+            color 0.75s ease;
 
          &:hover {
             background-color: white;
+            color: $primary;
          }
       }
+   }
+}
+
+.navbarButton {
+   font-family: $fontFamily;
+   font-size: clamp(1rem, 1.6vw, 1.375rem);
+   font-weight: $medium;
+   line-height: 1.2;
+   color: $textColor;
+   transition:
+      background-color 0.75s ease,
+      transform 0.75s ease,
+      color 0.75s ease;
+
+   &:hover {
+      color: $primary;
+   }
+}
+
+.modalCloseButton {
+   background-color: $primary;
+}
+
+@include respond-down(sm) {
+   .navbarWrapper {
+      .navbarArea {
+         .textButton {
+            font-size: 0.875rem;
+            padding: 6px 12px;
+         }
+      }
+   }
+
+   .navbarButton {
+      font-size: 1rem;
    }
 }

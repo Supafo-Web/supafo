@@ -128,5 +128,11 @@
       "tr": "Türkcə",
       "en": "İngilis dili",
       "az": "Azərbaycan dili"
+   },
+   "Partner": {
+      "title": "Tərəfdaş Portalı",
+      "subtitle": "Tezliklə aktiv olacaq",
+      "description": "Tərəfdaş portalına giriş hələ hazır deyil. Tezliklə bütün tərəfdaşlarımız üçün istifadəyə veriləcək.",
+      "notice": "Avtomatik olaraq bildiriləcəksən"
    }
 }

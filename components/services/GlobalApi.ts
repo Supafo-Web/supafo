@@ -6,6 +6,19 @@ const BASE_URL = isServer
    ? `${process.env.INTERNAL_APP_URL}/api/proxy`
    : '/api/proxy'
 
+const getLocaleFromPath = () => {
+   if (typeof window === 'undefined') return 'tr'
+
+   const segments = window.location.pathname.split('/')
+   const locale = segments[1]
+
+   if (['tr', 'en', 'az', 'de'].includes(locale)) {
+      return locale
+   }
+
+   return 'tr'
+}
+
 const apiClient = axios.create({
    baseURL: BASE_URL,
    timeout: 15000,
@@ -13,6 +26,13 @@ const apiClient = axios.create({
    headers: {
       Accept: 'application/json',
    },
+})
+
+apiClient.interceptors.request.use((config) => {
+   config.headers = config.headers ?? {}
+   config.headers['X-Locale'] = getLocaleFromPath()
+
+   return config
 })
 
 export const api = {

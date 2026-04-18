@@ -5,11 +5,14 @@ import styles from "@/components/modules/navbar.module.scss"
 import Dropdown from "@/components/dropdown/Dropdown"
 import NavbarDownloadButton from "./NavbarDownloadButton"
 import Hamburger from "@/components/navbar/Hamburger"
+import { getNavbarMenu } from "@/components/utils/Navbar"
 
 const Navbar = async () => {
    const t = await getTranslations("Navbar")
    const modal = await getTranslations("Modal")
    const locale = await getLocale()
+
+   const navbarMenu = getNavbarMenu({ locale, t })
 
    return (
       <div
@@ -34,30 +37,15 @@ const Navbar = async () => {
             <div
                className={`flex items-center justify-center ${styles.navbarArea}`}
             >
-               <Button
-                  href={`/${locale}`}
-                  text={t("home")}
-                  navbar
-                  className={`${styles.textButton} js-close-lang-dropdown`}
-               />
-               <Button
-                  href={`/${locale}/about-us`}
-                  text={t("about")}
-                  navbar
-                  className={`${styles.textButton} js-close-lang-dropdown`}
-               />
-               <Button
-                  href={`/${locale}/how-does-it-work`}
-                  text={t("how_work")}
-                  navbar
-                  className={`${styles.textButton} js-close-lang-dropdown`}
-               />
-               <Button
-                  href={`/${locale}/partner`}
-                  text={t("partner")}
-                  navbar
-                  className={`${styles.textButton} js-close-lang-dropdown`}
-               />
+               {navbarMenu.map((item, index) => (
+                  <Button
+                     key={item.id || index}
+                     href={item.href}
+                     text={item.text}
+                     navbar
+                     className={`${styles.textButton} js-close-lang-dropdown`}
+                  />
+               ))}
             </div>
 
             <div
@@ -84,8 +72,8 @@ const Navbar = async () => {
                <Image
                   alt="logo"
                   src="/logo/logo.svg"
-                  width={80}
-                  height={69}
+                  width={65}
+                  height={56}
                   style={{ height: 'auto' }}
                />
             </Button>

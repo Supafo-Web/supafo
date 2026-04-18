@@ -27,24 +27,38 @@
 
 .title {
    font-family: $fontFamily;
-   font-size: clamp(32px, 5vw, 48px);
+   font-size: clamp(1.9rem, 3.6vw, 3rem);
    font-weight: $semiBold;
+   line-height: 1.15;
+   letter-spacing: -0.02em;
    color: $textColor;
-   margin-bottom: 5px;
+   margin-bottom: 8px;
 }
 
 .smallText {
    font-family: $fontFamily;
-   font-size: 16px;
+   font-size: clamp(0.9rem, 1vw, 1rem);
+   line-height: 1.6;
    font-weight: $regular;
    color: $placeholder;
 }
 
 .notFoundButton {
-   padding: 0 60px;
+   padding: 0 clamp(28px, 4vw, 60px);
    border-radius: 15px;
 }
 
 .buttonText {
-   font-size: 18px !important;
+   font-size: clamp(0.95rem, 1.2vw, 1.125rem) !important;
+   line-height: 1.2;
+}
+
+@include respond-down(sm) {
+   .notFoundButton {
+      padding: 0 28px;
+   }
+
+   .buttonText {
+      font-size: 0.95rem !important;
+   }
 }
