@@ -5,6 +5,7 @@
    display: flex;
    gap: 20px;
    justify-content: center;
+   align-items: center;
 
    .generalAppStore,
    .footerAppStore {
@@ -33,7 +34,6 @@
       perspective: 1000px;
 
       &:hover {
-         transform: scale(1.05);
          background-color: $secondary;
          color: white;
          border-color: $secondary;
@@ -49,10 +49,6 @@
       &:hover .title {
          color: white;
       }
-   }
-
-   .footerAppStore {
-      padding: clamp(10px, 1vw, 12px) clamp(14px, 1.5vw, 20px);
    }
 }
 
@@ -72,6 +68,7 @@
    height: clamp(18px, 1.2vw, 20px);
    perspective: 1000px;
    flex-shrink: 0;
+   margin-bottom: 2px;
 }
 
 .iconFlipInner {
