@@ -17,7 +17,7 @@ const LangSwitch = () => {
    }
 
    return (
-      <div className="flex flex-col items-center h-full justify-center gap-12 pt-16">
+      <div className="flex flex-col items-center h-full justify-end pb-10 gap-6">
          <Link
             href={redirectedPathname("tr")}
             className={`${styles.lang}`}

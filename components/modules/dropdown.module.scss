@@ -5,11 +5,9 @@
    position: fixed;
    inset: 0;
    z-index: -1;
-
    background: rgba(0, 0, 0, 0.3);
    backdrop-filter: blur(18px);
    -webkit-backdrop-filter: blur(18px);
-
    opacity: 0;
    visibility: hidden;
    pointer-events: none;
@@ -22,10 +20,9 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: clamp(320px, 45vh, 520px);
+      height: clamp(280px, 42vh, 420px);
       z-index: 41;
       background-color: $background2;
-
       transform: translateY(-100%);
       opacity: 0;
       transition:
@@ -46,10 +43,18 @@
    }
 }
 
-// @include respond-down(sm) {
-//    .dropdownArea {
-//       .dropdownMenu {
-//          height: min(70vh, 560px);
-//       }
-//    }
-// }
+@include respond-down(md) {
+   .dropdownArea {
+      .dropdownMenu {
+         height: min(56vh, 380px);
+      }
+   }
+}
+
+@include respond-down(sm) {
+   .dropdownArea {
+      .dropdownMenu {
+         height: min(62vh, 340px);
+      }
+   }
+}

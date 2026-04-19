@@ -2,9 +2,24 @@
    "Navbar": {
       "home": "Ana səhifə",
       "about": "Haqqımızda",
-      "how_work": "Necə işləyir",
+      "guide": "Bələdçi",
       "partner": "Tərəfdaş",
-      "download_app": "Tətbiqi yüklə"
+      "download_app": "Tətbiqi yüklə",
+      "home_section": {
+         "section_1": "Supafo nədir?",
+         "section_2": "Supafo necə işləyir?",
+         "section_3": "Supafo Çanta",
+         "section_4": "Sağlam Həyat Səyahəti",
+         "section_5": "Gələcəyin Texnologiyası",
+         "section_6": "Yaxşılıq etməkdə Supafo-ya qoşulun",
+         "section_7": "Tez-tez verilən suallar"
+      },
+      "about_section": {
+         "section_1": "Biz Kimik",
+         "section_2": "Missiyamız və Vizyonumuz",
+         "section_3": "Bizi Fərqləndirən Nədir?",
+         "section_4": "Mübarizəmizə qoşulun!"
+      }
    },
    "Modal": {
       "download_app": "Tətbiqi yüklə",
@@ -12,17 +27,13 @@
    },
    "Footer": {
       "header_link": {
-         "about_us": "Haqqımızda",
-         "guide": "Bələdçi",
          "career": "Karyera",
-         "our_team": "Komandamız",
          "what_is_food_waste": "Qida İsrafı Nədir?",
          "projects": "Layihələr",
-         "blog": "Supafo Bloqu",
-         "contact": "Bizimlə Əlaqə"
+         "contact": "Ünsiyyət",
+         "faq": "Tez-tez verilən suallar"
       },
       "footer_link": {
-         "faq": "Tez-tez verilən suallar",
          "terms": "Şərtlər və Qaydalar",
          "privacy": "Məxfilik Siyasəti",
          "cookie": "Kuki Siyasəti"

@@ -1,11 +1,17 @@
 "use client"
 
+import Button from "@/components/button/Button"
 import styles from "@/components/modules/dropdown.module.scss"
-import LangSwitch from "@/components/lang/LangSwitch"
-import Image from "next/image"
-import { useEffect, useRef, useState } from "react"
+import navbarStyles from '@/components/modules/navbar.module.scss'
+import { ReactNode, useEffect, useRef, useState } from "react"
 
-const Dropdown = () => {
+interface DropdownProps {
+   image?: ReactNode | boolean
+   children?: ReactNode
+   navbarText?: string
+}
+
+const Dropdown = ({ image, children, navbarText }: DropdownProps) => {
    const [open, setOpen] = useState<boolean>(false)
    const dropdownRef = useRef<HTMLDivElement | null>(null)
 
@@ -58,29 +64,31 @@ const Dropdown = () => {
          ref={dropdownRef}
          className={`relative`}
       >
-         <button
-            type="button"
-            className="group cursor-pointer rounded-full bg-white p-2.5 transition-all duration-300 ease-in-out hover:bg-[#578B23]"
-            onMouseEnter={handleOpen}
-            onClick={handleOpen}
-         >
-            <div className="relative h-7.5 w-7.5">
-               <Image
-                  alt="language"
-                  src="/icons/Language.svg"
-                  width={30}
-                  height={30}
-                  className="absolute inset-0 opacity-100 transition-opacity duration-500 ease-in-out group-hover:opacity-0"
-               />
-               <Image
-                  alt="language hover"
-                  src="/icons/Language-white.svg"
-                  width={30}
-                  height={30}
-                  className="absolute inset-0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100"
+         {image ? (
+            <button
+               type="button"
+               className="group cursor-pointer rounded-full bg-white p-2.5 transition-all duration-300 ease-in-out hover:bg-[#578B23]"
+               onMouseEnter={handleOpen}
+               onClick={handleOpen}
+            >
+               <div
+                  className="relative h-7.5 w-7.5"
+               >
+                  {image}
+               </div>
+            </button>
+         ) : (
+            <div
+               onMouseEnter={handleOpen}
+               onClick={handleOpen}
+            >
+               <Button
+                  text={navbarText}
+                  navbar
+                  className={`${navbarStyles.textButton} js-close-lang-dropdown`}
                />
             </div>
-         </button>
+         )}
          <div
             className={`${styles.dropdownArea} ${open ? styles.open : ""}`}
          >
@@ -89,7 +97,7 @@ const Dropdown = () => {
                onMouseEnter={handleOpen}
                onMouseLeave={handleClose}
             >
-               <LangSwitch />
+               {children}
             </div>
          </div>
       </div>

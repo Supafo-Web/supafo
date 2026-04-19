@@ -10,7 +10,8 @@ const AboutUs = async () => {
    return (
       <main>
          <section
-            className={`px-10 sm:px-30 lg:px-40 xl:px-50 2xl:px-80 py-30 relative`}
+            className={`px-10 sm:px-30 lg:px-40 xl:px-50 2xl:px-80 py-30 scroll-mt-24 relative`}
+            id='who-we-are'
          >
             <Image
                alt='flower'
@@ -74,7 +75,8 @@ const AboutUs = async () => {
          </section>
 
          <section
-            className={`px-10 sm:px-30 lg:px-40 xl:px-50 2xl:px-80 pb-30`}
+            className={`px-10 sm:px-30 lg:px-40 xl:px-50 2xl:px-80 pb-30 scroll-mt-24`}
+            id='mission-and-vision'
          >
             <div
                className="flex flex-col items-center mb-12.5 gap-3"
@@ -189,7 +191,8 @@ const AboutUs = async () => {
          </section>
 
          <section
-            className={`px-10 sm:px-30 lg:px-40 xl:px-50 2xl:px-80 pb-30 relative`}
+            className={`px-10 sm:px-30 lg:px-40 xl:px-50 2xl:px-80 pb-30 scroll-mt-24 relative`}
+            id='what-makes-us-different'
          >
             <Image
                alt='flower'
@@ -303,7 +306,8 @@ const AboutUs = async () => {
          </section>
 
          <section
-            className={`px-10 sm:px-30 lg:px-40 xl:px-50 2xl:px-80 pb-30 relative`}
+            className={`px-10 sm:px-30 lg:px-40 xl:px-50 2xl:px-80 pb-30 scroll-mt-24 relative`}
+            id='join-our-struggle'
          >
             <Image
                alt='flower'

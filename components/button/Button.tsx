@@ -46,6 +46,7 @@ const Button = ({
       return (
          <Link
             href={href}
+            onClick={onClick}
             className={`
                ${navbar ? styles.navbarButton
                   : footer ? styles.footerButton

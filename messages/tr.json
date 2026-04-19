@@ -2,9 +2,24 @@
    "Navbar": {
       "home": "Ana Sayfa",
       "about": "Hakkımızda",
-      "how_work": "Nasıl Çalışır",
+      "guide": "Rehber",
       "partner": "Partner",
-      "download_app": "Uygulamayı İndir"
+      "download_app": "Uygulamayı İndir",
+      "home_section": {
+         "section_1": "Supafo Nedir?",
+         "section_2": "Supafo Nasıl Çalışır?",
+         "section_3": "Supafo Çanta",
+         "section_4": "Sağlıklı Yaşam Yolculuğu",
+         "section_5": "Geleceğin Teknolojisi",
+         "section_6": "Supafo ile İyiliğe Katıl",
+         "section_7": "S.S.S"
+      },
+      "about_section": {
+         "section_1": "Biz Kimiz",
+         "section_2": "Misyonumuz ve Vizyonumuz",
+         "section_3": "Bizi Farklı Kılan Ne?",
+         "section_4": "Mücadelemize Katılın"
+      }
    },
    "Modal": {
       "download_app": "Uygulamayı İndir",
@@ -12,17 +27,13 @@
    },
    "Footer": {
       "header_link": {
-         "about_us": "Hakkımızda",
-         "guide": "Rehber",
          "career": "Kariyer",
-         "our_team": "Ekibimiz",
          "what_is_food_waste": "Gıda İsrafı Nedir?",
          "projects": "Projeler",
-         "blog": "Supafo Blog",
-         "contact": "Bize Ulaşın"
+         "contact": "İletişim",
+         "faq": "S.S.S"
       },
       "footer_link": {
-         "faq": "S.S.S",
          "terms": "Şartlar ve Koşullar",
          "privacy": "Gizlilik Politikası",
          "cookie": "Çerez Politikası"

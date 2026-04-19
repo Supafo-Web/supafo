@@ -2,9 +2,24 @@
    "Navbar": {
       "home": "Home",
       "about": "About",
-      "how_work": "How Does It Work",
+      "guide": "Guide",
       "partner": "Partner",
-      "download_app": "Download App"
+      "download_app": "Download App",
+      "home_section": {
+         "section_1": "What is Supafo?",
+         "section_2": "How Does Supafo Work?",
+         "section_3": "Supafo Bag",
+         "section_4": "Healthy Life Journey",
+         "section_5": "Technology of the Future",
+         "section_6": "Join Supafo in Doing Good",
+         "section_7": "F.A.Q"
+      },
+      "about_section": {
+         "section_1": "Who We Are",
+         "section_2": "Our Mission and Vision",
+         "section_3": "What Makes Us Different?",
+         "section_4": "Join Our Struggle!"
+      }
    },
    "Modal": {
       "download_app": "Download App",
@@ -12,17 +27,13 @@
    },
    "Footer": {
       "header_link": {
-         "about_us": "About Us",
-         "guide": "Guide",
          "career": "Careers",
-         "our_team": "Our Team",
          "what_is_food_waste": "What Is Food Waste?",
          "projects": "Projects",
-         "blog": "Supafo Blog",
-         "contact": "Contact Us"
+         "contact": "Contact",
+         "faq": "F.A.Q"
       },
       "footer_link": {
-         "faq": "F.A.Q",
          "terms": "Terms and Conditions",
          "privacy": "Privacy Policy",
          "cookie": "Cookie Policy"

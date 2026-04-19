@@ -92,7 +92,8 @@ const Home = async () => {
 
          <main>
             <section
-               className={`px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 py-40 relative ${styles.whatIsSupafo}`}
+               className={`px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 py-40 relative scroll-mt-24 ${styles.whatIsSupafo}`}
+               id="what-is-supafo"
             >
                <Image
                   alt="flower"
@@ -151,7 +152,8 @@ const Home = async () => {
             </section>
 
             <section
-               className={styles.howDoesSupafo}
+               className={`scroll-mt-24 ${styles.howDoesSupafo}`}
+               id="how-does-supafo-work"
             >
                <h1>
                   {t.rich("how_it_works_title", {
@@ -174,7 +176,8 @@ const Home = async () => {
             </section>
 
             <section
-               className={styles.supafoBag}
+               className={`scroll-mt-24 ${styles.supafoBag}`}
+               id="supafo-bag"
             >
                <Image
                   alt="flower"
@@ -276,7 +279,8 @@ const Home = async () => {
             </section>
 
             <section
-               className={`flex flex-col lg:flex-row items-center px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 py-30 ${styles.lifeJourney}`}
+               className={`flex flex-col lg:flex-row items-center px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 py-30 scroll-mt-24 ${styles.lifeJourney}`}
+               id="healthy-life-journey"
             >
                <div
                   className="relative w-full sm:w-96 md:w-110 lg:w-80 xl:w-110 h-72 sm:h-90 md:h-110 lg:h-95 xl:h-110 overflow-hidden rounded-xl mt-4"
@@ -318,7 +322,8 @@ const Home = async () => {
             </section>
 
             <section
-               className={`px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 py-20 ${styles.supafoAI}`}
+               className={`px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 py-20 scroll-mt-24 ${styles.supafoAI}`}
+               id="technology-of-the-future"
             >
                <Image
                   alt="flower"
@@ -366,7 +371,8 @@ const Home = async () => {
             </section>
 
             <section
-               className={styles.supafoDonation}
+               className={`scroll-mt-24 ${styles.supafoDonation}`}
+               id="join-supafo-in-doing-good"
             >
                <h1
                   className="mt-20 text-center px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70"

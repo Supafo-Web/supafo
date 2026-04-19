@@ -1,22 +1,29 @@
-import { getTranslations } from 'next-intl/server'
+import { getLocale, getTranslations } from 'next-intl/server'
 import Image from 'next/image'
 import styles from '@/components/modules/partner.module.scss'
 import Dropdown from '@/components/dropdown/Dropdown'
+import Button from '@/components/button/Button'
 
 const Partner = async () => {
    const t = await getTranslations('Partner')
+   const locale = await getLocale()
+   const modal = await getTranslations('Navbar')
 
    return (
       <main>
          <section className="flex h-dvh">
-            <Image
-               alt="partner-portal"
-               src="/partner/PartnerPortal.svg"
-               width={650}
-               height={950}
-               priority
-               className={`h-full w-auto hidden lg:flex`}
-            />
+            <video
+               className="hidden lg:flex w-1/2! h-full shrink-0 object-fill"
+               autoPlay
+               muted
+               loop
+               playsInline
+            >
+               <source
+                  src="/videos/partner/PartnerDoor.mp4"
+                  type="video/mp4"
+               />
+            </video>
 
             <div className={`flex-1 flex justify-center items-center relative ${styles.container}`}>
                <div className="flex justify-between items-center absolute top-0 left-0 right-0 px-6 py-2">
@@ -25,13 +32,12 @@ const Partner = async () => {
                      src="/logo/logo.svg"
                      width={80}
                      height={67}
-                     className={`${styles.logoImage}`}
-                     style={{ height: 'auto' }}
+                     className={`${styles.logoImage} h-auto w-20`}
                   />
                   <Dropdown />
                </div>
                <div
-                  className={`flex flex-col items-center ${styles.partnerPortalContainer}`}
+                  className={`flex flex-col max-w-xl items-center ${styles.partnerPortalContainer}`}
                >
                   <Image
                      alt="mission-vision"
@@ -51,6 +57,11 @@ const Partner = async () => {
                         {t('notice')}
                      </small>
                   </div>
+                  <Button
+                     href={`/${locale}`}
+                     text={modal("home")}
+                     className={`mt-8 mb-4 px-16`}
+                  />
                </div>
             </div>
          </section>

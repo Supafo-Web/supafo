@@ -20,29 +20,24 @@ const Hamburger = () => {
       >
          <Button
             type="button"
-            className={`cursor-pointer z-50`}
-            onClick={() => setOpen(!open)}
+            className="cursor-pointer z-50"
+            onClick={() => setOpen((prev) => !prev)}
          >
             {open ? (
-               <button
-                  onClick={() => setOpen(false)}
-                  className={`rounded-full p-1.5 cursor-pointer ${styles.modalCloseButton}`}
-               >
+               <span className={`rounded-full p-1.5 ${styles.modalCloseButton}`}>
                   <Image
                      alt="close"
                      src="/icons/Close.svg"
                      width={30}
                      height={30}
-                     style={{ width: 30, height: 30 }}
                   />
-               </button>
+               </span>
             ) : (
                <Image
                   alt="hamburger"
                   src="/icons/HamburgerMenu.svg"
                   width={36}
                   height={36}
-                  style={{ width: 36, height: 36 }}
                />
             )}
          </Button>
@@ -57,6 +52,7 @@ const Hamburger = () => {
                      href={item.href}
                      text={item.text}
                      navbar
+                     onClick={() => setOpen((prev) => !prev)}
                      className={`${styles.navbarButton} js-close-lang-dropdown`}
                   />
                ))}
