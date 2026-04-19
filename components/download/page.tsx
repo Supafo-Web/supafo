@@ -1,9 +1,8 @@
 'use client'
 
-import { useEffect } from "react"
 import styles from '@/components/modules/download.module.scss'
 import Image from "next/image"
-import { appStoreUrl, data, playStoreUrl } from "@/components/store/AppStore"
+import { data } from "@/components/store/AppStore"
 
 interface DownloadType {
    modal?: boolean
@@ -11,23 +10,6 @@ interface DownloadType {
 }
 
 const DownloadApp = ({ modal, footer }: DownloadType) => {
-   useEffect(() => {
-      const ua = navigator.userAgent || navigator.vendor || ''
-
-      const isIOS = /iPhone|iPad|iPod/i.test(ua)
-      const isAndroid = /Android/i.test(ua)
-
-      if (isIOS) {
-         window.location.replace(appStoreUrl)
-         return
-      }
-
-      if (isAndroid) {
-         window.location.replace(playStoreUrl)
-         return
-      }
-   }, [])
-
    return (
       <div className={`${modal ? 'flex-col md:flex-row' : ''} ${styles.storeArea}`}>
          {data.map((item, index) => (
