@@ -224,22 +224,6 @@ const Career = async () => {
                      )
                   })}
                </div>
-
-               <div
-                  className="flex flex-col md:flex-row gap-12 md:gap-0 justify-around items-center mt-25"
-               >
-                  <Button
-                     href={`/${locale}/career/staj`}
-                     text={t('button_intern')}
-                     className={`${styles.button} w-full max-w-60`}
-                     textClass={styles.buttonText}
-                  />
-                  <Button
-                     text={t('button_team')}
-                     textClass={styles.buttonText}
-                     className={`${styles.button} w-full max-w-60`}
-                  />
-               </div>
             </div>
 
             <Image

@@ -40,10 +40,14 @@
 .leftFlower3 {
    position: absolute;
    left: 0;
-   top: 90%;
+   top: 91%;
+
+   @include respond-up(md) {
+      top: 87%;
+   }
 
    @include respond-up(lg) {
-      top: 86%;
+      top: 82%;
    }
 }
 
