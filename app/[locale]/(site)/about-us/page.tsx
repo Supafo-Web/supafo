@@ -18,7 +18,7 @@ const AboutUs = async () => {
                src='/images/LeftFlower.svg'
                width={69}
                height={115}
-               className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.leftFlower4}`}
+               className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.leftFlower4} ${styles.swingLeaf}`}
             />
             <div
                className="flex flex-col items-center mb-12.5 gap-3"
@@ -70,7 +70,7 @@ const AboutUs = async () => {
                src='/images/RightFlower.svg'
                width={69}
                height={115}
-               className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.rightFlower4}`}
+               className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.rightFlower4} ${styles.swingLeaf2}`}
             />
          </section>
 
@@ -199,7 +199,7 @@ const AboutUs = async () => {
                src='/images/LeftFlower.svg'
                width={69}
                height={115}
-               className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.leftFlower3}`}
+               className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.leftFlower3} ${styles.swingLeaf}`}
             />
             <div
                className="flex flex-col items-center mb-12.5 gap-3"
@@ -301,7 +301,7 @@ const AboutUs = async () => {
                src='/images/RightFlower.svg'
                width={69}
                height={115}
-               className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.rightFlower3}`}
+               className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.rightFlower3} ${styles.swingLeaf2}`}
             />
          </section>
 
@@ -314,7 +314,7 @@ const AboutUs = async () => {
                src='/images/LeftFlower.svg'
                width={69}
                height={115}
-               className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.leftFlower5}`}
+               className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.leftFlower5} ${styles.swingLeaf}`}
             />
             <div
                className="flex flex-col items-center mb-12.5 gap-3"

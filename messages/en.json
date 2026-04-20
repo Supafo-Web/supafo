@@ -31,7 +31,8 @@
          "what_is_food_waste": "What Is Food Waste?",
          "projects": "Projects",
          "contact": "Contact",
-         "faq": "F.A.Q"
+         "faq": "F.A.Q",
+         "kvkk": "KVKK"
       },
       "footer_link": {
          "terms": "Terms and Conditions",
@@ -130,6 +131,22 @@
       "button_intern": "Start your internship journey",
       "button_team": "Join an inspiring team",
       "apply": "Apply"
+   },
+   "CareerApply": {
+      "full_name": "Full Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "salary": "Salary Expectation",
+      "cover_letter": "Cover Letter",
+      "file_select": "Select File",
+      "file_change": "Change File",
+      "cv_upload": "Upload Your CV",
+      "cv_info": "You must upload a PDF file only. Maximum size: 5MB",
+      "submit": "Apply",
+      "privacy_info": "Your information will be used during the application evaluation process and stored in accordance with our privacy policy.",
+      "submit_error": "Your application could not be submitted. Please try again.",
+      "submit_success": "Your application has been submitted successfully.",
+      "generic_error": "An error occurred. Please try again."
    },
    "NotFound": {
       "description": "The page you are looking for may not exist or may have been removed",

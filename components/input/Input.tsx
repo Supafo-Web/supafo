@@ -2,7 +2,7 @@
 
 import React, { forwardRef } from "react"
 import styles from "@/components/modules/input.module.scss"
-import { Countries } from "@/components/types/Country"
+import { Country } from "@/components/types/Country"
 
 interface InputProps
    extends Omit<
@@ -11,6 +11,7 @@ interface InputProps
    > {
    placeholder?: string
    isCountry?: boolean
+   isCurrency?: boolean
    isOTP?: boolean
    value?: string
    onChangeText?: (text: string) => void
@@ -23,8 +24,10 @@ interface InputProps
    readOnly?: boolean
    isWhite?: boolean
    countryCode?: string
+   currencyCode?: string
    onCountryCodeChange?: (value: string) => void
-   countryOptions?: Countries[]
+   onCurrencyCodeChange?: (value: string) => void
+   countryOptions?: Country[]
 }
 
 const Input = forwardRef<HTMLInputElement | HTMLTextAreaElement, InputProps>(
@@ -32,6 +35,7 @@ const Input = forwardRef<HTMLInputElement | HTMLTextAreaElement, InputProps>(
       {
          placeholder,
          isCountry,
+         isCurrency,
          isOTP,
          disabled,
          value,
@@ -46,7 +50,9 @@ const Input = forwardRef<HTMLInputElement | HTMLTextAreaElement, InputProps>(
          readOnly,
          isWhite,
          countryCode,
+         currencyCode,
          onCountryCodeChange,
+         onCurrencyCodeChange,
          countryOptions = [],
          className,
          ...props
@@ -82,7 +88,7 @@ const Input = forwardRef<HTMLInputElement | HTMLTextAreaElement, InputProps>(
             <div
                className={[
                   styles.root,
-                  isCountry ? styles.countryRoot : "",
+                  (isCountry || isCurrency) ? styles.countryRoot : "",
                ]
                   .filter(Boolean)
                   .join(" ")}
@@ -103,9 +109,33 @@ const Input = forwardRef<HTMLInputElement | HTMLTextAreaElement, InputProps>(
                      {countryOptions.map((country) => (
                         <option
                            key={country.code}
-                           value={country.calling_code}
+                           value={country.phone?.calling_code}
                         >
-                           {country.calling_code}
+                           {country.phone?.calling_code}
+                        </option>
+                     ))}
+                  </select>
+               )}
+
+               {isCurrency && (
+                  <select
+                     value={currencyCode}
+                     onChange={(e) => onCurrencyCodeChange?.(e.target.value)}
+                     className={[
+                        styles.countrySelect,
+                        error ? styles.error : "",
+                     ]
+                        .filter(Boolean)
+                        .join(" ")}
+                     disabled={disabled}
+                     aria-label="Currency code"
+                  >
+                     {countryOptions.map((country) => (
+                        <option
+                           key={country.code}
+                           value={country.currency}
+                        >
+                           {country.currency}
                         </option>
                      ))}
                   </select>

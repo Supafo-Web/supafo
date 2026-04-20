@@ -51,6 +51,46 @@
    }
 }
 
+.swingLeaf {
+   animation: leafSwing 4.2s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+   transform-origin: top center;
+   will-change: transform;
+}
+
+@keyframes leafSwing {
+   0% {
+      transform: translateY(0px) rotate(0deg);
+   }
+
+   50% {
+      transform: translateY(0px) rotate(-24deg);
+   }
+
+   100% {
+      transform: translateY(0px) rotate(0deg);
+   }
+}
+
+.swingLeaf2 {
+   animation: leafSwing 4.2s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+   transform-origin: top center;
+   will-change: transform;
+}
+
+@keyframes leafSwing {
+   0% {
+      transform: translateY(0px) rotate(0deg);
+   }
+
+   50% {
+      transform: translateY(0px) rotate(-24deg);
+   }
+
+   100% {
+      transform: translateY(0px) rotate(0deg);
+   }
+}
+
 .brand {
    color: $primary;
 }
@@ -299,10 +339,7 @@
          line-height: 1.35;
          color: $primary;
          border: 1px solid $primary;
-         border-top-left-radius: 10px;
-         border-bottom-left-radius: 10px;
-         border-right: 0px;
-         margin-right: -20px;
+         border-radius: 10px;
       }
    }
 }

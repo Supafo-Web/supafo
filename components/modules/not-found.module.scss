@@ -25,6 +25,46 @@
    }
 }
 
+.swingLeaf {
+   animation: leafSwing 4.2s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+   transform-origin: top center;
+   will-change: transform;
+}
+
+@keyframes leafSwing {
+   0% {
+      transform: translateY(0px) rotate(0deg);
+   }
+
+   50% {
+      transform: translateY(0px) rotate(-24deg);
+   }
+
+   100% {
+      transform: translateY(0px) rotate(0deg);
+   }
+}
+
+.swingLeaf2 {
+   animation: leafSwing 4.2s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+   transform-origin: top center;
+   will-change: transform;
+}
+
+@keyframes leafSwing {
+   0% {
+      transform: translateY(0px) rotate(0deg);
+   }
+
+   50% {
+      transform: translateY(0px) rotate(-24deg);
+   }
+
+   100% {
+      transform: translateY(0px) rotate(0deg);
+   }
+}
+
 .title {
    font-family: $fontFamily;
    font-size: clamp(1.9rem, 3.6vw, 3rem);

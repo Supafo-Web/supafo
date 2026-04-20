@@ -31,7 +31,8 @@
          "what_is_food_waste": "Qida İsrafı Nədir?",
          "projects": "Layihələr",
          "contact": "Ünsiyyət",
-         "faq": "Tez-tez verilən suallar"
+         "faq": "Tez-tez verilən suallar",
+         "kvkk": "KVKK"
       },
       "footer_link": {
          "terms": "Şərtlər və Qaydalar",
@@ -130,6 +131,22 @@
       "button_intern": "Staj yoluna başla",
       "button_team": "İlhamverici komandaya qoşul",
       "apply": "Müraciət et"
+   },
+   "CareerApply": {
+      "full_name": "Ad Soyad",
+      "email": "E-poçt",
+      "phone": "Telefon Nömrəsi",
+      "salary": "Maaş Gözləntin",
+      "cover_letter": "Ön Yazı",
+      "file_select": "Fayl Seç",
+      "file_change": "Faylı Dəyiş",
+      "cv_upload": "CV Faylını Yüklə",
+      "cv_info": "Yalnız PDF faylı yükləməlisən. Maksimum ölçü: 5MB",
+      "submit": "Müraciət et",
+      "privacy_info": "Məlumatların müraciətin qiymətləndirilməsi prosesində istifadə olunacaq və məxfilik siyasətimizə uyğun olaraq saxlanılacaq.",
+      "submit_error": "Müraciət göndərilə bilmədi. Yenidən cəhd et.",
+      "submit_success": "Müraciətin uğurla göndərildi.",
+      "generic_error": "Xəta baş verdi. Yenidən cəhd et."
    },
    "NotFound": {
       "description": "Axtardığın səhifə mövcud deyil və ya silinmiş ola bilər",

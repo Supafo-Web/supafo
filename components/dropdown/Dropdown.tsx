@@ -9,9 +9,10 @@ interface DropdownProps {
    image?: ReactNode | boolean
    children?: ReactNode
    navbarText?: string
+   href?: string
 }
 
-const Dropdown = ({ image, children, navbarText }: DropdownProps) => {
+const Dropdown = ({ image, children, navbarText, href }: DropdownProps) => {
    const [open, setOpen] = useState<boolean>(false)
    const dropdownRef = useRef<HTMLDivElement | null>(null)
 
@@ -83,6 +84,7 @@ const Dropdown = ({ image, children, navbarText }: DropdownProps) => {
                onClick={handleOpen}
             >
                <Button
+                  href={href}
                   text={navbarText}
                   navbar
                   className={`${navbarStyles.textButton} js-close-lang-dropdown`}

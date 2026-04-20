@@ -1,12 +1,10 @@
-import { getLocale, getTranslations } from 'next-intl/server'
+import { getTranslations } from 'next-intl/server'
 import styles from '@/components/modules/career.module.scss'
 import Image from 'next/image'
-import Button from '@/components/button/Button'
 import OpenPositions from '@/app/[locale]/(site)/career/OpenPositions'
 
 const Career = async () => {
    const t = await getTranslations('Career')
-   const locale = await getLocale()
 
    const whySupafo = [
       { id: 1, icon: '/career/Clock.svg', title: t('why_1'), alt: 'clock' },
@@ -31,7 +29,7 @@ const Career = async () => {
                src="/images/LeftFlower.svg"
                width={69}
                height={115}
-               className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.leftFlower}`}
+               className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.leftFlower} ${styles.swingLeaf}`}
             />
 
             <div
@@ -83,7 +81,7 @@ const Career = async () => {
                src="/images/RightFlower.svg"
                width={69}
                height={115}
-               className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.rightFlower}`}
+               className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.rightFlower} ${styles.swingLeaf2}`}
             />
          </section>
 
@@ -148,7 +146,7 @@ const Career = async () => {
                src="/images/LeftFlower.svg"
                width={69}
                height={115}
-               className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.leftFlower2}`}
+               className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.leftFlower2} ${styles.swingLeaf}`}
             />
 
             <div
@@ -181,7 +179,7 @@ const Career = async () => {
                src="/images/RightFlower.svg"
                width={69}
                height={115}
-               className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.rightFlower2}`}
+               className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.rightFlower2} ${styles.swingLeaf2}`}
             />
          </section>
 
@@ -231,7 +229,7 @@ const Career = async () => {
                src="/images/LeftFlower.svg"
                width={69}
                height={115}
-               className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.leftFlower3}`}
+               className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.leftFlower3} ${styles.swingLeaf}`}
             />
          </section>
       </main>

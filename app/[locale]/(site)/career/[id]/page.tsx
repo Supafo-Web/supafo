@@ -3,7 +3,6 @@ import { OpenPositions } from '@/components/utils/UIType'
 import { notFound } from 'next/navigation'
 import styles from '@/components/modules/career.module.scss'
 import Image from 'next/image'
-import { getTranslations } from 'next-intl/server'
 import { formatPrice } from '@/components/utils/Utils'
 import CareerApplyForm from '@/app/[locale]/(site)/career/[id]/CareerApplyForm'
 
@@ -27,7 +26,6 @@ const getCareerDetailId = async (id: number): Promise<OpenPositions | null> => {
 }
 
 const CareerDetail = async ({ params }: PageProps) => {
-   const t = await getTranslations('Career')
    const { id } = await params
    const jobId = Number(id)
 
@@ -52,7 +50,7 @@ const CareerDetail = async ({ params }: PageProps) => {
                src='/images/LeftFlower.svg'
                width={69}
                height={115}
-               className={`w-full h-auto max-w-12 lg:max-w-17.5 ${styles.leftFlower}`}
+               className={`w-full h-auto max-w-12 lg:max-w-17.5 ${styles.leftFlower} ${styles.swingLeaf}`}
                style={{ height: 'auto' }}
             />
             <div
@@ -133,7 +131,7 @@ const CareerDetail = async ({ params }: PageProps) => {
                src='/images/RightFlower.svg'
                width={69}
                height={115}
-               className={`w-full h-auto max-w-12 lg:max-w-17.5 ${styles.rightFlower}`}
+               className={`w-full h-auto max-w-12 lg:max-w-17.5 ${styles.rightFlower} ${styles.swingLeaf2}`}
                style={{ width: 69, height: 'auto' }}
             />
          </section>

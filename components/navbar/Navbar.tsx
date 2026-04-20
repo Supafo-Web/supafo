@@ -24,7 +24,7 @@ const Navbar = async () => {
             className="hidden md:flex items-center justify-between"
          >
             <Button
-               href={`/${locale}`}
+               href={`/${locale}/`}
                className={`js-close-lang-dropdown`}
             >
                <Image
@@ -43,6 +43,7 @@ const Navbar = async () => {
                   if (item.submenu?.length) {
                      return (
                         <Dropdown
+                           href={item.href}
                            key={item.id || index}
                            navbarText={item.text}
                         >

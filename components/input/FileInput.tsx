@@ -2,6 +2,7 @@
 
 import React, { forwardRef } from "react"
 import styles from "@/components/modules/input.module.scss"
+import Image from "next/image"
 
 interface FileInputProps
    extends Omit<React.InputHTMLAttributes<HTMLInputElement>, "type" | "onChange"> {
@@ -77,8 +78,16 @@ const FileInput = forwardRef<HTMLInputElement, FileInputProps>(
                   </span>
                </div>
 
-               <span className={styles.fileInputIcon}>
-                  📄
+               <span
+                  className={styles.fileInputIcon}
+               >
+                  <Image
+                     alt='file-upload'
+                     src='/career/UploadFile.svg'
+                     width={24}
+                     height={24}
+                     style={{ width: 24, height: 24 }}
+                  />
                </span>
             </label>
 

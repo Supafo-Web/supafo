@@ -100,7 +100,7 @@ const Home = async () => {
                   src="/images/LeftFlower.svg"
                   width={69}
                   height={115}
-                  className={`w-10 sm:w-12 lg:w-17.25 h-auto ${styles.leftFlower}`}
+                  className={`w-10 sm:w-12 lg:w-17.25 h-auto ${styles.leftFlower} ${styles.swingLeaf}`}
                />
 
                <div
@@ -147,7 +147,7 @@ const Home = async () => {
                   src="/images/RightFlower.svg"
                   width={69}
                   height={115}
-                  className={`w-10 sm:w-12 lg:w-17.25 h-auto ${styles.rightFlower}`}
+                  className={`w-10 sm:w-12 lg:w-17.25 h-auto ${styles.rightFlower} ${styles.swingLeaf2}`}
                />
             </section>
 
@@ -184,7 +184,7 @@ const Home = async () => {
                   src="/images/RightFlower.svg"
                   width={69}
                   height={115}
-                  className={`w-10 sm:w-12 lg:w-17.25 h-auto ${styles.rightFlower2}`}
+                  className={`w-10 sm:w-12 lg:w-17.25 h-auto ${styles.rightFlower2} ${styles.swingLeaf2}`}
                />
 
                <h1
@@ -274,7 +274,7 @@ const Home = async () => {
                   src="/images/LeftFlower.svg"
                   width={69}
                   height={115}
-                  className={`w-10 sm:w-12 lg:w-17.25 h-auto ${styles.leftFlower2}`}
+                  className={`w-10 sm:w-12 lg:w-17.25 h-auto ${styles.leftFlower2} ${styles.swingLeaf}`}
                />
             </section>
 
@@ -330,7 +330,7 @@ const Home = async () => {
                   src="/images/RightFlower.svg"
                   width={69}
                   height={115}
-                  className={`w-10 sm:w-12 lg:w-17.25 h-auto ${styles.rightFlower3}`}
+                  className={`w-10 sm:w-12 lg:w-17.25 h-auto ${styles.rightFlower3} ${styles.swingLeaf2}`}
                />
 
                <div
@@ -366,7 +366,7 @@ const Home = async () => {
                   src="/images/LeftFlower.svg"
                   width={69}
                   height={115}
-                  className={`w-10 sm:w-12 lg:w-17.25 h-auto ${styles.leftFlower3}`}
+                  className={`w-10 sm:w-12 lg:w-17.25 h-auto ${styles.leftFlower3} ${styles.swingLeaf}`}
                />
             </section>
 
@@ -448,7 +448,7 @@ const Home = async () => {
                   src="/images/RightFlower.svg"
                   width={69}
                   height={115}
-                  className={`w-10 sm:w-12 lg:w-17.25 h-auto ${styles.rightFlower4}`}
+                  className={`w-10 sm:w-12 lg:w-17.25 h-auto ${styles.rightFlower4} ${styles.swingLeaf2}`}
                />
 
                <Image
@@ -456,7 +456,7 @@ const Home = async () => {
                   src="/images/LeftFlower.svg"
                   width={69}
                   height={115}
-                  className={`w-10 sm:w-12 lg:w-17.25 h-auto ${styles.leftFlower4}`}
+                  className={`w-10 sm:w-12 lg:w-17.25 h-auto ${styles.leftFlower4} ${styles.swingLeaf}`}
                />
             </section>
          </main>

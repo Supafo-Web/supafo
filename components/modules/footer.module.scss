@@ -10,7 +10,7 @@
 
    .footerHeaderLinks {
       display: flex;
-      gap: 8px;
+      gap: 12px;
       flex-wrap: wrap;
 
       @include respond-down(md) {
@@ -21,6 +21,8 @@
       .footerButtons {
          padding: clamp(6px, 0.8vw, 8px) clamp(12px, 1.4vw, 15px);
          border-radius: 15px;
+         font-family: $fontFamily;
+         font-weight: $semiBold;
          transition:
             background-color 0.75s ease,
             transform 0.75s ease,
@@ -55,4 +57,5 @@
    line-height: 1.5;
    color: white;
    text-align: center;
+   font-weight: $medium;
 }

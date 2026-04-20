@@ -31,7 +31,8 @@
          "what_is_food_waste": "Gıda İsrafı Nedir?",
          "projects": "Projeler",
          "contact": "İletişim",
-         "faq": "S.S.S"
+         "faq": "S.S.S",
+         "kvkk": "KVKK"
       },
       "footer_link": {
          "terms": "Şartlar ve Koşullar",
@@ -130,6 +131,22 @@
       "button_intern": "Staj macerana başla",
       "button_team": "İlham veren ekibe katıl",
       "apply": "Başvur"
+   },
+   "CareerApply": {
+      "full_name": "Ad Soyad",
+      "email": "Email",
+      "phone": "Telefon Numarası",
+      "salary": "Maaş Beklentin",
+      "cover_letter": "Ön Yazı",
+      "file_select": "Dosya Seç",
+      "file_change": "Dosyayı Değiştir",
+      "cv_upload": "CV Dosyanı Yükle",
+      "cv_info": "Sadece PDF dosya yüklemelisin. Maksimum boyut: 5MB",
+      "submit": "Başvur",
+      "privacy_info": "Bilgilerin başvuru değerlendirme sürecinde kullanılacak ve gizlilik politikamız çerçevesinde saklanacaktır.",
+      "submit_error": "Başvuru gönderilemedi. Tekrar dene.",
+      "submit_success": "Başvurun başarıyla gönderildi.",
+      "generic_error": "Bir hata oluştu. Tekrar dene."
    },
    "NotFound": {
       "description": "Aradığın sayfa mevcut değil veya kaldırılmış olabilir",

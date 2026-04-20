@@ -20,7 +20,7 @@ export default function AppInitializer() {
 
             const countriesResponse = await getCountries()
             if (countriesResponse) {
-               setCountries(countriesResponse?.result)
+               setCountries(countriesResponse?.countries)
             }
          } catch (error) {
             if (process.env.NODE_ENV === 'development') {

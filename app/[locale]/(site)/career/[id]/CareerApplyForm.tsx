@@ -6,8 +6,8 @@ import Input from '@/components/input/Input'
 import styles from '@/components/modules/career.module.scss'
 import { setCareerApply } from '@/components/services/Api'
 import { useUI } from '@/components/services/contexts/UIContexts'
-import axios from 'axios'
 import { useState } from 'react'
+import { useTranslations } from 'use-intl'
 
 export interface CareerForm {
    job_id?: string
@@ -18,6 +18,7 @@ export interface CareerForm {
    salary: string
    cv: File | null
    cover_letter: string
+   currency: string
 }
 
 interface CareerId {
@@ -33,11 +34,13 @@ const CareerApplyForm = ({ id }: CareerId) => {
       salary: '',
       cv: null,
       cover_letter: "",
+      currency: 'TRY'
    })
 
    const [error, setError] = useState<string | null>(null)
    const [success, setSuccess] = useState<string | null>(null)
    const { countries } = useUI()
+   const t = useTranslations('CareerApply')
 
    const handleChange = (field: keyof typeof form, value: string) => {
       setForm((prev) => ({
@@ -80,18 +83,19 @@ const CareerApplyForm = ({ id }: CareerId) => {
          const response = await setCareerApply(formData)
 
          if (!response) {
-            setError("Başvuru gönderilemedi. Tekrar dene.")
+            setError(t('submit_error'))
          }
 
-         setSuccess("Başvurun başarıyla gönderildi.")
+         setSuccess(t('submit_success'))
          setForm({
             full_name: "",
             email: "",
-            country_code: '',
+            country_code: '+90',
             phone: "",
             salary: '',
             cv: null,
             cover_letter: "",
+            currency: 'TRY'
          })
       } catch (err: any) {
          console.error('career apply error:', err)
@@ -108,7 +112,7 @@ const CareerApplyForm = ({ id }: CareerId) => {
             return
          }
 
-         setError(message || 'Bir hata oluştu. Tekrar dene.')
+         setError(message || t('generic_error'))
       }
    }
 
@@ -120,21 +124,21 @@ const CareerApplyForm = ({ id }: CareerId) => {
          <div className="flex flex-col gap-8">
             <Input
                type='text'
-               placeholder='Ad Soyad'
+               placeholder={t('full_name')}
                value={form.full_name}
                onChangeText={text => handleChange('full_name', text)}
             />
 
             <Input
                type='email'
-               placeholder='Email'
+               placeholder={t('email')}
                value={form.email}
                onChangeText={text => handleChange('email', text)}
             />
 
             <Input
                type="tel"
-               placeholder="Telefon Numarası"
+               placeholder={t('phone')}
                isCountry
                countryOptions={countries}
                countryCode={form.country_code}
@@ -154,16 +158,30 @@ const CareerApplyForm = ({ id }: CareerId) => {
             />
 
             <Input
-               type='number'
-               placeholder='Maaş Beklentin'
+               type="number"
+               placeholder={t('salary')}
+               isCurrency
+               countryOptions={countries}
+               currencyCode={form.currency}
+               onCurrencyCodeChange={(value) =>
+                  setForm((prev) => ({
+                     ...prev,
+                     currency: value,
+                  }))
+               }
                value={form.salary}
-               onChangeText={text => handleChange('salary', text)}
+               onChangeText={(text) =>
+                  setForm((prev) => ({
+                     ...prev,
+                     salary: text,
+                  }))
+               }
             />
 
             <FileInput
-               buttonText='Dosya Seç'
-               placeholder='CV Dosyanı Yükle'
-               buttonActiveText='Dosyayı Değiştir'
+               buttonText={t('file_select')}
+               placeholder={t('cv_upload')}
+               buttonActiveText={t('file_change')}
                accept="application/pdf"
                fileName={form.cv?.name}
                onFileChange={(file) =>
@@ -172,11 +190,11 @@ const CareerApplyForm = ({ id }: CareerId) => {
                      cv: file,
                   }))
                }
-               subText='Sadece PDF dosya yüklemelisin.'
+               subText={t('cv_info')}
             />
 
             <Input
-               placeholder="Ön Yazı"
+               placeholder={t('cover_letter')}
                isMultiline
                numberOfLines={6}
                value={form.cover_letter}
@@ -201,12 +219,12 @@ const CareerApplyForm = ({ id }: CareerId) => {
          <div className="flex flex-col mt-30">
             <Button
                type='submit'
-               text='Başvur'
+               text={t('submit')}
             />
             <p
                className={`${styles.smallInfoText}`}
             >
-               Bilgilerin başvuru değerlendirme sürecinde kullanılacak ve gizlilik politikamız çerçevesinde saklanacaktır.
+               {t('privacy_info')}
             </p>
          </div>
       </form>

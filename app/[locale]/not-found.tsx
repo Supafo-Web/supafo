@@ -18,7 +18,7 @@ const NotFoundPage = async () => {
             src="/images/LeftFlower.svg"
             width={69}
             height={115}
-            className={`w-full h-auto max-w-12 lg:max-w-17.5 ${styles.leftFlower}`}
+            className={`w-full h-auto max-w-12 lg:max-w-17.5 ${styles.leftFlower} ${styles.swingLeaf}`}
             style={{ height: 'auto' }}
          />
 
@@ -39,7 +39,7 @@ const NotFoundPage = async () => {
             src='/images/RightFlower.svg'
             width={69}
             height={115}
-            className={`w-full h-auto max-w-12 lg:max-w-17.5 ${styles.rightFlower}`}
+            className={`w-full h-auto max-w-12 lg:max-w-17.5 ${styles.rightFlower} ${styles.swingLeaf2}`}
 
             style={{ width: 69, height: 115 }}
          />

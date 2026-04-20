@@ -13,7 +13,7 @@ const Partner = async () => {
       <main>
          <section className="flex h-dvh">
             <video
-               className="hidden lg:flex w-1/2! h-full shrink-0 object-fill"
+               className="hidden lg:flex w-[40%]! h-full shrink-0 object-fill"
                autoPlay
                muted
                loop
@@ -27,13 +27,17 @@ const Partner = async () => {
 
             <div className={`flex-1 flex justify-center items-center relative ${styles.container}`}>
                <div className="flex justify-between items-center absolute top-0 left-0 right-0 px-6 py-2">
-                  <Image
-                     alt="logo"
-                     src="/logo/logo.svg"
-                     width={80}
-                     height={67}
-                     className={`${styles.logoImage} h-auto w-20`}
-                  />
+                  <Button
+                     href={`/${locale}/`}
+                  >
+                     <Image
+                        alt="logo"
+                        src="/logo/logo.svg"
+                        width={80}
+                        height={67}
+                        className={`${styles.logoImage} h-auto w-20`}
+                     />
+                  </Button>
                   <Dropdown />
                </div>
                <div

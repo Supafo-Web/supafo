@@ -30,13 +30,18 @@ const Footer = async () => {
       },
       {
          id: 2,
+         title: t('header_link.faq'),
+         link: `/${locale}#faq`
+      },
+      {
+         id: 3,
          title: t('header_link.contact'),
          link: `/${locale}/contact`
       },
       {
-         id: 3,
-         title: t('header_link.faq'),
-         link: `/${locale}#faq`
+         id: 4,
+         title: t('header_link.kvkk'),
+         link: `/${locale}/kvkk`
       },
    ]
 
@@ -63,7 +68,7 @@ const Footer = async () => {
          className={`container-fluid ${styles.footerContainer}`}
       >
          <div
-            className={`flex flex-col items-center gap-7.5 mb-7.5 ${styles.footerHeader}`}
+            className={`flex flex-col items-center gap-5 mb-7.5 ${styles.footerHeader}`}
          >
             <div
                className={styles.footerHeaderLinks}
@@ -80,7 +85,7 @@ const Footer = async () => {
             </div>
             <div className={styles.footerHeaderLinks}>
                {headerRightLink.map((item, index) => {
-                  const isFaq = item.id === 3
+                  const isFaq = item.id === 2
 
                   if (isFaq) {
                      return (
