@@ -183,25 +183,25 @@ const Navbar = async () => {
                   <Button
                      href={`/${locale}/partner`}
                      className="
-        group
-        absolute
-        left-0
-        top-0
-        z-20
-        flex
-        h-12.5
-        w-12.5
-        hover:w-41.5
-        items-center
-        justify-center
-        overflow-hidden
-        rounded-full
-        bg-white
-        hover:bg-[#578B23]
-        transition-all
-        duration-500
-        ease-in-out
-      "
+                        group
+                        absolute
+                        left-0
+                        top-0
+                        z-20
+                        flex
+                        h-12.5
+                        w-12.5
+                        hover:w-41.5
+                        items-center
+                        justify-center
+                        overflow-hidden
+                        rounded-full
+                        bg-white
+                        hover:bg-[#578B23]
+                        transition-all
+                        duration-500
+                        ease-in-out
+                     "
                   >
                      <div className="relative h-7.5 w-22.5 flex items-center justify-center">
                         <Image
@@ -210,31 +210,31 @@ const Navbar = async () => {
                            width={30}
                            height={30}
                            className="
-            absolute
-            opacity-100
-            scale-100
-            transition-all
-            duration-400
-            ease-in-out
-            group-hover:opacity-0
-            group-hover:scale-75
-          "
+                              absolute
+                              opacity-100
+                              scale-100
+                              transition-all
+                              duration-400
+                              ease-in-out
+                              group-hover:opacity-0
+                              group-hover:scale-75
+                           "
                         />
 
                         <span
                            className="
-            absolute
-            text-white
-            text-sm
-            font-semibold
-            opacity-0
-            scale-95
-            transition-all
-            duration-400
-            ease-in-out
-            group-hover:opacity-100
-            group-hover:scale-100
-          "
+                              absolute
+                              text-white
+                              text-sm
+                              font-semibold
+                              opacity-0
+                              scale-95
+                              transition-all
+                              duration-400
+                              ease-in-out
+                              group-hover:opacity-100
+                              group-hover:scale-100
+                           "
                         >
                            {t("partner")}
                         </span>

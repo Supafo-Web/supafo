@@ -10,7 +10,7 @@ const NotFoundPage = async () => {
 
    return (
       <div
-         className={`flex flex-col min-h-screen justify-center items-center ${styles.notFoundBody} relative`}
+         className={`flex flex-col min-h-screen justify-center items-center overflow-hidden ${styles.notFoundBody} relative`}
       >
          <div className="absolute z-1 -left-5 md:-left-22.5 md:-top-12.5 h-full md:h-200 w-full md:max-w-262.5 rounded-full bg-[#82B74C] blur-[120px] opacity-25" />
          <Image
@@ -24,7 +24,7 @@ const NotFoundPage = async () => {
 
          <NotFoundClient />
          <p
-            className={`${styles.smallText} mt-30 z-30`}
+            className={`${styles.smallText} mt-20 z-30`}
          >
             {t('description')}
          </p>

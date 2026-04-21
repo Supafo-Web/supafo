@@ -6,7 +6,7 @@ import notFound from '@/public/lottie/NotFound.json'
 const NotFoundClient = () => {
    return (
       <div
-         className="w-full md:w-140 h-full bg-white items-center justify-center"
+         className="w-120 h-full bg-white items-center justify-center"
       >
          <Lottie
             animationData={notFound}
