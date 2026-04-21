@@ -1,10 +1,12 @@
-import { getTranslations } from 'next-intl/server'
+import { getLocale, getTranslations } from 'next-intl/server'
 import styles from '@/components/modules/career.module.scss'
 import Image from 'next/image'
 import OpenPositions from '@/app/[locale]/(site)/career/OpenPositions'
+import Button from '@/components/button/Button'
 
 const Career = async () => {
    const t = await getTranslations('Career')
+   const locale = await getLocale()
 
    const whySupafo = [
       { id: 1, icon: '/career/Clock.svg', title: t('why_1'), alt: 'clock' },
@@ -222,6 +224,21 @@ const Career = async () => {
                      )
                   })}
                </div>
+            </div>
+            <div
+               className="flex flex-col md:flex-row gap-12 md:gap-0 justify-around items-center mt-25"
+            >
+               {/* <Button
+                  text={t('button_intern')}
+                  className={`${styles.button} w-full max-w-60`}
+                  textClass={`${styles.buttonText}`}
+               /> */}
+               <Button
+                  href={`/${locale}/career/team`}
+                  text={t('button_team')}
+                  textClass={`${styles.buttonText}`}
+                  className={`${styles.button} w-full max-w-60`}
+               />
             </div>
 
             <Image

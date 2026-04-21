@@ -4,7 +4,7 @@ import Button from '@/components/button/Button'
 import FileInput from '@/components/input/FileInput'
 import Input from '@/components/input/Input'
 import styles from '@/components/modules/career.module.scss'
-import { setCareerApply } from '@/components/services/Api'
+import { setCareerApply, setCareerTeamApply } from '@/components/services/Api'
 import { useUI } from '@/components/services/contexts/UIContexts'
 import { useState } from 'react'
 import { useTranslations } from 'use-intl'
@@ -21,11 +21,12 @@ export interface CareerForm {
    currency: string
 }
 
-interface CareerId {
-   id: number
+interface CareerProps {
+   id?: number
+   team?: boolean
 }
 
-const CareerApplyForm = ({ id }: CareerId) => {
+const CareerApplyForm = ({ id, team }: CareerProps) => {
    const [form, setForm] = useState<CareerForm>({
       full_name: "",
       email: "",
@@ -58,7 +59,10 @@ const CareerApplyForm = ({ id }: CareerId) => {
       try {
          const formData = new FormData()
 
-         formData.append('job_id', String(id))
+         if (!team) {
+            formData.append('job_id', String(id))
+         }
+
          formData.append('full_name', form.full_name.trim())
          formData.append('email', form.email.trim())
          formData.append('country_code', form.country_code.trim())
@@ -76,11 +80,10 @@ const CareerApplyForm = ({ id }: CareerId) => {
             formData.append('cover_letter', form.cover_letter.trim())
          }
 
-         for (const [key, value] of formData.entries()) {
-            console.log(key, value)
-         }
-
-         const response = await setCareerApply(formData)
+         const response =
+            team
+               ? await setCareerTeamApply(formData)
+               : await setCareerApply(formData)
 
          if (!response) {
             setError(t('submit_error'))

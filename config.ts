@@ -33,4 +33,12 @@ export const config = {
       process.env.NEXT_PUBLIC_FILE_URL,
       "NEXT_PUBLIC_FILE_URL"
    ),
+   mapsKey: required(
+      process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
+      "NEXT_PUBLIC_GOOGLE_MAPS_API_KEY"
+   ),
+   mapId: required(
+      process.env.NEXT_PUBLIC_GOOGLE_MAP_ID,
+      "NEXT_PUBLIC_GOOGLE_MAP_ID"
+   ),
 }

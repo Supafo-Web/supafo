@@ -162,5 +162,53 @@
       "subtitle": "Yakında aktif olacak",
       "description": "Partner portalına giriş henüz hazır değil. Yakında tüm partnerlerimiz için kullanıma hazır olacak.",
       "notice": "Otomatik olarak bildirileceksin"
+   },
+   "ContactForm": {
+      "title": "İletişim",
+      "write_us": "Bize Yaz",
+      "send": "Gönder",
+      "full_name": "Ad Soyad",
+      "email": "E-posta",
+      "subject": "Konu",
+      "message": "Mesaj",
+      "submit_error": "Mesaj gönderilemedi. Tekrar dene.",
+      "submit_success": "Mesajın başarıyla gönderildi.",
+      "generic_error": "Bir hata oluştu. Tekrar dene."
+   },
+   "CareerTeam": {
+      "title": "Ekibimize Katıl",
+      "hero_text": "Hayallerini gerçeğe dönüştürmek ve fark yaratmak için aramıza katıl!",
+      "about_team": "Ekibimiz Hakkında",
+      "team_item_1": "Yenilikçi, dinamik ve destekleyici bir çalışma ortamı",
+      "team_item_2": "Farklı alanlarda uzman ekip arkadaşları",
+      "team_item_3": "Sürekli öğrenme ve gelişim fırsatları",
+      "team_item_4": "Açık iletişim ve takım ruhu",
+      "application_form": "Başvuru Formu",
+      "faq": {
+         "q1": "Başvuru süreci nasıl ilerliyor?",
+         "a1": "Başvurun bize ulaştıktan sonra aday havuzumuza eklenir. Profilin mevcut ya da ileride açılabilecek uygun bir pozisyonla eşleşirse seninle iletişime geçilir ve süreç hakkında bilgilendirme yapılır.",
+         "q2": "Uzaktan çalışma imkanı var mı?",
+         "a2": "Evet. Supafo esnek çalışma saatleri uygular. Bazı pozisyonlarda tam uzaktan, diğerlerinde ise hibrit (ofis/uzaktan) çalışma modeli mevcuttur. Uygun çalışma şekli ilan detaylarında belirtilir.",
+         "q3": "Şu anda açık pozisyon yoksa yine de başvuru yapabilir miyim?",
+         "a3": "Evet, yapabilirsin. Başvurun, ileride açılabilecek uygun pozisyonlar için değerlendirilmek üzere sistemimizde saklanabilir.",
+         "q4": "CV’m ne kadar süre saklanıyor?",
+         "a4": "Paylaştığın CV ve başvuru bilgileri, gelecekte oluşabilecek uygun pozisyonlarda değerlendirme yapılabilmesi için belirli bir süre boyunca güvenli şekilde saklanabilir.",
+         "q5": "Başvuru yaptıktan sonra ne zaman dönüş alırım?",
+         "a5": "Tüm başvurular dikkatle incelenir. Başvurun mevcut ya da ileride açılacak bir pozisyonla uyumlu bulunursa seninle iletişime geçilir.",
+         "q6": "Başvuru bilgilerim güvende mi?",
+         "a6": "Evet. Paylaştığın bilgiler, gizlilik ve kişisel verilerin korunmasına ilişkin kurallara uygun şekilde saklanır ve yalnızca işe alım süreçlerinde değerlendirilir.",
+         "q7": "Daha önce gönderdiğim başvuruyu güncelleyebilir miyim?",
+         "a7": "Bilgilerinde veya deneyimlerinde güncelleme olduysa, yeni CV’ni ya da güncel bilgilerini bizimle paylaşabilirsin. Uygun durumlarda başvurun güncel haliyle yeniden değerlendirilebilir.",
+         "q8": "Aynı anda birden fazla pozisyon için değerlendirilebilir miyim?",
+         "a8": "Evet. Profilin birden fazla pozisyon için uygunsa, farklı roller için de değerlendirmeye alınabilirsin.",
+         "q9": "Olumsuz değerlendirilirsem tekrar başvuru yapabilir miyim?",
+         "a9": "Evet, tekrar başvuru yapabilirsin. Deneyimlerin, yetkinliklerin veya açık pozisyonlar zaman içinde değişebileceği için başvurun ileride yeniden değerlendirilebilir.",
+         "q10": "Hangi pozisyonlar için değerlendirme yapılıyor?",
+         "a10": "Başvurular, Supafo’nun mevcut ve gelecekte oluşabilecek ekip ihtiyaçlarına göre değerlendirilir. Uygunluk; deneyim, yetkinlik ve pozisyon ihtiyacına göre belirlenir.",
+         "q11": "Başvurumdan sonra ek belge veya bilgi istenecek mi?",
+         "a11": "Gerekli görülmesi halinde seninle iletişime geçilerek ek bilgi, belge veya kısa bir ön görüşme talep edilebilir.",
+         "q12": "Başvurumu silmemi veya bilgilerimin kaldırılmasını talep edebilir miyim?",
+         "a12": "Evet. Başvuru bilgilerinle ilgili güncelleme, silme veya bilgi talebinde bulunmak istersen bizimle iletişime geçebilirsin."
+      }
    }
 }

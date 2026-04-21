@@ -1,0 +1,157 @@
+import Image from 'next/image'
+import styles from '@/components/modules/career.module.scss'
+import { getTranslations } from 'next-intl/server'
+import CareerApplyForm from '@/app/[locale]/(site)/career/[id]/CareerApplyForm'
+import FAQ from '@/components/faq/FAQ'
+
+const CareerTeam = async () => {
+   const t = await getTranslations('CareerTeam')
+
+   const faq = [
+      { id: 1, question: t("faq.q1"), answer: t("faq.a1") },
+      { id: 2, question: t("faq.q2"), answer: t("faq.a2") },
+      { id: 3, question: t("faq.q3"), answer: t("faq.a3") },
+      { id: 4, question: t("faq.q4"), answer: t("faq.a4") },
+      { id: 5, question: t("faq.q5"), answer: t("faq.a5") },
+      { id: 6, question: t("faq.q6"), answer: t("faq.a6") },
+      { id: 7, question: t("faq.q7"), answer: t("faq.a7") },
+      { id: 8, question: t("faq.q8"), answer: t("faq.a8") },
+      { id: 9, question: t("faq.q9"), answer: t("faq.a9") },
+      { id: 10, question: t("faq.q10"), answer: t("faq.a10") },
+      { id: 11, question: t("faq.q11"), answer: t("faq.a11") },
+      { id: 12, question: t("faq.q12"), answer: t("faq.a12") }
+   ]
+
+   return (
+      <main>
+         <section
+            className="px-10 sm:px-30 lg:px-40 xl:px-50 2xl:px-80 py-30 relative"
+         >
+            <Image
+               alt="flower"
+               src="/images/LeftFlower.svg"
+               width={69}
+               height={115}
+               className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.leftFlower} ${styles.swingLeaf}`}
+            />
+
+            <div
+               className="flex flex-col items-center mb-12.5 gap-3"
+            >
+               <h1
+                  className={`text-center ${styles.title}`}
+               >
+                  {t('title')}
+               </h1>
+
+               <Image
+                  alt="title-under"
+                  src="/icons/about-us/Title-Under.svg"
+                  width={283}
+                  height={40}
+                  className="w-40 sm:w-52 md:w-60 lg:w-72 h-auto"
+                  sizes="(max-width: 640px) 160px, (max-width: 768px) 208px, (max-width: 1024px) 240px, 288px"
+               />
+            </div>
+
+            <div className="flex flex-col-reverse items-center lg:items-start lg:flex-row gap-12.5 justify-center">
+               <div className="flex flex-col">
+                  <h2>
+                     {t('hero_text')}
+                  </h2>
+                  <div
+                     className="flex flex-col mt-7.5"
+                  >
+                     <p
+                        className={`${styles.articleTitle}`}
+                     >
+                        {t('about_team')}
+                     </p>
+                     <div
+                        className={`ps-8 ${styles.articleSubTitle}`}
+                     >
+                        <li>
+                           {t('team_item_1')}
+                        </li>
+                        <li>
+                           {t('team_item_2')}
+                        </li>
+                        <li>
+                           {t('team_item_3')}
+                        </li>
+                        <li>
+                           {t('team_item_4')}
+                        </li>
+                     </div>
+                  </div>
+               </div>
+               <Image
+                  alt="career-team"
+                  src="/career/team/Team.svg"
+                  width={385}
+                  height={385}
+                  className="w-70 xl:w-56 2xl:w-74 h-auto"
+                  sizes="(max-width: 1280px) 224px, (max-width: 1536px) 296px, 379px"
+               />
+            </div>
+
+            <Image
+               alt="flower"
+               src="/images/RightFlower.svg"
+               width={69}
+               height={115}
+               className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.rightFlower} ${styles.swingLeaf2}`}
+            />
+         </section>
+
+         <section
+            className="px-10 pt-20 pb-40 relative"
+         >
+            <div
+               className="flex flex-col items-center mb-12.5 gap-3"
+            >
+               <h1
+                  className={`text-center ${styles.title}`}
+               >
+                  {t('application_form')}
+               </h1>
+
+               <Image
+                  alt="title-under"
+                  src="/icons/about-us/Title-Under.svg"
+                  width={283}
+                  height={40}
+                  className="w-40 sm:w-52 md:w-60 lg:w-72 h-auto"
+                  sizes="(max-width: 640px) 160px, (max-width: 768px) 208px, (max-width: 1024px) 240px, 288px"
+               />
+            </div>
+
+            <div
+               className="flex flex-col lg:flex-row gap-7.5"
+            >
+               <CareerApplyForm
+                  team
+               />
+
+               <div
+                  className={`w-full px-5 mt-16 lg:mt-0`}
+               >
+                  <FAQ
+                     faq={faq}
+                  />
+               </div>
+            </div>
+
+            <Image
+               alt="flower"
+               src="/images/LeftFlower.svg"
+               width={69}
+               height={115}
+               className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.leftFlower4} ${styles.swingLeaf}`}
+            />
+         </section>
+      </main>
+   )
+}
+
+export default CareerTeam

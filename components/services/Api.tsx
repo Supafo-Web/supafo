@@ -23,3 +23,11 @@ export const getCountries = async () => {
 export const setCareerApply = async (formData: FormData) => {
    return api.post('/career/apply', formData)
 }
+
+export const setCareerTeamApply = async (formData: FormData) => {
+   return api.post('/career/team/apply', formData)
+}
+
+export const setContactForm = async (formData: FormData) => {
+   return api.post('/contact/form', formData)
+}

@@ -51,6 +51,20 @@
    }
 }
 
+.leftFlower4 {
+   position: absolute;
+   left: 0;
+   top: 97%;
+
+   @include respond-up(sm) {
+      top: 96%;
+   }
+
+   @include respond-up(lg) {
+      top: 92%;
+   }
+}
+
 .swingLeaf {
    animation: leafSwing 4.2s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
    transform-origin: top center;
@@ -437,5 +451,28 @@
    .openPositionArea,
    .careerDetailArea {
       border-radius: 22px;
+   }
+}
+
+.articleTitle {
+   font-family: $fontFamily;
+   font-size: clamp(0.95rem, 1.05vw, 1.05rem);
+   font-weight: $semiBold;
+   line-height: 1.6;
+   color: $textColor;
+}
+
+.articleSubTitle {
+   font-family: $fontFamily;
+   font-size: clamp(0.95rem, 1.05vw, 1.05rem);
+   font-weight: $regular;
+   line-height: 1.65;
+   color: $placeholder;
+
+   li {
+      span {
+         font-style: italic;
+         font-weight: $semiBold;
+      }
    }
 }

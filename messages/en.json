@@ -130,7 +130,33 @@
       "intern_3_subtitle": "Change starts with you!",
       "button_intern": "Start your internship journey",
       "button_team": "Join an inspiring team",
-      "apply": "Apply"
+      "apply": "Apply",
+      "faq": {
+         "q1": "How does the application process work?",
+         "a1": "After your application reaches us, it is added to our candidate pool. If your profile matches a suitable current or future position, we will contact you and inform you about the next steps.",
+         "q2": "Is remote work available?",
+         "a2": "Yes. Supafo offers flexible working arrangements. Some positions are fully remote, while others follow a hybrid model (office/remote). The suitable working model is specified in the job details.",
+         "q3": "Can I still apply if there are no open positions right now?",
+         "a3": "Yes, you can. Your application may be kept in our system to be considered for suitable positions that may open in the future.",
+         "q4": "How long is my CV stored?",
+         "a4": "The CV and application information you share may be stored securely for a certain period so that they can be considered for suitable opportunities that may arise in the future.",
+         "q5": "When will I hear back after applying?",
+         "a5": "All applications are reviewed carefully. If your application is found to be suitable for a current or future position, you will be contacted.",
+         "q6": "Is my application information secure?",
+         "a6": "Yes. The information you share is stored in accordance with privacy and personal data protection rules and is used only for recruitment processes.",
+         "q7": "Can I update an application I submitted before?",
+         "a7": "If there has been an update in your information or experience, you can share your new CV or updated details with us. When appropriate, your application may be reassessed with its updated version.",
+         "q8": "Can I be considered for more than one position at the same time?",
+         "a8": "Yes. If your profile is suitable for more than one position, you may also be considered for different roles.",
+         "q9": "Can I apply again if my application is unsuccessful?",
+         "a9": "Yes, you can apply again. Since your experience, skills, or open positions may change over time, your application may be reconsidered in the future.",
+         "q10": "Which positions are applications evaluated for?",
+         "a10": "Applications are evaluated according to Supafo’s current and future team needs. Suitability is determined based on experience, competencies, and the requirements of the position.",
+         "q11": "Will any additional documents or information be requested after my application?",
+         "a11": "If necessary, we may contact you to request additional information, documents, or a short preliminary interview.",
+         "q12": "Can I request that my application be deleted or my information removed?",
+         "a12": "Yes. If you would like to request an update, deletion, or information regarding your application data, you can contact us."
+      }
    },
    "CareerApply": {
       "full_name": "Full Name",
@@ -162,5 +188,27 @@
       "subtitle": "Coming soon",
       "description": "Access to the partner portal is not ready yet. It will soon be available for all our partners.",
       "notice": "You will be notified automatically"
+   },
+   "ContactForm": {
+      "title": "Contact",
+      "write_us": "Write to Us",
+      "send": "Send",
+      "full_name": "Full Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "submit_error": "Your message could not be sent. Please try again.",
+      "submit_success": "Your message has been sent successfully.",
+      "generic_error": "An error occurred. Please try again."
+   },
+   "CareerTeam": {
+      "title": "Join Our Team",
+      "hero_text": "Join us to turn your dreams into reality and make a difference!",
+      "about_team": "About Our Team",
+      "team_item_1": "An innovative, dynamic, and supportive work environment",
+      "team_item_2": "Teammates specialized in different fields",
+      "team_item_3": "Continuous learning and growth opportunities",
+      "team_item_4": "Open communication and team spirit",
+      "application_form": "Application Form"
    }
 }
