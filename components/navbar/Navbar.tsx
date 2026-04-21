@@ -69,6 +69,67 @@ const Navbar = async () => {
             <div
                className={`flex gap-2`}
             >
+               <div className="relative w-12.5 h-12.5 shrink-0">
+                  <Button
+                     href={`/${locale}/partner`}
+                     className="
+                        group
+                        absolute
+                        right-0
+                        top-0
+                        flex
+                        h-12.5
+                        w-12.5
+                        hover:w-35
+                        items-center
+                        justify-center
+                        overflow-hidden
+                        rounded-full
+                        bg-white
+                        hover:bg-[#578B23]
+                        transition-all
+                        duration-500
+                        ease-in-out
+                     "
+                  >
+                     <div className="relative h-7.5 w-22.5 flex items-center justify-center">
+                        <Image
+                           alt="partner-login"
+                           src="/icons/PartnerLogin.svg"
+                           width={30}
+                           height={30}
+                           className="
+                              absolute
+                              opacity-100
+                              scale-100
+                              transition-all
+                              duration-400
+                              ease-in-out
+                              group-hover:opacity-0
+                              group-hover:scale-75
+                           "
+                        />
+
+                        <span
+                           className="
+                              absolute
+                              text-white
+                              text-sm
+                              font-semibold
+                              opacity-0
+                              scale-95
+                              transition-all
+                              duration-400
+                              ease-in-out
+                              group-hover:opacity-100
+                              group-hover:scale-100
+                           "
+                        >
+                           {t("partner")}
+                        </span>
+                     </div>
+                  </Button>
+               </div>
                <NavbarDownloadButton
                   text={t("download_app")}
                   title={modal('download_app_title')}
@@ -117,10 +178,73 @@ const Navbar = async () => {
                />
             </Button>
 
-            <div className="flex gap-4">
+            <div className="flex gap-2 items-center overflow-visible relative">
+               <div className="relative w-12.5 h-12.5 shrink-0 overflow-visible">
+                  <Button
+                     href={`/${locale}/partner`}
+                     className="
+        group
+        absolute
+        left-0
+        top-0
+        z-20
+        flex
+        h-12.5
+        w-12.5
+        hover:w-41.5
+        items-center
+        justify-center
+        overflow-hidden
+        rounded-full
+        bg-white
+        hover:bg-[#578B23]
+        transition-all
+        duration-500
+        ease-in-out
+      "
+                  >
+                     <div className="relative h-7.5 w-22.5 flex items-center justify-center">
+                        <Image
+                           alt="partner-login"
+                           src="/icons/PartnerLogin.svg"
+                           width={30}
+                           height={30}
+                           className="
+            absolute
+            opacity-100
+            scale-100
+            transition-all
+            duration-400
+            ease-in-out
+            group-hover:opacity-0
+            group-hover:scale-75
+          "
+                        />
+
+                        <span
+                           className="
+            absolute
+            text-white
+            text-sm
+            font-semibold
+            opacity-0
+            scale-95
+            transition-all
+            duration-400
+            ease-in-out
+            group-hover:opacity-100
+            group-hover:scale-100
+          "
+                        >
+                           {t("partner")}
+                        </span>
+                     </div>
+                  </Button>
+               </div>
+
                <NavbarDownloadButton
                   text={t("download_app")}
-                  title={modal('download_app_title')}
+                  title={modal("download_app_title")}
                   modal
                   navbar
                />

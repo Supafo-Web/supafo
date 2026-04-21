@@ -94,10 +94,5 @@ export const getNavbarMenu = ({ locale, t }: GetNavbarMenuParams): NavbarMenuIte
          href: `/${locale}/guide`,
          text: t("guide"),
       },
-      {
-         id: 4,
-         href: `/${locale}/partner`,
-         text: t("partner"),
-      },
    ]
 }
