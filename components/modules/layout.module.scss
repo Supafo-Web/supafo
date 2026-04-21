@@ -10,10 +10,10 @@
    position: relative;
    margin-top: 110px;
 
-   @include respond-down(md) {
-      height: calc(100% - 80px);
-      min-height: calc(100% - 80px);
-      max-height: calc(100% - 80px);
-      margin-top: 80px;
+   @include respond-down(lg) {
+      height: calc(100% - 81px);
+      min-height: calc(100% - 81px);
+      max-height: calc(100% - 81px);
+      margin-top: 81px;
    }
 }

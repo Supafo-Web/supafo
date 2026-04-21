@@ -18,10 +18,10 @@ const Navbar = async () => {
 
    return (
       <div
-         className={`container-fluid px-[2%] py-2 fixed top-0 left-0 w-full z-50 ${styles.navbarWrapper}`}
+         className={`container-fluid ps-[2%] pe-[1%] py-2 fixed top-0 left-0 w-full z-50 ${styles.navbarWrapper}`}
       >
          <div
-            className="hidden md:flex items-center justify-between"
+            className="hidden lg:flex items-center justify-between"
          >
             <Button
                href={`/${locale}/`}
@@ -164,7 +164,7 @@ const Navbar = async () => {
 
 
          <div
-            className="flex md:hidden items-center justify-between gap-2"
+            className="flex lg:hidden items-center justify-between"
          >
             <Button
                href={`/${locale}`}
