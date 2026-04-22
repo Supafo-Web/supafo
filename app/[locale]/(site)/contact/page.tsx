@@ -20,7 +20,7 @@ export interface CareerForm {
 
 const Contact = () => {
    const { settings } = useUI()
-   const location = useGoogleMapLocation(settings?.google_maps_url)
+   const location = useGoogleMapLocation(settings?.address)
 
    const [form, setForm] = useState<CareerForm>({
       full_name: "",
@@ -51,7 +51,7 @@ const Contact = () => {
       {
          id: 4,
          icon: '/icons/contact/Location.svg',
-         text: location.address,
+         text: location.displayAddress || location.address,
          alt: 'address'
       },
    ]

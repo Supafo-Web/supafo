@@ -281,21 +281,16 @@
    font-size: clamp(0.95rem, 1vw, 1rem);
    font-weight: $semiBold;
    line-height: 1.2;
-   color: $textColor;
+   color: white;
    transition: color 0.3s ease;
 }
 
 .button {
-   background-color: transparent;
-   border: 1px solid $primary;
+   background-color: $primary;
    transition: all 0.3s ease;
 
    &:hover {
-      background-color: $primary;
-   }
-
-   &:hover span {
-      color: white;
+      background-color: $secondary;
    }
 }
 

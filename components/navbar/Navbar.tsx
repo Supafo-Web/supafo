@@ -94,22 +94,6 @@ const Navbar = async () => {
                      "
                   >
                      <div className="relative h-7.5 w-22.5 flex items-center justify-center">
-                        {/* <Image
-                           alt="partner-login"
-                           src="/icons/PartnerLogin.svg"
-                           width={30}
-                           height={30}
-                           className="
-                              absolute
-                              opacity-100
-                              scale-100
-                              transition-all
-                              duration-400
-                              ease-in-out
-                              group-hover:opacity-0
-                              group-hover:scale-75
-                           "
-                        /> */}
                         <PartnerLoginAnimation />
 
                         <span
@@ -189,22 +173,7 @@ const Navbar = async () => {
                      "
                   >
                      <div className="relative h-7.5 w-22.5 flex items-center justify-center">
-                        <Image
-                           alt="partner-login"
-                           src="/icons/PartnerLogin.svg"
-                           width={30}
-                           height={30}
-                           className="
-                              absolute
-                              opacity-100
-                              scale-100
-                              transition-all
-                              duration-400
-                              ease-in-out
-                              group-hover:opacity-0
-                              group-hover:scale-75
-                           "
-                        />
+                        <PartnerLoginAnimation />
 
                         <span
                            className="

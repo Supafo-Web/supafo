@@ -84,12 +84,13 @@ const Dropdown = ({
                onClick={handleOpen}
             >
                <div
-                  className="relative h-12 w-12 flex items-center"
+                  className="relative h-12 w-12 flex items-center justify-center"
                >
                   {image ? image : language && (
                      <Lottie
                         animationData={open ? LanguageAnimationWhite : LanguageAnimation}
                         loop
+                        className={`w-7.5 h-7.5`}
                      />
                   )}
                </div>
