@@ -23,15 +23,10 @@ const NotFoundPage = async () => {
          />
 
          <NotFoundClient />
-         <p
-            className={`${styles.smallText} mt-20 z-30`}
-         >
-            {t('description')}
-         </p>
          <Button
             href={`/${locale}`}
             text={t('home')}
-            className={`mt-8 ${styles.notFoundButton} z-30`}
+            className={`mt-8 ${styles.notFoundButton} mt-20 z-30`}
             textClass={`${styles.buttonText}`}
          />
          <Image

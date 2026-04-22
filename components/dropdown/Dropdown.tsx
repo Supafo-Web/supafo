@@ -3,16 +3,26 @@
 import Button from "@/components/button/Button"
 import styles from "@/components/modules/dropdown.module.scss"
 import navbarStyles from '@/components/modules/navbar.module.scss'
+import Lottie from "lottie-react"
 import { ReactNode, useEffect, useRef, useState } from "react"
+import LanguageAnimation from "@/public/lottie/Language.json"
+import LanguageAnimationWhite from "@/public/lottie/Language-white.json"
 
 interface DropdownProps {
    image?: ReactNode | boolean
    children?: ReactNode
    navbarText?: string
    href?: string
+   language?: boolean
 }
 
-const Dropdown = ({ image, children, navbarText, href }: DropdownProps) => {
+const Dropdown = ({
+   image,
+   children,
+   navbarText,
+   href,
+   language
+}: DropdownProps) => {
    const [open, setOpen] = useState<boolean>(false)
    const dropdownRef = useRef<HTMLDivElement | null>(null)
 
@@ -65,17 +75,23 @@ const Dropdown = ({ image, children, navbarText, href }: DropdownProps) => {
          ref={dropdownRef}
          className={`relative`}
       >
-         {image ? (
+         {(image || language) ? (
             <button
                type="button"
-               className="group cursor-pointer rounded-full bg-white p-2.5 transition-all duration-300 ease-in-out hover:bg-[#578B23]"
+               className={`group cursor-pointer rounded-full transition-all duration-300 ease-in-out ${open ? "bg-[#578B23]" : "bg-white"
+                  }`}
                onMouseEnter={handleOpen}
                onClick={handleOpen}
             >
                <div
-                  className="relative h-7.5 w-7.5"
+                  className="relative h-12 w-12 flex items-center"
                >
-                  {image}
+                  {image ? image : language && (
+                     <Lottie
+                        animationData={open ? LanguageAnimationWhite : LanguageAnimation}
+                        loop
+                     />
+                  )}
                </div>
             </button>
          ) : (

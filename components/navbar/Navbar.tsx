@@ -8,6 +8,7 @@ import Hamburger from "@/components/navbar/Hamburger"
 import { getNavbarMenu } from "@/components/utils/Navbar"
 import LangSwitch from "@/components/lang/LangSwitch"
 import NavbarSubmenuLinks from "@/components/navbar/NavbarSubmenuLinks"
+import PartnerLoginAnimation from "@/components/navbar/PartnerLoginAnimation"
 
 const Navbar = async () => {
    const t = await getTranslations("Navbar")
@@ -25,14 +26,14 @@ const Navbar = async () => {
          >
             <Button
                href={`/${locale}/`}
-               className={`js-close-lang-dropdown`}
+               className={`js-close-lang-dropdown w-35 flex justify-start`}
             >
                <Image
                   alt="logo"
                   src="/logo/logo.svg"
                   width={94}
                   height={81}
-                  className={`w-23.5 h-auto`}
+                  className={`w-23.5 h-20.25`}
                />
             </Button>
 
@@ -93,7 +94,7 @@ const Navbar = async () => {
                      "
                   >
                      <div className="relative h-7.5 w-22.5 flex items-center justify-center">
-                        <Image
+                        {/* <Image
                            alt="partner-login"
                            src="/icons/PartnerLogin.svg"
                            width={30}
@@ -108,7 +109,8 @@ const Navbar = async () => {
                               group-hover:opacity-0
                               group-hover:scale-75
                            "
-                        />
+                        /> */}
+                        <PartnerLoginAnimation />
 
                         <span
                            className="
@@ -138,24 +140,7 @@ const Navbar = async () => {
                />
 
                <Dropdown
-                  image={
-                     <>
-                        <Image
-                           alt="language"
-                           src="/icons/Language.svg"
-                           width={30}
-                           height={30}
-                           className="absolute inset-0 opacity-100 transition-opacity duration-500 ease-in-out group-hover:opacity-0"
-                        />
-                        <Image
-                           alt="language hover"
-                           src="/icons/Language-white.svg"
-                           width={30}
-                           height={30}
-                           className="absolute inset-0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100"
-                        />
-                     </>
-                  }
+                  language
                >
                   <LangSwitch />
                </Dropdown>
@@ -250,24 +235,7 @@ const Navbar = async () => {
                />
 
                <Dropdown
-                  image={
-                     <>
-                        <Image
-                           alt="language"
-                           src="/icons/Language.svg"
-                           width={30}
-                           height={30}
-                           className="absolute inset-0 opacity-100 transition-opacity duration-500 ease-in-out group-hover:opacity-0"
-                        />
-                        <Image
-                           alt="language hover"
-                           src="/icons/Language-white.svg"
-                           width={30}
-                           height={30}
-                           className="absolute inset-0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100"
-                        />
-                     </>
-                  }
+                  language
                >
                   <LangSwitch />
                </Dropdown>

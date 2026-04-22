@@ -3,12 +3,12 @@
 
 .layout {
    width: 100%;
-   height: calc(100% - 110px);
-   min-height: calc(100% - 110px);
-   max-height: calc(100% - 110px);
+   height: calc(100% - 97px);
+   min-height: calc(100% - 97px);
+   max-height: calc(100% - 97px);
    overflow: hidden;
    position: relative;
-   margin-top: 110px;
+   margin-top: 97px;
 
    @include respond-down(lg) {
       height: calc(100% - 81px);
