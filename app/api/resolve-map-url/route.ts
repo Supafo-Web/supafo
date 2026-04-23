@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server"
 
-const GET = async (req: NextRequest) => {
+export async function GET(req: NextRequest) {
    const url = req.nextUrl.searchParams.get("url")
 
    if (!url) {
@@ -30,5 +30,3 @@ const GET = async (req: NextRequest) => {
       })
    }
 }
-
-export default GET
