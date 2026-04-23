@@ -2,49 +2,71 @@
 @use "../../styles/breakpoints" as *;
 
 .notFoundBody {
+   position: relative;
+   overflow: hidden;
+   min-height: 100vh;
    background-color: white;
+   padding: clamp(24px, 4vw, 48px) clamp(16px, 3vw, 32px);
+   isolation: isolate;
+}
+
+.topLeftGlow,
+.bottomRightGlow {
+   position: absolute;
+   z-index: 0;
+   pointer-events: none;
+   border-radius: 9999px;
+   filter: blur(clamp(70px, 9vw, 140px));
+   opacity: 1;
+}
+
+.topLeftGlow {
+   width: clamp(380px, 72vw, 1100px);
+   height: clamp(380px, 72vw, 1100px);
+   top: clamp(-220px, -16vw, -100px);
+   left: clamp(-220px, -16vw, -100px);
+   background: radial-gradient(circle at 35% 35%,
+         rgba(130, 183, 76, 0.22) 0%,
+         rgba(130, 183, 76, 0.18) 22%,
+         rgba(130, 183, 76, 0.1) 45%,
+         rgba(130, 183, 76, 0.04) 65%,
+         rgba(130, 183, 76, 0) 78%);
+   transform: rotate(-18deg) scaleX(1.15) scaleY(0.95);
+}
+
+.bottomRightGlow {
+   width: clamp(380px, 72vw, 1100px);
+   height: clamp(380px, 72vw, 1100px);
+   right: clamp(-220px, -16vw, -100px);
+   bottom: clamp(-220px, -16vw, -100px);
+   background: radial-gradient(circle at 65% 65%,
+         rgba(130, 183, 76, 0.18) 0%,
+         rgba(130, 183, 76, 0.16) 24%,
+         rgba(130, 183, 76, 0.09) 46%,
+         rgba(130, 183, 76, 0.035) 66%,
+         rgba(130, 183, 76, 0) 80%);
+   transform: rotate(-18deg) scaleX(1.15) scaleY(0.95);
 }
 
 .leftFlower {
    position: absolute;
    left: 0;
-   top: 0px;
-
-   @include respond-up(lg) {
-      top: -5px;
-   }
+   top: 0;
+   z-index: 2;
+   width: clamp(34px, 6vw, 70px);
+   height: auto;
 }
 
 .rightFlower {
    position: absolute;
    right: 0;
-   top: 86%;
-
-   @include respond-up(lg) {
-      top: 86%;
-   }
+   bottom: clamp(18px, 4vw, 48px);
+   z-index: 2;
+   width: clamp(34px, 6vw, 70px);
+   height: auto;
 }
 
-.swingLeaf {
-   animation: leafSwing 4.2s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
-   transform-origin: top center;
-   will-change: transform;
-}
-
-@keyframes leafSwing {
-   0% {
-      transform: translateY(0px) rotate(0deg);
-   }
-
-   50% {
-      transform: translateY(0px) rotate(-24deg);
-   }
-
-   100% {
-      transform: translateY(0px) rotate(0deg);
-   }
-}
-
+.swingLeaf,
 .swingLeaf2 {
    animation: leafSwing 4.2s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
    transform-origin: top center;
@@ -53,15 +75,15 @@
 
 @keyframes leafSwing {
    0% {
-      transform: translateY(0px) rotate(0deg);
+      transform: rotate(0deg);
    }
 
    50% {
-      transform: translateY(0px) rotate(-24deg);
+      transform: rotate(-24deg);
    }
 
    100% {
-      transform: translateY(0px) rotate(0deg);
+      transform: rotate(0deg);
    }
 }
 
@@ -73,29 +95,98 @@
    letter-spacing: -0.02em;
    color: $textColor;
    margin-bottom: 8px;
+   text-align: center;
 }
 
 .smallText {
    font-family: $fontFamily;
-   font-size: clamp(0.9rem, 1vw, 1rem);
+   font-size: clamp(0.9rem, 1.1vw, 1rem);
    line-height: 1.6;
    font-weight: $regular;
    color: $placeholder;
+   text-align: center;
+   max-width: min(90vw, 620px);
+   margin-inline: auto;
 }
 
 .notFoundButton {
+   position: relative;
+   z-index: 3;
    padding: 0 clamp(28px, 4vw, 60px);
    border-radius: 15px;
+   min-height: clamp(44px, 5vw, 56px);
 }
 
 .buttonText {
    font-size: clamp(0.95rem, 1.2vw, 1.125rem) !important;
    line-height: 1.2;
+   white-space: nowrap;
+}
+
+@include respond-down(lg) {
+
+   .topLeftGlow,
+   .bottomRightGlow {
+      width: clamp(300px, 68vw, 720px);
+      height: clamp(300px, 68vw, 720px);
+      filter: blur(110px);
+   }
+
+   .leftFlower,
+   .rightFlower {
+      width: clamp(30px, 5vw, 56px);
+   }
 }
 
 @include respond-down(sm) {
+   .notFoundBody {
+      padding: 24px 16px 32px;
+   }
+
+   .topLeftGlow,
+   .bottomRightGlow {
+      width: 360px;
+      height: 360px;
+      filter: blur(90px);
+   }
+
+   .topLeftGlow {
+      top: -170px;
+      left: -170px;
+   }
+
+   .bottomRightGlow {
+      right: -170px;
+      bottom: -170px;
+   }
+
+   .leftFlower {
+      width: 40px;
+      top: 0;
+      left: 0;
+   }
+
+   .rightFlower {
+      width: 40px;
+      right: 0;
+      bottom: 24px;
+   }
+
+   .title {
+      font-size: clamp(1.6rem, 7vw, 2.1rem);
+      line-height: 1.2;
+   }
+
+   .smallText {
+      font-size: 0.95rem;
+      line-height: 1.55;
+      max-width: 92%;
+   }
+
    .notFoundButton {
       padding: 0 28px;
+      min-height: 46px;
+      border-radius: 12px;
    }
 
    .buttonText {

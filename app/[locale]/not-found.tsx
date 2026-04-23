@@ -12,7 +12,10 @@ const NotFoundPage = async () => {
       <div
          className={`flex flex-col min-h-screen justify-center items-center overflow-hidden ${styles.notFoundBody} relative`}
       >
-         <div className="absolute z-1 -left-5 md:-left-22.5 md:-top-12.5 h-full md:h-200 w-full md:max-w-262.5 rounded-full bg-[#82B74C] blur-[120px] opacity-25" />
+         {/* Yeşil blur gölgeler */}
+         <div className={styles.topLeftGlow} />
+         <div className={styles.bottomRightGlow} />
+
          <Image
             alt="flower"
             src="/images/LeftFlower.svg"
@@ -23,20 +26,20 @@ const NotFoundPage = async () => {
          />
 
          <NotFoundClient />
+
          <Button
             href={`/${locale}`}
             text={t('home')}
             className={`mt-8 ${styles.notFoundButton} mt-20 z-30`}
             textClass={`${styles.buttonText}`}
          />
+
          <Image
-            alt='flower'
-            src='/images/RightFlower.svg'
+            alt="flower"
+            src="/images/RightFlower.svg"
             width={69}
             height={115}
             className={`w-full h-auto max-w-12 lg:max-w-17.5 ${styles.rightFlower} ${styles.swingLeaf2}`}
-
-            style={{ width: 69, height: 115 }}
          />
       </div>
    )

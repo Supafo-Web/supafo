@@ -27,7 +27,7 @@ const getCareerDetailId = async (id: number): Promise<OpenPositions | null> => {
 
 const CareerDetail = async ({ params }: PageProps) => {
    const { id } = await params
-   const jobId = Number(id)
+   const jobId = Number(0)
 
    if (Number.isNaN(jobId)) {
       notFound()
