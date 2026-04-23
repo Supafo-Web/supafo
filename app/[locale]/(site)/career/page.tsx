@@ -212,7 +212,8 @@ const Career = async () => {
                               src={item.icon}
                               width={110}
                               height={110}
-                              className="w-20 sm:w-24 md:w-28 h-auto"
+                              className="w-18 sm:w-20 md:w-24 lg:w-28 h-auto"
+                              sizes="(max-width: 640px) 72px, (max-width: 768px) 80px, (max-width: 1024px) 96px, 112px"
                            />
                            <h5>
                               {item.title}

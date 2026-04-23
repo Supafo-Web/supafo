@@ -159,7 +159,8 @@ const Contact = () => {
                            src={item.icon}
                            width={38}
                            height={38}
-                           className="w-9.5 h-auto"
+                           className="w-7 sm:w-8 md:w-9.5 h-auto shrink-0"
+                           sizes="(max-width: 640px) 28px, (max-width: 768px) 32px, 38px"
                         />
                         <p
                            className={styles.contactText}

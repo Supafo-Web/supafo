@@ -46,15 +46,14 @@ const CareerDetail = async ({ params }: PageProps) => {
             className={`px-5 sm:px-10 md:px-20 2xl:px-30 py-30 relative`}
          >
             <Image
-               alt='flower'
-               src='/images/LeftFlower.svg'
+               alt="flower"
+               src="/images/LeftFlower.svg"
                width={69}
                height={115}
-               className={`w-full h-auto max-w-12 lg:max-w-17.5 ${styles.leftFlower} ${styles.swingLeaf}`}
-               style={{ height: 'auto' }}
+               className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.leftFlower} ${styles.swingLeaf}`}
             />
             <div
-               className="flex flex-col lg:flex-row gap-7.5"
+               className="flex flex-col lg:flex-row items-start gap-7.5"
             >
                <div
                   className={`w-full px-5 py-10 ${styles.careerDetailArea}`}
@@ -84,7 +83,7 @@ const CareerDetail = async ({ params }: PageProps) => {
                            src="/career/Location.svg"
                            width={20}
                            height={20}
-                           style={{ width: 20, height: 20 }}
+                           className="w-4.5 sm:w-5 h-auto shrink-0"
                         />
                         <div
                            className={styles.smallText}
@@ -127,12 +126,11 @@ const CareerDetail = async ({ params }: PageProps) => {
                />
             </div>
             <Image
-               alt='flower'
-               src='/images/RightFlower.svg'
+               alt="flower"
+               src="/images/RightFlower.svg"
                width={69}
                height={115}
-               className={`w-full h-auto max-w-12 lg:max-w-17.5 ${styles.rightFlower} ${styles.swingLeaf2}`}
-               style={{ width: 69, height: 'auto' }}
+               className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.rightFlower} ${styles.swingLeaf2}`}
             />
          </section>
       </main>

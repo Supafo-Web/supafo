@@ -21,25 +21,23 @@ const Navbar = async () => {
       <div
          className={`container-fluid ps-[2%] pe-[1%] py-2 fixed top-0 left-0 w-full z-50 ${styles.navbarWrapper}`}
       >
-         <div
-            className="hidden lg:flex items-center justify-between"
-         >
+         <div className="hidden lg:flex items-center justify-between">
             <Button
                href={`/${locale}/`}
-               className={`js-close-lang-dropdown w-35 flex justify-start`}
+               className="js-close-lang-dropdown w-35 flex justify-start"
             >
                <Image
                   alt="logo"
                   src="/logo/logo.svg"
                   width={94}
                   height={81}
-                  className={`w-23.5 h-20.25`}
+                  priority
+                  className="w-20 lg:w-23.5 h-auto"
+                  sizes="(max-width: 1024px) 80px, 94px"
                />
             </Button>
 
-            <div
-               className={`flex items-center justify-center ${styles.navbarArea}`}
-            >
+            <div className={`flex items-center justify-center ${styles.navbarArea}`}>
                {navbarMenu.map((item, index) => {
                   if (item.submenu?.length) {
                      return (
@@ -48,9 +46,7 @@ const Navbar = async () => {
                            key={item.id || index}
                            navbarText={item.text}
                         >
-                           <NavbarSubmenuLinks
-                              items={item.submenu}
-                           />
+                           <NavbarSubmenuLinks items={item.submenu} />
                         </Dropdown>
                      )
                   }
@@ -67,9 +63,7 @@ const Navbar = async () => {
                })}
             </div>
 
-            <div
-               className={`flex gap-2`}
-            >
+            <div className="flex gap-2">
                <div className="relative w-12.5 h-12.5 shrink-0">
                   <Button
                      href={`/${locale}/partner`}
@@ -116,34 +110,30 @@ const Navbar = async () => {
                      </div>
                   </Button>
                </div>
+
                <NavbarDownloadButton
                   text={t("download_app")}
-                  title={modal('download_app_title')}
+                  title={modal("download_app_title")}
                   modal
                   navbar
                />
 
-               <Dropdown
-                  language
-               >
+               <Dropdown language>
                   <LangSwitch />
                </Dropdown>
             </div>
          </div>
 
-
-         <div
-            className="flex lg:hidden items-center justify-between"
-         >
-            <Button
-               href={`/${locale}`}
-            >
+         <div className="flex lg:hidden items-center justify-between">
+            <Button href={`/${locale}`}>
                <Image
                   alt="logo"
                   src="/logo/logo.svg"
                   width={65}
                   height={56}
-                  className={`w-16.25 h-auto`}
+                  priority
+                  className="w-14 sm:w-16.25 h-auto"
+                  sizes="(max-width: 640px) 56px, 65px"
                />
             </Button>
 
@@ -203,16 +193,12 @@ const Navbar = async () => {
                   navbar
                />
 
-               <Dropdown
-                  language
-               >
+               <Dropdown language>
                   <LangSwitch />
                </Dropdown>
             </div>
 
-            <div
-               className={`flex items-center justify-around ${styles.navbarArea}`}
-            >
+            <div className={`flex items-center justify-around ${styles.navbarArea}`}>
                <Hamburger />
             </div>
          </div>

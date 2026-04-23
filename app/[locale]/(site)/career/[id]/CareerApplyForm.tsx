@@ -120,90 +120,207 @@ const CareerApplyForm = ({ id, team }: CareerProps) => {
    }
 
    return (
-      <form
-         onSubmit={handleSubmit}
-         className={`w-full px-5 py-10 flex flex-col justify-between ${styles.careerDetailArea}`}
-      >
-         <div className="flex flex-col gap-8">
-            <Input
-               type='text'
-               placeholder={t('full_name')}
-               value={form.full_name}
-               onChangeText={text => handleChange('full_name', text)}
-            />
+      !team ? (
+         <form
+            onSubmit={handleSubmit}
+            className={`w-full px-5 py-10 flex flex-col justify-between ${styles.careerDetailArea}`}
+         >
+            <div className="flex flex-col gap-4">
+               <Input
+                  type='text'
+                  placeholder={t('full_name')}
+                  value={form.full_name}
+                  onChangeText={text => handleChange('full_name', text)}
+               />
 
-            <Input
-               type='email'
-               placeholder={t('email')}
-               value={form.email}
-               onChangeText={text => handleChange('email', text)}
-            />
+               <Input
+                  type='email'
+                  placeholder={t('email')}
+                  value={form.email}
+                  onChangeText={text => handleChange('email', text)}
+               />
 
-            <Input
-               type="tel"
-               placeholder={t('phone')}
-               isCountry
-               countryOptions={countries}
-               countryCode={form.country_code}
-               onCountryCodeChange={(value) =>
-                  setForm((prev) => ({
-                     ...prev,
-                     country_code: value,
-                  }))
-               }
-               value={form.phone}
-               onChangeText={(text) =>
-                  setForm((prev) => ({
-                     ...prev,
-                     phone: text,
-                  }))
-               }
-            />
+               <Input
+                  type="tel"
+                  placeholder={t('phone')}
+                  isCountry
+                  countryOptions={countries}
+                  countryCode={form.country_code}
+                  onCountryCodeChange={(value) =>
+                     setForm((prev) => ({
+                        ...prev,
+                        country_code: value,
+                     }))
+                  }
+                  value={form.phone}
+                  onChangeText={(text) =>
+                     setForm((prev) => ({
+                        ...prev,
+                        phone: text,
+                     }))
+                  }
+               />
 
-            <Input
-               type="number"
-               placeholder={t('salary')}
-               isCurrency
-               countryOptions={countries}
-               currencyCode={form.currency}
-               onCurrencyCodeChange={(value) =>
-                  setForm((prev) => ({
-                     ...prev,
-                     currency: value,
-                  }))
-               }
-               value={form.salary}
-               onChangeText={(text) =>
-                  setForm((prev) => ({
-                     ...prev,
-                     salary: text,
-                  }))
-               }
-            />
+               <Input
+                  type="number"
+                  placeholder={t('salary')}
+                  isCurrency
+                  countryOptions={countries}
+                  currencyCode={form.currency}
+                  onCurrencyCodeChange={(value) =>
+                     setForm((prev) => ({
+                        ...prev,
+                        currency: value,
+                     }))
+                  }
+                  value={form.salary}
+                  onChangeText={(text) =>
+                     setForm((prev) => ({
+                        ...prev,
+                        salary: text,
+                     }))
+                  }
+               />
 
-            <FileInput
-               buttonText={t('file_select')}
-               placeholder={t('cv_upload')}
-               buttonActiveText={t('file_change')}
-               accept="application/pdf"
-               fileName={form.cv?.name}
-               onFileChange={(file) =>
-                  setForm((prev) => ({
-                     ...prev,
-                     cv: file,
-                  }))
-               }
-               subText={t('cv_info')}
-            />
+               <FileInput
+                  buttonText={t('file_select')}
+                  placeholder={t('cv_upload')}
+                  buttonActiveText={t('file_change')}
+                  accept="application/pdf"
+                  fileName={form.cv?.name}
+                  onFileChange={(file) =>
+                     setForm((prev) => ({
+                        ...prev,
+                        cv: file,
+                     }))
+                  }
+                  subText={t('cv_info')}
+               />
 
-            <Input
-               placeholder={t('cover_letter')}
-               isMultiline
-               numberOfLines={6}
-               value={form.cover_letter}
-               onChangeText={(text) => handleChange("cover_letter", text)}
-            />
+               <Input
+                  placeholder={t('cover_letter')}
+                  isMultiline
+                  numberOfLines={6}
+                  value={form.cover_letter}
+                  onChangeText={(text) => handleChange("cover_letter", text)}
+               />
 
+               {error && (
+                  <p
+                     className={styles.formError}
+                  >
+                     {error}
+                  </p>
+               )}
+               {success && (
+                  <p
+                     className={styles.formSuccess}
+                  >
+                     {success}
+                  </p>
+               )}
+            </div>
+            <div className="flex flex-col mt-10">
+               <Button
+                  type='submit'
+                  text={t('submit')}
+               />
+               <p
+                  className={`${styles.smallInfoText}`}
+               >
+                  {t('privacy_info')}
+               </p>
+            </div>
+         </form>
+      ) : (
+         <form
+            onSubmit={handleSubmit}
+            className={`w-full 2xl:w-8/12 xl:w-10/12 mx-auto p-6 sm:p-8 md:p-12 lg:p-20 flex flex-col justify-between ${styles.careerDetailArea}`}
+         >
+            <div className="flex flex-col lg:flex-row gap-6 lg:gap-12.5">
+               <div className="flex flex-col w-full justify-between gap-6 lg:gap-0">
+                  <Input
+                     type='text'
+                     placeholder={t('full_name')}
+                     value={form.full_name}
+                     onChangeText={text => handleChange('full_name', text)}
+                  />
+
+                  <Input
+                     type='email'
+                     placeholder={t('email')}
+                     value={form.email}
+                     onChangeText={text => handleChange('email', text)}
+                  />
+
+                  <Input
+                     type="tel"
+                     placeholder={t('phone')}
+                     isCountry
+                     countryOptions={countries}
+                     countryCode={form.country_code}
+                     onCountryCodeChange={(value) =>
+                        setForm((prev) => ({
+                           ...prev,
+                           country_code: value,
+                        }))
+                     }
+                     value={form.phone}
+                     onChangeText={(text) =>
+                        setForm((prev) => ({
+                           ...prev,
+                           phone: text,
+                        }))
+                     }
+                  />
+
+                  <Input
+                     type="number"
+                     placeholder={t('salary')}
+                     isCurrency
+                     countryOptions={countries}
+                     currencyCode={form.currency}
+                     onCurrencyCodeChange={(value) =>
+                        setForm((prev) => ({
+                           ...prev,
+                           currency: value,
+                        }))
+                     }
+                     value={form.salary}
+                     onChangeText={(text) =>
+                        setForm((prev) => ({
+                           ...prev,
+                           salary: text,
+                        }))
+                     }
+                  />
+               </div>
+
+               <div className="flex flex-col w-full justify-between gap-7.5">
+                  <FileInput
+                     buttonText={t('file_select')}
+                     placeholder={t('cv_upload')}
+                     buttonActiveText={t('file_change')}
+                     accept="application/pdf"
+                     fileName={form.cv?.name}
+                     onFileChange={(file) =>
+                        setForm((prev) => ({
+                           ...prev,
+                           cv: file,
+                        }))
+                     }
+                     subText={t('cv_info')}
+                  />
+
+                  <Input
+                     placeholder={t('cover_letter')}
+                     isMultiline
+                     numberOfLines={4}
+                     value={form.cover_letter}
+                     onChangeText={(text) => handleChange("cover_letter", text)}
+                  />
+               </div>
+            </div>
             {error && (
                <p
                   className={styles.formError}
@@ -218,19 +335,21 @@ const CareerApplyForm = ({ id, team }: CareerProps) => {
                   {success}
                </p>
             )}
-         </div>
-         <div className="flex flex-col mt-30">
-            <Button
-               type='submit'
-               text={t('submit')}
-            />
-            <p
-               className={`${styles.smallInfoText}`}
-            >
-               {t('privacy_info')}
-            </p>
-         </div>
-      </form>
+            <div className="flex flex-col mt-15">
+               <Button
+                  type='submit'
+                  text={t('submit')}
+                  className={`py-2`}
+                  textClass={styles.buttonText}
+               />
+               <p
+                  className={`${styles.smallInfoText}`}
+               >
+                  {t('privacy_info')}
+               </p>
+            </div>
+         </form>
+      )
    )
 }
 

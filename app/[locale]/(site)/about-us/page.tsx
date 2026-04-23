@@ -106,7 +106,7 @@ const AboutUs = async () => {
                   width={379}
                   height={398}
                   className="w-40 xl:w-56 2xl:w-74 h-auto"
-                  sizes="(max-width: 1280px) 224px, (max-width: 1536px) 296px, 379px"
+                  sizes="(max-width: 1280px) 160px, (max-width: 1536px) 224px, 296px"
                />
                <div
                   className="flex flex-col gap-10"
@@ -264,7 +264,7 @@ const AboutUs = async () => {
                      width={452}
                      height={494}
                      className="w-64 xl:w-80 2xl:w-113 h-auto"
-                     sizes="(max-width: 1280px) 320px, (max-width: 1536px) 384px, 452px"
+                     sizes="(max-width: 1280px) 256px, (max-width: 1536px) 320px, 452px"
                   />
                </div>
             </div>

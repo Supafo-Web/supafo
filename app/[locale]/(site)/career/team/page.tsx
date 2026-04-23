@@ -54,8 +54,12 @@ const CareerTeam = async () => {
                />
             </div>
 
-            <div className="flex flex-col-reverse items-center lg:items-start lg:flex-row gap-12.5 justify-center">
-               <div className="flex flex-col">
+            <div
+               className="flex flex-col-reverse items-center lg:items-start lg:flex-row gap-12.5 justify-center"
+            >
+               <div
+                  className={`flex flex-col ${styles.headerTitleArea}`}
+               >
                   <h2>
                      {t('hero_text')}
                   </h2>
@@ -90,8 +94,8 @@ const CareerTeam = async () => {
                   src="/career/team/Team.svg"
                   width={385}
                   height={385}
-                  className="w-70 xl:w-56 2xl:w-74 h-auto"
-                  sizes="(max-width: 1280px) 224px, (max-width: 1536px) 296px, 379px"
+                  className="w-52 sm:w-56 lg:w-64 xl:w-70 2xl:w-74 h-auto"
+                  sizes="(max-width: 640px) 208px, (max-width: 1024px) 224px, (max-width: 1280px) 256px, (max-width: 1536px) 280px, 296px"
                />
             </div>
 
@@ -127,28 +131,41 @@ const CareerTeam = async () => {
             </div>
 
             <div
-               className="flex flex-col lg:flex-row gap-7.5"
+               className="flex flex-col gap-7.5"
             >
                <CareerApplyForm
                   team
                />
 
+               <Image
+                  alt="flower"
+                  src="/images/LeftFlower.svg"
+                  width={69}
+                  height={115}
+                  className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.leftFlower4} ${styles.swingLeaf}`}
+               />
+
                <div
-                  className={`w-full px-5 mt-16 lg:mt-0`}
+                  className={`w-full lg:w-8/12 md:w-11/12 mx-auto md:px-5 mt-32 lg:mt-62`}
                >
+                  <h1
+                     className={`text-center ${styles.faqTitle}`}
+                  >
+                     S.S.S
+                  </h1>
                   <FAQ
                      faq={faq}
                   />
                </div>
-            </div>
 
-            <Image
-               alt="flower"
-               src="/images/LeftFlower.svg"
-               width={69}
-               height={115}
-               className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.leftFlower4} ${styles.swingLeaf}`}
-            />
+               <Image
+                  alt="flower"
+                  src="/images/RightFlower.svg"
+                  width={69}
+                  height={115}
+                  className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.rightFlower4} ${styles.swingLeaf2}`}
+               />
+            </div>
          </section>
       </main>
    )

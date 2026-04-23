@@ -35,17 +35,10 @@ const Home = async () => {
 
    return (
       <>
-         <header
-            className={styles.header}
-         >
-            <div
-               className={styles.grid}
-            >
+         <header className={styles.header}>
+            <div className={styles.grid}>
                {media.map((item) => (
-                  <div
-                     key={item.id}
-                     className={styles.card}
-                  >
+                  <div key={item.id} className={styles.card}>
                      {item.type === "video/mp4" ? (
                         <video
                            className={styles.media}
@@ -53,6 +46,7 @@ const Home = async () => {
                            muted
                            loop
                            playsInline
+                           preload={item.id <= 2 ? "auto" : "metadata"}
                         >
                            <source src={item.src} type={item.type} />
                         </video>
@@ -70,20 +64,12 @@ const Home = async () => {
                ))}
             </div>
 
-            <div
-               className={styles.overlay}
-            >
-               <div
-                  className={styles.content}
-               >
-                  <h1
-                     className={styles.title}
-                  >
+            <div className={styles.overlay}>
+               <div className={styles.content}>
+                  <h1 className={styles.title}>
                      {t("hero_title")}
                   </h1>
-                  <p
-                     className={styles.desc}
-                  >
+                  <p className={styles.desc}>
                      {t("hero_desc")}
                   </p>
                </div>
@@ -100,40 +86,33 @@ const Home = async () => {
                   src="/images/LeftFlower.svg"
                   width={69}
                   height={115}
+                  priority
                   className={`w-10 sm:w-12 lg:w-17.25 h-auto ${styles.leftFlower} ${styles.swingLeaf}`}
+                  sizes="(max-width: 640px) 40px, (max-width: 768px) 48px, 69px"
                />
 
-               <div
-                  className="flex flex-col lg:flex-row items-center gap-15"
-               >
+               <div className="flex flex-col lg:flex-row items-center gap-15">
                   <Image
                      alt="what-is-supafo"
                      src="/home/1.svg"
                      width={350}
                      height={335}
+                     priority
                      className="w-56 sm:w-72 md:w-80 lg:w-87.5 xl:w-96 h-auto"
                      sizes="(max-width: 640px) 224px, (max-width: 768px) 288px, (max-width: 1024px) 320px, (max-width: 1280px) 350px, 384px"
                   />
 
-                  <div
-                     className={`gap-12.5 ${styles.hero1}`}
-                  >
-                     <h1
-                        className="text-center lg:text-left"
-                     >
+                  <div className={`gap-12.5 ${styles.hero1}`}>
+                     <h1 className="text-center lg:text-left">
                         {t.rich("what_is_title", {
                            highlight: (chunks) => <span>{chunks}</span>
                         })}
                      </h1>
 
-                     <h6
-                        className="text-center lg:text-left"
-                     >
+                     <h6 className="text-center lg:text-left">
                         {t("what_is_heading")}
 
-                        <p
-                           className="text-center mt-5 lg:text-left"
-                        >
+                        <p className="text-center mt-5 lg:text-left">
                            {t.rich("what_is_desc", {
                               highlight: (chunks) => <span>{chunks}</span>
                            })}
@@ -147,7 +126,9 @@ const Home = async () => {
                   src="/images/RightFlower.svg"
                   width={69}
                   height={115}
+                  priority
                   className={`w-10 sm:w-12 lg:w-17.25 h-auto ${styles.rightFlower} ${styles.swingLeaf2}`}
+                  sizes="(max-width: 640px) 40px, (max-width: 768px) 48px, 69px"
                />
             </section>
 
@@ -167,11 +148,9 @@ const Home = async () => {
                   muted
                   loop
                   playsInline
+                  preload="metadata"
                >
-                  <source
-                     src="/videos/Mockup.mp4"
-                     type="video/mp4"
-                  />
+                  <source src="/videos/Mockup.mp4" type="video/mp4" />
                </video>
             </section>
 
@@ -185,19 +164,16 @@ const Home = async () => {
                   width={69}
                   height={115}
                   className={`w-10 sm:w-12 lg:w-17.25 h-auto ${styles.rightFlower2} ${styles.swingLeaf2}`}
+                  sizes="(max-width: 640px) 40px, (max-width: 768px) 48px, 69px"
                />
 
-               <h1
-                  className="pt-20"
-               >
+               <h1 className="pt-20">
                   {t.rich("bag_title", {
                      highlight: (chunks) => <span>{chunks}</span>
                   })}
                </h1>
 
-               <div
-                  className="mb-30 lg:mb-0 flex flex-col lg:flex-row items-center gap-15 px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 pt-20"
-               >
+               <div className="mb-30 lg:mb-0 flex flex-col lg:flex-row items-center gap-15 px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 pt-20">
                   <Image
                      alt="supafo-bag-1"
                      src="/home/2.svg"
@@ -207,30 +183,20 @@ const Home = async () => {
                      sizes="(max-width: 640px) 208px, (max-width: 768px) 256px, (max-width: 1024px) 288px, (max-width: 1280px) 320px, 305px"
                   />
 
-                  <h6
-                     className="text-center lg:text-left"
-                  >
+                  <h6 className="text-center lg:text-left">
                      {t("bag_heading_1")}
 
-                     <p
-                        className="text-center mt-10 lg:text-left"
-                     >
+                     <p className="text-center mt-10 lg:text-left">
                         {t("bag_desc_1")}
                      </p>
                   </h6>
                </div>
 
-               <div
-                  className="flex flex-col lg:flex-row items-center gap-15 px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 pb-20"
-               >
-                  <h6
-                     className="text-center lg:text-left"
-                  >
+               <div className="flex flex-col lg:flex-row items-center gap-15 px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 pb-20">
+                  <h6 className="text-center lg:text-left">
                      {t("bag_heading_2")}
 
-                     <p
-                        className="text-center mt-10 lg:text-left"
-                     >
+                     <p className="text-center mt-10 lg:text-left">
                         {t("bag_desc_2")}
                      </p>
                   </h6>
@@ -245,20 +211,12 @@ const Home = async () => {
                   />
                </div>
 
-               <div
-                  className="my-20 flex flex-col items-center justify-center px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70"
-               >
-                  <div
-                     className="flex flex-col items-center mb-12"
-                  >
-                     <h6
-                        className="text-center"
-                     >
+               <div className="my-20 flex flex-col items-center justify-center px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70">
+                  <div className="flex flex-col items-center mb-12">
+                     <h6 className="text-center">
                         {t("bag_heading_3")}
                      </h6>
-                     <p
-                        className="text-center mt-3"
-                     >
+                     <p className="text-center mt-3">
                         {t("bag_desc_3")}
                      </p>
                   </div>
@@ -275,6 +233,7 @@ const Home = async () => {
                   width={69}
                   height={115}
                   className={`w-10 sm:w-12 lg:w-17.25 h-auto ${styles.leftFlower2} ${styles.swingLeaf}`}
+                  sizes="(max-width: 640px) 40px, (max-width: 768px) 48px, 69px"
                />
             </section>
 
@@ -282,39 +241,27 @@ const Home = async () => {
                className={`flex flex-col lg:flex-row items-center px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 py-30 scroll-mt-24 ${styles.lifeJourney}`}
                id="healthy-life-journey"
             >
-               <div
-                  className="relative w-full sm:w-96 md:w-110 lg:w-80 xl:w-110 h-72 sm:h-90 md:h-110 lg:h-95 xl:h-110 overflow-hidden rounded-xl mt-4"
-               >
+               <div className="relative w-full sm:w-96 md:w-110 lg:w-80 xl:w-110 h-72 sm:h-90 md:h-110 lg:h-95 xl:h-110 overflow-hidden rounded-xl mt-4">
                   <video
                      autoPlay
                      muted
                      loop
                      playsInline
+                     preload="metadata"
                      className="w-full h-full object-cover"
                   >
-                     <source
-                        src="/videos/Restaurant.mp4"
-                        type="video/mp4"
-                     />
+                     <source src="/videos/Restaurant.mp4" type="video/mp4" />
                   </video>
                </div>
 
-               <div
-                  className={styles.textArea}
-               >
-                  <h1
-                     className="text-center lg:text-left"
-                  >
+               <div className={styles.textArea}>
+                  <h1 className="text-center lg:text-left">
                      {t("journey_title")}
                   </h1>
-                  <h6
-                     className="text-center lg:text-left"
-                  >
+                  <h6 className="text-center lg:text-left">
                      {t("journey_heading")}
 
-                     <p
-                        className="text-center mt-7 lg:text-left"
-                     >
+                     <p className="text-center mt-7 lg:text-left">
                         {t("journey_desc")}
                      </p>
                   </h6>
@@ -331,22 +278,15 @@ const Home = async () => {
                   width={69}
                   height={115}
                   className={`w-10 sm:w-12 lg:w-17.25 h-auto ${styles.rightFlower3} ${styles.swingLeaf2}`}
+                  sizes="(max-width: 640px) 40px, (max-width: 768px) 48px, 69px"
                />
 
-               <div
-                  className="flex flex-col lg:flex-row items-center gap-15"
-               >
-                  <div
-                     className={styles.textArea}
-                  >
-                     <h1
-                        className="text-center lg:text-left"
-                     >
+               <div className="flex flex-col lg:flex-row items-center gap-15">
+                  <div className={styles.textArea}>
+                     <h1 className="text-center lg:text-left">
                         {t("ai_title")}
                      </h1>
-                     <p
-                        className="text-center mt-7 lg:text-left"
-                     >
+                     <p className="text-center mt-7 lg:text-left">
                         {t("ai_desc")}
                      </p>
                   </div>
@@ -367,6 +307,7 @@ const Home = async () => {
                   width={69}
                   height={115}
                   className={`w-10 sm:w-12 lg:w-17.25 h-auto ${styles.leftFlower3} ${styles.swingLeaf}`}
+                  sizes="(max-width: 640px) 40px, (max-width: 768px) 48px, 69px"
                />
             </section>
 
@@ -374,15 +315,11 @@ const Home = async () => {
                className={`scroll-mt-24 ${styles.supafoDonation}`}
                id="join-supafo-in-doing-good"
             >
-               <h1
-                  className="mt-20 text-center px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70"
-               >
+               <h1 className="mt-20 text-center px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70">
                   {t("donation_title")}
                </h1>
 
-               <div
-                  className="mb-30 lg:mb-0 flex flex-col lg:flex-row items-center gap-15 px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 pt-20"
-               >
+               <div className="mb-30 lg:mb-0 flex flex-col lg:flex-row items-center gap-15 px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 pt-20">
                   <Image
                      alt="supafo-donation"
                      src="/home/Donation.svg"
@@ -392,30 +329,20 @@ const Home = async () => {
                      sizes="(max-width: 640px) 224px, (max-width: 768px) 288px, (max-width: 1024px) 320px, (max-width: 1280px) 336px, 320px"
                   />
 
-                  <h6
-                     className="text-center lg:text-left"
-                  >
+                  <h6 className="text-center lg:text-left">
                      {t("donation_heading_1")}
 
-                     <p
-                        className="text-center mt-7 lg:text-left"
-                     >
+                     <p className="text-center mt-7 lg:text-left">
                         {t("donation_desc_1")}
                      </p>
                   </h6>
                </div>
 
-               <div
-                  className="flex flex-col lg:flex-row items-center justify-between gap-15 px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 pb-20"
-               >
-                  <h6
-                     className="text-center lg:text-left"
-                  >
+               <div className="flex flex-col lg:flex-row items-center justify-between gap-15 px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 pb-20">
+                  <h6 className="text-center lg:text-left">
                      {t("donation_heading_2")}
 
-                     <p
-                        className="text-center mt-7 lg:text-left"
-                     >
+                     <p className="text-center mt-7 lg:text-left">
                         {t("donation_desc_2")}
                      </p>
                   </h6>
@@ -439,9 +366,7 @@ const Home = async () => {
                   {t("faq_title")}
                </h1>
 
-               <FAQ
-                  faq={faq}
-               />
+               <FAQ faq={faq} />
 
                <Image
                   alt="flower"
@@ -449,6 +374,7 @@ const Home = async () => {
                   width={69}
                   height={115}
                   className={`w-10 sm:w-12 lg:w-17.25 h-auto ${styles.rightFlower4} ${styles.swingLeaf2}`}
+                  sizes="(max-width: 640px) 40px, (max-width: 768px) 48px, 69px"
                />
 
                <Image
@@ -457,6 +383,7 @@ const Home = async () => {
                   width={69}
                   height={115}
                   className={`w-10 sm:w-12 lg:w-17.25 h-auto ${styles.leftFlower4} ${styles.swingLeaf}`}
+                  sizes="(max-width: 640px) 40px, (max-width: 768px) 48px, 69px"
                />
             </section>
          </main>

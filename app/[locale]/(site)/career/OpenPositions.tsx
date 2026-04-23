@@ -124,7 +124,7 @@ const OpenPositions = () => {
                                     src="/career/Location.svg"
                                     width={20}
                                     height={20}
-                                    style={{ width: 20, height: 20 }}
+                                    className="w-4.5 sm:w-5 h-auto shrink-0"
                                  />
                                  <div
                                     className={styles.smallText}
