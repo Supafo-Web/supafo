@@ -35,7 +35,8 @@ const Partner = async () => {
                         src="/logo/logo.svg"
                         width={80}
                         height={67}
-                        className={`${styles.logoImage} h-auto w-20`}
+                        className={`${styles.logoImage} w-20`}
+                        style={{ height: "auto" }}
                      />
                   </Button>
                   <Dropdown />

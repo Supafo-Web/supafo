@@ -32,8 +32,9 @@ const Navbar = async () => {
                   width={94}
                   height={81}
                   priority
-                  className="w-20 lg:w-23.5 h-auto"
+                  className="w-20 lg:w-23.5"
                   sizes="(max-width: 1024px) 80px, 94px"
+                  style={{ height: "auto" }}
                />
             </Button>
 
@@ -132,8 +133,9 @@ const Navbar = async () => {
                   width={65}
                   height={56}
                   priority
-                  className="w-14 sm:w-16.25 h-auto"
+                  className="w-14 sm:w-16.25"
                   sizes="(max-width: 640px) 56px, 65px"
+                  style={{ height: "auto" }}
                />
             </Button>
 

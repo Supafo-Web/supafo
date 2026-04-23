@@ -31,7 +31,7 @@ const DownloadApp = ({ modal, footer }: DownloadType) => {
                         width={20}
                         height={20}
                         className={styles.iconFront}
-                        style={{ width: 20, height: 20 }}
+                        style={{ height: "auto" }}
                      />
                      <Image
                         alt={`${item.alt} hover`}
@@ -39,7 +39,7 @@ const DownloadApp = ({ modal, footer }: DownloadType) => {
                         width={20}
                         height={20}
                         className={styles.iconBack}
-                        style={{ width: 20, height: 20 }}
+                        style={{ height: "auto" }}
                      />
                   </div>
                </div>
