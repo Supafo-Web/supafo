@@ -5,20 +5,12 @@
    position: absolute;
    left: 0;
    top: -5px;
-
-   @include respond-up(lg) {
-      top: 10px;
-   }
 }
 
 .rightFlower {
    position: absolute;
    right: 0;
    top: 105%;
-
-   @include respond-up(lg) {
-      top: 110%;
-   }
 }
 
 .leftFlower2 {
@@ -27,11 +19,11 @@
    top: -5px;
 
    @include respond-up(md) {
-      top: 25px;
+      top: 5px;
    }
 
    @include respond-up(lg) {
-      top: -15px;
+      top: 30px;
    }
 }
 
@@ -48,18 +40,18 @@
 .leftFlower3 {
    position: absolute;
    left: 0;
-   top: 94%;
+   top: 92%;
 
    @include respond-up(sm) {
-      top: 92%;
+      top: 90%;
    }
 
    @include respond-up(md) {
-      top: 93%;
+      top: 91%;
    }
 
    @include respond-up(lg) {
-      top: 86%;
+      top: 83%;
    }
 }
 
