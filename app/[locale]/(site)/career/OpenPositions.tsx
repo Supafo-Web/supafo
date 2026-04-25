@@ -146,7 +146,7 @@ const OpenPositions = () => {
                                     {keywords.map((keyword, keywordIndex) => (
                                        <p
                                           key={`${item.id || index}-${keyword}-${keywordIndex}`}
-                                          className={`truncate px-2.5 py-1.5 rounded-lg ${styles.keyword}`}
+                                          className={`truncate px-1.5 sm:px-2.5 py-1.5 rounded-lg ${styles.keyword}`}
                                        >
                                           {keyword}
                                        </p>

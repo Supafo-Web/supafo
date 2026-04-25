@@ -112,7 +112,7 @@
 .notFoundButton {
    position: relative;
    z-index: 3;
-   padding: 0 clamp(28px, 4vw, 60px);
+   padding: 0 120px;
    border-radius: 15px;
    min-height: clamp(44px, 5vw, 56px);
 }
@@ -139,9 +139,6 @@
 }
 
 @include respond-down(sm) {
-   .notFoundBody {
-      padding: 24px 16px 32px;
-   }
 
    .topLeftGlow,
    .bottomRightGlow {
@@ -184,7 +181,6 @@
    }
 
    .notFoundButton {
-      padding: 0 28px;
       min-height: 46px;
       border-radius: 12px;
    }

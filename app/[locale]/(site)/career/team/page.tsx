@@ -146,7 +146,7 @@ const CareerTeam = async () => {
                />
 
                <div
-                  className={`w-full lg:w-8/12 md:w-11/12 mx-auto md:px-5 mt-32 lg:mt-62`}
+                  className={`w-full lg:w-8/12 md:w-11/12 mx-auto md:px-5 mt-32`}
                >
                   <h1
                      className={`text-center ${styles.faqTitle}`}

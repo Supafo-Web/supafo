@@ -130,33 +130,7 @@
       "intern_3_subtitle": "Change starts with you!",
       "button_intern": "Start your internship journey",
       "button_team": "Join Our Team",
-      "apply": "Apply",
-      "faq": {
-         "q1": "How does the application process work?",
-         "a1": "After your application reaches us, it is added to our candidate pool. If your profile matches a suitable current or future position, we will contact you and inform you about the next steps.",
-         "q2": "Is remote work available?",
-         "a2": "Yes. Supafo offers flexible working arrangements. Some positions are fully remote, while others follow a hybrid model (office/remote). The suitable working model is specified in the job details.",
-         "q3": "Can I still apply if there are no open positions right now?",
-         "a3": "Yes, you can. Your application may be kept in our system to be considered for suitable positions that may open in the future.",
-         "q4": "How long is my CV stored?",
-         "a4": "The CV and application information you share may be stored securely for a certain period so that they can be considered for suitable opportunities that may arise in the future.",
-         "q5": "When will I hear back after applying?",
-         "a5": "All applications are reviewed carefully. If your application is found to be suitable for a current or future position, you will be contacted.",
-         "q6": "Is my application information secure?",
-         "a6": "Yes. The information you share is stored in accordance with privacy and personal data protection rules and is used only for recruitment processes.",
-         "q7": "Can I update an application I submitted before?",
-         "a7": "If there has been an update in your information or experience, you can share your new CV or updated details with us. When appropriate, your application may be reassessed with its updated version.",
-         "q8": "Can I be considered for more than one position at the same time?",
-         "a8": "Yes. If your profile is suitable for more than one position, you may also be considered for different roles.",
-         "q9": "Can I apply again if my application is unsuccessful?",
-         "a9": "Yes, you can apply again. Since your experience, skills, or open positions may change over time, your application may be reconsidered in the future.",
-         "q10": "Which positions are applications evaluated for?",
-         "a10": "Applications are evaluated according to Supafo’s current and future team needs. Suitability is determined based on experience, competencies, and the requirements of the position.",
-         "q11": "Will any additional documents or information be requested after my application?",
-         "a11": "If necessary, we may contact you to request additional information, documents, or a short preliminary interview.",
-         "q12": "Can I request that my application be deleted or my information removed?",
-         "a12": "Yes. If you would like to request an update, deletion, or information regarding your application data, you can contact us."
-      }
+      "apply": "Apply"
    },
    "CareerApply": {
       "full_name": "Full Name",
@@ -209,6 +183,63 @@
       "team_item_2": "Teammates specialized in different fields",
       "team_item_3": "Continuous learning and growth opportunities",
       "team_item_4": "Open communication and team spirit",
-      "application_form": "Application Form"
+      "application_form": "Application Form",
+      "faq": {
+         "q1": "How does the application process work?",
+         "a1": "After we receive your application, it is added to our candidate pool. If your profile matches a suitable current or future position, we will contact you and provide information about the process.",
+         "q2": "Is remote work available?",
+         "a2": "Yes. Supafo offers flexible working hours. Some positions are fully remote, while others follow a hybrid work model, combining office and remote work. The applicable working model is specified in the job posting details.",
+         "q3": "Can I still apply if there are no open positions right now?",
+         "a3": "Yes, you can. Your application may be stored in our system to be considered for suitable positions that may open in the future.",
+         "q4": "How long is my CV stored?",
+         "a4": "The CV and application information you share may be securely stored for a certain period so that you can be considered for suitable future positions.",
+         "q5": "When will I receive a response after applying?",
+         "a5": "All applications are carefully reviewed. If your application is found suitable for a current or future position, we will contact you.",
+         "q6": "Is my application information secure?",
+         "a6": "Yes. The information you share is stored in accordance with confidentiality and personal data protection rules and is used only for recruitment processes.",
+         "q7": "Can I update an application I submitted earlier?",
+         "a7": "If there have been updates to your information or experience, you can share your new CV or updated details with us. Where appropriate, your application may be reconsidered with the updated information.",
+         "q8": "Can I be considered for more than one position at the same time?",
+         "a8": "Yes. If your profile is suitable for multiple positions, you may also be considered for different roles.",
+         "q9": "Can I apply again if my application is not successful?",
+         "a9": "Yes, you can apply again. Since your experience, skills, or open positions may change over time, your application may be reconsidered in the future.",
+         "q10": "Which positions are applications evaluated for?",
+         "a10": "Applications are evaluated according to Supafo’s current and future team needs. Suitability is determined based on experience, skills, and position requirements.",
+         "q11": "Will additional documents or information be requested after my application?",
+         "a11": "If necessary, we may contact you to request additional information, documents, or a short preliminary interview.",
+         "q12": "Can I request that my application be deleted or my information removed?",
+         "a12": "Yes. If you would like to request an update, deletion, or information regarding your application details, you can contact us."
+      }
+   },
+   "Projects": {
+      "saplings": {
+         "title": "A Sapling for the Future with <brand>Supafo</brand>",
+         "heroSubtitle": "Every Order Is a Breath",
+         "heroParagraph1": "At <brand>Supafo</brand>, we believe that food is not only a need, but also a responsibility. With the Sapling Planting Project we launched with this understanding, we turn every order into a real contribution to nature.",
+         "heroParagraph2": "Thanks to this project, you do not just place an order — you also take a step toward a greener future.",
+         "purposeTitle": "Purpose of the Project",
+         "purposeParagraph": "As our world changes rapidly, protecting nature is becoming more important than ever. As <brand>Supafo</brand>, our goal is to:",
+         "purposeItems": [
+            "Contribute to reducing the carbon footprint",
+            "Support the regeneration of forests",
+            "Encourage more conscious consumption habits"
+         ],
+         "howItWorksTitle": "How Does It Work?",
+         "howItWorksParagraph": "The system is quite simple and effective:",
+         "howItWorksItems": [
+            "Every order placed → supports the planting of 1 sapling",
+            "Every bag purchased → provides an extra contribution of 1 sapling"
+         ],
+         "plantingTitle": "Where Are the Saplings Planted?",
+         "plantingParagraph1": "<brand>Supafo</brand> carries out sapling planting in cooperation with reliable and expert environmental organizations.",
+         "plantingParagraph2": "Our goal is to create the <brand>Supafo</brand> Forest. In this way, your contributions turn into real projects.",
+         "contributionTitle": "Your Contribution",
+         "contributionParagraph": "A small choice can create a big impact.\nWith <brand>Supafo</brand>:",
+         "contributionItems": [
+            "You support the protection of nature",
+            "You adopt a more sustainable lifestyle",
+            "You make your shopping meaningful"
+         ]
+      }
    }
 }

@@ -254,6 +254,10 @@
                      font-weight: $semiBold;
                      line-height: 1.35;
                      color: $primary;
+
+                     @include respond-down(sm) {
+                        font-size: 8px;
+                     }
                   }
 
                   .priceArea {
@@ -451,7 +455,7 @@
 @include respond-down(sm) {
    .carouselSection {
       .embla {
-         padding: 16px 12px;
+         padding: 16px 26px;
 
          .emblaContainer {
             gap: 16px;

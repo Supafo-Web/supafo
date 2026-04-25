@@ -211,3 +211,11 @@
       transform: translateY(0);
    }
 }
+
+.buttonText {
+   font-family: $fontFamily;
+   font-size: clamp(1rem, 1.1vw, 1.125rem);
+   font-weight: $semiBold;
+   line-height: 1.2;
+   color: white;
+}

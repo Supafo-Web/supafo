@@ -148,7 +148,7 @@ const Contact = () => {
                <div className="w-full lg:w-1/2">
                   <Map />
                </div>
-               <div className="flex flex-col gap-5 w-full lg:w-1/2 items-center lg:items-start">
+               <div className="flex flex-col gap-5 w-full lg:w-1/2">
                   {icons.map((item, index) => (
                      <div
                         key={item.id || index}
@@ -208,7 +208,7 @@ const Contact = () => {
             >
                <form
                   onSubmit={handleSubmit}
-                  className={`w-full px-5 py-10 flex flex-col justify-between ${styles.careerDetailArea}`}
+                  className={`w-full 2xl:w-8/12 xl:w-10/12 mx-auto p-6 sm:p-8 md:p-12 lg:p-20 flex flex-col justify-between ${styles.careerDetailArea}`}
                >
                   <div className="flex flex-col lg:flex-row gap-8">
                      <div className="w-full flex flex-col justify-between gap-4">
@@ -260,11 +260,12 @@ const Contact = () => {
                         </p>
                      )}
                   </div>
-                  <div className="flex flex-col mt-10 items-center">
+                  <div className="flex flex-col mt-10">
                      <Button
                         type='submit'
                         text={t('send')}
                         className={`px-12 py-2`}
+                        textClass={`${styles.buttonText}`}
                      />
                   </div>
                </form>

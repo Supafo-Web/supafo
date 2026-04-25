@@ -78,7 +78,7 @@ const Home = async () => {
 
          <main>
             <section
-               className={`px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 py-40 relative scroll-mt-24 ${styles.whatIsSupafo}`}
+               className={`px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 pt-20 relative scroll-mt-24 ${styles.whatIsSupafo}`}
                id="what-is-supafo"
             >
                <Image
@@ -133,7 +133,7 @@ const Home = async () => {
             </section>
 
             <section
-               className={`scroll-mt-24 ${styles.howDoesSupafo}`}
+               className={`scroll-mt-24 pt-20 ${styles.howDoesSupafo}`}
                id="how-does-supafo-work"
             >
                <h1>
@@ -269,7 +269,7 @@ const Home = async () => {
             </section>
 
             <section
-               className={`px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 py-20 scroll-mt-24 ${styles.supafoAI}`}
+               className={`px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 pt-10 scroll-mt-24 ${styles.supafoAI}`}
                id="technology-of-the-future"
             >
                <Image
@@ -312,7 +312,7 @@ const Home = async () => {
             </section>
 
             <section
-               className={`scroll-mt-24 ${styles.supafoDonation}`}
+               className={`scroll-mt-24 pt-10 ${styles.supafoDonation}`}
                id="join-supafo-in-doing-good"
             >
                <h1 className="mt-20 text-center px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70">
@@ -360,7 +360,7 @@ const Home = async () => {
 
             <section
                id="faq"
-               className={`px-10 sm:px-30 lg:px-50 xl:px-70 2xl:px-100 py-20 scroll-mt-24 mb-20 ${styles.faq}`}
+               className={`px-10 sm:px-30 lg:px-50 xl:px-70 2xl:px-100 py-10 scroll-mt-24 mb-20 ${styles.faq}`}
             >
                <h1>
                   {t("faq_title")}

@@ -130,33 +130,7 @@
       "intern_3_subtitle": "Dəyişiklik səndən başlayır!",
       "button_intern": "Staj yoluna başla",
       "button_team": "Komandamıza qoşul",
-      "apply": "Müraciət et",
-      "faq": {
-         "q1": "Müraciət prosesi necə irəliləyir?",
-         "a1": "Müraciətin bizə çatdıqdan sonra namizəd hovuzumuza əlavə olunur. Profilin hazırda mövcud olan və ya gələcəkdə açılacaq uyğun bir vəzifə ilə uyğunlaşarsa, səninlə əlaqə saxlanılır və proses barədə məlumat verilir.",
-         "q2": "Uzaqdan işləmək imkanı varmı?",
-         "a2": "Bəli. Supafo çevik iş rejimi tətbiq edir. Bəzi vəzifələr tam uzaqdan, digərləri isə hibrid (ofis/uzaqdan) model üzrə həyata keçirilir. Uyğun iş forması elan detallarında göstərilir.",
-         "q3": "Hazırda açıq vakansiya yoxdursa, yenə də müraciət edə bilərəm?",
-         "a3": "Bəli, edə bilərsən. Müraciətin gələcəkdə açılacaq uyğun vəzifələr üçün qiymətləndirilmək məqsədilə sistemimizdə saxlanıla bilər.",
-         "q4": "CV-m nə qədər müddət saxlanılır?",
-         "a4": "Paylaşdığın CV və müraciət məlumatları, gələcəkdə yarana biləcək uyğun vəzifələr üçün qiymətləndirmə aparılması məqsədilə müəyyən müddət ərzində təhlükəsiz şəkildə saxlanıla bilər.",
-         "q5": "Müraciət etdikdən sonra nə vaxt geri dönüş alaram?",
-         "a5": "Bütün müraciətlər diqqətlə nəzərdən keçirilir. Müraciətin hazırkı və ya gələcəkdə açılacaq bir vəzifə ilə uyğun hesab olunarsa, səninlə əlaqə saxlanılacaq.",
-         "q6": "Müraciət məlumatlarım güvəndədirmi?",
-         "a6": "Bəli. Paylaşdığın məlumatlar məxfilik və şəxsi məlumatların qorunması qaydalarına uyğun şəkildə saxlanılır və yalnız işə qəbul proseslərində istifadə olunur.",
-         "q7": "Daha əvvəl göndərdiyim müraciəti yeniləyə bilərəmmi?",
-         "a7": "Məlumatlarında və ya təcrübəndə yenilənmə olubsa, yeni CV-ni və ya yenilənmiş məlumatlarını bizimlə paylaşa bilərsən. Uyğun hallarda müraciətin yenilənmiş formada yenidən dəyərləndirilə bilər.",
-         "q8": "Eyni anda bir neçə vəzifə üçün qiymətləndirilə bilərəmmi?",
-         "a8": "Bəli. Profilin bir neçə vəzifə üçün uyğun olarsa, fərqli rollar üçün də qiymətləndirilə bilərsən.",
-         "q9": "Müraciətim mənfi qiymətləndirilərsə, yenidən müraciət edə bilərəmmi?",
-         "a9": "Bəli, yenidən müraciət edə bilərsən. Təcrübən, bacarıqların və ya açıq vəzifələr zamanla dəyişə biləcəyi üçün müraciətin gələcəkdə yenidən qiymətləndirilə bilər.",
-         "q10": "Hansı vəzifələr üçün qiymətləndirmə aparılır?",
-         "a10": "Müraciətlər Supafo-nun hazırkı və gələcək komanda ehtiyaclarına uyğun olaraq qiymətləndirilir. Uyğunluq təcrübə, bacarıq və vəzifə ehtiyacına əsasən müəyyən edilir.",
-         "q11": "Müraciətimdən sonra əlavə sənəd və ya məlumat istəniləcəkmi?",
-         "a11": "Zəruri hesab edildiyi halda səninlə əlaqə saxlanılaraq əlavə məlumat, sənəd və ya qısa ilkin görüş tələb oluna bilər.",
-         "q12": "Müraciətimin silinməsini və ya məlumatlarımın kaldırılmasını tələb edə bilərəmmi?",
-         "a12": "Bəli. Müraciət məlumatlarınla bağlı yeniləmə, silinmə və ya məlumat tələbində bulunmaq istəsən, bizimlə əlaqə saxlaya bilərsən."
-      }
+      "apply": "Müraciət et"
    },
    "CareerApply": {
       "full_name": "Ad Soyad",
@@ -209,6 +183,63 @@
       "team_item_2": "Fərqli sahələrdə ixtisaslaşmış komanda yoldaşları",
       "team_item_3": "Davamlı öyrənmə və inkişaf imkanları",
       "team_item_4": "Açıq ünsiyyət və komanda ruhu",
-      "application_form": "Müraciət Forması"
+      "application_form": "Müraciət Forması",
+      "faq": {
+         "q1": "Müraciət prosesi necə davam edir?",
+         "a1": "Müraciətin bizə çatdıqdan sonra namizəd bazamıza əlavə olunur. Profilin hazırda mövcud olan və ya gələcəkdə açıla biləcək uyğun bir vakansiya ilə uyğunlaşarsa, səninlə əlaqə saxlanılacaq və proses haqqında məlumat veriləcək.",
+         "q2": "Uzaqdan işləmək imkanı varmı?",
+         "a2": "Bəli. Supafo çevik iş saatları tətbiq edir. Bəzi vəzifələrdə tam uzaqdan, digərlərində isə hibrid, yəni ofis və uzaqdan iş modeli mövcuddur. Uyğun iş forması vakansiya məlumatlarında qeyd olunur.",
+         "q3": "Hazırda açıq vakansiya yoxdursa, yenə də müraciət edə bilərəm?",
+         "a3": "Bəli, edə bilərsən. Müraciətin gələcəkdə açıla biləcək uyğun vakansiyalar üçün qiymətləndirilmək məqsədilə sistemimizdə saxlanıla bilər.",
+         "q4": "CV-m nə qədər müddət saxlanılır?",
+         "a4": "Paylaşdığın CV və müraciət məlumatları gələcəkdə yarana biləcək uyğun vəzifələr üzrə qiymətləndirmə aparılması üçün müəyyən müddət ərzində təhlükəsiz şəkildə saxlanıla bilər.",
+         "q5": "Müraciət etdikdən sonra nə vaxt cavab alacağam?",
+         "a5": "Bütün müraciətlər diqqətlə nəzərdən keçirilir. Müraciətin mövcud və ya gələcəkdə açılacaq bir vəzifəyə uyğun hesab olunarsa, səninlə əlaqə saxlanılacaq.",
+         "q6": "Müraciət məlumatlarım təhlükəsizdirmi?",
+         "a6": "Bəli. Paylaşdığın məlumatlar məxfilik və şəxsi məlumatların qorunması qaydalarına uyğun şəkildə saxlanılır və yalnız işə qəbul proseslərində qiymətləndirilir.",
+         "q7": "Əvvəllər göndərdiyim müraciəti yeniləyə bilərəm?",
+         "a7": "Məlumatlarında və ya təcrübəndə yenilik olubsa, yeni CV-ni və ya yenilənmiş məlumatlarını bizimlə paylaşa bilərsən. Uyğun hallarda müraciətin yenilənmiş formada yenidən qiymətləndirilə bilər.",
+         "q8": "Eyni anda birdən çox vəzifə üçün qiymətləndirilə bilərəm?",
+         "a8": "Bəli. Profilin birdən çox vəzifə üçün uyğundursa, fərqli rollar üzrə də qiymətləndirilə bilərsən.",
+         "q9": "Müraciətim mənfi qiymətləndirilərsə, yenidən müraciət edə bilərəm?",
+         "a9": "Bəli, yenidən müraciət edə bilərsən. Təcrübən, bacarıqların və ya açıq vakansiyalar zamanla dəyişə biləcəyi üçün müraciətin gələcəkdə yenidən qiymətləndirilə bilər.",
+         "q10": "Hansı vəzifələr üçün qiymətləndirmə aparılır?",
+         "a10": "Müraciətlər Supafo-nun mövcud və gələcəkdə yarana biləcək komanda ehtiyaclarına əsasən qiymətləndirilir. Uyğunluq təcrübə, bacarıqlar və vəzifə ehtiyaclarına görə müəyyən edilir.",
+         "q11": "Müraciətimdən sonra əlavə sənəd və ya məlumat tələb olunacaqmı?",
+         "a11": "Lazım gələrsə, əlavə məlumat, sənəd və ya qısa ilkin görüş tələb etmək üçün səninlə əlaqə saxlanıla bilər.",
+         "q12": "Müraciətimin silinməsini və ya məlumatlarımın kaldırılmasını tələb edə bilərəm?",
+         "a12": "Bəli. Müraciət məlumatlarınla bağlı yeniləmə, silinmə və ya məlumat tələbin olarsa, bizimlə əlaqə saxlaya bilərsən."
+      }
+   },
+   "Projects": {
+      "saplings": {
+         "title": "<brand>Supafo</brand> ilə Gələcəyə Bir Fidan",
+         "heroSubtitle": "Hər Sifariş Bir Nəfəsdir",
+         "heroParagraph1": "<brand>Supafo</brand> olaraq inanırıq ki, yemək yalnız bir ehtiyac deyil, həm də məsuliyyətdir. Bu anlayışla həyata keçirdiyimiz Fidan Əkmə Layihəsi ilə hər sifarişi təbiətə edilən real töhfəyə çeviririk.",
+         "heroParagraph2": "Bu layihə sayəsində sən sadəcə sifariş vermirsən — eyni zamanda daha yaşıl gələcək üçün bir addım atırsan.",
+         "purposeTitle": "Layihənin Məqsədi",
+         "purposeParagraph": "Dünyamız sürətlə dəyişərkən təbiəti qorumaq hər zamankindən daha vacib hala gəlir. <brand>Supafo</brand> olaraq məqsədimiz:",
+         "purposeItems": [
+            "Karbon izinin azaldılmasına töhfə vermək",
+            "Meşələrin yenidən formalaşmasını dəstəkləmək",
+            "Daha şüurlu istehlak vərdişlərini təşviq etmək"
+         ],
+         "howItWorksTitle": "Necə İşləyir?",
+         "howItWorksParagraph": "Sistem olduqca sadə və effektivdir:",
+         "howItWorksItems": [
+            "Verilən hər sifariş → 1 fidan əkilməsinə dəstək olur",
+            "Alınan hər çanta → əlavə 1 fidan töhfəsi təmin edir"
+         ],
+         "plantingTitle": "Fidanlar Harada Əkilir?",
+         "plantingParagraph1": "<brand>Supafo</brand> fidan əkinlərini etibarlı və bu sahədə ixtisaslaşmış ekoloji təşkilatlarla əməkdaşlıq çərçivəsində həyata keçirir.",
+         "plantingParagraph2": "Məqsədimiz <brand>Supafo</brand> Meşəsi yaratmaqdır. Bu sayədə töhfələrin real layihələrə çevrilir.",
+         "contributionTitle": "Sənin Töhfən",
+         "contributionParagraph": "Kiçik bir seçim böyük təsir yarada bilər.\n<brand>Supafo</brand> ilə:",
+         "contributionItems": [
+            "Təbiətin qorunmasına dəstək olursan",
+            "Daha dayanıqlı həyat tərzini mənimsəyirsən",
+            "Alış-verişini mənalı hala gətirirsən"
+         ]
+      }
    }
 }

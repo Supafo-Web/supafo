@@ -210,5 +210,36 @@
          "q12": "Başvurumu silmemi veya bilgilerimin kaldırılmasını talep edebilir miyim?",
          "a12": "Evet. Başvuru bilgilerinle ilgili güncelleme, silme veya bilgi talebinde bulunmak istersen bizimle iletişime geçebilirsin."
       }
+   },
+   "Projects": {
+      "saplings": {
+         "title": "<brand>Supafo</brand> ile Geleceğe Bir Fidan",
+         "heroSubtitle": "Her Sipariş Bir Nefes",
+         "heroParagraph1": "<brand>Supafo</brand> olarak inanıyoruz ki yemek sadece bir ihtiyaç değil, aynı zamanda sorumluluktur. Bu anlayışla hayata geçirdiğimiz Fidan Dikme Projesi ile her siparişi doğaya yapılan gerçek bir katkıya dönüştürüyoruz.",
+         "heroParagraph2": "Bu proje sayesinde sen sadece bir sipariş vermezsin — aynı zamanda daha yeşil bir gelecek için bir adım atarsın.",
+         "purposeTitle": "Projenin Amacı",
+         "purposeParagraph": "Dünyamız hızla değişirken doğayı korumak her zamankinden daha önemli hale geliyor. <brand>Supafo</brand> olarak amacımız:",
+         "purposeItems": [
+            "Karbon ayak izini azaltmaya katkı sağlamak",
+            "Ormanların yeniden oluşumunu desteklemek",
+            "Daha bilinçli tüketim alışkanlıklarını teşvik etmek"
+         ],
+         "howItWorksTitle": "Nasıl Çalışır?",
+         "howItWorksParagraph": "Sistem oldukça basit ve etkilidir:",
+         "howItWorksItems": [
+            "Verilen her sipariş → 1 fidan dikimine destek olur",
+            "Satın alınan her çanta → ekstra 1 fidan katkısı sağlar"
+         ],
+         "plantingTitle": "Fidanlar Nerede Dikiliyor?",
+         "plantingParagraph1": "<brand>Supafo</brand>, fidan dikimlerini güvenilir ve alanında uzman çevre kuruluşlarıyla iş birliği içinde gerçekleştirir.",
+         "plantingParagraph2": "Amacımız <brand>Supafo</brand> Ormanı oluşturmaktır. Bu sayede katkıların gerçek projelere dönüşür.",
+         "contributionTitle": "Senin Katkın",
+         "contributionParagraph": "Küçük bir seçim, büyük bir etki yaratabilir.\n<brand>Supafo</brand> ile:",
+         "contributionItems": [
+            "Doğanın korunmasına destek olursun",
+            "Daha sürdürülebilir bir yaşam tarzını benimsersin",
+            "Alışverişini anlamlı hale getirirsin"
+         ]
+      }
    }
 }

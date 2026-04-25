@@ -65,6 +65,10 @@
    color: white;
    padding: clamp(16px, 3vw, 24px);
    max-width: 720px;
+
+   @include respond-down(sm) {
+      max-width: 320px;
+   }
 }
 
 .title {
@@ -85,17 +89,17 @@
 .leftFlower {
    position: absolute;
    left: 0;
-   top: 88%;
+   top: 103%;
 
    @include respond-up(lg) {
-      top: 82%;
+      top: 100%;
    }
 }
 
 .rightFlower {
    position: absolute;
    right: 0;
-   top: -10px;
+   top: 0px;
 }
 
 .leftFlower2 {
@@ -111,7 +115,7 @@
 .rightFlower2 {
    position: absolute;
    right: 0;
-   top: -55px;
+   top: -35px;
 
    @include respond-up(lg) {
       top: -60px;
@@ -121,7 +125,7 @@
 .leftFlower3 {
    position: absolute;
    left: 0;
-   top: 96%;
+   top: 105%;
 
    @include respond-up(lg) {
       top: 92%;
@@ -155,7 +159,7 @@
 .rightFlower4 {
    position: absolute;
    right: 0;
-   top: -40px;
+   top: -50px;
 }
 
 .swingLeaf {
