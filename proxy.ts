@@ -145,16 +145,6 @@ function isCareerHost(host: string) {
    return host === "career.supafo.com"
 }
 
-function getLocaleFromPath(pathname: string) {
-   const firstSegment = pathname.split("/")[1]
-
-   if (locales.includes(firstSegment as any)) {
-      return firstSegment
-   }
-
-   return defaultLocale
-}
-
 export default function proxy(request: NextRequest) {
    const { pathname } = request.nextUrl
    const method = request.method
@@ -187,9 +177,8 @@ export default function proxy(request: NextRequest) {
 
    if (isCareerHost(host)) {
       const url = request.nextUrl.clone()
-      const locale = getLocaleFromPath(pathname)
 
-      url.pathname = `/${locale}/career`
+      url.pathname = "/career"
 
       const response = NextResponse.rewrite(url)
       return applySecurityHeaders(response, pathname, nonce)
