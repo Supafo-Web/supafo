@@ -36,7 +36,7 @@ const CareerTeam = async () => {
             />
 
             <div
-               className="flex flex-col items-center mb-12.5 gap-3"
+               className="flex flex-col items-center mb-12.5 gap-0 lg:gap-3"
             >
                <h1
                   className={`text-center ${styles.title}`}
@@ -112,7 +112,7 @@ const CareerTeam = async () => {
             className="px-10 pt-20 pb-40 relative"
          >
             <div
-               className="flex flex-col items-center mb-12.5 gap-3"
+               className="flex flex-col items-center mb-12.5 gap-0 lg:gap-3"
             >
                <h1
                   className={`text-center ${styles.title}`}

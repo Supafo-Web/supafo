@@ -24,7 +24,7 @@ const Career = async () => {
    return (
       <main>
          <section
-            className="px-10 sm:px-30 lg:px-40 xl:px-50 2xl:px-80 py-30 relative"
+            className="px-10 sm:px-30 lg:px-40 xl:px-50 2xl:px-80 py-15 lg:py-30 relative"
          >
             <Image
                alt="flower"
@@ -35,7 +35,7 @@ const Career = async () => {
             />
 
             <div
-               className="flex flex-col items-center mb-12.5 gap-3"
+               className="flex flex-col items-center mb-12.5 gap-0 lg:gap-3"
             >
                <h1
                   className={`text-center ${styles.title}`}
@@ -54,7 +54,7 @@ const Career = async () => {
             </div>
 
             <div
-               className="flex flex-col gap-12.5"
+               className="flex flex-col gap-6 lg:gap-12.5"
             >
                <h6
                   className={`text-center lg:text-left ${styles.subtitle}`}
@@ -63,7 +63,7 @@ const Career = async () => {
                </h6>
 
                <div
-                  className="flex flex-col gap-10 leading-10"
+                  className="flex flex-col gap-5 lg:gap-10 leading-10"
                >
                   <p
                      className={`text-center lg:text-left ${styles.paragraph}`}
@@ -88,10 +88,10 @@ const Career = async () => {
          </section>
 
          <section
-            className="px-10 pb-30"
+            className="px-10 py-15 lg:pb-30"
          >
             <div
-               className="flex flex-col items-center mb-12.5 gap-3"
+               className="flex flex-col items-center mb-12.5 gap-0 lg:gap-3"
             >
                <h1
                   className={`text-center ${styles.title}`}
@@ -115,7 +115,7 @@ const Career = async () => {
                className="flex justify-center items-center"
             >
                <div
-                  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10"
+                  className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10"
                >
                   {whySupafo.map((item, index) => (
                      <div
@@ -141,7 +141,7 @@ const Career = async () => {
          </section>
 
          <section
-            className="px-10 pb-30 relative"
+            className="px-10 py-15 lg:pb-30 relative"
          >
             <Image
                alt="flower"
@@ -152,7 +152,7 @@ const Career = async () => {
             />
 
             <div
-               className="flex flex-col items-center mb-12.5 gap-3"
+               className="flex flex-col items-center mb-12.5 gap-0 lg:gap-3"
             >
                <h1
                   className={`text-center ${styles.title}`}
@@ -186,13 +186,13 @@ const Career = async () => {
          </section>
 
          <section
-            className="px-10 pb-30 relative"
+            className="px-10 py-15 lg:pb-30 relative"
          >
             <div
                className="w-full max-w-280 mx-auto"
             >
                <div
-                  className="grid grid-cols-1 md:grid-cols-2 gap-12"
+                  className="grid grid-cols-1 sm:grid-cols-2 gap-12"
                >
                   {staj.map((item, index) => {
                      const isLastOddItem =
@@ -227,7 +227,7 @@ const Career = async () => {
                </div>
             </div>
             <div
-               className="flex flex-col md:flex-row gap-12 md:gap-0 justify-around items-center mt-25"
+               className="flex flex-col md:flex-row gap-12 md:gap-0 justify-around items-center mt-25 mb-15 lg:mb-0"
             >
                {/* <Button
                   text={t('button_intern')}

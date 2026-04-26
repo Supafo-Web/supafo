@@ -19,7 +19,7 @@ const Projects = () => {
 
    return (
       <main className="overflow-hidden">
-         <section className="relative px-5 sm:px-8 md:px-12 lg:px-20 xl:px-32 2xl:px-60 pt-24 md:pt-30">
+         <section className="relative px-5 sm:px-8 md:px-12 lg:px-20 xl:px-32 2xl:px-60 py-15 lg:py-30">
             <Image
                alt="flower"
                src="/images/LeftFlower.svg"
@@ -28,7 +28,7 @@ const Projects = () => {
                className={`w-9 sm:w-12 lg:w-17.5 h-auto ${styles.leftFlower} ${styles.swingLeaf}`}
             />
 
-            <div className="flex flex-col items-center mb-10 md:mb-12.5 gap-3">
+            <div className="flex flex-col items-center mb-10 md:mb-12.5 gap-0 lg:gap-3">
                <h1 className={`text-center ${styles.title}`}>
                   {t.rich("saplings.title", richText)}
                </h1>
@@ -214,7 +214,7 @@ const Projects = () => {
             </section>
          </div>
 
-         <div className="flex justify-center px-5 sm:px-8 md:px-12 lg:px-20 xl:px-32 2xl:px-60 py-20">
+         <div className="flex justify-center px-5 sm:px-8 md:px-12 lg:px-20 xl:px-32 2xl:px-60 mb-20">
             <Button
                type="button"
                onClick={() => setIsExpanded((prev) => !prev)}

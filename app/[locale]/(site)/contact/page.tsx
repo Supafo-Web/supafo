@@ -115,7 +115,7 @@ const Contact = () => {
    return (
       <main>
          <section
-            className={`px-10 sm:px-30 lg:px-40 xl:px-50 2xl:px-80 py-30 relative`}
+            className={`px-10 sm:px-30 lg:px-40 xl:px-50 2xl:px-80 py-15 lg:py-30 relative`}
          >
             <Image
                alt="flower"
@@ -126,7 +126,7 @@ const Contact = () => {
             />
 
             <div
-               className="flex flex-col items-center mb-12.5 gap-3"
+               className="flex flex-col items-center mb-12.5 gap-0 lg:gap-3"
             >
                <h1
                   className={`text-center ${styles.title}`}
@@ -144,7 +144,7 @@ const Contact = () => {
                />
             </div>
 
-            <div className="flex flex-col lg:flex-row justify-center items-center gap-15">
+            <div className="flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-15">
                <div className="w-full lg:w-1/2">
                   <Map />
                </div>
@@ -182,10 +182,10 @@ const Contact = () => {
          </section>
 
          <section
-            className={`px-10 pt-20 pb-40 relative`}
+            className={`px-10 py-15 lg:py-30 mb-20 lg:mb-0 relative`}
          >
             <div
-               className="flex flex-col items-center mb-12.5 gap-3"
+               className="flex flex-col items-center mb-12.5 gap-0 lg:gap-3"
             >
                <h1
                   className={`text-center ${styles.title}`}

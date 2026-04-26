@@ -10,14 +10,10 @@
 .rightFlower {
    position: absolute;
    right: 0;
-   top: 88%;
+   top: 97%;
 
    @include respond-up(lg) {
-      top: 84%;
-   }
-
-   @include respond-up(xl) {
-      top: 86%;
+      top: 95%;
    }
 }
 

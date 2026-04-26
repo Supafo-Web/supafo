@@ -1,6 +1,6 @@
 "use client"
 
-import styles from "@/components/modules/privacy.module.scss"
+import styles from "@/components/modules/policy.module.scss"
 
 const PrivacyPolicy = () => {
    return (

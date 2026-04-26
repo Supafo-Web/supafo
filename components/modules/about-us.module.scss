@@ -4,20 +4,20 @@
 .leftFlower3 {
    position: absolute;
    left: 0;
-   top: -90px;
+   top: -20px;
 
    @include respond-up(lg) {
-      top: -110px;
+      top: -70px;
    }
 }
 
 .rightFlower3 {
    position: absolute;
    right: 0;
-   top: 88%;
+   top: 97%;
 
    @include respond-up(lg) {
-      top: 82%;
+      top: 88%;
    }
 }
 
@@ -30,10 +30,10 @@
 .rightFlower4 {
    position: absolute;
    right: 0;
-   top: 88%;
+   top: 95%;
 
    @include respond-up(lg) {
-      top: 86%;
+      top: 90%;
    }
 }
 
@@ -47,11 +47,11 @@
    }
 
    @include respond-up(lg) {
-      top: 79%;
+      top: 84%;
    }
 
    @include respond-up(xl) {
-      top: 83%;
+      top: 87%;
    }
 }
 

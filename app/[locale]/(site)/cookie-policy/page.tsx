@@ -1,4 +1,6 @@
-import styles from '@/components/modules/cookie.module.scss'
+"use client"
+
+import styles from "@/components/modules/policy.module.scss"
 
 const CookiePolicy = () => {
    return (

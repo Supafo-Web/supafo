@@ -1,4 +1,6 @@
-import React from 'react'
+"use client"
+
+import styles from "@/components/modules/policy.module.scss"
 
 const KVKK = () => {
    return (

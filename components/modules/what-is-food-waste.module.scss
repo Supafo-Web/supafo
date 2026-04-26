@@ -1,2 +1,132 @@
 @use "../../styles/variables" as *;
 @use "../../styles/breakpoints" as *;
+
+.leftFlower {
+   position: absolute;
+   left: 0;
+   top: -5px;
+
+   @include respond-up(lg) {
+      top: -10px;
+   }
+}
+
+.rightFlower {
+   position: absolute;
+   right: 0;
+   top: 97%;
+
+   @include respond-up(lg) {
+      top: 92%;
+   }
+}
+
+.leftFlower2 {
+   position: absolute;
+   left: 0;
+   top: -30px;
+
+   @include respond-up(lg) {
+      top: -50px;
+   }
+}
+
+.rightFlower2 {
+   position: absolute;
+   right: 0;
+   top: 97%;
+
+   @include respond-up(lg) {
+      top: 94%;
+   }
+}
+
+.leftFlower3 {
+   position: absolute;
+   left: 0;
+   top: 97%;
+
+   @include respond-up(sm) {
+      top: 93%;
+   }
+
+   @include respond-up(md) {
+      top: 92%;
+   }
+
+   @include respond-up(lg) {
+      top: 86%;
+   }
+
+   @include respond-up(xl) {
+      top: 87%;
+   }
+}
+
+.swingLeaf {
+   animation: leafSwing 4.2s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+   transform-origin: top center;
+   will-change: transform;
+}
+
+@keyframes leafSwing {
+   0% {
+      transform: translateY(0px) rotate(0deg);
+   }
+
+   50% {
+      transform: translateY(0px) rotate(-24deg);
+   }
+
+   100% {
+      transform: translateY(0px) rotate(0deg);
+   }
+}
+
+.swingLeaf2 {
+   animation: leafSwing 4.2s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+   transform-origin: top center;
+   will-change: transform;
+}
+
+@keyframes leafSwing {
+   0% {
+      transform: translateY(0px) rotate(0deg);
+   }
+
+   50% {
+      transform: translateY(0px) rotate(-24deg);
+   }
+
+   100% {
+      transform: translateY(0px) rotate(0deg);
+   }
+}
+
+.brand {
+   color: $primary;
+}
+
+.title {
+   font-family: $fontFamily;
+   font-size: clamp(1.9rem, 3.6vw, 3rem);
+   font-weight: $semiBold;
+   letter-spacing: -0.02em;
+   color: $textColor;
+   margin-bottom: 8px;
+}
+
+.subtitle {
+   font-family: $fontFamily;
+   font-size: clamp(1.1rem, 2.2vw, 1.6875rem);
+   font-weight: $semiBold;
+   color: $primary;
+}
+
+.paragraph {
+   font-family: $fontFamily;
+   font-size: clamp(0.95rem, 1.35vw, 1.3125rem);
+   font-weight: $regular;
+   line-height: 1.7;
+   color: $placeholder;
+}

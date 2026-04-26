@@ -78,7 +78,7 @@ const Home = async () => {
 
          <main>
             <section
-               className={`px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 pt-20 relative scroll-mt-24 ${styles.whatIsSupafo}`}
+               className={`px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 py-15 lg:py-30 relative scroll-mt-24 ${styles.whatIsSupafo}`}
                id="what-is-supafo"
             >
                <Image
@@ -133,7 +133,7 @@ const Home = async () => {
             </section>
 
             <section
-               className={`scroll-mt-24 pt-20 ${styles.howDoesSupafo}`}
+               className={`scroll-mt-24 pt-15 lg:pt-30 ${styles.howDoesSupafo}`}
                id="how-does-supafo-work"
             >
                <h1>
@@ -167,13 +167,13 @@ const Home = async () => {
                   sizes="(max-width: 640px) 40px, (max-width: 768px) 48px, 69px"
                />
 
-               <h1 className="pt-20">
+               <h1 className="pt-15 lg:pt-20">
                   {t.rich("bag_title", {
                      highlight: (chunks) => <span>{chunks}</span>
                   })}
                </h1>
 
-               <div className="mb-30 lg:mb-0 flex flex-col lg:flex-row items-center gap-15 px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 pt-20">
+               <div className="mb-15 lg:mb-0 flex flex-col lg:flex-row items-center gap-10 lg:gap-15 px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 pt-10 lg:pt-20">
                   <Image
                      alt="supafo-bag-1"
                      src="/home/2.svg"
@@ -186,17 +186,17 @@ const Home = async () => {
                   <h6 className="text-center lg:text-left">
                      {t("bag_heading_1")}
 
-                     <p className="text-center mt-10 lg:text-left">
+                     <p className="text-center mt-2 lg:mt-10 lg:text-left">
                         {t("bag_desc_1")}
                      </p>
                   </h6>
                </div>
 
-               <div className="flex flex-col lg:flex-row items-center gap-15 px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 pb-20">
+               <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-15 px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 pb-10 lg:pb-20">
                   <h6 className="text-center lg:text-left">
                      {t("bag_heading_2")}
 
-                     <p className="text-center mt-10 lg:text-left">
+                     <p className="text-center mt-2 lg:mt-10 lg:text-left">
                         {t("bag_desc_2")}
                      </p>
                   </h6>
@@ -211,12 +211,12 @@ const Home = async () => {
                   />
                </div>
 
-               <div className="my-20 flex flex-col items-center justify-center px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70">
-                  <div className="flex flex-col items-center mb-12">
+               <div className="my-30 lg:my-20 flex flex-col items-center justify-center px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70">
+                  <div className="flex flex-col items-center mb-6 lg:mb-12">
                      <h6 className="text-center">
                         {t("bag_heading_3")}
                      </h6>
-                     <p className="text-center mt-3">
+                     <p className="text-center mt-2 lg:mt-3">
                         {t("bag_desc_3")}
                      </p>
                   </div>
@@ -238,7 +238,7 @@ const Home = async () => {
             </section>
 
             <section
-               className={`flex flex-col lg:flex-row items-center px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 py-30 scroll-mt-24 ${styles.lifeJourney}`}
+               className={`flex flex-col lg:flex-row items-center px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 pb-15 lg:py-30 scroll-mt-24 ${styles.lifeJourney}`}
                id="healthy-life-journey"
             >
                <div className="relative w-full sm:w-96 md:w-110 lg:w-80 xl:w-110 h-72 sm:h-90 md:h-110 lg:h-95 xl:h-110 overflow-hidden rounded-xl mt-4">
@@ -269,7 +269,7 @@ const Home = async () => {
             </section>
 
             <section
-               className={`px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 pt-10 scroll-mt-24 ${styles.supafoAI}`}
+               className={`px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 scroll-mt-24 py-15 lg:py-30 ${styles.supafoAI}`}
                id="technology-of-the-future"
             >
                <Image
@@ -286,7 +286,7 @@ const Home = async () => {
                      <h1 className="text-center lg:text-left">
                         {t("ai_title")}
                      </h1>
-                     <p className="text-center mt-7 lg:text-left">
+                     <p className="text-center mt-0 lg:mt-7 lg:text-left">
                         {t("ai_desc")}
                      </p>
                   </div>
@@ -312,14 +312,14 @@ const Home = async () => {
             </section>
 
             <section
-               className={`scroll-mt-24 pt-10 ${styles.supafoDonation}`}
+               className={`scroll-mt-24 pb-15 lg:py-30 ${styles.supafoDonation}`}
                id="join-supafo-in-doing-good"
             >
                <h1 className="mt-20 text-center px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70">
                   {t("donation_title")}
                </h1>
 
-               <div className="mb-30 lg:mb-0 flex flex-col lg:flex-row items-center gap-15 px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 pt-20">
+               <div className="mb-15 lg:mb-0 flex flex-col lg:flex-row items-center gap-10 lg:gap-15 px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 pt-10 lg:pt-20">
                   <Image
                      alt="supafo-donation"
                      src="/home/Donation.svg"
@@ -332,17 +332,17 @@ const Home = async () => {
                   <h6 className="text-center lg:text-left">
                      {t("donation_heading_1")}
 
-                     <p className="text-center mt-7 lg:text-left">
+                     <p className="text-center mt-3 lg:mt-7 lg:text-left">
                         {t("donation_desc_1")}
                      </p>
                   </h6>
                </div>
 
-               <div className="flex flex-col lg:flex-row items-center justify-between gap-15 px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 pb-20">
+               <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-15 px-10 sm:px-20 lg:px-30 xl:px-40 2xl:px-70 pb-10 lg:pb-20">
                   <h6 className="text-center lg:text-left">
                      {t("donation_heading_2")}
 
-                     <p className="text-center mt-7 lg:text-left">
+                     <p className="text-center mt-3 lg:mt-7 lg:text-left">
                         {t("donation_desc_2")}
                      </p>
                   </h6>
@@ -360,7 +360,7 @@ const Home = async () => {
 
             <section
                id="faq"
-               className={`px-10 sm:px-30 lg:px-50 xl:px-70 2xl:px-100 py-10 scroll-mt-24 mb-20 ${styles.faq}`}
+               className={`px-10 sm:px-30 lg:px-50 xl:px-70 2xl:px-100 py-15 lg:py-30 scroll-mt-24 mb-10 lg:mb-20 ${styles.faq}`}
             >
                <h1>
                   {t("faq_title")}

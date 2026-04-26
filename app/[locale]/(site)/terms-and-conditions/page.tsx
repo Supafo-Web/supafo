@@ -1,6 +1,6 @@
 "use client"
 
-import styles from "@/components/modules/terms.module.scss"
+import styles from "@/components/modules/policy.module.scss"
 
 const TermsConditions = () => {
    return (

@@ -89,10 +89,10 @@
 .leftFlower {
    position: absolute;
    left: 0;
-   top: 103%;
+   top: 95%;
 
    @include respond-up(lg) {
-      top: 100%;
+      top: 94%;
    }
 }
 
@@ -105,10 +105,10 @@
 .leftFlower2 {
    position: absolute;
    left: 0;
-   top: 105%;
+   top: 103%;
 
    @include respond-up(lg) {
-      top: 103%;
+      top: 105%;
    }
 }
 
@@ -117,38 +117,42 @@
    right: 0;
    top: -35px;
 
-   @include respond-up(lg) {
-      top: -60px;
+   @include respond-up(sm) {
+      top: -40px;
+   }
+
+   @include respond-up(md) {
+      top: -50px;
    }
 }
 
 .leftFlower3 {
    position: absolute;
    left: 0;
-   top: 105%;
+   top: 98%;
 
    @include respond-up(lg) {
-      top: 92%;
+      top: 100%;
    }
 }
 
 .rightFlower3 {
    position: absolute;
    right: 0;
-   top: -70px;
+   top: -30px;
 
    @include respond-up(lg) {
-      top: -85px;
+      top: -60px;
    }
 }
 
 .leftFlower4 {
    position: absolute;
    left: 0;
-   top: 104%;
+   top: 98%;
 
    @include respond-up(sm) {
-      top: 102%;
+      top: 96%;
    }
 
    @include respond-up(lg) {
@@ -159,7 +163,7 @@
 .rightFlower4 {
    position: absolute;
    right: 0;
-   top: -50px;
+   top: -55px;
 }
 
 .swingLeaf {

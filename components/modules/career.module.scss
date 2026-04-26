@@ -10,64 +10,44 @@
 .rightFlower {
    position: absolute;
    right: 0;
-   top: 88%;
+   top: 95%;
 
    @include respond-up(lg) {
-      top: 84%;
-   }
-
-   @include respond-up(xl) {
-      top: 86%;
+      top: 89%;
    }
 }
 
 .leftFlower2 {
    position: absolute;
    left: 0;
-   top: -80px;
+   top: -20px;
 
    @include respond-up(lg) {
-      top: -85px;
+      top: -50px;
    }
 }
 
 .rightFlower2 {
    position: absolute;
    right: 0;
-   top: 88%;
+   top: 97%;
+
+   @include respond-up(lg) {
+      top: 92%;
+   }
 }
 
 .leftFlower3 {
    position: absolute;
    left: 0;
-   top: 91%;
+   top: 93%;
 
-   @include respond-up(md) {
-      top: 87%;
+   @include respond-up(sm) {
+      top: 90%;
    }
 
    @include respond-up(lg) {
-      top: 82%;
-   }
-}
-
-.leftFlower4 {
-   position: absolute;
-   left: 0;
-   top: 57%;
-
-   @include respond-up(lg) {
-      top: 50%;
-   }
-}
-
-.rightFlower4 {
-   position: absolute;
-   right: 0;
-   top: 97%;
-
-   @include respond-up(lg) {
-      top: 95%;
+      top: 86%;
    }
 }
 
@@ -173,7 +153,6 @@
    width: 100%;
 
    .embla {
-      overflow: hidden;
       padding: 20px 18px;
 
       .emblaContainer {
@@ -256,7 +235,7 @@
                      color: $primary;
 
                      @include respond-down(sm) {
-                        font-size: 8px;
+                        font-size: 10px;
                      }
                   }
 
@@ -455,7 +434,7 @@
 @include respond-down(sm) {
    .carouselSection {
       .embla {
-         padding: 16px 26px;
+         padding: 16px;
 
          .emblaContainer {
             gap: 16px;

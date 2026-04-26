@@ -10,7 +10,7 @@ const AboutUs = async () => {
    return (
       <main>
          <section
-            className={`px-10 sm:px-30 lg:px-40 xl:px-50 2xl:px-80 py-30 scroll-mt-24 relative`}
+            className={`px-10 sm:px-30 lg:px-40 xl:px-50 2xl:px-80 py-15 lg:py-30 scroll-mt-24 relative`}
             id='who-we-are'
          >
             <Image
@@ -21,7 +21,7 @@ const AboutUs = async () => {
                className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.leftFlower4} ${styles.swingLeaf}`}
             />
             <div
-               className="flex flex-col items-center mb-12.5 gap-3"
+               className="flex flex-col items-center mb-12.5 gap-0 lg:gap-3"
             >
                <h1
                   className={`text-center ${styles.title}`}
@@ -39,7 +39,7 @@ const AboutUs = async () => {
                />
             </div>
             <div
-               className="flex flex-col gap-12.5"
+               className="flex flex-col gap-6 lg:gap-12.5"
             >
                <h6
                   className={`text-center lg:text-left ${styles.subtitle}`}
@@ -47,7 +47,7 @@ const AboutUs = async () => {
                   {t('subtitle_1')}
                </h6>
                <div
-                  className="flex flex-col gap-10 leading-10"
+                  className="flex flex-col gap-5 lg:gap-10 leading-10"
                >
                   <p
                      className={`text-center lg:text-left ${styles.paragraph}`}
@@ -75,11 +75,11 @@ const AboutUs = async () => {
          </section>
 
          <section
-            className={`px-10 sm:px-30 lg:px-40 xl:px-50 2xl:px-80 pb-30 scroll-mt-24`}
+            className={`px-10 sm:px-30 lg:px-40 xl:px-50 2xl:px-80 py-15 lg:pb-30 scroll-mt-24`}
             id='mission-and-vision'
          >
             <div
-               className="flex flex-col items-center mb-12.5 gap-3"
+               className="flex flex-col items-center mb-12.5 gap-0 lg:gap-3"
             >
                <h1
                   className={`text-center ${styles.title}`}
@@ -191,7 +191,7 @@ const AboutUs = async () => {
          </section>
 
          <section
-            className={`px-10 sm:px-30 lg:px-40 xl:px-50 2xl:px-80 pb-30 scroll-mt-24 relative`}
+            className={`px-10 sm:px-30 lg:px-40 xl:px-50 2xl:px-80 py-15 lg:pb-30 scroll-mt-24 relative`}
             id='what-makes-us-different'
          >
             <Image
@@ -202,7 +202,7 @@ const AboutUs = async () => {
                className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.leftFlower3} ${styles.swingLeaf}`}
             />
             <div
-               className="flex flex-col items-center mb-12.5 gap-3"
+               className="flex flex-col items-center mb-12.5 gap-0 lg:gap-3"
             >
                <h1
                   className={`text-center ${styles.title}`}
@@ -306,7 +306,7 @@ const AboutUs = async () => {
          </section>
 
          <section
-            className={`px-10 sm:px-30 lg:px-40 xl:px-50 2xl:px-80 pb-30 scroll-mt-24 relative`}
+            className={`px-10 sm:px-30 lg:px-40 xl:px-50 2xl:px-80 py-15 lg:pb-30 scroll-mt-24 relative`}
             id='join-our-struggle'
          >
             <Image
@@ -317,7 +317,7 @@ const AboutUs = async () => {
                className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.leftFlower5} ${styles.swingLeaf}`}
             />
             <div
-               className="flex flex-col items-center mb-12.5 gap-3"
+               className="flex flex-col items-center mb-12.5 gap-0 lg:gap-3"
             >
                <h1
                   className={`text-center ${styles.title}`}
