@@ -178,7 +178,7 @@ export default function proxy(request: NextRequest) {
    if (isCareerHost(host)) {
       const url = request.nextUrl.clone()
 
-      url.pathname = "/career"
+      url.pathname = `/${defaultLocale}/career`
 
       const response = NextResponse.rewrite(url)
       return applySecurityHeaders(response, pathname, nonce)
