@@ -19,6 +19,7 @@ const ALLOWED_HOSTS = new Set([
    "api.supafo.com",
    "admin.supafo.com",
    "partner.supafo.com",
+   "career.supafo.com"
 ])
 
 const PUBLIC_FILE_REGEX = /\.(.*)$/
@@ -58,6 +59,7 @@ function buildCsp(nonce: string) {
       "'self'",
       "https://supafo.com",
       "https://www.supafo.com",
+      "https://career.supafo.com",
       "https://api.supafo.com",
       "https://admin.supafo.com",
       "https://partner.supafo.com",
@@ -139,6 +141,20 @@ function applySecurityHeaders(
    return response
 }
 
+function isCareerHost(host: string) {
+   return host === "career.supafo.com"
+}
+
+function getLocaleFromPath(pathname: string) {
+   const firstSegment = pathname.split("/")[1]
+
+   if (locales.includes(firstSegment as any)) {
+      return firstSegment
+   }
+
+   return defaultLocale
+}
+
 export default function proxy(request: NextRequest) {
    const { pathname } = request.nextUrl
    const method = request.method
@@ -166,6 +182,16 @@ export default function proxy(request: NextRequest) {
 
    if (pathname.startsWith("/api")) {
       const response = NextResponse.next()
+      return applySecurityHeaders(response, pathname, nonce)
+   }
+
+   if (isCareerHost(host)) {
+      const url = request.nextUrl.clone()
+      const locale = getLocaleFromPath(pathname)
+
+      url.pathname = `/${locale}/career`
+
+      const response = NextResponse.rewrite(url)
       return applySecurityHeaders(response, pathname, nonce)
    }
 
