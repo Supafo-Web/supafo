@@ -486,24 +486,6 @@ function PackageCardsSection() {
    return (
       <section id="paketler" className="px-5 py-12 sm:px-8 lg:px-12 lg:py-16">
          <div className="mx-auto max-w-7xl">
-            <div className="flex flex-col justify-between gap-6 lg:flex-row lg:items-end">
-               <div>
-                  <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#578B23] sm:text-sm">
-                     App kart stili
-                  </p>
-
-                  <h2 className="mt-4 max-w-3xl text-3xl font-bold tracking-[-0.04em] text-[#182F00] sm:text-4xl lg:text-5xl">
-                     Web sayfasında da mobil uygulamadaki paket hissi.
-                  </h2>
-               </div>
-
-               <p className="max-w-md text-base leading-8 text-[#737373] sm:text-lg">
-                  Kartlar görsel arka plan, koyu gradient, stok rozeti, yeni etiketi,
-                  favori butonu, puan, mesafe ve fiyat yapısıyla app deneyimine yakın
-                  tasarlandı.
-               </p>
-            </div>
-
             <div className="mt-9 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
                {packageExamples.map((item) => (
                   <AppStylePackageCard key={item.title} item={item} />
