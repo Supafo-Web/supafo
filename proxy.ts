@@ -176,6 +176,10 @@ export default function proxy(request: NextRequest) {
    }
 
    if (isCareerHost(host)) {
+      return new NextResponse("CAREER PROXY WORKS", { status: 200 })
+   }
+
+   if (isCareerHost(host)) {
       const url = request.nextUrl.clone()
 
       url.pathname = `/tr/career`
