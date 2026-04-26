@@ -142,7 +142,7 @@ function applySecurityHeaders(
 }
 
 function isCareerHost(host: string) {
-   return host === "career.supafo.com"
+   return host.replace(":443", "").replace(":80", "") === "career.supafo.com"
 }
 
 export default function proxy(request: NextRequest) {
@@ -180,7 +180,15 @@ export default function proxy(request: NextRequest) {
 
       url.pathname = "/tr/career"
 
-      const response = NextResponse.rewrite(url)
+      const requestHeaders = new Headers(request.headers)
+      requestHeaders.set("x-next-intl-locale", "tr")
+
+      const response = NextResponse.rewrite(url, {
+         request: {
+            headers: requestHeaders,
+         },
+      })
+
       return applySecurityHeaders(response, pathname, nonce)
    }
 
