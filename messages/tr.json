@@ -242,5 +242,14 @@
          ]
       }
    },
-   "WhatIsFoodWaste": {}
+   "WhatIsFoodWaste": {
+      "section1Title": "Gıda İsrafı Nedir?",
+      "section1Text": "Gıda israfı, yenilebilir durumdaki yiyeceklerin tüketilmeden çöpe gitmesi anlamına gelir. Restoranlarda, kafelerde, marketlerde, fırınlarda her gün birçok ürün taze olmasına rağmen zamanında tüketilemediği için atılabiliyor.<br></br>Oysa bu yiyeceklerin büyük bir kısmı hâlâ güvenle tüketilebilir durumdadır. Sorun çoğu zaman ürünün bozulmuş olması değil; gün sonunda satılamamış, fazla üretilmiş ya da raf ömrü yaklaşmış olmasıdır.<br></br><brand>Supafo</brand>, tam da bu noktada devreye girer.",
+      "section2Title": "Gıda İsrafı Neden Önemli Bir Sorundur?",
+      "section2Text": "Gıda israfı sadece yiyeceklerin çöpe gitmesi değildir. Aynı zamanda bu yiyecekleri üretmek için kullanılan su, enerji, emek, toprak, ambalaj ve ulaşım kaynaklarının da boşa harcanması demektir.<br></br>Bir ürün çöpe gittiğinde, onun üretiminden sofraya gelene kadar geçen tüm süreç de boşa gitmiş olur. Bu durum hem çevreye zarar verir hem de ekonomik kayıplara neden olur.<br></br>Daha az gıda israfı; daha temiz bir çevre, daha bilinçli tüketim ve daha sürdürülebilir bir gelecek anlamına gelir.",
+      "section3Title": "<brand>Supafo</brand> Gıda İsrafını Nasıl Azaltır?",
+      "section3Text": "<brand>Supafo</brand>, restoran, kafe, fırın ve marketlerde gün sonunda satılamayan ama hâlâ tüketilebilir durumda olan ürünleri kullanıcılarla buluşturur.<br></br>İşletmeler fazla kalan ürünlerini <brand>Supafo</brand> üzerinden uygun fiyatlı paketler halinde sunar. Kullanıcılar ise bu paketleri uygulama üzerinden keşfeder, satın alır ve belirlenen saatlerde işletmeden teslim alır.<br></br>Böylece hem işletmeler ürünlerini çöpe atmak yerine değerlendirmiş olur hem de kullanıcılar kaliteli yiyeceklere daha uygun fiyatlarla ulaşır.",
+      "section4Title": "Her Paket Bir Fark Yaratır",
+      "section4Text": "<brand>Supafo</brand>’da satın alınan her paket, çöpe gitmek üzere olan bir yiyeceğin yeniden değer kazanması demektir.<br></br>Bu küçük seçimler bir araya geldiğinde büyük bir etki oluşturur. Daha az israf, daha fazla tasarruf ve daha sürdürülebilir bir yaşam mümkün hale gelir.<br></br><brand>Supafo</brand> ile hem bütçeni koruyabilir hem de gıda israfına karşı gerçek bir adım atabilirsin."
+   }
 }

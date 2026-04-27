@@ -32,7 +32,7 @@ const CareerTeam = async () => {
                src="/images/LeftFlower.svg"
                width={69}
                height={115}
-               className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.leftFlower} ${styles.swingLeaf}`}
+               className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.leftFlower4} ${styles.swingLeaf}`}
             />
 
             <div
@@ -104,7 +104,7 @@ const CareerTeam = async () => {
                src="/images/RightFlower.svg"
                width={69}
                height={115}
-               className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.rightFlower} ${styles.swingLeaf2}`}
+               className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.rightFlower4} ${styles.swingLeaf2}`}
             />
          </section>
 
@@ -142,7 +142,7 @@ const CareerTeam = async () => {
                   src="/images/LeftFlower.svg"
                   width={69}
                   height={115}
-                  className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.leftFlower4} ${styles.swingLeaf}`}
+                  className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.leftFlower5} ${styles.swingLeaf}`}
                />
 
                <div
@@ -163,7 +163,7 @@ const CareerTeam = async () => {
                   src="/images/RightFlower.svg"
                   width={69}
                   height={115}
-                  className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.rightFlower4} ${styles.swingLeaf2}`}
+                  className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.rightFlower5} ${styles.swingLeaf2}`}
                />
             </div>
          </section>

@@ -1,6 +1,7 @@
 import styles from '@/components/modules/what-is-food-waste.module.scss'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
+import React from 'react'
 
 const WhatIsFoodWaste = () => {
    const t = useTranslations("WhatIsFoodWaste")
@@ -47,15 +48,13 @@ const WhatIsFoodWaste = () => {
                   <h6
                      className={`text-center lg:text-left ${styles.subtitle}`}
                   >
-                     Gıda İsrafı Nedir?
+                     {t.rich("section1Title", richText)}
                   </h6>
 
                   <p
                      className={`text-center lg:text-left ${styles.paragraph}`}
                   >
-                     Gıda israfı, yenilebilir durumdaki yiyeceklerin tüketilmeden çöpe gitmesi anlamına gelir. Restoranlarda, kafelerde, marketlerde, fırınlarda her gün birçok ürün taze olmasına rağmen zamanında tüketilemediği için atılabiliyor.<br />
-                     Oysa bu yiyeceklerin büyük bir kısmı hâlâ güvenle tüketilebilir durumdadır. Sorun çoğu zaman ürünün bozulmuş olması değil; gün sonunda satılamamış, fazla üretilmiş ya da raf ömrü yaklaşmış olmasıdır.<br />
-                     Supafo, tam da bu noktada devreye girer.
+                     {t.rich("section1Text", richText)}
                   </p>
                </div>
             </div>
@@ -94,15 +93,13 @@ const WhatIsFoodWaste = () => {
                   <h6
                      className={`text-center lg:text-left ${styles.subtitle}`}
                   >
-                     Gıda İsrafı Neden Önemli Bir Sorundur?
+                     {t.rich("section2Title", richText)}
                   </h6>
 
                   <p
                      className={`text-center lg:text-left ${styles.paragraph}`}
                   >
-                     Gıda israfı sadece yiyeceklerin çöpe gitmesi değildir. Aynı zamanda bu yiyecekleri üretmek için kullanılan su, enerji, emek, toprak, ambalaj ve ulaşım kaynaklarının da boşa harcanması demektir.<br />
-                     Bir ürün çöpe gittiğinde, onun üretiminden sofraya gelene kadar geçen tüm süreç de boşa gitmiş olur. Bu durum hem çevreye zarar verir hem de ekonomik kayıplara neden olur.<br />
-                     Daha az gıda israfı; daha temiz bir çevre, daha bilinçli tüketim ve daha sürdürülebilir bir gelecek anlamına gelir.
+                     {t.rich("section2Text", richText)}
                   </p>
                </div>
             </div>
@@ -141,15 +138,13 @@ const WhatIsFoodWaste = () => {
                   <h6
                      className={`text-center lg:text-left ${styles.subtitle}`}
                   >
-                     Supafo Gıda İsrafını Nasıl Azaltır?
+                     {t.rich("section3Title", richText)}
                   </h6>
 
                   <p
                      className={`text-center lg:text-left ${styles.paragraph}`}
                   >
-                     Supafo, restoran, kafe, fırın ve marketlerde gün sonunda satılamayan ama hâlâ tüketilebilir durumda olan ürünleri kullanıcılarla buluşturur.<br />
-                     İşletmeler fazla kalan ürünlerini Supafo üzerinden uygun fiyatlı paketler halinde sunar. Kullanıcılar ise bu paketleri uygulama üzerinden keşfeder, satın alır ve belirlenen saatlerde işletmeden teslim alır.<br />
-                     Böylece hem işletmeler ürünlerini çöpe atmak yerine değerlendirmiş olur hem de kullanıcılar kaliteli yiyeceklere daha uygun fiyatlarla ulaşır.
+                     {t.rich("section3Text", richText)}
                   </p>
                </div>
             </div>
@@ -170,17 +165,15 @@ const WhatIsFoodWaste = () => {
                className="flex flex-col gap-6 md:gap-7 w-full"
             >
                <h6
-                  className={`text-center lg:text-left ${styles.subtitle}`}
+                  className={`text-center ${styles.subtitle}`}
                >
-                  Her Paket Bir Fark Yaratır
+                  {t.rich("section4Title", richText)}
                </h6>
 
                <p
-                  className={`text-center lg:text-left ${styles.paragraph}`}
+                  className={`text-center ${styles.paragraph}`}
                >
-                  Supafo’da satın alınan her paket, çöpe gitmek üzere olan bir yiyeceğin yeniden değer kazanması demektir.<br />
-                  Bu küçük seçimler bir araya geldiğinde büyük bir etki oluşturur. Daha az israf, daha fazla tasarruf ve daha sürdürülebilir bir yaşam mümkün hale gelir.<br />
-                  Supafo ile hem bütçeni koruyabilir hem de gıda israfına karşı gerçek bir adım atabilirsin.
+                  {t.rich("section4Text", richText)}
                </p>
             </div>
 

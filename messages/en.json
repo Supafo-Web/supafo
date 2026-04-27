@@ -242,5 +242,14 @@
          ]
       }
    },
-   "WhatIsFoodWaste": {}
+   "WhatIsFoodWaste": {
+      "section1Title": "What Is Food Waste?",
+      "section1Text": "Food waste means that edible food is thrown away without being consumed. In restaurants, cafés, markets, and bakeries, many products can be discarded every day even though they are still fresh, simply because they are not consumed in time.<br></br>However, a large portion of these foods is still safe to eat. The problem is often not that the product is spoiled, but that it remained unsold at the end of the day, was overproduced, or is approaching its expiration date.<br></br>This is exactly where <brand>Supafo</brand> steps in.",
+      "section2Title": "Why Is Food Waste an Important Problem?",
+      "section2Text": "Food waste is not only about food being thrown away. It also means that the water, energy, labor, soil, packaging, and transportation resources used to produce that food are wasted as well.<br></br>When a product is thrown away, the entire process from production to reaching the table is wasted too. This harms the environment and also causes economic losses.<br></br>Less food waste means a cleaner environment, more conscious consumption, and a more sustainable future.",
+      "section3Title": "How Does <brand>Supafo</brand> Reduce Food Waste?",
+      "section3Text": "<brand>Supafo</brand> brings users together with products from restaurants, cafés, bakeries, and markets that remain unsold at the end of the day but are still suitable for consumption.<br></br>Businesses offer their surplus products through <brand>Supafo</brand> as affordable packages. Users discover these packages through the app, purchase them, and pick them up from the business at the specified times.<br></br>In this way, businesses make use of their products instead of throwing them away, while users access quality food at more affordable prices.",
+      "section4Title": "Every Package Makes a Difference",
+      "section4Text": "Every package purchased on <brand>Supafo</brand> means that food about to be thrown away gains value again.<br></br>When these small choices come together, they create a big impact. Less waste, more savings, and a more sustainable life become possible.<br></br>With <brand>Supafo</brand>, you can protect your budget and take a real step against food waste."
+   }
 }

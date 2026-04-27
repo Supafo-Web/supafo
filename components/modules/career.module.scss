@@ -51,6 +51,46 @@
    }
 }
 
+.leftFlower4 {
+   position: absolute;
+   left: 0;
+   top: -5px;
+}
+
+.rightFlower4 {
+   position: absolute;
+   right: 0;
+   top: 95%;
+
+   @include respond-up(lg) {
+      top: 92%;
+   }
+}
+
+.leftFlower5 {
+   position: absolute;
+   left: 0;
+   top: 54%;
+
+   @include respond-up(sm) {
+      top: 55%;
+   }
+
+   @include respond-up(lg) {
+      top: 49%;
+   }
+}
+
+.rightFlower5 {
+   position: absolute;
+   right: 0;
+   top: 97%;
+
+   @include respond-up(lg) {
+      top: 95%;
+   }
+}
+
 .swingLeaf {
    animation: leafSwing 4.2s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
    transform-origin: top center;
