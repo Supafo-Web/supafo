@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import Image from "next/image";
 
+
 const INITIAL_VISIBLE_COUNT = 5;
 
 const journeySteps = [
