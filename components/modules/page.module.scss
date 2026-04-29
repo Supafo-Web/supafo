@@ -23,38 +23,19 @@
    display: flex;
    flex-wrap: wrap;
    width: 100%;
-   height: calc(60dvh - 86px);
+   height: calc(100dvh - 72px);
 
    .card {
       width: calc(100% / 3);
       height: 50%;
    }
 
-   // @include respond-up(xs) {
-   //    height: calc(100dvh - 72px);
-
-   //    .card {
-   //       width: calc(100% / 2);
-   //       height: 33.3%;
-   //    }
-   // }
-
-   // @include respond-up(sm) {
-   //    height: calc(100dvh - 81px);
-
-   //    .card {
-   //       width: calc(100% / 2);
-   //       height: 33.3%;
-   //    }
-   // }
+   @include respond-up(sm) {
+      height: calc(100dvh - 81px);
+   }
 
    @include respond-up(md) {
       height: calc(60dvh - 86px);
-
-      .card {
-         width: calc(100% / 3);
-         height: 50%;
-      }
    }
 
    @include respond-up(lg) {
