@@ -1,12 +1,13 @@
 import Image from "next/image"
 import styles from "@/components/modules/page.module.scss"
 import NavbarDownloadButton from "@/components/navbar/NavbarDownloadButton"
-import { getTranslations } from "next-intl/server"
+import { getLocale, getTranslations } from "next-intl/server"
 import FAQ from "@/components/faq/FAQ"
 
 const Home = async () => {
    const t = await getTranslations("Home")
    const modal = await getTranslations("Modal")
+   const locale = await getLocale()
 
    const media = [
       { id: 1, src: "/images/1-1.jpg", type: "image" },
@@ -32,6 +33,16 @@ const Home = async () => {
       { id: 9, question: t("faq.q9"), answer: t("faq.a9") },
       { id: 10, question: t("faq.q10"), answer: t("faq.a10") }
    ]
+
+   const mockupVideo = () => {
+      if (locale === 'tr') {
+         return "/videos/Turkish.mp4"
+      } else if (locale === 'en') {
+         return "/videos/English.mp4"
+      } else if (locale === 'az') {
+         return "/videos/Azərbaycan.mp4"
+      }
+   }
 
    return (
       <>
@@ -150,7 +161,10 @@ const Home = async () => {
                   playsInline
                   preload="metadata"
                >
-                  <source src="/videos/Mockup.mp4" type="video/mp4" />
+                  <source
+                     src={mockupVideo()}
+                     type="video/mp4"
+                  />
                </video>
             </section>
 
