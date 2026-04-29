@@ -10,15 +10,12 @@ const Home = async () => {
    const locale = await getLocale()
 
    const media = [
-      { id: 1, src: "/images/1-1.jpg", type: "image" },
+      { id: 1, src: "/images/3-1.jpg", type: "image" },
       { id: 2, src: "/videos/2-1.mp4", type: "video/mp4" },
-      { id: 3, src: "/images/2-3.jpg", type: "image" },
-      { id: 4, src: "/images/3-1.jpg", type: "image" },
-      { id: 5, src: "/videos/3-2.mp4", type: "video/mp4" },
-      { id: 6, src: "/images/3-3.jpg", type: "image" },
-      { id: 7, src: "/videos/1-2.mp4", type: "video/mp4" },
-      { id: 8, src: "/videos/2-2.mp4", type: "video/mp4" },
-      { id: 9, src: "/videos/1-3.mp4", type: "video/mp4" }
+      { id: 3, src: "/images/1-1.jpg", type: "image" },
+      { id: 4, src: "/videos/1-2.mp4", type: "video/mp4" },
+      { id: 5, src: "/videos/1-3.mp4", type: "video/mp4" },
+      { id: 6, src: "/videos/2-2.mp4", type: "video/mp4" }
    ]
 
    const faq = [
