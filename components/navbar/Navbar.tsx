@@ -29,11 +29,10 @@ const Navbar = async () => {
                <Image
                   alt="logo"
                   src="/logo/logo.svg"
-                  width={94}
-                  height={81}
+                  width={70}
+                  height={60}
                   priority
-                  className="w-20 lg:w-23.5"
-                  sizes="(max-width: 1024px) 80px, 94px"
+                  className="w-17.5"
                   style={{ height: "auto" }}
                />
             </Button>

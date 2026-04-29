@@ -3,31 +3,24 @@
 
 .layout {
    width: 100%;
-   height: calc(100% - 73px);
-   min-height: calc(100% - 73px);
-   max-height: calc(100% - 73px);
+   height: calc(100% - 72px);
+   min-height: calc(100% - 72px);
+   max-height: calc(100% - 72px);
    overflow: hidden;
    position: relative;
-   margin-top: 73px;
+   margin-top: 72px;
 
    @include respond-up(sm) {
-      height: calc(100% - 83px);
-      min-height: calc(100% - 83px);
-      max-height: calc(100% - 83px);
-      margin-top: 83px;
+      height: calc(100% - 81px);
+      min-height: calc(100% - 81px);
+      max-height: calc(100% - 81px);
+      margin-top: 81px;
    }
 
    @include respond-up(lg) {
-      height: calc(100% - 111px);
-      min-height: calc(100% - 111px);
-      max-height: calc(100% - 111px);
-      margin-top: 111px;
+      height: calc(100% - 86px);
+      min-height: calc(100% - 86px);
+      max-height: calc(100% - 86px);
+      margin-top: 86px;
    }
-
-   // @include respond-up(lg) {
-   //    height: calc(100% - 83px);
-   //    min-height: calc(100% - 83px);
-   //    max-height: calc(100% - 83px);
-   //    margin-top: 83px;
-   // }
 }
