@@ -17,6 +17,10 @@
    height: 100%;
    overflow: hidden;
    position: relative;
+
+   @include respond-up(lg) {
+      height: calc(100dvh - 86px);
+   }
 }
 
 .grid {
@@ -28,6 +32,13 @@
 
    @include respond-up(lg) {
       height: calc(100dvh - 86px);
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-rows: repeat(3, minmax(0, 1fr));
+      overflow: hidden;
+   }
+
+   @include respond-up(xl) {
+      height: calc((100dvh - 86px) * 1.5);
       grid-template-columns: repeat(3, minmax(0, 1fr));
       grid-template-rows: repeat(3, minmax(0, 1fr));
       overflow: hidden;
@@ -45,7 +56,7 @@
 .media {
    width: 100%;
    height: 100%;
-   object-fit: fill;
+   object-fit: cover;
    display: block;
 }
 
