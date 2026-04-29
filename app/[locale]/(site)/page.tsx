@@ -40,7 +40,7 @@ const Home = async () => {
       } else if (locale === 'en') {
          return "/videos/English.mp4"
       } else if (locale === 'az') {
-         return "/videos/Azərbaycan.mp4"
+         return "/videos/Azerbaycan.mp4"
       }
    }
 
