@@ -36,8 +36,8 @@
       grid-template-columns: repeat(3, minmax(0, 1fr));
    }
 
-   @include respond-up(lg) {
-      width: min(100%, 1260px);
+   @include respond-up(xl) {
+      width: min(100%, 1330px);
       height: calc(100dvh - 86px);
       margin-inline: auto;
 
@@ -45,7 +45,7 @@
       grid-template-rows: repeat(3, minmax(0, 1fr));
    }
 
-   @include respond-up(xl) {
+   @include respond-up(2xl) {
       width: min(100%, 1330px);
       height: calc(100dvh - 86px);
    }
