@@ -14,22 +14,88 @@ type StaticRoute = {
    path: string
    priority: number
    changeFrequency: ChangeFrequency
+   lastModified?: string
 }
 
 const staticRoutes: StaticRoute[] = [
-   { path: "", priority: 1, changeFrequency: "daily" },
-   { path: "/about-us", priority: 0.8, changeFrequency: "monthly" },
-   { path: "/career", priority: 0.6, changeFrequency: "monthly" },
-   { path: "/contact", priority: 0.7, changeFrequency: "monthly" },
-   { path: "/cookie-policy", priority: 0.4, changeFrequency: "yearly" },
-   { path: "/guide", priority: 0.7, changeFrequency: "monthly" },
-   { path: "/kvkk", priority: 0.4, changeFrequency: "yearly" },
-   { path: "/privacy-policy", priority: 0.4, changeFrequency: "yearly" },
-   { path: "/projects", priority: 0.7, changeFrequency: "weekly" },
-   { path: "/terms-and-conditions", priority: 0.4, changeFrequency: "yearly" },
-   { path: "/what-is-food-waste", priority: 0.7, changeFrequency: "monthly" },
-   { path: "/career/team", priority: 0.7, changeFrequency: "monthly" },
-   { path: "/partner", priority: 0.8, changeFrequency: "monthly" },
+   {
+      path: "",
+      priority: 1,
+      changeFrequency: "daily",
+      lastModified: "2026-04-30",
+   },
+   {
+      path: "/about-us",
+      priority: 0.8,
+      changeFrequency: "monthly",
+      lastModified: "2026-04-30",
+   },
+   {
+      path: "/career",
+      priority: 0.6,
+      changeFrequency: "monthly",
+      lastModified: "2026-04-30",
+   },
+   {
+      path: "/contact",
+      priority: 0.7,
+      changeFrequency: "monthly",
+      lastModified: "2026-04-30",
+   },
+   {
+      path: "/cookie-policy",
+      priority: 0.4,
+      changeFrequency: "yearly",
+      lastModified: "2026-04-30",
+   },
+   {
+      path: "/guide",
+      priority: 0.7,
+      changeFrequency: "monthly",
+      lastModified: "2026-04-30",
+   },
+   {
+      path: "/kvkk",
+      priority: 0.4,
+      changeFrequency: "yearly",
+      lastModified: "2026-04-30",
+   },
+   {
+      path: "/privacy-policy",
+      priority: 0.4,
+      changeFrequency: "yearly",
+      lastModified: "2026-04-30",
+   },
+   {
+      path: "/projects",
+      priority: 0.7,
+      changeFrequency: "weekly",
+      lastModified: "2026-04-30",
+   },
+   {
+      path: "/terms-and-conditions",
+      priority: 0.4,
+      changeFrequency: "yearly",
+      lastModified: "2026-04-30",
+   },
+   {
+      path: "/what-is-food-waste",
+      priority: 0.7,
+      changeFrequency: "monthly",
+      lastModified: "2026-04-30",
+   },
+   {
+      path: "/career/team",
+      priority: 0.7,
+      changeFrequency: "monthly",
+      lastModified: "2026-04-30",
+   },
+   {
+      path: "/partner",
+      priority: 0.8,
+      changeFrequency: "monthly",
+      lastModified: "2026-04-30",
+   },
 ]
 
 function getLocalizedUrl(locale: Locale, path: string) {
@@ -46,12 +112,12 @@ function getLanguageAlternates(path: string) {
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
-   const lastModified = new Date()
-
    return staticRoutes.flatMap((route) =>
       locales.map((locale) => ({
          url: getLocalizedUrl(locale, route.path),
-         lastModified,
+         lastModified: route.lastModified
+            ? new Date(route.lastModified)
+            : undefined,
          changeFrequency: route.changeFrequency,
          priority: route.priority,
          alternates: {
