@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
          userAgent: "*",
          allow: "/",
       },
-      sitemap: "https://supafo.com/sitemap.xml",
-      host: "https://supafo.com",
+      sitemap: "https://www.supafo.com/sitemap.xml",
+      host: "https://www.supafo.com",
    }
 }
