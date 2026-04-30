@@ -1,9 +1,14 @@
 import type { MetadataRoute } from "next"
 
-const SITE_URL = "https://supafo.com"
+const SITE_URL = "https://www.supafo.com"
+
 const locales = ["tr", "en", "az"] as const
 
-type ChangeFrequency = NonNullable<MetadataRoute.Sitemap[number]["changeFrequency"]>
+type Locale = (typeof locales)[number]
+
+type ChangeFrequency = NonNullable<
+   MetadataRoute.Sitemap[number]["changeFrequency"]
+>
 
 type StaticRoute = {
    path: string
@@ -27,22 +32,30 @@ const staticRoutes: StaticRoute[] = [
    { path: "/partner", priority: 0.8, changeFrequency: "monthly" },
 ]
 
+function getLocalizedUrl(locale: Locale, path: string) {
+   return `${SITE_URL}/${locale}${path}`
+}
+
+function getLanguageAlternates(path: string) {
+   return {
+      tr: getLocalizedUrl("tr", path),
+      en: getLocalizedUrl("en", path),
+      az: getLocalizedUrl("az", path),
+      "x-default": getLocalizedUrl("tr", path),
+   }
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
-   const now = new Date()
+   const lastModified = new Date()
 
    return staticRoutes.flatMap((route) =>
       locales.map((locale) => ({
-         url: `${SITE_URL}/${locale}${route.path}`,
-         lastModified: now,
+         url: getLocalizedUrl(locale, route.path),
+         lastModified,
          changeFrequency: route.changeFrequency,
          priority: route.priority,
          alternates: {
-            languages: {
-               tr: `${SITE_URL}/tr${route.path}`,
-               en: `${SITE_URL}/en${route.path}`,
-               az: `${SITE_URL}/az${route.path}`,
-               "x-default": `${SITE_URL}/tr${route.path}`,
-            },
+            languages: getLanguageAlternates(route.path),
          },
       }))
    )
