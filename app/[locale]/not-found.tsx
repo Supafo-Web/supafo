@@ -12,7 +12,6 @@ const NotFoundPage = async () => {
       <div
          className={`flex flex-col min-h-screen justify-center items-center overflow-hidden ${styles.notFoundBody} relative`}
       >
-         {/* Yeşil blur gölgeler */}
          <div className={styles.topLeftGlow} />
          <div className={styles.bottomRightGlow} />
 
