@@ -3,6 +3,9 @@ import styles from "@/components/modules/page.module.scss"
 import NavbarDownloadButton from "@/components/navbar/NavbarDownloadButton"
 import { getLocale, getTranslations } from "next-intl/server"
 import FAQ from "@/components/faq/FAQ"
+import { createGenerateMetadata } from "@/lib/createGenerateMetadata"
+
+export const generateMetadata = createGenerateMetadata("")
 
 const Home = async () => {
    const t = await getTranslations("Home")

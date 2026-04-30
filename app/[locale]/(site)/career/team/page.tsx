@@ -3,6 +3,9 @@ import styles from '@/components/modules/career.module.scss'
 import { getTranslations } from 'next-intl/server'
 import CareerApplyForm from '@/app/[locale]/(site)/career/[id]/CareerApplyForm'
 import FAQ from '@/components/faq/FAQ'
+import { createGenerateMetadata } from "@/lib/createGenerateMetadata"
+
+export const generateMetadata = createGenerateMetadata("/career/team")
 
 const CareerTeam = async () => {
    const t = await getTranslations('CareerTeam')

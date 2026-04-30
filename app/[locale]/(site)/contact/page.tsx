@@ -10,6 +10,9 @@ import { useUI } from '@/components/services/contexts/UIContexts'
 import Image from 'next/image'
 import { useState } from 'react'
 import { useTranslations } from 'use-intl'
+import { createGenerateMetadata } from "@/lib/createGenerateMetadata"
+
+export const generateMetadata = createGenerateMetadata("/contact")
 
 export interface CareerForm {
    full_name: string

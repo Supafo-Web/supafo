@@ -3,6 +3,9 @@ import styles from '@/components/modules/career.module.scss'
 import Image from 'next/image'
 import OpenPositions from '@/app/[locale]/(site)/career/OpenPositions'
 import Button from '@/components/button/Button'
+import { createGenerateMetadata } from "@/lib/createGenerateMetadata"
+
+export const generateMetadata = createGenerateMetadata("/career")
 
 const Career = async () => {
    const t = await getTranslations('Career')

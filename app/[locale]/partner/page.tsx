@@ -3,6 +3,9 @@ import Image from 'next/image'
 import styles from '@/components/modules/partner.module.scss'
 import Dropdown from '@/components/dropdown/Dropdown'
 import Button from '@/components/button/Button'
+import { createGenerateMetadata } from "@/lib/createGenerateMetadata"
+
+export const generateMetadata = createGenerateMetadata("/partner")
 
 const Partner = async () => {
    const t = await getTranslations('Partner')

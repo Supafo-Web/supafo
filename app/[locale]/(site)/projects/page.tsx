@@ -5,6 +5,9 @@ import Image from "next/image"
 import { useTranslations } from "next-intl"
 import { useState } from "react"
 import Button from "@/components/button/Button"
+import { createGenerateMetadata } from "@/lib/createGenerateMetadata"
+
+export const generateMetadata = createGenerateMetadata("/projects")
 
 const Projects = () => {
    const t = useTranslations("Projects")

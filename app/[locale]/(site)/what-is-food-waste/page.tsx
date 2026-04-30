@@ -2,6 +2,9 @@ import styles from '@/components/modules/what-is-food-waste.module.scss'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import React from 'react'
+import { createGenerateMetadata } from "@/lib/createGenerateMetadata"
+
+export const generateMetadata = createGenerateMetadata("/what-is-food-waste")
 
 const WhatIsFoodWaste = () => {
    const t = useTranslations("WhatIsFoodWaste")

@@ -2,6 +2,9 @@ import { getTranslations } from 'next-intl/server'
 import styles from '@/components/modules/about-us.module.scss'
 import Image from 'next/image'
 import NavbarDownloadButton from '@/components/navbar/NavbarDownloadButton'
+import { createGenerateMetadata } from "@/lib/createGenerateMetadata"
+
+export const generateMetadata = createGenerateMetadata("/about-us")
 
 const AboutUs = async () => {
    const t = await getTranslations("AboutUs")

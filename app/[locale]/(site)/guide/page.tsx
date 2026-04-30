@@ -2,6 +2,9 @@
 
 import { useMemo, useState } from "react";
 import Image from "next/image";
+import { createGenerateMetadata } from "@/lib/createGenerateMetadata"
+
+export const generateMetadata = createGenerateMetadata("/guide")
 
 const INITIAL_VISIBLE_COUNT = 5;
 

@@ -1,11 +1,10 @@
-import { Metadata } from "next"
+import type { Metadata } from "next"
 
 export const SITE_URL = "https://www.supafo.com"
 export const SITE_NAME = "Supafo"
 export const OG_IMAGE = "/og-image.jpg"
 
 export const SUPPORTED_LOCALES = ["tr", "en", "az"] as const
-
 export type Locale = (typeof SUPPORTED_LOCALES)[number]
 
 export const DEFAULT_LOCALE: Locale = "tr"
@@ -37,6 +36,7 @@ type CreatePageMetadataParams = {
    title: string
    description: string
    keywords?: string[]
+   ogLocale?: string
 }
 
 export function createPageMetadata({
@@ -45,6 +45,7 @@ export function createPageMetadata({
    title,
    description,
    keywords,
+   ogLocale,
 }: CreatePageMetadataParams): Metadata {
    const url = getAbsoluteUrl(locale, path)
 
@@ -62,6 +63,7 @@ export function createPageMetadata({
          siteName: SITE_NAME,
          title,
          description,
+         locale: ogLocale,
          images: [
             {
                url: OG_IMAGE,
@@ -77,6 +79,17 @@ export function createPageMetadata({
          description,
          images: [OG_IMAGE],
          creator: "@supafo_app",
+      },
+      robots: {
+         index: true,
+         follow: true,
+         googleBot: {
+            index: true,
+            follow: true,
+            "max-image-preview": "large",
+            "max-snippet": -1,
+            "max-video-preview": -1,
+         },
       },
    }
 }
