@@ -1,6 +1,5 @@
 import type { MetadataRoute } from "next"
-
-const SITE_URL = "https://www.supafo.com"
+import { SITE_URL } from "@/config/seo"
 
 export default function robots(): MetadataRoute.Robots {
    return {
@@ -12,6 +11,7 @@ export default function robots(): MetadataRoute.Robots {
                "/api/",
                "/admin/",
                "/dashboard/",
+               "/profile/",
             ],
          },
       ],

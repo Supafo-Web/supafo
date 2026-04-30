@@ -4,9 +4,7 @@ import "./globals.css"
 import "./globals.scss"
 import { UIProvider } from "@/components/services/contexts/UIContexts"
 import AppInitializer from "@/components/AppInitializer"
-
-const SITE_URL = "https://supafo.com"
-const SITE_NAME = "Supafo"
+import { SITE_NAME, SITE_URL } from "@/config/seo"
 
 const poppins = Poppins({
    subsets: ["latin"],
@@ -77,7 +75,7 @@ const RootLayout = ({
    children: React.ReactNode
 }>) => {
    return (
-      <html className={poppins.variable} suppressHydrationWarning>
+      <html lang="tr" className={poppins.variable} suppressHydrationWarning>
          <body className="min-h-full flex flex-col antialiased">
             <UIProvider>
                <AppInitializer />

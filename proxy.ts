@@ -11,14 +11,14 @@ const handleI18nRouting = createMiddleware({
 
 const isProd = process.env.NODE_ENV === "production"
 
-const ALLOWED_HOSTS = new Set([
+const CANONICAL_HOST = "www.supafo.com"
+const APEX_HOST = "supafo.com"
+
+const ALLOWED_MARKETING_HOSTS = new Set([
    "localhost:3000",
    "127.0.0.1:3000",
-   "supafo.com",
-   "www.supafo.com",
-   "api.supafo.com",
-   "admin.supafo.com",
-   "partner.supafo.com",
+   APEX_HOST,
+   CANONICAL_HOST,
 ])
 
 const PUBLIC_FILE_REGEX = /\.(.*)$/
@@ -56,7 +56,6 @@ function shouldBypass(pathname: string) {
 function buildCsp(nonce: string) {
    const connectSrc = [
       "'self'",
-      "https://supafo.com",
       "https://www.supafo.com",
       "https://api.supafo.com",
       "https://admin.supafo.com",
@@ -123,7 +122,6 @@ function applySecurityHeaders(
    const isSensitivePath =
       pathname.startsWith("/api") ||
       pathname.includes("/admin") ||
-      pathname.includes("/partner") ||
       pathname.includes("/dashboard") ||
       pathname.includes("/profile")
 
@@ -134,9 +132,18 @@ function applySecurityHeaders(
       )
       response.headers.set("Pragma", "no-cache")
       response.headers.set("Expires", "0")
+      response.headers.set("X-Robots-Tag", "noindex, nofollow, noarchive")
    }
 
    return response
+}
+
+function redirectToCanonicalHost(request: NextRequest) {
+   const url = request.nextUrl.clone()
+   url.protocol = "https:"
+   url.hostname = CANONICAL_HOST
+
+   return NextResponse.redirect(url, 308)
 }
 
 export default function proxy(request: NextRequest) {
@@ -149,8 +156,17 @@ export default function proxy(request: NextRequest) {
       return new NextResponse("Method Not Allowed", { status: 405 })
    }
 
-   if (isProd && host && !ALLOWED_HOSTS.has(host)) {
-      return new NextResponse("Forbidden", { status: 403 })
+   if (isProd && host && !ALLOWED_MARKETING_HOSTS.has(host)) {
+      return new NextResponse("Forbidden", {
+         status: 403,
+         headers: {
+            "X-Robots-Tag": "noindex, nofollow, noarchive",
+         },
+      })
+   }
+
+   if (isProd && host === APEX_HOST) {
+      return redirectToCanonicalHost(request)
    }
 
    if (isProd && !userAgent) {

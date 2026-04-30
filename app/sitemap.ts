@@ -1,10 +1,10 @@
 import type { MetadataRoute } from "next"
-
-const SITE_URL = "https://www.supafo.com"
-
-const locales = ["tr", "en", "az"] as const
-
-type Locale = (typeof locales)[number]
+import {
+   getAbsoluteUrl,
+   getLanguageAlternates,
+   SUPPORTED_LOCALES,
+   type Locale,
+} from "@/config/seo"
 
 type ChangeFrequency = NonNullable<
    MetadataRoute.Sitemap[number]["changeFrequency"]
@@ -33,23 +33,10 @@ const staticRoutes: StaticRoute[] = [
    { path: "/partner", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-04-30" },
 ]
 
-function getLocalizedUrl(locale: Locale, path: string) {
-   return `${SITE_URL}/${locale}${path}`
-}
-
-function getLanguageAlternates(path: string) {
-   return {
-      tr: getLocalizedUrl("tr", path),
-      en: getLocalizedUrl("en", path),
-      az: getLocalizedUrl("az", path),
-      "x-default": getLocalizedUrl("tr", path),
-   }
-}
-
 export default function sitemap(): MetadataRoute.Sitemap {
    return staticRoutes.flatMap((route) =>
-      locales.map((locale) => ({
-         url: getLocalizedUrl(locale, route.path),
+      SUPPORTED_LOCALES.map((locale: Locale) => ({
+         url: getAbsoluteUrl(locale, route.path),
          lastModified: new Date(route.lastModified),
          changeFrequency: route.changeFrequency,
          priority: route.priority,

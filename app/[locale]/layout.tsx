@@ -2,13 +2,15 @@ import type { Metadata } from "next"
 import { NextIntlClientProvider } from "next-intl"
 import { getMessages, setRequestLocale } from "next-intl/server"
 import { notFound } from "next/navigation"
+import {
+   getAbsoluteUrl,
+   getLanguageAlternates,
+   isSupportedLocale,
+   OG_IMAGE,
+   SITE_NAME,
+   type Locale,
+} from "@/config/seo"
 import { locales } from "@/i18n"
-
-type Locale = "tr" | "en" | "az"
-
-const SITE_URL = "https://supafo.com"
-const SITE_NAME = "Supafo"
-const OG_IMAGE = "/og-image.jpg"
 
 const localeMetadata: Record<
    Locale,
@@ -79,13 +81,13 @@ export async function generateMetadata({
 }): Promise<Metadata> {
    const { locale } = await params
 
-   if (!locales.includes(locale as Locale)) {
+   if (!isSupportedLocale(locale)) {
       notFound()
    }
 
-   const currentLocale = locale as Locale
+   const currentLocale = locale
    const current = localeMetadata[currentLocale]
-   const currentUrl = `${SITE_URL}/${currentLocale}`
+   const currentUrl = getAbsoluteUrl(currentLocale)
 
    return {
       title: {
@@ -95,13 +97,8 @@ export async function generateMetadata({
       description: current.description,
       keywords: current.keywords,
       alternates: {
-         canonical: `/${currentLocale}`,
-         languages: {
-            tr: "/tr",
-            en: "/en",
-            az: "/az",
-            "x-default": "/tr",
-         },
+         canonical: currentUrl,
+         languages: getLanguageAlternates(),
       },
       openGraph: {
          type: "website",
@@ -142,7 +139,7 @@ const LocaleLayout = async ({
 }>) => {
    const { locale } = await params
 
-   if (!locales.includes(locale as Locale)) {
+   if (!isSupportedLocale(locale)) {
       notFound()
    }
 
@@ -150,10 +147,7 @@ const LocaleLayout = async ({
    const messages = await getMessages()
 
    return (
-      <NextIntlClientProvider
-         messages={messages}
-         locale={locale}
-      >
+      <NextIntlClientProvider messages={messages} locale={locale}>
          {children}
       </NextIntlClientProvider>
    )
