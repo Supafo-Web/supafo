@@ -43,7 +43,7 @@ const CareerDetail = async ({ params }: PageProps) => {
    return (
       <main>
          <section
-            className={`px-5 sm:px-10 md:px-20 2xl:px-30 py-30 relative`}
+            className={`px-5 sm:px-10 md:px-20 2xl:px-30 py-15 lg:py-30 relative`}
          >
             <Image
                alt="flower"
@@ -62,10 +62,10 @@ const CareerDetail = async ({ params }: PageProps) => {
                      className={`flex flex-col gap-5 ${styles.header}`}
                   >
                      <div
-                        className="flex items-center justify-between mb-5"
+                        className="flex flex-col sm:flex-row items-end sm:justify-between gap-2 sm:gap-0"
                      >
                         <h3
-                           className={`truncate ${styles.title}`}
+                           className={`truncate w-full sm:w-auto ${styles.title}`}
                         >
                            {job.title}
                         </h3>
@@ -92,10 +92,10 @@ const CareerDetail = async ({ params }: PageProps) => {
                         </div>
                      </small>
                      <div
-                        className="flex justify-between"
+                        className="flex flex-col sm:flex-row items-end sm:justify-between gap-4 sm:gap-0"
                      >
                         <div
-                           className="flex gap-2.5 flex-wrap"
+                           className="flex gap-2.5 flex-wrap w-full sm:w-auto"
                         >
                            {keywords.map((keyword, keywordIndex) => (
                               <p

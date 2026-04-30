@@ -33,8 +33,6 @@
    @include respond-up(sm) {
       height: calc(60dvh - 81px);
 
-      // height: calc(60dvh - 72px);
-
       .card {
          width: calc(100% / 3);
          height: 50%;
