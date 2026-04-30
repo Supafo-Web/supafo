@@ -1,14 +1,10 @@
-"use client"
-
-import styles from "@/components/modules/policy.module.scss"
+import KVKKClient from "@/app/[locale]/(site)/kvkk/KVKKClient"
 import { createGenerateMetadata } from "@/lib/createGenerateMetadata"
 
 export const generateMetadata = createGenerateMetadata("/kvkk")
 
 const KVKK = () => {
-   return (
-      <div>KVKK</div>
-   )
+   return <KVKKClient />
 }
 
 export default KVKK
