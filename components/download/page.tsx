@@ -20,7 +20,11 @@ const DownloadApp = () => {
                   ${styles.storeButton}
                `}
             >
-               <div className={styles.iconFlip}>
+               <div
+                  className={`
+                     ${styles.iconFlip}
+                     ${item?.title === 'App Store' && styles.appStore}`}
+               >
                   <div className={styles.iconFlipInner}>
                      <Image
                         alt={item.alt}
