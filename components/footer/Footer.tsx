@@ -125,9 +125,7 @@ const Footer = async () => {
             </div>
          </div>
 
-         <DownloadApp
-            footer
-         />
+         <DownloadApp />
 
          <SocialButtons />
 
