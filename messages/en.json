@@ -42,8 +42,9 @@
       "copyright": "© 2026 Supafo. All rights reserved."
    },
    "Home": {
-      "hero_title": "Reduce waste with surprise packages",
-      "hero_desc": "Discover affordable packages from nearby businesses, save money, and contribute to sustainable consumption.",
+      "hero_title": "Save on delicious meals and put an end to food waste!",
+      "hero_button_1": "Explore the app",
+      "hero_button_2": "I want to become a partner",
       "what_is_title": "<highlight>What is</highlight> SUPAFO?",
       "what_is_heading": "Save the Flavors of the Day!",
       "what_is_desc": "With <highlight>Supafo</highlight>, get unsold, fresh, and delicious food from hundreds of cafes and restaurants every day at incredible discounts. Save money while also taking a meaningful step for our planet. <highlight>Supafo</highlight> is with you in this beautiful mission you want to bring to life!",
@@ -184,6 +185,7 @@
       "team_item_3": "Continuous learning and growth opportunities",
       "team_item_4": "Open communication and team spirit",
       "application_form": "Application Form",
+      "faq_title": "F.A.Q",
       "faq": {
          "q1": "How does the application process work?",
          "a1": "After we receive your application, it is added to our candidate pool. If your profile matches a suitable current or future position, we will contact you and provide information about the process.",
@@ -239,7 +241,9 @@
             "You support the protection of nature",
             "You adopt a more sustainable lifestyle",
             "You make your shopping meaningful"
-         ]
+         ],
+         "readMore": "Read more",
+         "readMore2": "See less"
       }
    },
    "WhatIsFoodWaste": {
@@ -251,5 +255,134 @@
       "section3Text": "<brand>Supafo</brand> brings users together with products from restaurants, cafés, bakeries, and markets that remain unsold at the end of the day but are still suitable for consumption.<br></br>Businesses offer their surplus products through <brand>Supafo</brand> as affordable packages. Users discover these packages through the app, purchase them, and pick them up from the business at the specified times.<br></br>In this way, businesses make use of their products instead of throwing them away, while users access quality food at more affordable prices.",
       "section4Title": "Every Package Makes a Difference",
       "section4Text": "Every package purchased on <brand>Supafo</brand> means that food about to be thrown away gains value again.<br></br>When these small choices come together, they create a big impact. Less waste, more savings, and a more sustainable life become possible.<br></br>With <brand>Supafo</brand>, you can protect your budget and take a real step against food waste."
+   },
+   "Guide": {
+      "hero": {
+         "title": "A smart package experience that reduces food waste",
+         "description": "<green>Supafo</green> turns unsold but still consumable products into affordable packages. Users discover packages, add them to the cart, and purchase them with a credit card or fast payment options.",
+         "stats": {
+            "discover": {
+               "value": "24/7",
+               "label": "Package discovery"
+            },
+            "payment": {
+               "value": "2+",
+               "label": "Payment options"
+            },
+            "discount": {
+               "value": "40%+",
+               "label": "Discounted packages"
+            }
+         }
+      },
+      "audience": {
+         "title": "Users and Partners",
+         "heading": "<green>Supafo</green> creates clear value for both sides.",
+         "description": "Users discover affordable packages. Businesses make use of their remaining products. Both sides become part of a more sustainable consumption model.",
+         "buttons": {
+            "user": {
+               "title": "I’m a user",
+               "text": "I want to discover packages and buy them at affordable prices."
+            },
+            "partner": {
+               "title": "I’m a partner",
+               "text": "I want to make use of my remaining products."
+            }
+         },
+         "userSteps": {
+            "title": "For users",
+            "steps": [
+               {
+                  "number": "01",
+                  "title": "Discover packages",
+                  "description": "View nearby cafe, restaurant, bakery, and market packages 24/7."
+               },
+               {
+                  "number": "02",
+                  "title": "Add to cart",
+                  "description": "Add the package you like to your cart and check the pickup time."
+               },
+               {
+                  "number": "03",
+                  "title": "Pay securely",
+                  "description": "Complete your payment with a credit card, Apple Pay, or Google Pay."
+               },
+               {
+                  "number": "04",
+                  "title": "Pick it up",
+                  "description": "Go to the business at the specified time and collect your package."
+               }
+            ]
+         },
+         "partnerSteps": {
+            "title": "For partners",
+            "steps": [
+               {
+                  "number": "01",
+                  "title": "Select remaining products",
+                  "description": "Identify unsold but still consumable products."
+               },
+               {
+                  "number": "02",
+                  "title": "Create a package",
+                  "description": "Enter the price, stock quantity, pickup time, and package details."
+               },
+               {
+                  "number": "03",
+                  "title": "Track orders",
+                  "description": "Manage orders created after users add packages to the cart and complete payment."
+               },
+               {
+                  "number": "04",
+                  "title": "Earn extra revenue",
+                  "description": "Turn products that would go to waste into new customers and revenue."
+               }
+            ]
+         }
+      },
+      "cartPayment": {
+         "title": "Cart and Payment",
+         "heading": "The user adds the package to the cart and pays with the method they prefer.",
+         "description": "The purchase experience on <green>Supafo</green> should be fast and easy to understand. The user adds the package to the cart, checks the pickup time, and pays by credit card or Apple Pay / Google Pay.",
+         "cards": {
+            "cart": "Add to Cart",
+            "creditCard": "Credit Card",
+            "fastPayment": "Apple Pay / Google Pay"
+         }
+      },
+      "miniGame": {
+         "title": "Mini Game",
+         "heading": "Waste or Opportunity?",
+         "description": "At the end of the day, a cafe has 5 croissants left. They are still fresh, but may not be suitable for sale tomorrow. What should happen?",
+         "answers": {
+            "waste": {
+               "title": "They go to waste",
+               "alt": "They go to waste",
+               "text": "A common but bad scenario."
+            },
+            "supafo": {
+               "title": "They become a <green>Supafo</green> package",
+               "alt": "They become a Supafo package",
+               "text": "They turn into an opportunity instead of waste."
+            }
+         },
+         "feedback": {
+            "correctTitle": "The right choice!",
+            "wrongTitle": "Actually, there is a better way.",
+            "correctText": "This product can be listed on <green>Supafo</green> as an affordable package, added to the cart by a user, and used before going to waste.",
+            "wrongText": "If these croissants are still consumable, they can be listed as a <green>Supafo</green> package."
+         }
+      },
+      "impactCalculator": {
+         "eyebrow": "Impact calculator",
+         "title": "How many packages can you save per month?",
+         "description": "Small choices add up to a big impact. This area is a simple simulation for informational purposes.",
+         "packageCount": "Package count",
+         "cards": {
+            "packages": "Packages saved",
+            "support": "Business supported",
+            "saving": "Estimated savings"
+         }
+      }
    }
 }

@@ -42,8 +42,9 @@
       "copyright": "© 2026 Supafo. Bütün hüquqlar qorunur."
    },
    "Home": {
-      "hero_title": "Sürpriz paketlərlə israfı azalt",
-      "hero_desc": "Yaxınlıqdakı müəssisələrdən sərfəli paketləri kəşf et, qənaət et və dayanıqlı istehlaka töhfə ver.",
+      "hero_title": "Dadlı yeməklərə qənaət et və qida israfına son qoy!",
+      "hero_button_1": "Tətbiqi kəşf et",
+      "hero_button_2": "Tərəfdaş olmaq istəyirəm",
       "what_is_title": "SUPAFO <highlight>Nədir?</highlight>",
       "what_is_heading": "Günün ləzzətlərini xilas et!",
       "what_is_desc": "<highlight>Supafo</highlight> ilə hər gün yüzlərlə kafe və restorandan satılmamış, təzə və dadlı yeməkləri inanılmaz endirimlərlə əldə et. Həm büdcəni qoru, həm də planetimiz üçün təsirli bir addım at. Həyata keçirmək istədiyin bu gözəl missiyada <highlight>Supafo</highlight> sənin yanındadır!",
@@ -184,6 +185,7 @@
       "team_item_3": "Davamlı öyrənmə və inkişaf imkanları",
       "team_item_4": "Açıq ünsiyyət və komanda ruhu",
       "application_form": "Müraciət Forması",
+      "faq_title": "Tez-tez verilən suallar",
       "faq": {
          "q1": "Müraciət prosesi necə davam edir?",
          "a1": "Müraciətin bizə çatdıqdan sonra namizəd bazamıza əlavə olunur. Profilin hazırda mövcud olan və ya gələcəkdə açıla biləcək uyğun bir vakansiya ilə uyğunlaşarsa, səninlə əlaqə saxlanılacaq və proses haqqında məlumat veriləcək.",
@@ -239,7 +241,9 @@
             "Təbiətin qorunmasına dəstək olursan",
             "Daha dayanıqlı həyat tərzini mənimsəyirsən",
             "Alış-verişini mənalı hala gətirirsən"
-         ]
+         ],
+         "readMore": "Davamını oxu",
+         "readMore2": "Daha az göstər"
       }
    },
    "WhatIsFoodWaste": {
@@ -251,5 +255,134 @@
       "section3Text": "<brand>Supafo</brand>, restoran, kafe, çörəkxana və marketlərdə günün sonunda satılmayan, amma hələ də istehlak edilə bilən vəziyyətdə olan məhsulları istifadəçilərlə bir araya gətirir.<br></br>Bizneslər artıq qalan məhsullarını <brand>Supafo</brand> üzərindən sərfəli paketlər şəklində təqdim edir. İstifadəçilər isə bu paketləri tətbiq üzərindən kəşf edir, satın alır və müəyyən edilmiş saatlarda biznesdən təhvil götürür.<br></br>Beləliklə, bizneslər məhsullarını zibilə atmaq əvəzinə dəyərləndirmiş olur, istifadəçilər isə keyfiyyətli qidalara daha sərfəli qiymətlərlə çatır.",
       "section4Title": "Hər Paket Bir Fərq Yaradır",
       "section4Text": "<brand>Supafo</brand>-da satın alınan hər paket, zibilə getmək üzrə olan bir qidanın yenidən dəyər qazanması deməkdir.<br></br>Bu kiçik seçimlər bir araya gəldikdə böyük təsir yaradır. Daha az israf, daha çox qənaət və daha dayanıqlı həyat mümkün olur.<br></br><brand>Supafo</brand> ilə həm büdcəni qoruya, həm də qida israfına qarşı real addım ata bilərsən."
+   },
+   "Guide": {
+      "hero": {
+         "title": "Qida israfını azaldan ağıllı paket təcrübəsi",
+         "description": "<green>Supafo</green> satılmayan, amma hələ də istehlaka yararlı məhsulları sərfəli paketlərə çevirir. İstifadəçilər paketləri kəşf edir, səbətə əlavə edir və kredit kartı və ya sürətli ödəniş seçimləri ilə satın alırlar.",
+         "stats": {
+            "discover": {
+               "value": "7/24",
+               "label": "Paket kəşfi"
+            },
+            "payment": {
+               "value": "2+",
+               "label": "Ödəniş seçimi"
+            },
+            "discount": {
+               "value": "40%+",
+               "label": "Sərfəli paketlər"
+            }
+         }
+      },
+      "audience": {
+         "title": "İstifadəçi və Tərəfdaş",
+         "heading": "<green>Supafo</green> hər iki tərəf üçün aydın dəyər yaradır.",
+         "description": "İstifadəçilər sərfəli paketləri kəşf edir. Bizneslər qalan məhsullarını dəyərləndirir. Hər iki tərəf daha dayanıqlı istehlak modelinin bir hissəsi olur.",
+         "buttons": {
+            "user": {
+               "title": "İstifadəçiyəm",
+               "text": "Paketləri kəşf etmək və sərfəli qiymətə almaq istəyirəm."
+            },
+            "partner": {
+               "title": "Tərəfdaşam",
+               "text": "Qalan məhsullarımı dəyərləndirmək istəyirəm."
+            }
+         },
+         "userSteps": {
+            "title": "İstifadəçilər üçün",
+            "steps": [
+               {
+                  "number": "01",
+                  "title": "Paketləri kəşf et",
+                  "description": "Yaxınlıqdakı kafe, restoran, çörəkxana və market paketlərini 7/24 görüntülə."
+               },
+               {
+                  "number": "02",
+                  "title": "Səbətə əlavə et",
+                  "description": "Bəyəndiyin paketi səbətə əlavə et və təhvil alma saatını yoxla."
+               },
+               {
+                  "number": "03",
+                  "title": "Təhlükəsiz ödə",
+                  "description": "Ödənişini kredit kartı, Apple Pay və ya Google Pay ilə tamamla."
+               },
+               {
+                  "number": "04",
+                  "title": "Təhvil al",
+                  "description": "Göstərilən saatda biznes məkanına gedib paketini təhvil al."
+               }
+            ]
+         },
+         "partnerSteps": {
+            "title": "Tərəfdaşlar üçün",
+            "steps": [
+               {
+                  "number": "01",
+                  "title": "Qalan məhsulları seç",
+                  "description": "Satılmayan, amma istehlaka yararlı məhsulları müəyyən et."
+               },
+               {
+                  "number": "02",
+                  "title": "Paket yarat",
+                  "description": "Qiyməti, stok sayını, təhvil alma saatını və paket məlumatını daxil et."
+               },
+               {
+                  "number": "03",
+                  "title": "Sifarişləri izlə",
+                  "description": "İstifadəçilərin səbət və ödənişdən sonra yaratdığı sifarişləri idarə et."
+               },
+               {
+                  "number": "04",
+                  "title": "Əlavə gəlir qazan",
+                  "description": "Zibilə gedəcək məhsulları yeni müştəriyə və gəlirə çevir."
+               }
+            ]
+         }
+      },
+      "cartPayment": {
+         "title": "Səbət və Ödəniş",
+         "heading": "İstifadəçi paketi səbətə əlavə edir və istədiyi üsulla ödəniş edir.",
+         "description": "<green>Supafo</green>-da satınalma təcrübəsi sürətli və anlaşılan olmalıdır. İstifadəçi paketi səbətə əlavə edir, təhvil alma saatını yoxlayır və kredit kartı və ya Apple Pay / Google Pay ilə ödəniş edir.",
+         "cards": {
+            "cart": "Səbətə əlavə et",
+            "creditCard": "Kredit kartı",
+            "fastPayment": "Apple Pay / Google Pay"
+         }
+      },
+      "miniGame": {
+         "title": "Mini Oyun",
+         "heading": "İsraf, yoxsa Fürsət?",
+         "description": "Bir kafedə günün sonunda 5 kruassan qalıb. Hələ də təzədir, amma sabah satış üçün uyğun olmaya bilər. Nə edilməlidir?",
+         "answers": {
+            "waste": {
+               "title": "Zibilə gedir",
+               "alt": "Zibilə gedir",
+               "text": "Klassik, amma pis ssenari."
+            },
+            "supafo": {
+               "title": "<green>Supafo</green> paketi olur",
+               "alt": "Supafo paketi olur",
+               "text": "İsraf əvəzinə fürsətə çevrilir."
+            }
+         },
+         "feedback": {
+            "correctTitle": "Doğru seçim!",
+            "wrongTitle": "Əslində daha yaxşı yol var.",
+            "correctText": "Bu məhsul <green>Supafo</green>-da sərfəli paket kimi yayımlana bilər, istifadəçi tərəfindən səbətə əlavə edilə bilər və zibilə getmədən dəyərləndirilə bilər.",
+            "wrongText": "Bu kruassanlar hələ də istehlaka yararlıdırsa, <green>Supafo</green> paketi kimi siyahıya əlavə edilə bilər."
+         }
+      },
+      "impactCalculator": {
+         "eyebrow": "Təsir kalkulyatoru",
+         "title": "Ayda neçə paketi xilas edə bilərsən?",
+         "description": "Kiçik seçimlər toplandıqda böyük təsirə çevrilir. Bu sahə məlumat məqsədli sadə simulyasiyadır.",
+         "packageCount": "Paket sayı",
+         "cards": {
+            "packages": "Paket xilas edilir",
+            "support": "Biznesə dəstək",
+            "saving": "Təxmini qənaət"
+         }
+      }
    }
 }

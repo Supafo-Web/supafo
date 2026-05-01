@@ -4,14 +4,11 @@ import styles from '@/components/modules/download.module.scss'
 import Image from "next/image"
 import { data } from "@/components/store/AppStore"
 
-interface DownloadType {
-   modal?: boolean
-   footer?: boolean
-}
-
-const DownloadApp = ({ modal, footer }: DownloadType) => {
+const DownloadApp = () => {
    return (
-      <div className={`${modal ? 'flex-col md:flex-row' : ''} ${styles.storeArea}`}>
+      <div
+         className={`${styles.storeArea}`}
+      >
          {data.map((item, index) => (
             <a
                key={item.id || index}
@@ -19,7 +16,7 @@ const DownloadApp = ({ modal, footer }: DownloadType) => {
                target="_blank"
                rel="noreferrer"
                className={`
-                  ${footer ? styles.footerAppStore : styles.generalAppStore}
+                  ${styles.footerAppStore}
                   ${styles.storeButton}
                `}
             >

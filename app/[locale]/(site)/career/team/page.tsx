@@ -92,14 +92,16 @@ const CareerTeam = async () => {
                      </div>
                   </div>
                </div>
-               <Image
-                  alt="career-team"
-                  src="/career/team/Team.svg"
-                  width={385}
-                  height={385}
-                  className="w-52 sm:w-56 lg:w-64 xl:w-70 2xl:w-74 h-auto"
-                  sizes="(max-width: 640px) 208px, (max-width: 1024px) 224px, (max-width: 1280px) 256px, (max-width: 1536px) 280px, 296px"
-               />
+               <div className="flex w-full justify-center lg:w-1/2 lg:justify-end">
+                  <Image
+                     alt="career-team"
+                     src="/career/team/Team.svg"
+                     width={385}
+                     height={385}
+                     className="h-auto w-full max-w-60 rounded-[20px] border border-[#82B74C] sm:max-w-70 lg:max-w-[320px] xl:max-w-90"
+                     sizes="(max-width: 640px) 240px, (max-width: 1024px) 280px, (max-width: 1280px) 320px, 360px"
+                  />
+               </div>
             </div>
 
             <Image
@@ -154,7 +156,7 @@ const CareerTeam = async () => {
                   <h1
                      className={`text-center ${styles.faqTitle}`}
                   >
-                     S.S.S
+                     {t('faq_title')}
                   </h1>
                   <FAQ
                      faq={faq}

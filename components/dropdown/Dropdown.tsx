@@ -78,7 +78,7 @@ const Dropdown = ({
          {(image || language) ? (
             <button
                type="button"
-               className={`group cursor-pointer rounded-full transition-all duration-300 ease-in-out ${open ? "bg-[#578B23]" : "bg-white"
+               className={`group cursor-pointer rounded-full transition-all duration-300 ease-in-out shadow-[0_0_20px_rgba(0,0,0,0.08)] ${open ? "bg-[#578B23]" : "bg-white"
                   }`}
                onMouseEnter={handleOpen}
                onClick={handleOpen}

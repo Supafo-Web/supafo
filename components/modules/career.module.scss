@@ -142,7 +142,6 @@
    line-height: 1.15;
    letter-spacing: -0.02em;
    color: $textColor;
-   margin-bottom: 8px;
 }
 
 .faqTitle {
@@ -273,6 +272,10 @@
                      font-weight: $semiBold;
                      line-height: 1.35;
                      color: $primary;
+
+                     @include respond-up("2xl") {
+                        font-size: 12px;
+                     }
 
                      @include respond-down(sm) {
                         font-size: 10px;

@@ -42,8 +42,9 @@
       "copyright": "© 2026 Supafo. Tüm Hakları Saklıdır."
    },
    "Home": {
-      "hero_title": "Sürpriz paketlerle israfı azalt",
-      "hero_desc": "Yakınındaki işletmelerden uygun fiyatlı paketleri keşfet, tasarruf et ve sürdürülebilir tüketime katkı sağla.",
+      "hero_title": "Lezzetli yemeklerde tasarruf et ve Gıda İsrafına son ver!",
+      "hero_button_1": "Uygulamayı keşfet",
+      "hero_button_2": "Partner olmak istiyorum",
       "what_is_title": "SUPAFO <highlight>Nedir?</highlight>",
       "what_is_heading": "Günün Lezzetlerini Kurtar!",
       "what_is_desc": "<highlight>Supafo</highlight> ile hergün yüzlerce kafe ve restorandan satılmamış, taze ve lezzetli yiyecekleri inanılmaz indirimlerle elde et. Hem cebini düşün, hem de gezegenimiz için büyük etkili bir adım at. Hayata geçirmek istediğin bu güzel misyonda sana eşlik etmek için <highlight>Supafo</highlight> yanında!",
@@ -184,6 +185,7 @@
       "team_item_3": "Sürekli öğrenme ve gelişim fırsatları",
       "team_item_4": "Açık iletişim ve takım ruhu",
       "application_form": "Başvuru Formu",
+      "faq_title": "S.S.S",
       "faq": {
          "q1": "Başvuru süreci nasıl ilerliyor?",
          "a1": "Başvurun bize ulaştıktan sonra aday havuzumuza eklenir. Profilin mevcut ya da ileride açılabilecek uygun bir pozisyonla eşleşirse seninle iletişime geçilir ve süreç hakkında bilgilendirme yapılır.",
@@ -239,7 +241,9 @@
             "Doğanın korunmasına destek olursun",
             "Daha sürdürülebilir bir yaşam tarzını benimsersin",
             "Alışverişini anlamlı hale getirirsin"
-         ]
+         ],
+         "readMore": "Devamını oku",
+         "readMore2": "Daha az gör"
       }
    },
    "WhatIsFoodWaste": {
@@ -251,5 +255,134 @@
       "section3Text": "<brand>Supafo</brand>, restoran, kafe, fırın ve marketlerde gün sonunda satılamayan ama hâlâ tüketilebilir durumda olan ürünleri kullanıcılarla buluşturur.<br></br>İşletmeler fazla kalan ürünlerini <brand>Supafo</brand> üzerinden uygun fiyatlı paketler halinde sunar. Kullanıcılar ise bu paketleri uygulama üzerinden keşfeder, satın alır ve belirlenen saatlerde işletmeden teslim alır.<br></br>Böylece hem işletmeler ürünlerini çöpe atmak yerine değerlendirmiş olur hem de kullanıcılar kaliteli yiyeceklere daha uygun fiyatlarla ulaşır.",
       "section4Title": "Her Paket Bir Fark Yaratır",
       "section4Text": "<brand>Supafo</brand>’da satın alınan her paket, çöpe gitmek üzere olan bir yiyeceğin yeniden değer kazanması demektir.<br></br>Bu küçük seçimler bir araya geldiğinde büyük bir etki oluşturur. Daha az israf, daha fazla tasarruf ve daha sürdürülebilir bir yaşam mümkün hale gelir.<br></br><brand>Supafo</brand> ile hem bütçeni koruyabilir hem de gıda israfına karşı gerçek bir adım atabilirsin."
+   },
+   "Guide": {
+      "hero": {
+         "title": "Gıda israfını azaltan akıllı paket deneyimi",
+         "description": "<green>Supafo</green>, satılamayan ama hâlâ tüketilebilir ürünleri uygun fiyatlı paketlere dönüştürür. Kullanıcılar paketleri keşfeder, sepete ekler, kredi kartı veya hızlı ödeme seçenekleriyle satın alır.",
+         "stats": {
+            "discover": {
+               "value": "7/24",
+               "label": "Paket keşfetme"
+            },
+            "payment": {
+               "value": "2+",
+               "label": "Ödeme seçeneği"
+            },
+            "discount": {
+               "value": "%40+",
+               "label": "Fırsatlı paketler"
+            }
+         }
+      },
+      "audience": {
+         "title": "Kullanıcı ve Partner",
+         "heading": "<green>Supafo</green> iki taraf için de net değer üretir.",
+         "description": "Kullanıcılar uygun fiyatlı paketleri keşfeder. İşletmeler kalan ürünlerini değerlendirir. Her iki taraf da daha sürdürülebilir bir tüketim modelinin parçası olur.",
+         "buttons": {
+            "user": {
+               "title": "Kullanıcıyım",
+               "text": "Paket keşfetmek ve uygun fiyatla satın almak istiyorum."
+            },
+            "partner": {
+               "title": "Partnerim",
+               "text": "Kalan ürünlerimi değerlendirmek istiyorum."
+            }
+         },
+         "userSteps": {
+            "title": "Kullanıcılar için",
+            "steps": [
+               {
+                  "number": "01",
+                  "title": "Paketleri keşfet",
+                  "description": "Yakındaki kafe, restoran, fırın ve market paketlerini 7/24 görüntüle."
+               },
+               {
+                  "number": "02",
+                  "title": "Sepete ekle",
+                  "description": "Beğendiğin paketi sepete ekle ve teslim saatini kontrol et."
+               },
+               {
+                  "number": "03",
+                  "title": "Güvenli öde",
+                  "description": "Kredi kartı, Apple Pay veya Google Pay ile ödemeni tamamla."
+               },
+               {
+                  "number": "04",
+                  "title": "Teslim al",
+                  "description": "Belirtilen saatte işletmeye gidip paketini al."
+               }
+            ]
+         },
+         "partnerSteps": {
+            "title": "Partnerler için",
+            "steps": [
+               {
+                  "number": "01",
+                  "title": "Kalan ürünleri seç",
+                  "description": "Satılamayan ama tüketilebilir ürünleri belirle."
+               },
+               {
+                  "number": "02",
+                  "title": "Paket oluştur",
+                  "description": "Fiyat, stok adedi, teslim saati ve paket bilgisini gir."
+               },
+               {
+                  "number": "03",
+                  "title": "Siparişleri takip et",
+                  "description": "Kullanıcıların sepet ve ödeme sonrası oluşturduğu siparişleri yönet."
+               },
+               {
+                  "number": "04",
+                  "title": "Ek gelir kazan",
+                  "description": "Çöpe gidecek ürünleri yeni müşteriye ve gelire dönüştür."
+               }
+            ]
+         }
+      },
+      "cartPayment": {
+         "title": "Sepet ve Ödeme",
+         "heading": "Kullanıcı paketi sepete ekler, istediği yöntemle öder.",
+         "description": "<green>Supafo</green>’da satın alma deneyimi hızlı ve anlaşılır olmalı. Kullanıcı paketi sepete ekler, teslim saatini kontrol eder ve kredi kartı ya da Apple Pay / Google Pay ile ödeme yapar.",
+         "cards": {
+            "cart": "Sepete Ekle",
+            "creditCard": "Kredi Kartı",
+            "fastPayment": "Apple Pay / Google Pay"
+         }
+      },
+      "miniGame": {
+         "title": "Mini Oyun",
+         "heading": "İsraf mı, Fırsat mı?",
+         "description": "Bir kafede gün sonunda 5 kruvasan kaldı. Hâlâ taze, ama yarın satışa uygun olmayabilir. Ne olmalı?",
+         "answers": {
+            "waste": {
+               "title": "Çöpe gider",
+               "alt": "Çöpe gider",
+               "text": "Klasik ama kötü senaryo."
+            },
+            "supafo": {
+               "title": "<green>Supafo</green> paketi olur",
+               "alt": "Supafo paketi olur",
+               "text": "İsraf yerine fırsata dönüşür."
+            }
+         },
+         "feedback": {
+            "correctTitle": "Doğru seçim!",
+            "wrongTitle": "Aslında daha iyi bir yol var.",
+            "correctText": "Bu ürün <green>Supafo</green>’da uygun fiyatlı paket olarak yayınlanabilir, kullanıcı tarafından sepete eklenebilir ve çöpe gitmeden değerlendirilebilir.",
+            "wrongText": "Bu kruvasanlar hâlâ tüketilebilir durumdaysa <green>Supafo</green> paketi olarak listelenebilir."
+         }
+      },
+      "impactCalculator": {
+         "eyebrow": "Etki hesaplayıcı",
+         "title": "Ayda kaç paket kurtarabilirsin?",
+         "description": "Küçük seçimler birikince büyük bir etkiye dönüşür. Bu alan bilgilendirme amaçlı basit bir simülasyondur.",
+         "packageCount": "Paket sayısı",
+         "cards": {
+            "packages": "Paket kurtarılır",
+            "support": "İşletmeye destek",
+            "saving": "Tahmini tasarruf"
+         }
+      }
    }
 }

@@ -89,6 +89,7 @@ const Map = () => {
             overflow: "hidden",
             cursor: "pointer",
          }}
+         className="border border-[#82B74C] rounded-[30px] overflow-hidden"
       >
          <div
             ref={mapRef}

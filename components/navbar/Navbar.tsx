@@ -9,10 +9,11 @@ import { getNavbarMenu } from "@/components/utils/Navbar"
 import LangSwitch from "@/components/lang/LangSwitch"
 import NavbarSubmenuLinks from "@/components/navbar/NavbarSubmenuLinks"
 import PartnerLoginAnimation from "@/components/navbar/PartnerLoginAnimation"
+import { getDownloadUrl } from "@/components/store/AppStore"
+import NavbarDownloadButtonClient from "@/components/navbar/NavbarDownloadButtonClient"
 
 const Navbar = async () => {
    const t = await getTranslations("Navbar")
-   const modal = await getTranslations("Modal")
    const locale = await getLocale()
 
    const navbarMenu = getNavbarMenu({ locale, t })
@@ -85,6 +86,7 @@ const Navbar = async () => {
                         transition-all
                         duration-500
                         ease-in-out
+                        shadow-[0_0_20px_rgba(0,0,0,0.08)]
                      "
                   >
                      <div className="relative h-7.5 w-22.5 flex items-center justify-center">
@@ -103,6 +105,7 @@ const Navbar = async () => {
                               ease-in-out
                               group-hover:opacity-100
                               group-hover:scale-100
+                              shadow-[0_0_20px_rgba(0,0,0,0.08)]
                            "
                         >
                            {t("partner")}
@@ -111,10 +114,8 @@ const Navbar = async () => {
                   </Button>
                </div>
 
-               <NavbarDownloadButton
+               <NavbarDownloadButtonClient
                   text={t("download_app")}
-                  title={modal("download_app_title")}
-                  modal
                   navbar
                />
 
@@ -161,6 +162,7 @@ const Navbar = async () => {
                         transition-all
                         duration-500
                         ease-in-out
+                        shadow-[0_0_20px_rgba(0,0,0,0.08)]
                      "
                   >
                      <div className="relative h-7.5 w-22.5 flex items-center justify-center">
@@ -179,6 +181,7 @@ const Navbar = async () => {
                               ease-in-out
                               group-hover:opacity-100
                               group-hover:scale-100
+                              shadow-[0_0_20px_rgba(0,0,0,0.08)]
                            "
                         >
                            {t("partner")}
@@ -187,10 +190,8 @@ const Navbar = async () => {
                   </Button>
                </div>
 
-               <NavbarDownloadButton
+               <NavbarDownloadButtonClient
                   text={t("download_app")}
-                  title={modal("download_app_title")}
-                  modal
                   navbar
                />
 

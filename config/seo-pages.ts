@@ -25,7 +25,7 @@ type PageSeo = {
 export const pageSeo: Record<SeoPath, Record<Locale, PageSeo>> = {
    "": {
       tr: {
-         title: "Supafo | Sürpriz Paketlerle Gıda İsrafını Azalt",
+         title: "Sürpriz Paketlerle Gıda İsrafını Azalt",
          description:
             "Supafo ile yakınındaki restoran ve kafelerden sürpriz paketleri keşfet, tasarruf et ve gıda israfını azalt. Çok dilli yeni nesil food-tech deneyimi.",
          keywords: [
@@ -42,7 +42,7 @@ export const pageSeo: Record<SeoPath, Record<Locale, PageSeo>> = {
          ogLocale: "tr_TR",
       },
       en: {
-         title: "Supafo | Reduce Food Waste with Surprise Packs",
+         title: "Reduce Food Waste with Surprise Packs",
          description:
             "Discover surprise food packs from nearby restaurants and cafés with Supafo. Save money, reduce food waste, and join a multilingual next-generation food-tech experience.",
          keywords: [
@@ -59,7 +59,7 @@ export const pageSeo: Record<SeoPath, Record<Locale, PageSeo>> = {
          ogLocale: "en_US",
       },
       az: {
-         title: "Supafo | Sürpriz Paketlərlə Qida İsrafını Azalt",
+         title: "Sürpriz Paketlərlə Qida İsrafını Azalt",
          description:
             "Supafo ilə yaxınındakı restoran və kafelərdən sürpriz paketləri kəşf et, qənaət et və qida israfını azalt. Çoxdilli yeni nəsil food-tech təcrübəsi.",
          keywords: [
@@ -79,7 +79,7 @@ export const pageSeo: Record<SeoPath, Record<Locale, PageSeo>> = {
 
    "/about-us": {
       tr: {
-         title: "Hakkımızda | Supafo",
+         title: "Hakkımızda",
          description:
             "Supafo’nun gıda israfını azaltma misyonunu, vizyonunu ve sürdürülebilir tüketim için geliştirdiği yaklaşımı keşfedin.",
          keywords: [
@@ -92,7 +92,7 @@ export const pageSeo: Record<SeoPath, Record<Locale, PageSeo>> = {
          ogLocale: "tr_TR",
       },
       en: {
-         title: "About Us | Supafo",
+         title: "About Us",
          description:
             "Discover Supafo’s mission, vision, and approach to reducing food waste through sustainable consumption and surprise food packs.",
          keywords: [
@@ -105,7 +105,7 @@ export const pageSeo: Record<SeoPath, Record<Locale, PageSeo>> = {
          ogLocale: "en_US",
       },
       az: {
-         title: "Haqqımızda | Supafo",
+         title: "Haqqımızda",
          description:
             "Supafo-nun qida israfını azaltmaq missiyasını, vizyonunu və davamlı istehlaka yönəlmiş yanaşmasını kəşf edin.",
          keywords: [
@@ -121,21 +121,21 @@ export const pageSeo: Record<SeoPath, Record<Locale, PageSeo>> = {
 
    "/career": {
       tr: {
-         title: "Kariyer | Supafo",
+         title: "Kariyer",
          description:
             "Supafo ekibine katılın ve gıda israfını azaltan sürdürülebilir food-tech yolculuğunun parçası olun.",
          keywords: ["Supafo kariyer", "iş ilanları", "food-tech kariyer", "sürdürülebilirlik"],
          ogLocale: "tr_TR",
       },
       en: {
-         title: "Careers | Supafo",
+         title: "Careers",
          description:
             "Join the Supafo team and become part of a sustainable food-tech journey focused on reducing food waste.",
          keywords: ["Supafo careers", "jobs", "food-tech careers", "sustainability"],
          ogLocale: "en_US",
       },
       az: {
-         title: "Karyera | Supafo",
+         title: "Karyera",
          description:
             "Supafo komandasına qoşulun və qida israfını azaltmağa yönəlmiş davamlı food-tech yolculuğunun bir hissəsi olun.",
          keywords: ["Supafo karyera", "iş imkanları", "food-tech karyera", "davamlılıq"],
@@ -145,21 +145,21 @@ export const pageSeo: Record<SeoPath, Record<Locale, PageSeo>> = {
 
    "/contact": {
       tr: {
-         title: "İletişim | Supafo",
+         title: "İletişim",
          description:
             "Supafo ile iletişime geçin. Sorularınız, iş birlikleri ve destek talepleriniz için bize ulaşın.",
          keywords: ["Supafo iletişim", "destek", "iş birliği", "food-tech iletişim"],
          ogLocale: "tr_TR",
       },
       en: {
-         title: "Contact | Supafo",
+         title: "Contact",
          description:
             "Get in touch with Supafo for questions, partnerships, support requests, and collaboration opportunities.",
          keywords: ["Supafo contact", "support", "partnership", "food-tech contact"],
          ogLocale: "en_US",
       },
       az: {
-         title: "Əlaqə | Supafo",
+         title: "Əlaqə",
          description:
             "Sual, əməkdaşlıq və dəstək müraciətləriniz üçün Supafo ilə əlaqə saxlayın.",
          keywords: ["Supafo əlaqə", "dəstək", "əməkdaşlıq", "food-tech əlaqə"],
@@ -169,21 +169,21 @@ export const pageSeo: Record<SeoPath, Record<Locale, PageSeo>> = {
 
    "/cookie-policy": {
       tr: {
-         title: "Çerez Politikası | Supafo",
+         title: "Çerez Politikası",
          description:
             "Supafo çerez politikası hakkında bilgi alın. Web sitemizde çerezlerin nasıl kullanıldığını öğrenin.",
          keywords: ["Supafo çerez politikası", "çerezler", "cookie policy"],
          ogLocale: "tr_TR",
       },
       en: {
-         title: "Cookie Policy | Supafo",
+         title: "Cookie Policy",
          description:
             "Learn about Supafo’s cookie policy and how cookies are used on our website.",
          keywords: ["Supafo cookie policy", "cookies", "privacy"],
          ogLocale: "en_US",
       },
       az: {
-         title: "Çərəz Siyasəti | Supafo",
+         title: "Çərəz Siyasəti",
          description:
             "Supafo çərəz siyasəti haqqında məlumat alın və veb saytımızda çərəzlərin necə istifadə edildiyini öyrənin.",
          keywords: ["Supafo çərəz siyasəti", "çərəzlər", "cookie policy"],
@@ -193,21 +193,21 @@ export const pageSeo: Record<SeoPath, Record<Locale, PageSeo>> = {
 
    "/guide": {
       tr: {
-         title: "Rehber | Supafo",
+         title: "Rehber",
          description:
             "Supafo’yu nasıl kullanacağınızı öğrenin. Sürpriz paketleri keşfetme, satın alma ve teslim alma adımlarını inceleyin.",
          keywords: ["Supafo rehber", "sürpriz paket nasıl alınır", "gıda israfı rehberi"],
          ogLocale: "tr_TR",
       },
       en: {
-         title: "Guide | Supafo",
+         title: "Guide",
          description:
             "Learn how to use Supafo. Explore the steps for discovering, purchasing, and collecting surprise food packs.",
          keywords: ["Supafo guide", "how to buy surprise packs", "food waste guide"],
          ogLocale: "en_US",
       },
       az: {
-         title: "Bələdçi | Supafo",
+         title: "Bələdçi",
          description:
             "Supafo-dan necə istifadə edəcəyinizi öyrənin. Sürpriz paketləri kəşf etmək, almaq və təhvil götürmək addımlarını nəzərdən keçirin.",
          keywords: ["Supafo bələdçi", "sürpriz paket necə alınır", "qida israfı bələdçisi"],
@@ -217,21 +217,21 @@ export const pageSeo: Record<SeoPath, Record<Locale, PageSeo>> = {
 
    "/kvkk": {
       tr: {
-         title: "KVKK Aydınlatma Metni | Supafo",
+         title: "KVKK Aydınlatma Metni",
          description:
             "Supafo KVKK aydınlatma metni ile kişisel verilerin işlenmesi, saklanması ve korunmasına ilişkin bilgileri inceleyin.",
          keywords: ["Supafo KVKK", "kişisel veriler", "aydınlatma metni"],
          ogLocale: "tr_TR",
       },
       en: {
-         title: "Personal Data Protection Notice | Supafo",
+         title: "Personal Data Protection Notice",
          description:
             "Review Supafo’s personal data protection notice and information about the processing and protection of personal data.",
          keywords: ["Supafo personal data", "data protection", "privacy notice"],
          ogLocale: "en_US",
       },
       az: {
-         title: "Şəxsi Məlumatların Qorunması | Supafo",
+         title: "Şəxsi Məlumatların Qorunması",
          description:
             "Supafo-nun şəxsi məlumatların işlənməsi, saxlanması və qorunması haqqında məlumatlarını nəzərdən keçirin.",
          keywords: ["Supafo şəxsi məlumatlar", "məlumatların qorunması", "məxfilik"],
@@ -241,21 +241,21 @@ export const pageSeo: Record<SeoPath, Record<Locale, PageSeo>> = {
 
    "/privacy-policy": {
       tr: {
-         title: "Gizlilik Politikası | Supafo",
+         title: "Gizlilik Politikası",
          description:
             "Supafo gizlilik politikası ile kişisel verilerinizin nasıl toplandığını, kullanıldığını ve korunduğunu öğrenin.",
          keywords: ["Supafo gizlilik politikası", "kişisel veri", "privacy policy"],
          ogLocale: "tr_TR",
       },
       en: {
-         title: "Privacy Policy | Supafo",
+         title: "Privacy Policy",
          description:
             "Learn how Supafo collects, uses, and protects your personal data in our privacy policy.",
          keywords: ["Supafo privacy policy", "personal data", "data protection"],
          ogLocale: "en_US",
       },
       az: {
-         title: "Məxfilik Siyasəti | Supafo",
+         title: "Məxfilik Siyasəti",
          description:
             "Supafo məxfilik siyasəti ilə şəxsi məlumatlarınızın necə toplandığını, istifadə edildiyini və qorunduğunu öyrənin.",
          keywords: ["Supafo məxfilik siyasəti", "şəxsi məlumat", "data protection"],
@@ -265,21 +265,21 @@ export const pageSeo: Record<SeoPath, Record<Locale, PageSeo>> = {
 
    "/projects": {
       tr: {
-         title: "Projeler | Supafo",
+         title: "Projeler",
          description:
             "Supafo’nun gıda israfını azaltmaya, sürdürülebilir tüketime ve sosyal faydaya odaklanan projelerini keşfedin.",
          keywords: ["Supafo projeler", "gıda israfı projeleri", "sürdürülebilir projeler"],
          ogLocale: "tr_TR",
       },
       en: {
-         title: "Projects | Supafo",
+         title: "Projects",
          description:
             "Explore Supafo’s projects focused on reducing food waste, supporting sustainable consumption, and creating social impact.",
          keywords: ["Supafo projects", "food waste projects", "sustainable projects"],
          ogLocale: "en_US",
       },
       az: {
-         title: "Layihələr | Supafo",
+         title: "Layihələr",
          description:
             "Supafo-nun qida israfını azaltmağa, davamlı istehlaka və sosial faydaya yönəlmiş layihələrini kəşf edin.",
          keywords: ["Supafo layihələr", "qida israfı layihələri", "davamlı layihələr"],
@@ -289,21 +289,21 @@ export const pageSeo: Record<SeoPath, Record<Locale, PageSeo>> = {
 
    "/terms-and-conditions": {
       tr: {
-         title: "Şartlar ve Koşullar | Supafo",
+         title: "Şartlar ve Koşullar",
          description:
             "Supafo kullanım şartları ve koşullarını inceleyin. Hizmetlerimizi kullanmadan önce geçerli kuralları öğrenin.",
          keywords: ["Supafo şartlar", "kullanım koşulları", "terms and conditions"],
          ogLocale: "tr_TR",
       },
       en: {
-         title: "Terms and Conditions | Supafo",
+         title: "Terms and Conditions",
          description:
             "Review Supafo’s terms and conditions. Learn the rules that apply before using our services.",
          keywords: ["Supafo terms", "terms and conditions", "user agreement"],
          ogLocale: "en_US",
       },
       az: {
-         title: "Şərtlər və Qaydalar | Supafo",
+         title: "Şərtlər və Qaydalar",
          description:
             "Supafo istifadə şərtlərini və qaydalarını nəzərdən keçirin. Xidmətlərimizdən istifadə etməzdən əvvəl tətbiq olunan qaydaları öyrənin.",
          keywords: ["Supafo şərtlər", "istifadə qaydaları", "terms and conditions"],
@@ -313,21 +313,21 @@ export const pageSeo: Record<SeoPath, Record<Locale, PageSeo>> = {
 
    "/what-is-food-waste": {
       tr: {
-         title: "Gıda İsrafı Nedir? | Supafo",
+         title: "Gıda İsrafı Nedir?",
          description:
             "Gıda israfının ne olduğunu, neden önemli olduğunu ve Supafo ile israfı azaltmak için neler yapılabileceğini öğrenin.",
          keywords: ["gıda israfı nedir", "gıda israfını azaltmak", "Supafo"],
          ogLocale: "tr_TR",
       },
       en: {
-         title: "What Is Food Waste? | Supafo",
+         title: "What Is Food Waste?",
          description:
             "Learn what food waste is, why it matters, and how Supafo helps reduce waste through surprise food packs.",
          keywords: ["what is food waste", "reduce food waste", "Supafo"],
          ogLocale: "en_US",
       },
       az: {
-         title: "Qida İsrafı Nədir? | Supafo",
+         title: "Qida İsrafı Nədir?",
          description:
             "Qida israfının nə olduğunu, niyə vacib olduğunu və Supafo ilə israfı azaltmaq üçün nələr edilə biləcəyini öyrənin.",
          keywords: ["qida israfı nədir", "qida israfını azaltmaq", "Supafo"],
@@ -337,21 +337,21 @@ export const pageSeo: Record<SeoPath, Record<Locale, PageSeo>> = {
 
    "/career/team": {
       tr: {
-         title: "Ekibimiz | Supafo",
+         title: "Ekibimiz",
          description:
             "Supafo ekibini ve gıda israfını azaltma hedefiyle çalışan insanları yakından tanıyın.",
          keywords: ["Supafo ekibi", "Supafo takım", "food-tech ekip"],
          ogLocale: "tr_TR",
       },
       en: {
-         title: "Our Team | Supafo",
+         title: "Our Team",
          description:
             "Meet the Supafo team and the people working toward reducing food waste through technology.",
          keywords: ["Supafo team", "food-tech team", "our team"],
          ogLocale: "en_US",
       },
       az: {
-         title: "Komandamız | Supafo",
+         title: "Komandamız",
          description:
             "Supafo komandasını və texnologiya ilə qida israfını azaltmaq üçün çalışan insanları yaxından tanıyın.",
          keywords: ["Supafo komanda", "food-tech komanda", "komandamız"],
@@ -361,21 +361,21 @@ export const pageSeo: Record<SeoPath, Record<Locale, PageSeo>> = {
 
    "/partner": {
       tr: {
-         title: "Partner Ol | Supafo",
+         title: "Partner Ol",
          description:
             "Restoran, kafe veya gıda işletmenizi Supafo partner ağına katın; fazla ürünleri değerlendirin ve gıda israfını azaltın.",
          keywords: ["Supafo partner", "restoran partner", "gıda israfını azalt", "işletme kaydı"],
          ogLocale: "tr_TR",
       },
       en: {
-         title: "Become a Partner | Supafo",
+         title: "Become a Partner",
          description:
             "Join Supafo’s partner network with your restaurant, café, or food business to reduce food waste and make better use of surplus products.",
          keywords: ["Supafo partner", "restaurant partner", "reduce food waste", "business signup"],
          ogLocale: "en_US",
       },
       az: {
-         title: "Partner Ol | Supafo",
+         title: "Partner Ol",
          description:
             "Restoran, kafe və ya qida biznesinizi Supafo partner şəbəkəsinə qoşun; artıq məhsulları dəyərləndirin və qida israfını azaldın.",
          keywords: ["Supafo partner", "restoran partner", "qida israfını azalt", "biznes qeydiyyatı"],

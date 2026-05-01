@@ -17,6 +17,12 @@ const ProjectsClient = () => {
       br: () => <br />
    }
 
+   const imageWrapperClass =
+      "flex w-full shrink-0 justify-center lg:w-[36%] xl:w-[34%]"
+
+   const imageClass =
+      "h-auto w-full max-w-[260px] object-contain sm:max-w-[300px] md:max-w-[320px] lg:max-w-[360px] xl:max-w-[400px]"
+
    return (
       <main className="overflow-hidden">
          <section className="relative px-5 sm:px-8 md:px-12 lg:px-20 xl:px-32 2xl:px-60 py-15 lg:py-30">
@@ -44,14 +50,14 @@ const ProjectsClient = () => {
             </div>
 
             <div className="flex flex-col lg:flex-row-reverse gap-10 md:gap-16 lg:gap-20 items-center">
-               <div className="w-full max-w-80 shrink-0">
+               <div className={imageWrapperClass}>
                   <Image
                      alt="saplings"
                      src="/projects/saplings/1.svg"
                      width={422}
                      height={462}
-                     className="w-80 h-auto"
-                     sizes="(max-width: 640px) 70vw, (max-width: 1024px) 45vw, 422px"
+                     className={imageClass}
+                     sizes="(max-width: 640px) 80vw, (max-width: 1024px) 320px, 400px"
                   />
                </div>
 
@@ -87,14 +93,14 @@ const ProjectsClient = () => {
          >
             <section className="relative px-5 sm:px-8 md:px-12 lg:px-20 xl:px-32 2xl:px-60 py-10">
                <div className="flex flex-col lg:flex-row gap-10 md:gap-16 lg:gap-20 items-center mt-20 md:mt-30">
-                  <div className="w-full max-w-80 shrink-0">
+                  <div className={imageWrapperClass}>
                      <Image
                         alt="saplings"
                         src="/projects/saplings/2.svg"
                         width={422}
                         height={462}
-                        className="w-80 h-auto"
-                        sizes="(max-width: 640px) 70vw, (max-width: 1024px) 45vw, 422px"
+                        className={imageClass}
+                        sizes="(max-width: 640px) 80vw, (max-width: 1024px) 320px, 400px"
                      />
                   </div>
 
@@ -174,14 +180,14 @@ const ProjectsClient = () => {
 
             <section className="relative px-5 sm:px-8 md:px-12 lg:px-20 xl:px-32 2xl:px-60 py-20 md:py-30">
                <div className="flex flex-col lg:flex-row-reverse gap-10 md:gap-16 lg:gap-20 items-center">
-                  <div className="w-full max-w-80 shrink-0">
+                  <div className={imageWrapperClass}>
                      <Image
                         alt="saplings"
                         src="/projects/saplings/3.svg"
                         width={422}
                         height={462}
-                        className="w-80 h-auto"
-                        sizes="(max-width: 640px) 70vw, (max-width: 1024px) 45vw, 422px"
+                        className={imageClass}
+                        sizes="(max-width: 640px) 80vw, (max-width: 1024px) 320px, 400px"
                      />
                   </div>
 
@@ -221,7 +227,7 @@ const ProjectsClient = () => {
                textClass={styles.readMoreButton}
                className={`py-1 px-9`}
                aria-expanded={isExpanded}
-               text={isExpanded ? "Daha az gör" : "Devamını oku"}
+               text={isExpanded ? `${t.rich("saplings.readMore2", richText)}` : `${t.rich("saplings.readMore", richText)}`}
             />
          </div>
       </main>

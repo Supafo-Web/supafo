@@ -30,29 +30,37 @@ const ContactClient = () => {
    })
 
    const icons = [
-      {
-         id: 1,
-         icon: '/icons/contact/Phone.svg',
-         text: settings?.support_phone,
-         alt: 'phone'
-      },
-      {
-         id: 2,
-         icon: '/icons/contact/Whatsapp.svg',
-         text: settings?.support_whatsapp,
-         alt: 'whatsapp'
-      },
+      ...(settings?.is_support_active
+         ? [
+            {
+               id: 1,
+               icon: '/icons/contact/Phone.svg',
+               text: settings?.support_phone,
+               alt: 'phone',
+            },
+         ]
+         : []),
+      ...(settings?.is_whatsapp_active
+         ? [
+            {
+               id: 2,
+               icon: '/icons/contact/Whatsapp.svg',
+               text: settings?.support_whatsapp,
+               alt: 'whatsapp',
+            },
+         ]
+         : []),
       {
          id: 3,
          icon: '/icons/contact/Email.svg',
          text: settings?.support_email,
-         alt: 'email'
+         alt: 'email',
       },
       {
          id: 4,
          icon: '/icons/contact/Location.svg',
          text: location.displayAddress || location.address,
-         alt: 'address'
+         alt: 'address',
       },
    ]
 
@@ -115,7 +123,7 @@ const ContactClient = () => {
    return (
       <main>
          <section
-            className={`px-10 sm:px-30 lg:px-40 xl:px-50 2xl:px-80 py-15 lg:py-30 relative`}
+            className={`px-10 sm:px-20 lg:px-20 xl:px-50 2xl:px-80 py-15 lg:py-30 relative`}
          >
             <Image
                alt="flower"
@@ -144,11 +152,17 @@ const ContactClient = () => {
                />
             </div>
 
-            <div className="flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-15">
-               <div className="w-full lg:w-1/2">
+            <div
+               className="flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-15"
+            >
+               <div
+                  className="w-full lg:w-1/2"
+               >
                   <Map />
                </div>
-               <div className="flex flex-col gap-5 w-full lg:w-1/2">
+               <div
+                  className="flex flex-col gap-5 w-full lg:w-1/2"
+               >
                   {icons.map((item, index) => (
                      <div
                         key={item.id || index}
