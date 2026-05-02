@@ -34,7 +34,7 @@ const Button = ({
    const contentNode = !children ? (
       <span
          className={`
-            ${(!navbar && !footer) && styles.textButton}
+            ${!navbar && !footer ? styles.textButton : ""}
             ${textClass}
          `}
       >
@@ -56,7 +56,7 @@ const Button = ({
                      : baseClass
                }
                ${className}
-               ${notChildren && styles.privateButton}
+               ${notChildren ? styles.privateButton : ''}
             `}
          >
             {contentNode}
@@ -75,7 +75,7 @@ const Button = ({
                   : baseClass
             }
             ${className}
-            ${notChildren && styles.privateButton}
+            ${notChildren ? styles.privateButton : ''}
          `}
       >
          {contentNode}

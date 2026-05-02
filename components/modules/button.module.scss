@@ -2,17 +2,17 @@
 @use "../../styles/breakpoints" as *;
 
 .privateButton {
-   background-color: $primary;
+   background-color: $secondary;
    transition: background-color 0.3s ease;
 
    &:hover {
-      background-color: $secondary;
+      background-color: $textColor;
    }
 }
 
 .textButton {
    font-family: $fontFamily;
-   font-weight: $medium;
+   font-weight: $semiBold;
    font-size: clamp(0.875rem, 0.95vw, 1rem);
    line-height: 1.2;
    text-align: center;

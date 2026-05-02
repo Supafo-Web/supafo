@@ -285,15 +285,15 @@ const HomeClient = () => {
                            })}
                         </h1>
 
-                        <h6 className="text-center lg:text-left">
+                        <h3 className="text-center lg:text-left">
                            {t("what_is_heading")}
+                        </h3>
 
-                           <p className="mt-5 text-center lg:text-left">
-                              {t.rich("what_is_desc", {
-                                 highlight: (chunks) => <span>{chunks}</span>,
-                              })}
-                           </p>
-                        </h6>
+                        <p className="mt-5 text-center lg:text-left">
+                           {t.rich("what_is_desc", {
+                              highlight: (chunks) => <span>{chunks}</span>,
+                           })}
+                        </p>
                      </div>
                   </div>
                </div>
@@ -378,23 +378,23 @@ const HomeClient = () => {
                         />
                      </div>
 
-                     <h6 className="w-full min-w-0 text-center lg:text-left">
+                     <h3 className="w-full min-w-0 text-center lg:text-left">
                         {t("bag_heading_1")}
+                     </h3>
 
-                        <p className="mt-3 text-center lg:mt-8 lg:text-left">
-                           {t("bag_desc_1")}
-                        </p>
-                     </h6>
+                     <p className="mt-3 text-center lg:mt-8 lg:text-left">
+                        {t("bag_desc_1")}
+                     </p>
                   </div>
 
                   <div className="flex min-w-0 flex-col items-center gap-10 py-12 lg:flex-row lg:gap-14 lg:py-16 xl:gap-20">
-                     <h6 className="w-full min-w-0 text-center lg:text-left">
+                     <h3 className="w-full min-w-0 text-center lg:text-left">
                         {t("bag_heading_2")}
+                     </h3>
 
-                        <p className="mt-3 text-center lg:mt-8 lg:text-left">
-                           {t("bag_desc_2")}
-                        </p>
-                     </h6>
+                     <p className="mt-3 text-center lg:mt-8 lg:text-left">
+                        {t("bag_desc_2")}
+                     </p>
 
                      <div className="flex w-full shrink-0 justify-center lg:w-[38%]">
                         <Image
@@ -410,9 +410,9 @@ const HomeClient = () => {
 
                   <div className="flex flex-col items-center justify-center py-12 lg:py-16">
                      <div className="mb-6 flex max-w-4xl flex-col items-center lg:mb-10">
-                        <h6 className="text-center">
+                        <h3 className="text-center">
                            {t("bag_heading_3")}
-                        </h6>
+                        </h3>
 
                         <p className="mt-2 text-center lg:mt-3">
                            {t("bag_desc_3")}
@@ -474,13 +474,13 @@ const HomeClient = () => {
                         {t("journey_title")}
                      </h1>
 
-                     <h6 className="text-center lg:text-left">
+                     <h3 className="text-center lg:text-left">
                         {t("journey_heading")}
+                     </h3>
 
-                        <p className="mt-5 text-center lg:mt-7 lg:text-left">
-                           {t("journey_desc")}
-                        </p>
-                     </h6>
+                     <p className="mt-5 text-center lg:mt-7 lg:text-left">
+                        {t("journey_desc")}
+                     </p>
                   </div>
                </div>
             </section>
@@ -552,23 +552,23 @@ const HomeClient = () => {
                         />
                      </div>
 
-                     <h6 className="w-full min-w-0 text-center lg:text-left">
+                     <h3 className="w-full min-w-0 text-center lg:text-left">
                         {t("donation_heading_1")}
+                     </h3>
 
-                        <p className="mt-3 text-center lg:mt-7 lg:text-left">
-                           {t("donation_desc_1")}
-                        </p>
-                     </h6>
+                     <p className="mt-3 text-center lg:mt-7 lg:text-left">
+                        {t("donation_desc_1")}
+                     </p>
                   </div>
 
                   <div className="flex min-w-0 flex-col items-center gap-10 py-12 lg:flex-row lg:gap-14 lg:py-16 xl:gap-20">
-                     <h6 className="w-full min-w-0 text-center lg:text-left">
+                     <h3 className="w-full min-w-0 text-center lg:text-left">
                         {t("donation_heading_2")}
+                     </h3>
 
-                        <p className="mt-3 text-center lg:mt-7 lg:text-left">
-                           {t("donation_desc_2")}
-                        </p>
-                     </h6>
+                     <p className="mt-3 text-center lg:mt-7 lg:text-left">
+                        {t("donation_desc_2")}
+                     </p>
 
                      <div className="flex w-full shrink-0 justify-center lg:w-[38%]">
                         <Image
