@@ -14,12 +14,23 @@ const HomeClient = () => {
    const modal = useTranslations("Modal")
    const locale = useLocale()
 
+   const [loadAllVideos, setLoadAllVideos] = useState(false)
+
+   useEffect(() => {
+      const timer = window.setTimeout(() => {
+         setLoadAllVideos(true)
+      }, 1800)
+
+      return () => window.clearTimeout(timer)
+   }, [])
+
    type HeroMediaItem =
       | {
          id: number
          type: "video"
          mobileMp4: string
          desktopMp4: string
+         poster: string
       }
       | {
          id: number
@@ -34,12 +45,14 @@ const HomeClient = () => {
          type: "video",
          mobileMp4: "/videos/mobile/1-3.mp4",
          desktopMp4: "/videos/desktop/1-3.mp4",
+         poster: "/videos/posters/1-3.webp",
       },
       {
          id: 2,
          type: "video",
          mobileMp4: "/videos/mobile/2-1.mp4",
          desktopMp4: "/videos/desktop/2-1.mp4",
+         poster: "/videos/posters/2-1.webp",
       },
       {
          id: 3,
@@ -52,12 +65,14 @@ const HomeClient = () => {
          type: "video",
          mobileMp4: "/videos/mobile/1-2.mp4",
          desktopMp4: "/videos/desktop/1-2.mp4",
+         poster: "/videos/posters/1-2.webp",
       },
       {
          id: 5,
          type: "video",
          mobileMp4: "/videos/mobile/2-2.mp4",
          desktopMp4: "/videos/desktop/2-2.mp4",
+         poster: "/videos/posters/2-2.webp",
       },
       {
          id: 6,
@@ -104,23 +119,30 @@ const HomeClient = () => {
                      {item.type === "video" ? (
                         <video
                            className={styles.media}
-                           autoPlay
+                           autoPlay={item.id <= 2 || loadAllVideos}
                            muted
                            loop
                            playsInline
-                           preload="metadata"
+                           preload={item.id <= 2 ? "metadata" : "none"}
+                           poster={item.poster}
                            aria-label="Supafo uygulama tanıtım videosu"
+                           aria-hidden="true"
+                           tabIndex={-1}
                         >
-                           <source
-                              src={item.mobileMp4}
-                              type="video/mp4"
-                              media="(max-width: 768px)"
-                           />
-                           <source
-                              src={item.desktopMp4}
-                              type="video/mp4"
-                              media="(min-width: 769px)"
-                           />
+                           {(item.id <= 2 || loadAllVideos) && (
+                              <>
+                                 <source
+                                    src={item.mobileMp4}
+                                    type="video/mp4"
+                                    media="(max-width: 768px)"
+                                 />
+                                 <source
+                                    src={item.desktopMp4}
+                                    type="video/mp4"
+                                    media="(min-width: 769px)"
+                                 />
+                              </>
+                           )}
                         </video>
                      ) : (
                         <Image
