@@ -495,17 +495,7 @@ main {
    }
 }
 
-@include respond-down(md) {
-   .grid {
-      grid-template-columns: repeat(3, 1fr);
-   }
-}
-
 @include respond-down(sm) {
-   .grid {
-      grid-template-columns: repeat(3, 1fr);
-   }
-
    .content {
       padding: 16px;
    }

@@ -14,14 +14,25 @@ const HomeClient = () => {
    const modal = useTranslations("Modal")
    const locale = useLocale()
 
-   const [loadAllVideos, setLoadAllVideos] = useState(false)
+   const [loadVideos, setLoadVideos] = useState(false)
+   const [loadMockupVideo, setLoadMockupVideo] = useState(false)
+   const [loadRestaurantVideo, setLoadRestaurantVideo] = useState(false)
 
    useEffect(() => {
-      const timer = window.setTimeout(() => {
-         setLoadAllVideos(true)
-      }, 1800)
+      const load = () => setLoadVideos(true)
 
-      return () => window.clearTimeout(timer)
+      const timer = window.setTimeout(load, 3500)
+
+      window.addEventListener("scroll", load, { once: true })
+      window.addEventListener("touchstart", load, { once: true })
+      window.addEventListener("mousemove", load, { once: true })
+
+      return () => {
+         window.clearTimeout(timer)
+         window.removeEventListener("scroll", load)
+         window.removeEventListener("touchstart", load)
+         window.removeEventListener("mousemove", load)
+      }
    }, [])
 
    type HeroMediaItem =
@@ -110,6 +121,50 @@ const HomeClient = () => {
    const textBlockClass =
       "flex w-full min-w-0 flex-col gap-5 text-center lg:text-left"
 
+   useEffect(() => {
+      const mockupSection = document.getElementById("how-does-supafo-work")
+
+      if (!mockupSection) return
+
+      const observer = new IntersectionObserver(
+         ([entry]) => {
+            if (entry.isIntersecting) {
+               setLoadMockupVideo(true)
+               observer.disconnect()
+            }
+         },
+         {
+            rootMargin: "300px",
+         }
+      )
+
+      observer.observe(mockupSection)
+
+      return () => observer.disconnect()
+   }, [])
+
+   useEffect(() => {
+      const restaurantSection = document.getElementById("healthy-life-journey")
+
+      if (!restaurantSection) return
+
+      const observer = new IntersectionObserver(
+         ([entry]) => {
+            if (entry.isIntersecting) {
+               setLoadRestaurantVideo(true)
+               observer.disconnect()
+            }
+         },
+         {
+            rootMargin: "300px",
+         }
+      )
+
+      observer.observe(restaurantSection)
+
+      return () => observer.disconnect()
+   }, [])
+
    return (
       <>
          <header className={`${styles.header} w-full max-w-full overflow-hidden`}>
@@ -117,41 +172,50 @@ const HomeClient = () => {
                {media.map((item) => (
                   <div key={item.id} className={styles.card}>
                      {item.type === "video" ? (
-                        <video
-                           className={styles.media}
-                           autoPlay={item.id === 1 || loadAllVideos}
-                           muted
-                           loop
-                           playsInline
-                           preload={item.id === 1 ? "metadata" : "none"}
-                           poster={item.poster}
-                           aria-hidden="true"
-                           tabIndex={-1}
-                        >
-                           {(item.id === 1 || loadAllVideos) && (
-                              <>
-                                 <source
-                                    src={item.mobileMp4}
-                                    type="video/mp4"
-                                    media="(max-width: 768px)"
-                                 />
-                                 <source
-                                    src={item.desktopMp4}
-                                    type="video/mp4"
-                                    media="(min-width: 769px)"
-                                 />
-                              </>
-                           )}
-                        </video>
+                        loadVideos ? (
+                           <video
+                              className={styles.media}
+                              autoPlay
+                              muted
+                              loop
+                              playsInline
+                              preload="none"
+                              poster={item.poster}
+                              aria-hidden="true"
+                              tabIndex={-1}
+                           >
+                              <source
+                                 src={item.mobileMp4}
+                                 type="video/mp4"
+                                 media="(max-width: 768px)"
+                              />
+                              <source
+                                 src={item.desktopMp4}
+                                 type="video/mp4"
+                                 media="(min-width: 769px)"
+                              />
+                           </video>
+                        ) : (
+                           <Image
+                              className={styles.media}
+                              alt="Supafo uygulama tanıtım görseli"
+                              src={item.poster}
+                              fill
+                              quality={75}
+                              priority={item.id === 1}
+                              fetchPriority={item.id === 1 ? "high" : "auto"}
+                              sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
+                           />
+                        )
                      ) : (
                         <Image
                            className={styles.media}
                            alt={item.alt}
                            src={item.src}
                            fill
-                           quality={95}
+                           quality={75}
                            priority={item.id === 3}
-                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                           sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
                         />
                      )}
                   </div>
@@ -189,7 +253,6 @@ const HomeClient = () => {
                   src="/images/LeftFlower.svg"
                   width={69}
                   height={115}
-                  priority
                   className={`${flowerClass} ${styles.leftFlower} ${styles.swingLeaf}`}
                   sizes="(max-width: 640px) 36px, (max-width: 768px) 48px, 69px"
                />
@@ -202,7 +265,6 @@ const HomeClient = () => {
                            src="/home/1.svg"
                            width={350}
                            height={335}
-                           priority
                            className={imageClass}
                            sizes="(max-width: 640px) 80vw, (max-width: 1024px) 340px, 420px"
                         />
@@ -233,7 +295,6 @@ const HomeClient = () => {
                   src="/images/RightFlower.svg"
                   width={69}
                   height={115}
-                  priority
                   className={`${flowerClass} ${styles.rightFlower} ${styles.swingLeaf2}`}
                   sizes="(max-width: 640px) 36px, (max-width: 768px) 48px, 69px"
                />
@@ -249,19 +310,32 @@ const HomeClient = () => {
                   })}
                </h1>
 
-               <video
-                  className={styles.media}
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  preload="metadata"
-               >
-                  <source
-                     src={`/videos/${locale}/Mockup.mp4`}
-                     type="video/mp4"
+               {loadMockupVideo ? (
+                  <video
+                     className={styles.media}
+                     autoPlay
+                     muted
+                     loop
+                     playsInline
+                     preload="none"
+                     poster={`/videos/${locale}/Mockup-poster.webp`}
+                  >
+                     <source
+                        src={`/videos/${locale}/Mockup.mp4`}
+                        type="video/mp4"
+                     />
+                  </video>
+               ) : (
+                  <Image
+                     className={styles.media}
+                     alt="Supafo uygulama tanıtım videosu"
+                     src={`/videos/${locale}/Mockup-poster.webp`}
+                     width={1200}
+                     height={675}
+                     quality={75}
+                     sizes="100vw"
                   />
-               </video>
+               )}
             </section>
 
             <section
@@ -360,19 +434,31 @@ const HomeClient = () => {
             >
                <div className={`${containerClass} flex flex-col items-center gap-10 lg:flex-row lg:gap-14 xl:gap-20`}>
                   <div className="relative h-72 w-full max-w-130 overflow-hidden rounded-xl border border-[#82B74C] sm:h-90 md:h-110 lg:h-105 lg:w-[42%] xl:h-115">
-                     <video
-                        autoPlay
-                        muted
-                        loop
-                        playsInline
-                        preload="metadata"
-                        className="h-full w-full object-cover"
-                     >
-                        <source
-                           src="/videos/Restaurant.mp4"
-                           type="video/mp4"
+                     {loadRestaurantVideo ? (
+                        <video
+                           autoPlay
+                           muted
+                           loop
+                           playsInline
+                           preload="none"
+                           poster="/videos/posters/Restaurant.webp"
+                           className="h-full w-full object-cover"
+                        >
+                           <source
+                              src="/videos/Restaurant.mp4"
+                              type="video/mp4"
+                           />
+                        </video>
+                     ) : (
+                        <Image
+                           alt="Supafo restoran tanıtım görseli"
+                           src="/videos/posters/Restaurant.webp"
+                           fill
+                           quality={75}
+                           sizes="(max-width: 1024px) 100vw, 42vw"
+                           className="object-cover"
                         />
-                     </video>
+                     )}
                   </div>
 
                   <div className={`${styles.textArea} w-full min-w-0 text-center lg:flex-1 lg:text-left`}>

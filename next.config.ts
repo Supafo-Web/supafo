@@ -19,7 +19,9 @@ const nextConfig: NextConfig = {
          },
       ],
 
-      qualities: [75, 90, 95],
+      formats: ["image/avif", "image/webp"],
+      qualities: [60, 70, 75, 85],
+      minimumCacheTTL: 31536000,
    },
 
    compiler: isProd
