@@ -285,9 +285,9 @@ const HomeClient = () => {
                            })}
                         </h1>
 
-                        <h3 className="text-center lg:text-left">
+                        <h2 className="text-center lg:text-left">
                            {t("what_is_heading")}
-                        </h3>
+                        </h2>
 
                         <p className="mt-5 text-center lg:text-left">
                            {t.rich("what_is_desc", {
@@ -378,9 +378,9 @@ const HomeClient = () => {
                         />
                      </div>
 
-                     <h3 className="w-full min-w-0 text-center lg:text-left">
+                     <h2 className="w-full min-w-0 text-center lg:text-left">
                         {t("bag_heading_1")}
-                     </h3>
+                     </h2>
 
                      <p className="mt-3 text-center lg:mt-8 lg:text-left">
                         {t("bag_desc_1")}
@@ -388,9 +388,9 @@ const HomeClient = () => {
                   </div>
 
                   <div className="flex min-w-0 flex-col items-center gap-10 py-12 lg:flex-row lg:gap-14 lg:py-16 xl:gap-20">
-                     <h3 className="w-full min-w-0 text-center lg:text-left">
+                     <h2 className="w-full min-w-0 text-center lg:text-left">
                         {t("bag_heading_2")}
-                     </h3>
+                     </h2>
 
                      <p className="mt-3 text-center lg:mt-8 lg:text-left">
                         {t("bag_desc_2")}
@@ -474,9 +474,9 @@ const HomeClient = () => {
                         {t("journey_title")}
                      </h1>
 
-                     <h3 className="text-center lg:text-left">
+                     <h2 className="text-center lg:text-left">
                         {t("journey_heading")}
-                     </h3>
+                     </h2>
 
                      <p className="mt-5 text-center lg:mt-7 lg:text-left">
                         {t("journey_desc")}
@@ -552,9 +552,9 @@ const HomeClient = () => {
                         />
                      </div>
 
-                     <h3 className="w-full min-w-0 text-center lg:text-left">
+                     <h2 className="w-full min-w-0 text-center lg:text-left">
                         {t("donation_heading_1")}
-                     </h3>
+                     </h2>
 
                      <p className="mt-3 text-center lg:mt-7 lg:text-left">
                         {t("donation_desc_1")}
@@ -562,9 +562,9 @@ const HomeClient = () => {
                   </div>
 
                   <div className="flex min-w-0 flex-col items-center gap-10 py-12 lg:flex-row lg:gap-14 lg:py-16 xl:gap-20">
-                     <h3 className="w-full min-w-0 text-center lg:text-left">
+                     <h2 className="w-full min-w-0 text-center lg:text-left">
                         {t("donation_heading_2")}
-                     </h3>
+                     </h2>
 
                      <p className="mt-3 text-center lg:mt-7 lg:text-left">
                         {t("donation_desc_2")}

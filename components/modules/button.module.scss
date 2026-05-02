@@ -2,11 +2,15 @@
 @use "../../styles/breakpoints" as *;
 
 .privateButton {
-   background-color: $secondary;
-   transition: background-color 0.3s ease;
+   background-color: $primaryButton;
+   border: 1px solid $primaryButton;
+   transition:
+      background-color 0.3s ease,
+      border-color 0.3s ease;
 
    &:hover {
-      background-color: $textColor;
+      background-color: $primaryButtonHover;
+      border-color: $primaryButtonHover;
    }
 }
 
