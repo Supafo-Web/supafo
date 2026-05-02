@@ -15,6 +15,7 @@ const DownloadApp = () => {
                href={item.href}
                target="_blank"
                rel="noreferrer"
+               aria-label={`${item.title} app download link`}
                className={`
                   ${styles.footerAppStore}
                   ${styles.storeButton}
@@ -27,7 +28,8 @@ const DownloadApp = () => {
                >
                   <div className={styles.iconFlipInner}>
                      <Image
-                        alt={item.alt}
+                        alt=""
+                        aria-hidden="true"
                         src={item.icon}
                         width={20}
                         height={20}
@@ -35,7 +37,8 @@ const DownloadApp = () => {
                         style={{ height: "auto" }}
                      />
                      <Image
-                        alt={`${item.alt} hover`}
+                        alt=""
+                        aria-hidden="true"
                         src={item.src}
                         width={20}
                         height={20}

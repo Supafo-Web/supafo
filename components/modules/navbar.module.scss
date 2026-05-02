@@ -20,7 +20,7 @@
 
          &:hover {
             background-color: white;
-            color: $primary;
+            color: $primaryText;
          }
       }
    }
@@ -38,7 +38,7 @@
       color 0.75s ease;
 
    &:hover {
-      color: $primary;
+      color: $primaryText;
    }
 }
 
@@ -76,7 +76,7 @@
       color 0.75s ease;
 
    &:hover {
-      color: $primary;
+      color: $primaryText;
       background-color: white;
    }
 }

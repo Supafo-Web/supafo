@@ -12,6 +12,7 @@ type ButtonProps = {
    navbar?: boolean
    footer?: boolean
    textClass?: string
+   ariaLabel?: string
 }
 
 const Button = ({
@@ -23,7 +24,8 @@ const Button = ({
    className = "",
    navbar = false,
    footer = false,
-   textClass = ""
+   textClass = "",
+   ariaLabel
 }: ButtonProps) => {
    const baseClass =
       `inline-flex items-center justify-center rounded-[10px] transition cursor-pointer`
@@ -47,6 +49,7 @@ const Button = ({
          <Link
             href={href}
             onClick={onClick}
+            aria-label={ariaLabel}
             className={`
                ${navbar ? styles.navbarButton
                   : footer ? styles.footerButton
@@ -65,6 +68,7 @@ const Button = ({
       <button
          type={type}
          onClick={onClick}
+         aria-label={ariaLabel}
          className={`
             ${navbar ? styles.navbarButton
                : footer ? styles.footerButton

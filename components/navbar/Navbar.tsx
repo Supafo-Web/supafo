@@ -25,6 +25,7 @@ const Navbar = async () => {
          <div className="hidden lg:flex items-center justify-between">
             <Button
                href={`/${locale}/`}
+               ariaLabel="Supafo Home"
                className="js-close-lang-dropdown w-35 flex justify-start"
             >
                <img
@@ -66,6 +67,7 @@ const Navbar = async () => {
                <div className="relative w-12.5 h-12.5 shrink-0">
                   <Button
                      href={`/${locale}/partner`}
+                     ariaLabel={t("partner")}
                      className="
                         group
                         absolute
@@ -124,7 +126,10 @@ const Navbar = async () => {
          </div>
 
          <div className="flex lg:hidden items-center justify-between">
-            <Button href={`/${locale}`}>
+            <Button
+               href={`/${locale}`}
+               ariaLabel="Supafo Home"
+            >
                <img
                   src="/logo/logo.svg"
                   alt="Supafo logo"
@@ -138,6 +143,7 @@ const Navbar = async () => {
                <div className="relative w-12.5 h-12.5 shrink-0 overflow-visible">
                   <Button
                      href={`/${locale}/partner`}
+                     ariaLabel={t("partner")}
                      className="
                         group
                         absolute

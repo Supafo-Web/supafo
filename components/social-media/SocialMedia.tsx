@@ -16,30 +16,35 @@ const SocialButtons = () => {
    const socialLink = [
       {
          id: 1,
+         label: 'WhatsApp',
          icon: '/socials/WhatsApp.svg',
          icon2: '/socials/WhatsApp-white.svg',
          link: openWhatsApp
       },
       {
          id: 2,
+         label: 'Instagram',
          icon: '/socials/Instagram.svg',
          icon2: '/socials/Instagram-white.svg',
          link: openInstagram
       },
       {
          id: 3,
+         label: 'X',
          icon: '/socials/X.svg',
          icon2: '/socials/X-white.svg',
          link: openX
       },
       {
          id: 4,
+         label: 'TikTok',
          icon: '/socials/Tiktok.svg',
          icon2: '/socials/Tiktok-white.svg',
          link: openTiktok
       },
       {
          id: 5,
+         label: 'Discord',
          icon: '/socials/Discord.svg',
          icon2: '/socials/Discord-white.svg',
          link: openDiscord
@@ -54,6 +59,7 @@ const SocialButtons = () => {
             <Button
                key={item.id || index}
                onClick={item.link}
+               ariaLabel={`${item.label} hesabımızı aç`}
                className="
                   group cursor-pointer rounded-full bg-white p-2.75
                   shadow-[0_6px_18px_rgba(0,0,0,0.12)]
@@ -72,7 +78,8 @@ const SocialButtons = () => {
                   "
                >
                   <Image
-                     alt="social"
+                     alt=""
+                     aria-hidden="true"
                      src={item.icon}
                      width={24}
                      height={24}
@@ -82,7 +89,8 @@ const SocialButtons = () => {
                      "
                   />
                   <Image
-                     alt="social hover"
+                     alt=""
+                     aria-hidden="true"
                      src={item.icon2}
                      width={24}
                      height={24}

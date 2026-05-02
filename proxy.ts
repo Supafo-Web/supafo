@@ -87,7 +87,6 @@ function buildCsp(nonce: string) {
       "frame-src 'none'",
       "upgrade-insecure-requests",
       "block-all-mixed-content",
-      "report-sample",
    ].join("; ")
 }
 

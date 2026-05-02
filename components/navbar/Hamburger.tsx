@@ -22,11 +22,13 @@ const Hamburger = () => {
             type="button"
             className="cursor-pointer z-50"
             onClick={() => setOpen((prev) => !prev)}
+            ariaLabel={open ? "Close the menu" : "Open the menu"}
          >
             {open ? (
                <span className={`rounded-full p-1.5 ${styles.modalCloseButton}`}>
                   <Image
-                     alt="close"
+                     alt=""
+                     aria-hidden="true"
                      src="/icons/Close.svg"
                      width={30}
                      height={30}
@@ -34,7 +36,8 @@ const Hamburger = () => {
                </span>
             ) : (
                <Image
-                  alt="hamburger"
+                  alt=""
+                  aria-hidden="true"
                   src="/icons/HamburgerMenu.svg"
                   width={36}
                   height={36}

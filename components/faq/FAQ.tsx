@@ -56,10 +56,10 @@ const FAQ = ({ faq }: { faq: FAQItem[] }) => {
 
                         <Image
                            alt={isOpen ? "minus-button" : "plus-button"}
+                           aria-hidden="true"
                            src={isOpen ? "/icons/Minus.svg" : "/icons/Plus.svg"}
                            width={28}
                            height={28}
-
                            className={`
                               ${styles.faqIcon}
                               ${isOpen ? styles.faqIconActive : ''}
@@ -119,10 +119,10 @@ const FAQ = ({ faq }: { faq: FAQItem[] }) => {
 
                                  <Image
                                     alt={isOpen ? "minus-button" : "plus-button"}
+                                    aria-hidden="true"
                                     src={isOpen ? "/icons/Minus.svg" : "/icons/Plus.svg"}
                                     width={28}
                                     height={28}
-
                                     className={`
                                        ${styles.faqIcon}
                                        ${isOpen ? styles.faqIconActive : ''}
@@ -154,6 +154,7 @@ const FAQ = ({ faq }: { faq: FAQItem[] }) => {
          {hasHiddenItems && (
             <Button
                onClick={() => setShowAll(prev => !prev)}
+               ariaLabel={showAll ? "Show less frequently asked questions" : "Show more frequently asked questions"}
                className={`
                   ${styles.downArrow}
                   ${showAll ? styles.downArrowActive : ''}
@@ -161,10 +162,10 @@ const FAQ = ({ faq }: { faq: FAQItem[] }) => {
             >
                <Image
                   alt="down-arrow"
+                  aria-hidden='true'
                   src="/icons/DownArrowGreen.svg"
                   width={24}
                   height={24}
-
                   className={styles.downArrowIcon}
                />
             </Button>

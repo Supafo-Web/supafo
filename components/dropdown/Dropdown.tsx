@@ -78,6 +78,9 @@ const Dropdown = ({
          {(image || language) ? (
             <button
                type="button"
+               aria-label={language ? "Open the language selection menu" : "Open menu"}
+               aria-expanded={open}
+               aria-haspopup="menu"
                className={`group cursor-pointer rounded-full transition-all duration-300 ease-in-out shadow-[0_0_20px_rgba(0,0,0,0.08)] ${open ? "bg-[#578B23]" : "bg-white"
                   }`}
                onMouseEnter={handleOpen}
@@ -90,6 +93,7 @@ const Dropdown = ({
                      <Lottie
                         animationData={open ? LanguageAnimationWhite : LanguageAnimation}
                         loop
+                        aria-hidden='true'
                         className={`w-7.5 h-7.5`}
                      />
                   )}

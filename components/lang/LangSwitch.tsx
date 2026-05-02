@@ -20,18 +20,21 @@ const LangSwitch = () => {
       <div className="flex flex-col items-center h-full justify-end pb-10 gap-6">
          <Link
             href={redirectedPathname("tr")}
+            aria-label="Türkçe diline geç"
             className={`${styles.lang}`}
          >
             {t('tr')}
          </Link>
          <Link
             href={redirectedPathname("en")}
+            aria-label="İngilizce diline geç"
             className={`${styles.lang}`}
          >
             {t('en')}
          </Link>
          <Link
             href={redirectedPathname("az")}
+            aria-label="Azerbaycan Türkçesi diline geç"
             className={`${styles.lang}`}
          >
             {t('az')}
