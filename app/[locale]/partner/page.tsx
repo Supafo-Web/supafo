@@ -33,9 +33,9 @@ const Partner = async () => {
                   <Button
                      href={`/${locale}/`}
                   >
-                     <Image
-                        alt="logo"
+                     <img
                         src="/logo/logo.svg"
+                        alt="Supafo logo"
                         width={80}
                         height={67}
                         className={`${styles.logoImage} w-20 h-auto`}

@@ -119,17 +119,16 @@ const HomeClient = () => {
                      {item.type === "video" ? (
                         <video
                            className={styles.media}
-                           autoPlay={item.id <= 2 || loadAllVideos}
+                           autoPlay={item.id === 1 || loadAllVideos}
                            muted
                            loop
                            playsInline
-                           preload={item.id <= 2 ? "metadata" : "none"}
+                           preload={item.id === 1 ? "metadata" : "none"}
                            poster={item.poster}
-                           aria-label="Supafo uygulama tanıtım videosu"
                            aria-hidden="true"
                            tabIndex={-1}
                         >
-                           {(item.id <= 2 || loadAllVideos) && (
+                           {(item.id === 1 || loadAllVideos) && (
                               <>
                                  <source
                                     src={item.mobileMp4}

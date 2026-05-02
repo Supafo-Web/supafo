@@ -27,12 +27,11 @@ const Navbar = async () => {
                href={`/${locale}/`}
                className="js-close-lang-dropdown w-35 flex justify-start"
             >
-               <Image
-                  alt="logo"
+               <img
                   src="/logo/logo.svg"
+                  alt="Supafo logo"
                   width={70}
                   height={60}
-                  priority
                   className="w-17.5 h-auto"
                />
             </Button>
@@ -126,14 +125,12 @@ const Navbar = async () => {
 
          <div className="flex lg:hidden items-center justify-between">
             <Button href={`/${locale}`}>
-               <Image
-                  alt="logo"
+               <img
                   src="/logo/logo.svg"
+                  alt="Supafo logo"
                   width={65}
                   height={56}
-                  priority
                   className="w-14 sm:w-16.25 h-auto"
-                  sizes="(max-width: 640px) 56px, 65px"
                />
             </Button>
 
