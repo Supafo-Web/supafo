@@ -7,19 +7,64 @@ import FAQ from "@/components/faq/FAQ"
 import Button from "@/components/button/Button"
 import { getDownloadUrl } from "@/components/store/AppStore"
 import { useLocale, useTranslations } from "next-intl"
+import { useEffect, useState } from "react"
 
 const HomeClient = () => {
    const t = useTranslations("Home")
    const modal = useTranslations("Modal")
    const locale = useLocale()
 
-   const media = [
-      { id: 1, src: "/videos/1-3.mp4", type: "video/mp4" },
-      { id: 2, src: "/videos/2-1.mp4", type: "video/mp4" },
-      { id: 3, src: "/images/3-3.jpg", type: "image" },
-      { id: 4, src: "/videos/1-2.mp4", type: "video/mp4" },
-      { id: 5, src: "/videos/2-2.mp4", type: "video/mp4" },
-      { id: 6, src: "/images/1-1.jpg", type: "image" },
+   type HeroMediaItem =
+      | {
+         id: number
+         type: "video"
+         mobileMp4: string
+         desktopMp4: string
+      }
+      | {
+         id: number
+         type: "image"
+         src: string
+         alt: string
+      }
+
+   const media: HeroMediaItem[] = [
+      {
+         id: 1,
+         type: "video",
+         mobileMp4: "/videos/mobile/1-3.mp4",
+         desktopMp4: "/videos/desktop/1-3.mp4",
+      },
+      {
+         id: 2,
+         type: "video",
+         mobileMp4: "/videos/mobile/2-1.mp4",
+         desktopMp4: "/videos/desktop/2-1.mp4",
+      },
+      {
+         id: 3,
+         type: "image",
+         src: "/images/3-3.webp",
+         alt: "Supafo mobil uygulama görseli",
+      },
+      {
+         id: 4,
+         type: "video",
+         mobileMp4: "/videos/mobile/1-2.mp4",
+         desktopMp4: "/videos/desktop/1-2.mp4",
+      },
+      {
+         id: 5,
+         type: "video",
+         mobileMp4: "/videos/mobile/2-2.mp4",
+         desktopMp4: "/videos/desktop/2-2.mp4",
+      },
+      {
+         id: 6,
+         type: "image",
+         src: "/images/1-1.webp",
+         alt: "Supafo uygulama tanıtım görseli",
+      },
    ]
 
    const faq = [
@@ -56,24 +101,35 @@ const HomeClient = () => {
             <div className={styles.grid}>
                {media.map((item) => (
                   <div key={item.id} className={styles.card}>
-                     {item.type === "video/mp4" ? (
+                     {item.type === "video" ? (
                         <video
                            className={styles.media}
                            autoPlay
                            muted
                            loop
                            playsInline
-                           preload={item.id <= 2 ? "auto" : "metadata"}
+                           preload="metadata"
+                           aria-label="Supafo uygulama tanıtım videosu"
                         >
-                           <source src={item.src} type={item.type} />
+                           <source
+                              src={item.mobileMp4}
+                              type="video/mp4"
+                              media="(max-width: 768px)"
+                           />
+                           <source
+                              src={item.desktopMp4}
+                              type="video/mp4"
+                              media="(min-width: 769px)"
+                           />
                         </video>
                      ) : (
                         <Image
                            className={styles.media}
-                           alt={`media-${item.id}`}
+                           alt={item.alt}
                            src={item.src}
                            fill
-                           priority={item.id === 1}
+                           quality={95}
+                           priority={item.id === 3}
                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         />
                      )}

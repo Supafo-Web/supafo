@@ -114,10 +114,10 @@
    text-align: center;
    color: white;
    padding: clamp(16px, 3vw, 24px);
-   max-width: 720px;
+   max-width: 960px;
 
    @include respond-down(sm) {
-      max-width: 320px;
+      max-width: 380px;
    }
 }
 

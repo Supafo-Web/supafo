@@ -18,6 +18,8 @@ const nextConfig: NextConfig = {
             pathname: "/storage/**",
          },
       ],
+
+      qualities: [75, 90, 95],
    },
 
    compiler: isProd
