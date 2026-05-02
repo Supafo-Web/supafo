@@ -75,15 +75,15 @@
 
 @keyframes leafSwing {
    0% {
-      transform: rotate(0deg);
+      transform: translateY(0px) rotate(0deg);
    }
 
    50% {
-      transform: rotate(-24deg);
+      transform: translateY(0px) rotate(24deg);
    }
 
    100% {
-      transform: rotate(0deg);
+      transform: translateY(0px) rotate(0deg);
    }
 }
 

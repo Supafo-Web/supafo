@@ -21,17 +21,16 @@ const HomeClient = () => {
    useEffect(() => {
       const load = () => setLoadVideos(true)
 
-      const timer = window.setTimeout(load, 3500)
-
       window.addEventListener("scroll", load, { once: true })
       window.addEventListener("touchstart", load, { once: true })
       window.addEventListener("mousemove", load, { once: true })
+      window.addEventListener("keydown", load, { once: true })
 
       return () => {
-         window.clearTimeout(timer)
          window.removeEventListener("scroll", load)
          window.removeEventListener("touchstart", load)
          window.removeEventListener("mousemove", load)
+         window.removeEventListener("keydown", load)
       }
    }, [])
 
@@ -172,7 +171,18 @@ const HomeClient = () => {
                {media.map((item) => (
                   <div key={item.id} className={styles.card}>
                      {item.type === "video" ? (
-                        loadVideos ? (
+                        item.id === 1 ? (
+                           <Image
+                              className={styles.media}
+                              alt="Supafo uygulama tanıtım görseli"
+                              src={item.poster}
+                              fill
+                              quality={75}
+                              priority
+                              fetchPriority="high"
+                              sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
+                           />
+                        ) : loadVideos ? (
                            <video
                               className={styles.media}
                               autoPlay
@@ -202,8 +212,6 @@ const HomeClient = () => {
                               src={item.poster}
                               fill
                               quality={75}
-                              priority={item.id === 1}
-                              fetchPriority={item.id === 1 ? "high" : "auto"}
                               sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
                            />
                         )
@@ -262,7 +270,7 @@ const HomeClient = () => {
                      <div className="flex w-full shrink-0 justify-center lg:w-[38%]">
                         <Image
                            alt="what-is-supafo"
-                           src="/home/1.svg"
+                           src="/home/1.webp"
                            width={350}
                            height={335}
                            className={imageClass}
@@ -362,7 +370,7 @@ const HomeClient = () => {
                      <div className="flex w-full shrink-0 justify-center lg:w-[38%]">
                         <Image
                            alt="supafo-bag-1"
-                           src="/home/2.svg"
+                           src="/home/2.webp"
                            width={305}
                            height={320}
                            className={imageClass}
@@ -391,7 +399,7 @@ const HomeClient = () => {
                      <div className="flex w-full shrink-0 justify-center lg:w-[38%]">
                         <Image
                            alt="supafo-bag-2"
-                           src="/home/3.svg"
+                           src="/home/3.webp"
                            width={357}
                            height={344}
                            className={imageClass}
@@ -536,7 +544,7 @@ const HomeClient = () => {
                      <div className="flex w-full shrink-0 justify-center lg:w-[38%]">
                         <Image
                            alt="supafo-donation"
-                           src="/home/Donation.svg"
+                           src="/home/Donation.webp"
                            width={320}
                            height={264}
                            className={imageClass}
