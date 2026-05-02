@@ -359,7 +359,7 @@ const HomeClient = () => {
                id="healthy-life-journey"
             >
                <div className={`${containerClass} flex flex-col items-center gap-10 lg:flex-row lg:gap-14 xl:gap-20`}>
-                  <div className="relative h-72 w-full max-w-[520px] overflow-hidden rounded-xl border border-[#82B74C] sm:h-90 md:h-[440px] lg:h-[420px] lg:w-[42%] xl:h-[460px]">
+                  <div className="relative h-72 w-full max-w-130 overflow-hidden rounded-xl border border-[#82B74C] sm:h-90 md:h-110 lg:h-105 lg:w-[42%] xl:h-115">
                      <video
                         autoPlay
                         muted
@@ -421,7 +421,7 @@ const HomeClient = () => {
                         src="/home/AI.jpg"
                         width={265}
                         height={344}
-                        className={`h-auto w-full max-w-[220px] rounded-[20px] object-cover sm:max-w-[260px] md:max-w-[300px] lg:max-w-[320px] xl:max-w-[340px] ${styles.supafoAIImage}`}
+                        className={`h-auto w-full max-w-55 rounded-[20px] object-cover sm:max-w-65 md:max-w-75 lg:max-w-[320px] xl:max-w-85 ${styles.supafoAIImage}`}
                         sizes="(max-width: 640px) 220px, (max-width: 768px) 260px, (max-width: 1024px) 300px, 340px"
                      />
                   </div>
@@ -503,7 +503,7 @@ const HomeClient = () => {
                   sizes="(max-width: 640px) 36px, (max-width: 768px) 48px, 69px"
                />
 
-               <div className={`${containerClass} max-w-[1100px]`}>
+               <div className={`${containerClass} max-w-275`}>
                   <h1 className="text-center">
                      {t("faq_title")}
                   </h1>
