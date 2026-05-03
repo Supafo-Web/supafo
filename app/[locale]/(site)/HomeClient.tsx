@@ -5,7 +5,7 @@ import styles from "@/components/modules/page.module.scss"
 import NavbarDownloadButton from "@/components/navbar/NavbarDownloadButton"
 import FAQ from "@/components/faq/FAQ"
 import Button from "@/components/button/Button"
-import { getDownloadUrl, handleDownload } from "@/components/store/AppStore"
+import { handleDownload } from "@/components/store/AppStore"
 import { useLocale, useTranslations } from "next-intl"
 import { useEffect, useState } from "react"
 
@@ -421,7 +421,7 @@ const HomeClient = () => {
 
                      <NavbarDownloadButton
                         text={modal("download_app")}
-                        href={getDownloadUrl()}
+                        onClick={handleDownload}
                      />
                   </div>
                </div>

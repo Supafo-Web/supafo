@@ -5,17 +5,20 @@ import { useState } from "react"
 import Lottie from "lottie-react"
 import downloadAnimation from "@/public/lottie/Download.json"
 import downloadWhite from "@/public/lottie/Download-white.json"
+import { handleDownload } from "@/components/store/AppStore"
 
 interface NavbarDownloadButtonProps {
    text: string
    navbar?: boolean
    href?: string
+   onClick?: (e: React.MouseEvent<HTMLElement>) => void
 }
 
 const NavbarDownloadButton = ({
    text,
    navbar,
-   href
+   href,
+   onClick
 }: NavbarDownloadButtonProps) => {
    const [isHovered, setIsHovered] = useState<boolean>(false)
 
@@ -27,6 +30,7 @@ const NavbarDownloadButton = ({
                text={text}
                href={href}
                ariaLabel={text}
+               onClick={onClick}
             >
                <div
                   aria-hidden='true'
@@ -47,6 +51,7 @@ const NavbarDownloadButton = ({
                text={text}
                href={href}
                ariaLabel={text}
+               onClick={onClick}
             />
          )}
       </>

@@ -1,15 +1,12 @@
 import Button from "@/components/button/Button"
 import { getLocale, getTranslations } from "next-intl/server"
-import Image from "next/image"
 import styles from "@/components/modules/navbar.module.scss"
 import Dropdown from "@/components/dropdown/Dropdown"
-import NavbarDownloadButton from "./NavbarDownloadButton"
 import Hamburger from "@/components/navbar/Hamburger"
 import { getNavbarMenu } from "@/components/utils/Navbar"
 import LangSwitch from "@/components/lang/LangSwitch"
 import NavbarSubmenuLinks from "@/components/navbar/NavbarSubmenuLinks"
 import PartnerLoginAnimation from "@/components/navbar/PartnerLoginAnimation"
-import { getDownloadUrl } from "@/components/store/AppStore"
 import NavbarDownloadButtonClient from "@/components/navbar/NavbarDownloadButtonClient"
 
 const Navbar = async () => {

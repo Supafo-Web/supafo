@@ -1,7 +1,7 @@
 "use client"
 
 import NavbarDownloadButton from "./NavbarDownloadButton"
-import { getDownloadUrl } from "@/components/store/AppStore"
+import { handleDownload } from "@/components/store/AppStore"
 
 type Props = {
    text: string
@@ -13,7 +13,7 @@ const NavbarDownloadButtonClient = ({ text, navbar }: Props) => {
       <NavbarDownloadButton
          text={text}
          navbar={navbar}
-         href={getDownloadUrl()}
+         onClick={handleDownload}
       />
    )
 }
