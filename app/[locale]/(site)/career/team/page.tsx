@@ -1,11 +1,24 @@
 import Image from 'next/image'
 import styles from '@/components/modules/career.module.scss'
 import { getTranslations } from 'next-intl/server'
-import CareerApplyForm from '@/app/[locale]/(site)/career/[id]/CareerApplyForm'
-import FAQ from '@/components/faq/FAQ'
 import { createGenerateMetadata } from "@/lib/createGenerateMetadata"
+import dynamic from 'next/dynamic'
 
 export const generateMetadata = createGenerateMetadata("/career/team")
+
+const CareerApplyForm = dynamic(
+   () => import("@/app/[locale]/(site)/career/[id]/CareerApplyForm"),
+   {
+      loading: () => null,
+   }
+)
+
+const FAQ = dynamic(
+   () => import("@/components/faq/FAQ"),
+   {
+      loading: () => null,
+   }
+)
 
 const CareerTeam = async () => {
    const t = await getTranslations('CareerTeam')
@@ -31,7 +44,8 @@ const CareerTeam = async () => {
             className="px-10 sm:px-30 lg:px-40 xl:px-50 2xl:px-80 py-30 relative"
          >
             <Image
-               alt="flower"
+               alt=""
+               aria-hidden="true"
                src="/images/LeftFlower.svg"
                width={69}
                height={115}
@@ -48,11 +62,13 @@ const CareerTeam = async () => {
                </h1>
 
                <Image
-                  alt="title-under"
+                  alt=""
+                  aria-hidden="true"
                   src="/icons/about-us/Title-Under.svg"
                   width={283}
                   height={40}
-                  className="block w-70.75 max-w-full h-auto mx-auto"
+                  sizes="(max-width: 640px) 160px, (max-width: 768px) 208px, (max-width: 1024px) 240px, 283px"
+                  className="mx-auto block h-auto w-70.75 max-w-full"
                />
             </div>
 
@@ -73,38 +89,31 @@ const CareerTeam = async () => {
                      >
                         {t('about_team')}
                      </p>
-                     <div
-                        className={`ps-8 ${styles.articleSubTitle}`}
-                     >
-                        <li>
-                           {t('team_item_1')}
-                        </li>
-                        <li>
-                           {t('team_item_2')}
-                        </li>
-                        <li>
-                           {t('team_item_3')}
-                        </li>
-                        <li>
-                           {t('team_item_4')}
-                        </li>
-                     </div>
+                     <ul className={`list-disc ps-8 ${styles.articleSubTitle}`}>
+                        <li>{t("team_item_1")}</li>
+                        <li>{t("team_item_2")}</li>
+                        <li>{t("team_item_3")}</li>
+                        <li>{t("team_item_4")}</li>
+                     </ul>
                   </div>
                </div>
                <div className="flex w-full justify-center lg:w-1/2 lg:justify-end">
                   <Image
-                     alt="career-team"
-                     src="/career/team/Team.svg"
+                     alt={t("hero_image_alt")}
+                     src="/career/team/Team.webp"
                      width={385}
                      height={385}
                      className="h-auto w-full max-w-60 rounded-[20px] border border-[#82B74C] sm:max-w-70 lg:max-w-[320px] xl:max-w-90"
                      sizes="(max-width: 640px) 240px, (max-width: 1024px) 280px, (max-width: 1280px) 320px, 360px"
+                     priority
+                     fetchPriority="high"
                   />
                </div>
             </div>
 
             <Image
-               alt="flower"
+               alt=""
+               aria-hidden="true"
                src="/images/RightFlower.svg"
                width={69}
                height={115}
@@ -118,18 +127,20 @@ const CareerTeam = async () => {
             <div
                className="flex flex-col items-center mb-12.5 gap-0 lg:gap-3"
             >
-               <h1
+               <h2
                   className={`text-center ${styles.title}`}
                >
                   {t('application_form')}
-               </h1>
+               </h2>
 
                <Image
-                  alt="title-under"
+                  alt=""
+                  aria-hidden="true"
                   src="/icons/about-us/Title-Under.svg"
                   width={283}
                   height={40}
-                  className="block w-70.75 max-w-full h-auto mx-auto"
+                  sizes="(max-width: 640px) 160px, (max-width: 768px) 208px, (max-width: 1024px) 240px, 283px"
+                  className="mx-auto block h-auto w-70.75 max-w-full"
                />
             </div>
 
@@ -141,7 +152,8 @@ const CareerTeam = async () => {
                />
 
                <Image
-                  alt="flower"
+                  alt=""
+                  aria-hidden="true"
                   src="/images/LeftFlower.svg"
                   width={69}
                   height={115}
@@ -151,18 +163,19 @@ const CareerTeam = async () => {
                <div
                   className={`w-full lg:w-8/12 md:w-11/12 mx-auto md:px-5 mt-32`}
                >
-                  <h1
+                  <h2
                      className={`text-center ${styles.faqTitle}`}
                   >
                      {t('faq_title')}
-                  </h1>
+                  </h2>
                   <FAQ
                      faq={faq}
                   />
                </div>
 
                <Image
-                  alt="flower"
+                  alt=""
+                  aria-hidden="true"
                   src="/images/RightFlower.svg"
                   width={69}
                   height={115}

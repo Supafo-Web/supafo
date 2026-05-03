@@ -211,7 +211,8 @@
          "a11": "Gerekli görülmesi halinde seninle iletişime geçilerek ek bilgi, belge veya kısa bir ön görüşme talep edilebilir.",
          "q12": "Başvurumu silmemi veya bilgilerimin kaldırılmasını talep edebilir miyim?",
          "a12": "Evet. Başvuru bilgilerinle ilgili güncelleme, silme veya bilgi talebinde bulunmak istersen bizimle iletişime geçebilirsin."
-      }
+      },
+      "hero_image_alt": "Supafo ekibine katılma ve kariyer fırsatları görseli"
    },
    "Projects": {
       "saplings": {
