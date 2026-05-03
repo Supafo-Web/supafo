@@ -43,7 +43,8 @@ const WhatIsFoodWaste = () => {
       <main className="min-h-screen w-full max-w-full overflow-hidden">
          <section className={sectionClass}>
             <Image
-               alt="flower"
+               alt=""
+               aria-hidden="true"
                src="/images/LeftFlower.svg"
                width={69}
                height={115}
@@ -55,20 +56,22 @@ const WhatIsFoodWaste = () => {
                   <div className={imageWrapperClass}>
                      <div className={imageBoxClass}>
                         <Image
-                           alt="what-is-food-waste"
-                           src="/what-is-food-waste/1.svg"
+                           alt={t("section1ImageAlt")}
+                           src="/what-is-food-waste/1.webp"
                            width={422}
                            height={462}
                            className={imageClass}
                            sizes="(max-width: 640px) 80vw, (max-width: 1024px) 320px, 400px"
+                           priority
+                           fetchPriority="high"
                         />
                      </div>
                   </div>
 
                   <div className={textColumnClass}>
-                     <h6 className={styles.subtitle}>
+                     <h1 className={styles.subtitle}>
                         {t.rich("section1Title", richText)}
-                     </h6>
+                     </h1>
 
                      <p className={styles.paragraph}>
                         {t.rich("section1Text", richText)}
@@ -78,7 +81,8 @@ const WhatIsFoodWaste = () => {
             </div>
 
             <Image
-               alt="flower"
+               alt=""
+               aria-hidden="true"
                src="/images/RightFlower.svg"
                width={69}
                height={115}
@@ -92,8 +96,8 @@ const WhatIsFoodWaste = () => {
                   <div className={imageWrapperClass}>
                      <div className={imageBoxClass}>
                         <Image
-                           alt="what-is-food-waste"
-                           src="/what-is-food-waste/2.svg"
+                           alt={t("section2ImageAlt")}
+                           src="/what-is-food-waste/2.webp"
                            width={422}
                            height={462}
                            className={imageClass}
@@ -103,9 +107,9 @@ const WhatIsFoodWaste = () => {
                   </div>
 
                   <div className={textColumnClass}>
-                     <h6 className={styles.subtitle}>
+                     <h2 className={styles.subtitle}>
                         {t.rich("section2Title", richText)}
-                     </h6>
+                     </h2>
 
                      <p className={styles.paragraph}>
                         {t.rich("section2Text", richText)}
@@ -117,7 +121,8 @@ const WhatIsFoodWaste = () => {
 
          <section className={sectionClass}>
             <Image
-               alt="flower"
+               alt=""
+               aria-hidden="true"
                src="/images/LeftFlower.svg"
                width={69}
                height={115}
@@ -129,8 +134,8 @@ const WhatIsFoodWaste = () => {
                   <div className={imageWrapperClass}>
                      <div className={imageBoxClass}>
                         <Image
-                           alt="what-is-food-waste"
-                           src="/what-is-food-waste/3.svg"
+                           alt={t("section3ImageAlt")}
+                           src="/what-is-food-waste/3.webp"
                            width={422}
                            height={462}
                            className={imageClass}
@@ -140,9 +145,9 @@ const WhatIsFoodWaste = () => {
                   </div>
 
                   <div className={textColumnClass}>
-                     <h6 className={styles.subtitle}>
+                     <h2 className={styles.subtitle}>
                         {t.rich("section3Title", richText)}
-                     </h6>
+                     </h2>
 
                      <p className={styles.paragraph}>
                         {t.rich("section3Text", richText)}
@@ -152,7 +157,8 @@ const WhatIsFoodWaste = () => {
             </div>
 
             <Image
-               alt="flower"
+               alt=""
+               aria-hidden="true"
                src="/images/RightFlower.svg"
                width={69}
                height={115}
@@ -162,9 +168,9 @@ const WhatIsFoodWaste = () => {
 
          <section className={`${sectionClass} mb-10`}>
             <div className={`${containerClass} flex flex-col gap-6 text-center md:gap-7`}>
-               <h6 className={styles.subtitle}>
+               <h2 className={styles.subtitle}>
                   {t.rich("section4Title", richText)}
-               </h6>
+               </h2>
 
                <p className={styles.paragraph}>
                   {t.rich("section4Text", richText)}
@@ -172,7 +178,8 @@ const WhatIsFoodWaste = () => {
             </div>
 
             <Image
-               alt="flower"
+               alt=""
+               aria-hidden="true"
                src="/images/LeftFlower.svg"
                width={69}
                height={115}
