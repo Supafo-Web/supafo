@@ -22,6 +22,8 @@ const Partner = async () => {
                   muted
                   loop
                   playsInline
+                  preload="metadata"
+                  aria-hidden="true"
                >
                   <source
                      src="/videos/partner/PartnerDoor.mp4"
