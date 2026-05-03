@@ -31,8 +31,8 @@ const Map = () => {
          rel="noopener noreferrer"
          aria-label="Supafo konumunu Google Haritalar’da aç"
          className="
-            relative block h-[398px] w-full overflow-hidden rounded-[30px]
-            border border-[#82B74C]
+            relative block w-full h-[570px] overflow-hidden rounded-[30px]
+            border border-[#82B74C] mx-auto
          "
       >
          <Image
