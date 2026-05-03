@@ -243,7 +243,10 @@
             "You make your shopping meaningful"
          ],
          "readMore": "Read more",
-         "readMore2": "See less"
+         "readMore2": "See less",
+         "imageAlt": "Image of the “A Sapling for the Future with Supafo” project",
+         "purposeImageAlt": "Purpose of the Supafo sapling project",
+         "contributionImageAlt": "Contribution process for the Supafo sapling project"
       }
    },
    "WhatIsFoodWaste": {

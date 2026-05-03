@@ -243,7 +243,10 @@
             "Alış-verişini mənalı hala gətirirsən"
          ],
          "readMore": "Davamını oxu",
-         "readMore2": "Daha az göstər"
+         "readMore2": "Daha az göstər",
+         "imageAlt": "Supafo ilə gələcəyə bir fidan layihəsinin görsəli",
+         "purposeImageAlt": "Supafo fidan layihəsinin məqsədi",
+         "contributionImageAlt": "Supafo fidan layihəsinə töhfə prosesi"
       }
    },
    "WhatIsFoodWaste": {
