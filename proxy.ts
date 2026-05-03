@@ -63,18 +63,19 @@ function buildCsp(nonce: string) {
       "https://www.google-analytics.com",
       "https://www.googletagmanager.com",
       "https://maps.googleapis.com",
+      "https://maps.gstatic.com",
    ].join(" ")
 
    const scriptSrc = isProd
-      ? `script-src 'self' 'nonce-${nonce}' 'strict-dynamic'`
-      : `script-src 'self' 'nonce-${nonce}' 'strict-dynamic' 'unsafe-eval'`
+      ? `script-src 'self' 'nonce-${nonce}' 'strict-dynamic' https://maps.googleapis.com https://maps.gstatic.com`
+      : `script-src 'self' 'nonce-${nonce}' 'strict-dynamic' 'unsafe-eval' https://maps.googleapis.com https://maps.gstatic.com`
 
    return [
       "default-src 'self'",
       scriptSrc,
-      "style-src 'self' 'unsafe-inline'",
+      "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
       "img-src 'self' data: blob: https:",
-      "font-src 'self' data: https:",
+      "font-src 'self' data: https: https://fonts.gstatic.com",
       `connect-src ${connectSrc}`,
       "media-src 'self' https:",
       "worker-src 'self' blob:",
@@ -84,7 +85,7 @@ function buildCsp(nonce: string) {
       "base-uri 'self'",
       "form-action 'self'",
       "frame-ancestors 'none'",
-      "frame-src 'none'",
+      "frame-src 'self' https://www.google.com https://maps.google.com",
       "upgrade-insecure-requests",
       "block-all-mixed-content",
    ].join("; ")

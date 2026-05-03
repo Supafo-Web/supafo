@@ -3,7 +3,6 @@
 import Button from '@/components/button/Button'
 import Input from '@/components/input/Input'
 import Map from '@/components/map/Map'
-import { useGoogleMapLocation } from '@/components/map/useGoogleMapLocation'
 import styles from '@/components/modules/contact.module.scss'
 import { setContactForm } from '@/components/services/Api'
 import { useUI } from '@/components/services/contexts/UIContexts'
@@ -20,7 +19,6 @@ export interface CareerForm {
 
 const ContactClient = () => {
    const { settings } = useUI()
-   const location = useGoogleMapLocation(settings?.address)
 
    const [form, setForm] = useState<CareerForm>({
       full_name: "",
@@ -59,7 +57,7 @@ const ContactClient = () => {
       {
          id: 4,
          icon: '/icons/contact/Location.svg',
-         text: location.displayAddress || location.address,
+         text: settings?.address,
          alt: 'address',
       },
    ]
@@ -126,7 +124,8 @@ const ContactClient = () => {
             className={`px-10 sm:px-20 lg:px-20 xl:px-50 2xl:px-80 py-15 lg:py-30 relative`}
          >
             <Image
-               alt="flower"
+               alt=""
+               aria-hidden='true'
                src="/images/LeftFlower.svg"
                width={69}
                height={115}
@@ -143,7 +142,8 @@ const ContactClient = () => {
                </h1>
 
                <Image
-                  alt="title-under"
+                  alt=""
+                  aria-hidden='true'
                   src="/icons/about-us/Title-Under.svg"
                   width={283}
                   height={40}
@@ -169,7 +169,8 @@ const ContactClient = () => {
                         className="flex items-center gap-5"
                      >
                         <Image
-                           alt={item.alt}
+                           alt=""
+                           aria-hidden='true'
                            src={item.icon}
                            width={38}
                            height={38}
@@ -187,7 +188,8 @@ const ContactClient = () => {
             </div>
 
             <Image
-               alt="flower"
+               alt=""
+               aria-hidden='true'
                src="/images/RightFlower.svg"
                width={69}
                height={115}
@@ -201,14 +203,15 @@ const ContactClient = () => {
             <div
                className="flex flex-col items-center mb-12.5 gap-0 lg:gap-3"
             >
-               <h1
+               <h2
                   className={`text-center ${styles.title}`}
                >
                   {t('write_us')}
-               </h1>
+               </h2>
 
                <Image
-                  alt="title-under"
+                  alt=""
+                  aria-hidden='true'
                   src="/icons/about-us/Title-Under.svg"
                   width={283}
                   height={40}
