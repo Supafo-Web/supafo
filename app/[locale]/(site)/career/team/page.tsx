@@ -4,6 +4,7 @@ import { getTranslations } from 'next-intl/server'
 import { createGenerateMetadata } from "@/lib/createGenerateMetadata"
 import dynamic from 'next/dynamic'
 
+
 export const generateMetadata = createGenerateMetadata("/career/team")
 
 const CareerApplyForm = dynamic(
