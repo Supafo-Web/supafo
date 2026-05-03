@@ -54,7 +54,6 @@ const AboutUs = async () => {
                      width={283}
                      height={40}
                      className={titleUnderClass}
-                     sizes="(max-width: 640px) 160px, (max-width: 768px) 208px, (max-width: 1024px) 240px, 283px"
                   />
                </div>
 
@@ -114,7 +113,6 @@ const AboutUs = async () => {
                      width={283}
                      height={40}
                      className={titleUnderClass}
-                     sizes="(max-width: 640px) 160px, (max-width: 768px) 208px, (max-width: 1024px) 240px, 283px"
                   />
                </div>
 
@@ -240,7 +238,6 @@ const AboutUs = async () => {
                      width={283}
                      height={40}
                      className={titleUnderClass}
-                     sizes="(max-width: 640px) 160px, (max-width: 768px) 208px, (max-width: 1024px) 240px, 283px"
                   />
                </div>
 
@@ -362,7 +359,6 @@ const AboutUs = async () => {
                      width={283}
                      height={40}
                      className={titleUnderClass}
-                     sizes="(max-width: 640px) 160px, (max-width: 768px) 208px, (max-width: 1024px) 240px, 283px"
                   />
                </div>
 

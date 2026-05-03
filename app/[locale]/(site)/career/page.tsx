@@ -51,8 +51,7 @@ const Career = async () => {
                   src="/icons/about-us/Title-Under.svg"
                   width={283}
                   height={40}
-                  className="w-40 sm:w-52 md:w-60 lg:w-72 h-auto"
-                  sizes="(max-width: 640px) 160px, (max-width: 768px) 208px, (max-width: 1024px) 240px, 288px"
+                  className="block w-70.75 max-w-full h-auto mx-auto"
                />
             </div>
 
@@ -109,8 +108,7 @@ const Career = async () => {
                   src="/icons/about-us/Title-Under.svg"
                   width={283}
                   height={40}
-                  className="w-40 sm:w-52 md:w-60 lg:w-72 h-auto"
-                  sizes="(max-width: 640px) 160px, (max-width: 768px) 208px, (max-width: 1024px) 240px, 288px"
+                  className="block w-70.75 max-w-full h-auto mx-auto"
                />
             </div>
 
@@ -168,8 +166,7 @@ const Career = async () => {
                   src="/icons/about-us/Title-Under.svg"
                   width={283}
                   height={40}
-                  className="w-40 sm:w-52 md:w-60 lg:w-72 h-auto"
-                  sizes="(max-width: 640px) 160px, (max-width: 768px) 208px, (max-width: 1024px) 240px, 288px"
+                  className="block w-70.75 max-w-full h-auto mx-auto"
                />
             </div>
 

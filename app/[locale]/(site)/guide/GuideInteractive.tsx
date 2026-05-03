@@ -2,8 +2,8 @@
 
 import { useMemo, useState, type ReactNode } from "react"
 import Image from "next/image"
+import { useTranslations } from "next-intl"
 import styles from "@/components/modules/guide.module.scss"
-import { useLocale, useTranslations } from "next-intl"
 
 type AudienceId = "user" | "partner"
 type QuizAnswer = "waste" | "supafo"
@@ -14,17 +14,20 @@ type GuideStep = {
    description: string
 }
 
-const GuideClient = () => {
+export default function GuideInteractive({
+   locale,
+   userSteps,
+   partnerSteps,
+}: {
+   locale: string
+   userSteps: GuideStep[]
+   partnerSteps: GuideStep[]
+}) {
    const t = useTranslations("Guide")
-   const locale = useLocale()
 
    const [activeSide, setActiveSide] = useState<AudienceId>("user")
    const [savedPackages, setSavedPackages] = useState(8)
    const [quizAnswer, setQuizAnswer] = useState<null | QuizAnswer>(null)
-
-   const green = (chunks: ReactNode) => (
-      <span className={styles.brand}>{chunks}</span>
-   )
 
    const impact = useMemo(() => {
       return {
@@ -33,6 +36,10 @@ const GuideClient = () => {
          saving: savedPackages * 55,
       }
    }, [savedPackages])
+
+   const green = (chunks: ReactNode) => (
+      <span className={styles.brand}>{chunks}</span>
+   )
 
    const titleWrapperClass =
       "mb-10 flex flex-col items-center gap-0 md:mb-12 lg:gap-3"
@@ -51,15 +58,15 @@ const GuideClient = () => {
          id: "user",
          title: t("audience.buttons.user.title"),
          text: t("audience.buttons.user.text"),
-         icon: "/guide/UserFill.svg",
-         activeIcon: "/guide/User.svg",
+         icon: "/guide/UserFill.webp",
+         activeIcon: "/guide/User.webp",
       },
       {
          id: "partner",
          title: t("audience.buttons.partner.title"),
          text: t("audience.buttons.partner.text"),
-         icon: "/guide/PartnerFill.svg",
-         activeIcon: "/guide/Partner.svg",
+         icon: "/guide/PartnerFill.webp",
+         activeIcon: "/guide/Partner.webp",
       },
    ] as const
 
@@ -69,16 +76,16 @@ const GuideClient = () => {
          titleKey: "miniGame.answers.waste.title",
          textKey: "miniGame.answers.waste.text",
          altKey: "miniGame.answers.waste.alt",
-         icon: "/guide/game/TrashFill.svg",
-         activeIcon: "/guide/game/Trash.svg",
+         icon: "/guide/game/TrashFill.webp",
+         activeIcon: "/guide/game/Trash.webp",
       },
       {
          id: "supafo",
          titleKey: "miniGame.answers.supafo.title",
          textKey: "miniGame.answers.supafo.text",
          altKey: "miniGame.answers.supafo.alt",
-         icon: "/guide/game/PackageFill.svg",
-         activeIcon: "/guide/game/Package.svg",
+         icon: "/guide/game/PackageFill.webp",
+         activeIcon: "/guide/game/Package.webp",
       },
    ] as const
 
@@ -90,107 +97,40 @@ const GuideClient = () => {
    const cartData = [
       {
          id: 1,
-         icon: "/guide/icons/Cart.svg",
+         icon: "/guide/icons/Cart.webp",
          text: t("cartPayment.cards.cart"),
       },
       {
          id: 2,
-         icon: "/guide/icons/Credit.svg",
+         icon: "/guide/icons/Credit.webp",
          text: t("cartPayment.cards.creditCard"),
       },
       {
          id: 3,
-         icon: "/guide/icons/Phone.svg",
+         icon: "/guide/icons/Phone.webp",
          text: t("cartPayment.cards.fastPayment"),
       },
    ]
 
-   const userSteps = t.raw("audience.userSteps.steps") as GuideStep[]
-   const partnerSteps = t.raw("audience.partnerSteps.steps") as GuideStep[]
-
    return (
-      <main className="min-h-screen w-full max-w-full overflow-hidden">
-         <section className={sectionClass}>
-            <Image
-               alt="flower"
-               src="/images/RightFlower.svg"
-               width={69}
-               height={115}
-               className={`${flowerClass} ${styles.rightFlower} ${styles.swingLeaf2}`}
-            />
-
-            <div
-               className={`${containerClass} flex flex-col-reverse items-center gap-10 lg:flex-row lg:gap-14 xl:gap-20`}
-            >
-               <div
-                  className={`${styles.heroTitleArea} w-full text-center lg:w-1/2 lg:text-left`}
-               >
-                  <h1>
-                     {t("hero.title")}
-                  </h1>
-
-                  <p className="mx-auto mt-4 max-w-2xl lg:mx-0">
-                     {t.rich("hero.description", { green })}
-                  </p>
-
-                  <div className="mx-auto mt-8 grid w-full max-w-xl grid-cols-1 gap-3 xs:grid-cols-2 md:grid-cols-3 lg:mx-0">
-                     <StatCard
-                        value={t("hero.stats.discover.value")}
-                        label={t("hero.stats.discover.label")}
-                     />
-
-                     <StatCard
-                        value={t("hero.stats.payment.value")}
-                        label={t("hero.stats.payment.label")}
-                     />
-
-                     <StatCard
-                        value={t("hero.stats.discount.value")}
-                        label={t("hero.stats.discount.label")}
-                     />
-                  </div>
-               </div>
-
-               <div className="flex w-full justify-center lg:w-1/2 lg:justify-end">
-                  <div className="w-full max-w-90 overflow-hidden rounded-[36px] border border-[#82B74C] sm:max-w-105 sm:rounded-[48px] lg:max-w-115 xl:max-w-130">
-                     <Image
-                        alt="package"
-                        src="/guide/Title.svg"
-                        width={422}
-                        height={462}
-                        className="h-auto w-full object-contain"
-                        sizes="(max-width: 640px) 90vw, (max-width: 1024px) 420px, 520px"
-                        priority
-                     />
-                  </div>
-               </div>
-            </div>
-
-            <Image
-               alt="flower"
-               src="/images/LeftFlower.svg"
-               width={69}
-               height={115}
-               className={`${flowerClass} ${styles.leftFlower} ${styles.swingLeaf}`}
-            />
-         </section>
-
+      <>
          <section
             id="partner-register"
             className={`scroll-mt-24 ${sectionClass}`}
          >
             <div className={titleWrapperClass}>
-               <h1 className={`text-center ${styles.title}`}>
+               <h2 className={`text-center ${styles.title}`}>
                   {t("audience.title")}
-               </h1>
+               </h2>
 
                <Image
-                  alt="title-under"
                   src="/icons/about-us/Title-Under.svg"
+                  alt=""
+                  aria-hidden="true"
                   width={283}
                   height={40}
-                  className="h-auto w-[clamp(160px,35vw,283px)]"
                   sizes="(max-width: 640px) 160px, (max-width: 768px) 208px, (max-width: 1024px) 240px, 283px"
+                  className="h-auto w-[clamp(160px,35vw,283px)]"
                />
             </div>
 
@@ -241,7 +181,8 @@ const GuideClient = () => {
 
          <section className={sectionClass}>
             <Image
-               alt="flower"
+               alt=""
+               aria-hidden="true"
                src="/images/RightFlower.svg"
                width={69}
                height={115}
@@ -249,17 +190,18 @@ const GuideClient = () => {
             />
 
             <div className={titleWrapperClass}>
-               <h1 className={`text-center ${styles.title}`}>
+               <h2 className={`text-center ${styles.title}`}>
                   {t("cartPayment.title")}
-               </h1>
+               </h2>
 
                <Image
-                  alt="title-under"
                   src="/icons/about-us/Title-Under.svg"
+                  alt=""
+                  aria-hidden="true"
                   width={283}
                   height={40}
-                  className="h-auto w-[clamp(160px,35vw,283px)]"
                   sizes="(max-width: 640px) 160px, (max-width: 768px) 208px, (max-width: 1024px) 240px, 283px"
+                  className="h-auto w-[clamp(160px,35vw,283px)]"
                />
             </div>
 
@@ -269,7 +211,8 @@ const GuideClient = () => {
                <div className="grid w-full max-w-225 grid-cols-1 place-items-center gap-6 sm:grid-cols-2 sm:gap-8 lg:gap-12">
                   <div className="w-full max-w-70 sm:max-w-82.5 lg:max-w-90">
                      <Image
-                        alt="cart"
+                        alt=""
+                        aria-hidden="true"
                         src={mockups.cart}
                         width={350}
                         height={312}
@@ -280,7 +223,8 @@ const GuideClient = () => {
 
                   <div className="w-full max-w-70 sm:max-w-82.5 lg:max-w-90">
                      <Image
-                        alt="payment"
+                        alt=""
+                        aria-hidden="true"
                         src={mockups.payment}
                         width={350}
                         height={412}
@@ -291,9 +235,9 @@ const GuideClient = () => {
                </div>
 
                <div className="mx-auto flex max-w-4xl flex-col items-center text-center">
-                  <h1>
+                  <h2>
                      {t("cartPayment.heading")}
-                  </h1>
+                  </h2>
 
                   <h6 className="mt-4">
                      {t.rich("cartPayment.description", { green })}
@@ -306,14 +250,14 @@ const GuideClient = () => {
                         key={item.id || index}
                         className="flex w-full flex-col items-center justify-center gap-2 rounded-[10px] px-4 py-5 text-center shadow-[0_0_20px_rgba(0,0,0,0.08)]"
                      >
-                        <div className="relative h-8 w-8">
-                           <Image
-                              src={item.icon}
-                              alt="icons"
-                              fill
-                              className="object-contain"
-                           />
-                        </div>
+                        <Image
+                           src={item.icon}
+                           alt=""
+                           aria-hidden="true"
+                           width={32}
+                           height={32}
+                           className="h-8 w-8 object-contain"
+                        />
 
                         <p>
                            {item.text}
@@ -324,7 +268,8 @@ const GuideClient = () => {
             </div>
 
             <Image
-               alt="flower"
+               alt=""
+               aria-hidden="true"
                src="/images/LeftFlower.svg"
                width={69}
                height={115}
@@ -334,17 +279,18 @@ const GuideClient = () => {
 
          <section className={sectionClass}>
             <div className={titleWrapperClass}>
-               <h1 className={`text-center ${styles.title}`}>
+               <h2 className={`text-center ${styles.title}`}>
                   {t("miniGame.title")}
-               </h1>
+               </h2>
 
                <Image
-                  alt="title-under"
                   src="/icons/about-us/Title-Under.svg"
+                  alt=""
+                  aria-hidden="true"
                   width={283}
                   height={40}
-                  className="h-auto w-[clamp(160px,35vw,283px)]"
                   sizes="(max-width: 640px) 160px, (max-width: 768px) 208px, (max-width: 1024px) 240px, 283px"
+                  className="h-auto w-[clamp(160px,35vw,283px)]"
                />
             </div>
 
@@ -422,11 +368,18 @@ const GuideClient = () => {
                         </span>
                      </div>
 
+                     <label htmlFor="savedPackages" className="sr-only">
+                        {t("impactCalculator.packageCount")}
+                     </label>
+
                      <input
+                        id="savedPackages"
+                        name="savedPackages"
                         type="range"
                         min="1"
                         max="30"
                         value={savedPackages}
+                        aria-label={t("impactCalculator.packageCount")}
                         onChange={(e) =>
                            setSavedPackages(Number(e.target.value))
                         }
@@ -453,21 +406,7 @@ const GuideClient = () => {
                </div>
             </div>
          </section>
-      </main>
-   )
-}
-
-function StatCard({ value, label }: { value: string; label: string }) {
-   return (
-      <div className={`${styles.heroStatCard} h-full w-full`}>
-         <p>
-            {value}
-         </p>
-
-         <small>
-            {label}
-         </small>
-      </div>
+      </>
    )
 }
 
@@ -496,14 +435,13 @@ function AudienceButton({
                : "bg-white text-[#82B74C] hover:-translate-y-1",
          ].join(" ")}
       >
-         <div className="relative h-8 w-8">
-            <Image
-               src={active ? activeIcon : icon}
-               alt={title}
-               fill
-               className="object-contain"
-            />
-         </div>
+         <Image
+            src={active ? activeIcon : icon}
+            alt={title}
+            width={32}
+            height={32}
+            className="h-8 w-8 object-contain"
+         />
 
          <p className="mt-3 text-lg font-bold">
             {title}
@@ -548,14 +486,13 @@ function MiniGameButton({
                : "bg-white text-[#82B74C] hover:-translate-y-1",
          ].join(" ")}
       >
-         <div className="relative h-8 w-8">
-            <Image
-               src={active ? activeIcon : icon}
-               alt={alt}
-               fill
-               className="object-contain"
-            />
-         </div>
+         <Image
+            src={active ? activeIcon : icon}
+            alt={alt}
+            width={32}
+            height={32}
+            className="h-8 w-8 object-contain"
+         />
 
          <p className="mt-3 text-lg font-bold">
             {title}
@@ -631,5 +568,3 @@ function ImpactCard({
       </div>
    )
 }
-
-export default GuideClient

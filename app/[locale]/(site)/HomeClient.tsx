@@ -256,7 +256,8 @@ const HomeClient = () => {
                id="what-is-supafo"
             >
                <Image
-                  alt="flower"
+                  alt=""
+                  aria-hidden="true"
                   src="/images/LeftFlower.svg"
                   width={69}
                   height={115}
@@ -268,7 +269,8 @@ const HomeClient = () => {
                   <div className="flex min-w-0 flex-col items-center gap-10 lg:flex-row lg:gap-14 xl:gap-20">
                      <div className="flex w-full shrink-0 justify-center lg:w-[38%]">
                         <Image
-                           alt="what-is-supafo"
+                           alt=""
+                           aria-hidden="true"
                            src="/home/1.webp"
                            width={350}
                            height={335}
@@ -298,7 +300,8 @@ const HomeClient = () => {
                </div>
 
                <Image
-                  alt="flower"
+                  alt=""
+                  aria-hidden="true"
                   src="/images/RightFlower.svg"
                   width={69}
                   height={115}
@@ -350,7 +353,8 @@ const HomeClient = () => {
                id="supafo-bag"
             >
                <Image
-                  alt="flower"
+                  alt=""
+                  aria-hidden="true"
                   src="/images/RightFlower.svg"
                   width={69}
                   height={115}
@@ -368,7 +372,8 @@ const HomeClient = () => {
                   <div className="flex min-w-0 flex-col items-center gap-10 pt-10 lg:flex-row lg:gap-14 lg:pt-16 xl:gap-20">
                      <div className="flex w-full shrink-0 justify-center lg:w-[38%]">
                         <Image
-                           alt="supafo-bag-1"
+                           alt=""
+                           aria-hidden="true"
                            src="/home/2.webp"
                            width={305}
                            height={320}
@@ -397,7 +402,8 @@ const HomeClient = () => {
 
                      <div className="flex w-full shrink-0 justify-center lg:w-[38%]">
                         <Image
-                           alt="supafo-bag-2"
+                           alt=""
+                           aria-hidden="true"
                            src="/home/3.webp"
                            width={357}
                            height={344}
@@ -427,7 +433,8 @@ const HomeClient = () => {
                </div>
 
                <Image
-                  alt="flower"
+                  alt=""
+                  aria-hidden="true"
                   src="/images/LeftFlower.svg"
                   width={69}
                   height={115}
@@ -490,7 +497,8 @@ const HomeClient = () => {
                id="technology-of-the-future"
             >
                <Image
-                  alt="flower"
+                  alt=""
+                  aria-hidden="true"
                   src="/images/RightFlower.svg"
                   width={69}
                   height={115}
@@ -511,7 +519,8 @@ const HomeClient = () => {
 
                   <div className="flex w-full shrink-0 justify-center lg:w-[38%]">
                      <Image
-                        alt="supafoAI"
+                        alt=""
+                        aria-hidden="true"
                         src="/home/AI.jpg"
                         width={265}
                         height={344}
@@ -522,7 +531,8 @@ const HomeClient = () => {
                </div>
 
                <Image
-                  alt="flower"
+                  alt=""
+                  aria-hidden="true"
                   src="/images/LeftFlower.svg"
                   width={69}
                   height={115}
@@ -543,7 +553,8 @@ const HomeClient = () => {
                   <div className="flex min-w-0 flex-col items-center gap-10 pt-10 lg:flex-row lg:gap-14 lg:pt-16 xl:gap-20">
                      <div className="flex w-full shrink-0 justify-center lg:w-[38%]">
                         <Image
-                           alt="supafo-donation"
+                           alt=""
+                           aria-hidden="true"
                            src="/home/Donation.webp"
                            width={320}
                            height={264}
@@ -572,7 +583,8 @@ const HomeClient = () => {
 
                      <div className="flex w-full shrink-0 justify-center lg:w-[38%]">
                         <Image
-                           alt="supafo-donation-2"
+                           alt=""
+                           aria-hidden="true"
                            src="/home/6.svg"
                            width={332}
                            height={245}
@@ -589,7 +601,8 @@ const HomeClient = () => {
                className={`${sectionClass} mb-10 lg:mb-20 ${styles.faq}`}
             >
                <Image
-                  alt="flower"
+                  alt=""
+                  aria-hidden="true"
                   src="/images/RightFlower.svg"
                   width={69}
                   height={115}
@@ -606,7 +619,8 @@ const HomeClient = () => {
                </div>
 
                <Image
-                  alt="flower"
+                  alt=""
+                  aria-hidden="true"
                   src="/images/LeftFlower.svg"
                   width={69}
                   height={115}

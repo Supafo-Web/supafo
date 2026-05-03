@@ -16,7 +16,8 @@ const NotFoundPage = async () => {
          <div className={styles.bottomRightGlow} />
 
          <Image
-            alt="flower"
+            alt=""
+            aria-hidden="true"
             src="/images/LeftFlower.svg"
             width={69}
             height={115}
@@ -34,7 +35,8 @@ const NotFoundPage = async () => {
          />
 
          <Image
-            alt="flower"
+            alt=""
+            aria-hidden="true"
             src="/images/RightFlower.svg"
             width={69}
             height={115}

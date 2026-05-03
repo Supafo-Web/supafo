@@ -27,23 +27,21 @@ const DownloadApp = () => {
                      ${item?.title === 'App Store' && styles.appStore}`}
                >
                   <div className={styles.iconFlipInner}>
-                     <Image
+                     <img
                         alt=""
                         aria-hidden="true"
                         src={item.icon}
                         width={20}
                         height={20}
-                        className={styles.iconFront}
-                        style={{ height: "auto" }}
+                        className={`w-5 h-auto ${styles.iconFront}`}
                      />
-                     <Image
+                     <img
                         alt=""
                         aria-hidden="true"
                         src={item.src}
                         width={20}
                         height={20}
-                        className={styles.iconBack}
-                        style={{ height: "auto" }}
+                        className={`w-5 h-auto ${styles.iconBack}`}
                      />
                   </div>
                </div>

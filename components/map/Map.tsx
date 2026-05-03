@@ -17,7 +17,7 @@ const Map = ({
          className="
             block relative w-full overflow-hidden rounded-[30px]
             border border-[#82B74C]
-            max-w-[450px] mx-auto
+            max-w-112.5 mx-auto
          "
       >
          <Image

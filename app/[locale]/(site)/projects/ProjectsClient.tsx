@@ -44,8 +44,7 @@ const ProjectsClient = () => {
                   src="/icons/about-us/Title-Under.svg"
                   width={283}
                   height={40}
-                  className="w-[clamp(160px,35vw,283px)] h-auto"
-                  sizes="(max-width: 640px) 160px, (max-width: 768px) 208px, (max-width: 1024px) 240px, 283px"
+                  className="block w-70.75 max-w-full h-auto mx-auto"
                />
             </div>
 

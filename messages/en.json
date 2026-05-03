@@ -273,7 +273,8 @@
                "value": "40%+",
                "label": "Discounted packages"
             }
-         }
+         },
+         "imageAlt": "Smart package experience that reduces food waste in the Supafo app"
       },
       "audience": {
          "title": "Users and Partners",
