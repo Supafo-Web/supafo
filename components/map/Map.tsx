@@ -1,48 +1,34 @@
-"use client"
-
 import Image from "next/image"
-import { useUI } from "@/components/services/contexts/UIContexts"
+import mapImage from "@/public/contact/Map.webp"
 
-const isUrl = (value?: string) => {
-   if (!value) return false
-
-   try {
-      new URL(value)
-      return true
-   } catch {
-      return false
-   }
+type ContactMapProps = {
+   href?: string
 }
 
-const Map = () => {
-   const { settings } = useUI()
-   const mapValue = settings?.address
-
-   if (!mapValue) return null
-
-   const openMapsUrl = isUrl(mapValue)
-      ? mapValue
-      : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(mapValue)}`
-
+const Map = ({
+   href = "https://www.google.com/maps/search/?api=1&query=Supafo"
+}: ContactMapProps) => {
    return (
       <a
-         href={openMapsUrl}
+         href={href}
          target="_blank"
          rel="noopener noreferrer"
-         aria-label="Supafo konumunu Google Haritalar’da aç"
+         aria-label="Supafo konumunu Google Maps üzerinde aç"
          className="
-            relative block w-full h-[570px] overflow-hidden rounded-[30px]
-            border border-[#82B74C] mx-auto
+            block relative w-full overflow-hidden rounded-[30px]
+            border border-[#82B74C]
+            max-w-[450px] mx-auto
          "
       >
          <Image
-            src="/contact/Map.webp"
+            src={mapImage}
             alt="Supafo konum haritası"
-            fill
+            width={450}
+            height={500}
             priority
             fetchPriority="high"
-            sizes="(max-width: 1024px) 100vw, 50vw"
-            className="object-cover"
+            sizes="(max-width: 768px) 450px, 450px"
+            className="block w-full h-auto rounded-[30px]"
          />
       </a>
    )

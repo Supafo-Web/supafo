@@ -131,19 +131,20 @@ const ContactClient = () => {
                </h1>
 
                <Image
+                  src="/icons/about-us/Title-Under.svg"
                   alt=""
                   aria-hidden="true"
-                  src="/icons/about-us/Title-Under.svg"
                   width={283}
                   height={40}
-                  className="w-40 sm:w-52 md:w-60 lg:w-72 h-auto"
-                  sizes="(max-width: 640px) 160px, (max-width: 768px) 208px, (max-width: 1024px) 240px, 288px"
+                  className="block w-70.75 max-w-full h-auto mx-auto"
                />
             </div>
 
             <div className="flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-15">
                <div className="w-full lg:w-1/2">
-                  <Map />
+                  <Map
+                     href={settings?.address}
+                  />
                </div>
 
                <div className="flex flex-col gap-5 w-full lg:w-1/2">
@@ -188,13 +189,12 @@ const ContactClient = () => {
                </h2>
 
                <Image
+                  src="/icons/about-us/Title-Under.svg"
                   alt=""
                   aria-hidden="true"
-                  src="/icons/about-us/Title-Under.svg"
                   width={283}
                   height={40}
-                  className="w-40 sm:w-52 md:w-60 lg:w-72 h-auto"
-                  sizes="(max-width: 640px) 160px, (max-width: 768px) 208px, (max-width: 1024px) 240px, 288px"
+                  className="block w-70.75 max-w-full h-auto mx-auto"
                />
             </div>
 
