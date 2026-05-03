@@ -144,9 +144,9 @@ export default function GuideInteractive({
                      {t.rich("audience.heading", { green })}
                   </h2>
 
-                  <h6>
+                  <h3>
                      {t("audience.description")}
-                  </h6>
+                  </h3>
 
                   <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-6">
                      {AUDIENCE_DATA.map((item) => (
@@ -239,9 +239,9 @@ export default function GuideInteractive({
                      {t("cartPayment.heading")}
                   </h2>
 
-                  <h6 className="mt-4">
+                  <h3 className="mt-4">
                      {t.rich("cartPayment.description", { green })}
-                  </h6>
+                  </h3>
                </div>
 
                <div className="grid w-full max-w-3xl grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -304,9 +304,9 @@ export default function GuideInteractive({
                      {t("miniGame.heading")}
                   </h2>
 
-                  <h6>
+                  <h3>
                      {t("miniGame.description")}
-                  </h6>
+                  </h3>
 
                   <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-6">
                      {GAME_DATA.map((item) => (
