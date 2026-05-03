@@ -1,6 +1,5 @@
 import { getLocale, getTranslations } from "next-intl/server"
 import Image from "next/image"
-import Link from "next/link"
 import styles from "@/components/modules/partner.module.scss"
 import Dropdown from "@/components/dropdown/Dropdown"
 import Button from "@/components/button/Button"
@@ -35,9 +34,9 @@ const Partner = async () => {
                className={`relative flex min-h-dvh flex-1 items-center justify-center ${styles.container}`}
             >
                <div className="absolute left-0 right-0 top-0 flex items-center justify-between px-6 py-2">
-                  <Link
+                  <Button
                      href={`/${locale}/`}
-                     aria-label={modal("home")}
+                     ariaLabel={modal("home")}
                      className="inline-flex items-center"
                   >
                      <Image
@@ -47,9 +46,11 @@ const Partner = async () => {
                         height={67}
                         className={`${styles.logoImage} h-auto w-20`}
                      />
-                  </Link>
+                  </Button>
 
-                  <Dropdown />
+                  <Dropdown
+                     language
+                  />
                </div>
 
                <div
@@ -61,7 +62,7 @@ const Partner = async () => {
                      src="/partner/PartnerClock.svg"
                      width={100}
                      height={100}
-                     className="h-auto w-[100px]"
+                     className="h-auto w-25"
                      sizes="100px"
                   />
 
@@ -82,6 +83,7 @@ const Partner = async () => {
                   <Button
                      href={`/${locale}`}
                      text={modal("home")}
+                     ariaLabel={modal("home")}
                      className="mb-4 mt-8 px-16"
                   />
                </div>
