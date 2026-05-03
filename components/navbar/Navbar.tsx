@@ -8,6 +8,7 @@ import LangSwitch from "@/components/lang/LangSwitch"
 import NavbarSubmenuLinks from "@/components/navbar/NavbarSubmenuLinks"
 import PartnerLoginAnimation from "@/components/navbar/PartnerLoginAnimation"
 import NavbarDownloadButton from "@/components/navbar/NavbarDownloadButton"
+import { handleDownload } from "@/components/store/AppStore"
 
 const Navbar = async () => {
    const t = await getTranslations("Navbar")
@@ -113,6 +114,7 @@ const Navbar = async () => {
 
                <NavbarDownloadButton
                   text={t("download_app")}
+                  onClick={handleDownload}
                />
 
                <Dropdown language>
@@ -189,6 +191,7 @@ const Navbar = async () => {
 
                <NavbarDownloadButton
                   text={t("download_app")}
+                  onClick={handleDownload}
                />
 
                <Dropdown language>
