@@ -1,6 +1,6 @@
 'use client'
 
-import { config } from "@/config"
+import { config } from '@/config'
 
 export const APP_STORE_URL = `https://apps.apple.com/app/${config.iosAppId}`
 
@@ -13,14 +13,17 @@ export const WINDOWS_URL = 'https://www.supafo.com/download/windows'
 export const DEFAULT_URL = '/download'
 
 export const getDownloadUrl = () => {
-   const userAgent = navigator.userAgent.toLowerCase()
-   const platform = navigator.platform.toLowerCase()
+   if (typeof window === 'undefined') return DEFAULT_URL
+
+   const userAgent = window.navigator.userAgent.toLowerCase()
+   const platform = window.navigator.platform.toLowerCase()
 
    const isIOS =
       /iphone|ipad|ipod/.test(userAgent) ||
-      (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)
+      (window.navigator.platform === 'MacIntel' && window.navigator.maxTouchPoints > 1)
+
    const isAndroid = /android/.test(userAgent)
-   const isMacOS = platform.includes('mac')
+   const isMacOS = platform.includes('mac') && !isIOS
    const isWindows = platform.includes('win')
 
    if (isIOS) return APP_STORE_URL
