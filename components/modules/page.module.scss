@@ -251,7 +251,7 @@ main {
             font-size: var(--fs-section-title);
             font-weight: $medium;
             line-height: var(--lh-title);
-            color: $primaryText;
+            color: $primary;
             letter-spacing: -0.02em;
 
             span {
@@ -264,7 +264,7 @@ main {
             font-size: var(--fs-subtitle);
             font-weight: $medium;
             line-height: var(--lh-subtitle);
-            color: $primaryText;
+            color: $primary;
          }
 
          p {
@@ -274,7 +274,7 @@ main {
             color: #737373;
 
             span {
-               color: $primaryText;
+               color: $primary;
             }
          }
       }
@@ -288,7 +288,7 @@ main {
          font-size: var(--fs-section-title);
          font-weight: $medium;
          line-height: var(--lh-title);
-         color: $primaryText;
+         color: $primary;
          text-align: center;
          margin-bottom: clamp(24px, 4vw, 50px);
          letter-spacing: -0.02em;
@@ -307,7 +307,7 @@ main {
          font-size: var(--fs-section-title);
          font-weight: $medium;
          line-height: var(--lh-title);
-         color: $primaryText;
+         color: $primary;
          text-align: center;
          letter-spacing: -0.02em;
 
@@ -321,7 +321,7 @@ main {
          font-size: var(--fs-subtitle);
          font-weight: $medium;
          line-height: var(--lh-subtitle);
-         color: $primaryText;
+         color: $primary;
       }
 
       p {
@@ -357,7 +357,7 @@ main {
             font-size: var(--fs-subtitle);
             font-weight: $regular;
             line-height: var(--lh-subtitle);
-            color: $primaryText;
+            color: $primary;
          }
 
          p {
@@ -430,7 +430,7 @@ main {
          font-size: var(--fs-subtitle);
          font-weight: $medium;
          line-height: var(--lh-subtitle);
-         color: $primaryText;
+         color: $primary;
       }
 
       p {
@@ -460,7 +460,7 @@ main {
          font-size: var(--fs-subtitle);
          font-weight: $medium;
          line-height: var(--lh-subtitle);
-         color: $primaryText;
+         color: $primary;
       }
 
       p {
@@ -470,7 +470,7 @@ main {
          color: #737373;
 
          span {
-            color: $primaryText;
+            color: $primary;
          }
       }
    }

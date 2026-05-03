@@ -20,7 +20,7 @@
 }
 
 .faqButton {
-   border: 1px solid $primaryText;
+   border: 1px solid $primary;
    padding: clamp(14px, 1.4vw, 18px) clamp(16px, 1.8vw, 20px);
    width: 100%;
    display: flex;
@@ -129,7 +129,7 @@
 }
 
 .downArrow {
-   border: 1px solid $primaryText;
+   border: 1px solid $primary;
    background-color: white;
    border-radius: 999px;
    padding: 6px;
