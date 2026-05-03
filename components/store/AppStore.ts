@@ -34,6 +34,10 @@ export const getDownloadUrl = () => {
    return DEFAULT_URL
 }
 
+export const handleDownload = () => {
+   window.location.href = getDownloadUrl()
+}
+
 export const data = [
    {
       id: 1,

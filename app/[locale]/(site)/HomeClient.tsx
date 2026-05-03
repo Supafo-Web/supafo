@@ -5,7 +5,7 @@ import styles from "@/components/modules/page.module.scss"
 import NavbarDownloadButton from "@/components/navbar/NavbarDownloadButton"
 import FAQ from "@/components/faq/FAQ"
 import Button from "@/components/button/Button"
-import { getDownloadUrl } from "@/components/store/AppStore"
+import { getDownloadUrl, handleDownload } from "@/components/store/AppStore"
 import { useLocale, useTranslations } from "next-intl"
 import { useEffect, useState } from "react"
 
@@ -239,7 +239,7 @@ const HomeClient = () => {
                   <div className="mt-6 flex flex-col items-center gap-4 sm:flex-row sm:justify-center lg:mt-0 lg:gap-5">
                      <Button
                         text={t("hero_button_1")}
-                        href={getDownloadUrl()}
+                        onClick={handleDownload}
                      />
 
                      <Button
