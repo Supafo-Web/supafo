@@ -2,7 +2,8 @@ import { getTranslations } from "next-intl/server"
 import styles from "@/components/modules/about-us.module.scss"
 import Image from "next/image"
 import { createGenerateMetadata } from "@/lib/createGenerateMetadata"
-import NavbarDownloadButtonClient from "@/components/navbar/NavbarDownloadButtonClient"
+import Button from "@/components/button/Button"
+import { handleDownload } from "@/components/store/AppStore"
 
 export const generateMetadata = createGenerateMetadata("/about-us")
 
@@ -32,7 +33,8 @@ const AboutUs = async () => {
             id="who-we-are"
          >
             <Image
-               alt="flower"
+               alt=""
+               aria-hidden="true"
                src="/images/LeftFlower.svg"
                width={69}
                height={115}
@@ -46,7 +48,8 @@ const AboutUs = async () => {
                   </h1>
 
                   <Image
-                     alt="title-under"
+                     alt=""
+                     aria-hidden="true"
                      src="/icons/about-us/Title-Under.svg"
                      width={283}
                      height={40}
@@ -56,9 +59,9 @@ const AboutUs = async () => {
                </div>
 
                <div className="flex min-w-0 flex-col gap-6 lg:gap-10">
-                  <h6 className={`text-center lg:text-left ${styles.subtitle}`}>
+                  <h3 className={`text-center lg:text-left ${styles.subtitle}`}>
                      {t("subtitle_1")}
-                  </h6>
+                  </h3>
 
                   <div className="flex min-w-0 flex-col gap-5 leading-8 sm:leading-9 lg:gap-8 lg:leading-10">
                      <p className={`wrap-break-word text-center lg:text-left ${styles.paragraph}`}>
@@ -85,7 +88,8 @@ const AboutUs = async () => {
             </div>
 
             <Image
-               alt="flower"
+               alt=""
+               aria-hidden="true"
                src="/images/RightFlower.svg"
                width={69}
                height={115}
@@ -99,12 +103,13 @@ const AboutUs = async () => {
          >
             <div className={containerClass}>
                <div className={titleWrapperClass}>
-                  <h1 className={`text-center ${styles.title}`}>
+                  <h2 className={`text-center ${styles.title}`}>
                      {t("title_2")}
-                  </h1>
+                  </h2>
 
                   <Image
-                     alt="title-under"
+                     alt=""
+                     aria-hidden="true"
                      src="/icons/about-us/Title-Under.svg"
                      width={283}
                      height={40}
@@ -116,7 +121,8 @@ const AboutUs = async () => {
                <div className="hidden min-w-0 items-center gap-10 lg:flex xl:gap-14">
                   <div className="flex w-[34%] shrink-0 justify-center">
                      <Image
-                        alt="mission-vision"
+                        alt=""
+                        aria-hidden="true"
                         src="/icons/about-us/1-2.svg"
                         width={379}
                         height={398}
@@ -127,9 +133,9 @@ const AboutUs = async () => {
 
                   <div className="flex min-w-0 flex-1 flex-col gap-8 xl:gap-10">
                      <div className="flex min-w-0 flex-col gap-4">
-                        <h6 className={`text-left ${styles.subtitle}`}>
+                        <h3 className={`text-left ${styles.subtitle}`}>
                            {t("mission_title")}
-                        </h6>
+                        </h3>
 
                         <p className={`wrap-break-word text-left ${styles.paragraph}`}>
                            {t("mission_desc")}
@@ -137,9 +143,9 @@ const AboutUs = async () => {
                      </div>
 
                      <div className="flex min-w-0 flex-col gap-4">
-                        <h6 className={`text-left ${styles.subtitle}`}>
+                        <h3 className={`text-left ${styles.subtitle}`}>
                            {t("vision_title")}
-                        </h6>
+                        </h3>
 
                         <p className={`wrap-break-word text-left ${styles.paragraph}`}>
                            {t.rich("vision_desc", {
@@ -156,13 +162,14 @@ const AboutUs = async () => {
 
                <div className="flex min-w-0 flex-col gap-12 lg:hidden">
                   <div className="flex min-w-0 flex-col gap-6">
-                     <h6 className={`text-left ${styles.subtitle}`}>
+                     <h3 className={`text-left ${styles.subtitle}`}>
                         {t("mission_title")}
-                     </h6>
+                     </h3>
 
                      <div className="flex flex-col items-center gap-8">
                         <Image
-                           alt="mission"
+                           alt=""
+                           aria-hidden="true"
                            src="/icons/about-us/small/1.svg"
                            width={98}
                            height={105}
@@ -177,13 +184,14 @@ const AboutUs = async () => {
                   </div>
 
                   <div className="flex min-w-0 flex-col gap-6">
-                     <h6 className={`text-left ${styles.subtitle}`}>
+                     <h3 className={`text-left ${styles.subtitle}`}>
                         {t("vision_title")}
-                     </h6>
+                     </h3>
 
                      <div className="flex flex-col items-center gap-8">
                         <Image
-                           alt="vision"
+                           alt=""
+                           aria-hidden="true"
                            src="/icons/about-us/small/2.svg"
                            width={98}
                            height={105}
@@ -211,7 +219,8 @@ const AboutUs = async () => {
             id="what-makes-us-different"
          >
             <Image
-               alt="flower"
+               alt=""
+               aria-hidden="true"
                src="/images/LeftFlower.svg"
                width={69}
                height={115}
@@ -220,12 +229,13 @@ const AboutUs = async () => {
 
             <div className={containerClass}>
                <div className={titleWrapperClass}>
-                  <h1 className={`text-center ${styles.title}`}>
+                  <h2 className={`text-center ${styles.title}`}>
                      {t("title_3")}
-                  </h1>
+                  </h2>
 
                   <Image
-                     alt="title-under"
+                     alt=""
+                     aria-hidden="true"
                      src="/icons/about-us/Title-Under.svg"
                      width={283}
                      height={40}
@@ -272,7 +282,8 @@ const AboutUs = async () => {
 
                   <div className="hidden w-[34%] shrink-0 justify-center lg:flex">
                      <Image
-                        alt="about-us-group"
+                        alt=""
+                        aria-hidden="true"
                         src="/icons/about-us/3-4-5.svg"
                         width={452}
                         height={494}
@@ -284,7 +295,8 @@ const AboutUs = async () => {
 
                <div className="mt-10 grid grid-cols-3 place-items-center gap-3 lg:hidden sm:gap-4">
                   <Image
-                     alt="about-us-small-group"
+                     alt=""
+                     aria-hidden="true"
                      src="/icons/about-us/small/3.svg"
                      width={98}
                      height={105}
@@ -293,7 +305,8 @@ const AboutUs = async () => {
                   />
 
                   <Image
-                     alt="about-us-small-group"
+                     alt=""
+                     aria-hidden="true"
                      src="/icons/about-us/small/4.svg"
                      width={98}
                      height={105}
@@ -302,7 +315,8 @@ const AboutUs = async () => {
                   />
 
                   <Image
-                     alt="about-us-small-group"
+                     alt=""
+                     aria-hidden="true"
                      src="/icons/about-us/small/5.svg"
                      width={98}
                      height={105}
@@ -313,7 +327,8 @@ const AboutUs = async () => {
             </div>
 
             <Image
-               alt="flower"
+               alt=""
+               aria-hidden="true"
                src="/images/RightFlower.svg"
                width={69}
                height={115}
@@ -326,7 +341,8 @@ const AboutUs = async () => {
             id="join-our-struggle"
          >
             <Image
-               alt="flower"
+               alt=""
+               aria-hidden="true"
                src="/images/LeftFlower.svg"
                width={69}
                height={115}
@@ -335,12 +351,13 @@ const AboutUs = async () => {
 
             <div className={containerClass}>
                <div className={titleWrapperClass}>
-                  <h1 className={`text-center ${styles.title}`}>
+                  <h2 className={`text-center ${styles.title}`}>
                      {t("title_4")}
-                  </h1>
+                  </h2>
 
                   <Image
-                     alt="title-under"
+                     alt=""
+                     aria-hidden="true"
                      src="/icons/about-us/Title-Under.svg"
                      width={283}
                      height={40}
@@ -352,7 +369,8 @@ const AboutUs = async () => {
                <div className="flex min-w-0 flex-col items-center gap-10 lg:flex-row lg:gap-14 xl:gap-20">
                   <div className="flex w-full shrink-0 justify-center lg:w-[34%]">
                      <Image
-                        alt="mission"
+                        alt=""
+                        aria-hidden="true"
                         src="/icons/about-us/small/6.svg"
                         width={420}
                         height={450}
@@ -366,8 +384,10 @@ const AboutUs = async () => {
                         {t("join_desc")}
                      </p>
 
-                     <NavbarDownloadButtonClient
+                     <Button
                         text={modal("download_app")}
+                        ariaLabel={modal("download_app")}
+                        onClick={handleDownload}
                      />
                   </div>
                </div>

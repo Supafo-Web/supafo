@@ -3,10 +3,10 @@
 import Button from "@/components/button/Button"
 import styles from "@/components/modules/dropdown.module.scss"
 import navbarStyles from '@/components/modules/navbar.module.scss'
-import Lottie from "lottie-react"
 import { ReactNode, useEffect, useRef, useState } from "react"
 import LanguageAnimation from "@/public/lottie/Language.json"
 import LanguageAnimationWhite from "@/public/lottie/Language-white.json"
+import dynamic from "next/dynamic"
 
 interface DropdownProps {
    image?: ReactNode | boolean
@@ -15,6 +15,10 @@ interface DropdownProps {
    href?: string
    language?: boolean
 }
+
+const Lottie = dynamic(() => import("lottie-react"), {
+   ssr: false,
+})
 
 const Dropdown = ({
    image,

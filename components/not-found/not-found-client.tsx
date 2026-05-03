@@ -1,7 +1,11 @@
 'use client'
 
-import Lottie from 'lottie-react'
 import notFound from '@/public/lottie/NotFound.json'
+import dynamic from 'next/dynamic'
+
+const Lottie = dynamic(() => import("lottie-react"), {
+   ssr: false,
+})
 
 const NotFoundClient = () => {
    return (

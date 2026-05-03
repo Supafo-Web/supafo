@@ -7,7 +7,7 @@ import { getNavbarMenu } from "@/components/utils/Navbar"
 import LangSwitch from "@/components/lang/LangSwitch"
 import NavbarSubmenuLinks from "@/components/navbar/NavbarSubmenuLinks"
 import PartnerLoginAnimation from "@/components/navbar/PartnerLoginAnimation"
-import NavbarDownloadButtonClient from "@/components/navbar/NavbarDownloadButtonClient"
+import NavbarDownloadButton from "@/components/navbar/NavbarDownloadButton"
 
 const Navbar = async () => {
    const t = await getTranslations("Navbar")
@@ -111,9 +111,8 @@ const Navbar = async () => {
                   </Button>
                </div>
 
-               <NavbarDownloadButtonClient
+               <NavbarDownloadButton
                   text={t("download_app")}
-                  navbar
                />
 
                <Dropdown language>
@@ -188,9 +187,8 @@ const Navbar = async () => {
                   </Button>
                </div>
 
-               <NavbarDownloadButtonClient
+               <NavbarDownloadButton
                   text={t("download_app")}
-                  navbar
                />
 
                <Dropdown language>

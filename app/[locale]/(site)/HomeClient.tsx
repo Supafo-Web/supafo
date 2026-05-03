@@ -2,7 +2,6 @@
 
 import Image from "next/image"
 import styles from "@/components/modules/page.module.scss"
-import NavbarDownloadButton from "@/components/navbar/NavbarDownloadButton"
 import FAQ from "@/components/faq/FAQ"
 import Button from "@/components/button/Button"
 import { handleDownload } from "@/components/store/AppStore"
@@ -419,8 +418,9 @@ const HomeClient = () => {
                         </p>
                      </div>
 
-                     <NavbarDownloadButton
+                     <Button
                         text={modal("download_app")}
+                        ariaLabel={modal("download_app")}
                         onClick={handleDownload}
                      />
                   </div>
