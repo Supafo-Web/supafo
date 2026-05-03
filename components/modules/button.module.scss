@@ -3,13 +3,10 @@
 
 .privateButton {
    background-color: $primaryButton;
-   transition:
-      background-color 0.3s ease,
-      border-color 0.3s ease;
+   transition: background-color 0.3s ease;
 
    &:hover {
       background-color: $primaryButtonHover;
-      border-color: $primaryButtonHover;
    }
 }
 
