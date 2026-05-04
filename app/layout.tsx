@@ -5,6 +5,8 @@ import "./globals.scss"
 import { UIProvider } from "@/components/services/contexts/UIContexts"
 import AppInitializer from "@/components/AppInitializer"
 import { SITE_NAME, SITE_URL } from "@/config/seo"
+import FirebaseAnalyticsProvider from "@/components/firebase/FirebaseAnalyticsProvider"
+import { Suspense } from "react"
 
 const poppins = Poppins({
    subsets: ["latin"],
@@ -79,6 +81,13 @@ const RootLayout = ({
          <body className="min-h-full flex flex-col antialiased">
             <UIProvider>
                <AppInitializer />
+
+               <Suspense
+                  fallback={null}
+               >
+                  <FirebaseAnalyticsProvider />
+               </Suspense>
+
                {children}
             </UIProvider>
          </body>

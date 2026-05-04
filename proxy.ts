@@ -60,8 +60,18 @@ function buildCsp(nonce: string) {
       "https://api.supafo.com",
       "https://admin.supafo.com",
       "https://partner.supafo.com",
+
+      // Google Analytics / GTM
       "https://www.google-analytics.com",
+      "https://*.google-analytics.com",
       "https://www.googletagmanager.com",
+
+      // Firebase Analytics config + installation
+      "https://firebase.googleapis.com",
+      "https://firebaseinstallations.googleapis.com",
+      "https://*.googleapis.com",
+
+      // Maps
       "https://maps.googleapis.com",
       "https://maps.gstatic.com",
    ].join(" ")
