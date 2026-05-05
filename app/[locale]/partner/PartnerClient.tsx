@@ -1,7 +1,7 @@
 "use client"
 
 import Lottie from "lottie-react"
-import PartnerLoading from "@/public/lottie/Partner2.json"
+import PartnerLoading from "@/public/lottie/Partner3.json"
 
 const PartnerClient = () => {
    return (
