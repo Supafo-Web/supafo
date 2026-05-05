@@ -13,6 +13,8 @@ export interface UIContextType {
    setOpenPositions: React.Dispatch<React.SetStateAction<OpenPositions[]>>
    countries: Country[]
    setCountries: React.Dispatch<React.SetStateAction<Country[]>>
+   isLoading: boolean
+   setIsLoading: React.Dispatch<React.SetStateAction<boolean>>
 }
 
 const UIContext = createContext<UIContextType | undefined>(undefined)
@@ -22,6 +24,7 @@ export const UIProvider = ({ children }: { children: ReactNode }) => {
    const [teamMembers, setTeamMembers] = useState<TeamMembers[]>([])
    const [openPositions, setOpenPositions] = useState<OpenPositions[]>([])
    const [countries, setCountries] = useState<Country[]>([])
+   const [isLoading, setIsLoading] = useState<boolean>(false)
 
    return (
       <UIContext.Provider value={{
@@ -32,7 +35,9 @@ export const UIProvider = ({ children }: { children: ReactNode }) => {
          openPositions,
          setOpenPositions,
          countries,
-         setCountries
+         setCountries,
+         isLoading,
+         setIsLoading
       }}>
          {children}
       </UIContext.Provider>

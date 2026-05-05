@@ -5,6 +5,8 @@ import { useState } from "react"
 import downloadAnimation from "@/public/lottie/Download.json"
 import downloadWhite from "@/public/lottie/Download-white.json"
 import dynamic from "next/dynamic"
+import Lottie from "lottie-react"
+import { useLottieRefreshKey } from "@/components/hooks/UseLottieRefreshKey"
 
 interface NavbarDownloadButtonProps {
    text: string
@@ -12,16 +14,13 @@ interface NavbarDownloadButtonProps {
    onClick?: (e: React.MouseEvent<HTMLElement>) => void
 }
 
-const Lottie = dynamic(() => import("lottie-react"), {
-   ssr: false,
-})
-
 const NavbarDownloadButton = ({
    text,
    href,
    onClick
 }: NavbarDownloadButtonProps) => {
    const [isHovered, setIsHovered] = useState<boolean>(false)
+   const refreshKey = useLottieRefreshKey()
 
    return (
       <Button
@@ -43,8 +42,11 @@ const NavbarDownloadButton = ({
             onMouseLeave={() => setIsHovered(false)}
          >
             <Lottie
+               key={`download-${isHovered ? "white" : "green"}-${refreshKey}`}
                animationData={isHovered ? downloadWhite : downloadAnimation}
                loop
+               autoplay
+               renderer="svg"
             />
          </div>
       </Button>

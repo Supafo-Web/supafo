@@ -32,7 +32,7 @@ const AboutUs = async () => {
             className={sectionClass}
             id="who-we-are"
          >
-            <Image
+            <img
                alt=""
                aria-hidden="true"
                src="/images/LeftFlower.svg"
@@ -47,7 +47,7 @@ const AboutUs = async () => {
                      {t("title_1")}
                   </h1>
 
-                  <Image
+                  <img
                      alt=""
                      aria-hidden="true"
                      src="/icons/about-us/Title-Under.svg"
@@ -86,7 +86,7 @@ const AboutUs = async () => {
                </div>
             </div>
 
-            <Image
+            <img
                alt=""
                aria-hidden="true"
                src="/images/RightFlower.svg"
@@ -106,7 +106,7 @@ const AboutUs = async () => {
                      {t("title_2")}
                   </h2>
 
-                  <Image
+                  <img
                      alt=""
                      aria-hidden="true"
                      src="/icons/about-us/Title-Under.svg"
@@ -118,7 +118,7 @@ const AboutUs = async () => {
 
                <div className="hidden min-w-0 items-center gap-10 lg:flex xl:gap-14">
                   <div className="flex w-[34%] shrink-0 justify-center">
-                     <Image
+                     <img
                         alt=""
                         aria-hidden="true"
                         src="/icons/about-us/1-2.svg"
@@ -165,7 +165,7 @@ const AboutUs = async () => {
                      </h3>
 
                      <div className="flex flex-col items-center gap-8">
-                        <Image
+                        <img
                            alt=""
                            aria-hidden="true"
                            src="/icons/about-us/small/1.svg"
@@ -187,7 +187,7 @@ const AboutUs = async () => {
                      </h3>
 
                      <div className="flex flex-col items-center gap-8">
-                        <Image
+                        <img
                            alt=""
                            aria-hidden="true"
                            src="/icons/about-us/small/2.svg"
@@ -216,7 +216,7 @@ const AboutUs = async () => {
             className={sectionClass}
             id="what-makes-us-different"
          >
-            <Image
+            <img
                alt=""
                aria-hidden="true"
                src="/images/LeftFlower.svg"
@@ -231,7 +231,7 @@ const AboutUs = async () => {
                      {t("title_3")}
                   </h2>
 
-                  <Image
+                  <img
                      alt=""
                      aria-hidden="true"
                      src="/icons/about-us/Title-Under.svg"
@@ -278,7 +278,7 @@ const AboutUs = async () => {
                   </div>
 
                   <div className="hidden w-[34%] shrink-0 justify-center lg:flex">
-                     <Image
+                     <img
                         alt=""
                         aria-hidden="true"
                         src="/icons/about-us/3-4-5.svg"
@@ -291,7 +291,7 @@ const AboutUs = async () => {
                </div>
 
                <div className="mt-10 grid grid-cols-3 place-items-center gap-3 lg:hidden sm:gap-4">
-                  <Image
+                  <img
                      alt=""
                      aria-hidden="true"
                      src="/icons/about-us/small/3.svg"
@@ -301,7 +301,7 @@ const AboutUs = async () => {
                      sizes="(max-width: 640px) 80px, (max-width: 768px) 96px, 112px"
                   />
 
-                  <Image
+                  <img
                      alt=""
                      aria-hidden="true"
                      src="/icons/about-us/small/4.svg"
@@ -311,7 +311,7 @@ const AboutUs = async () => {
                      sizes="(max-width: 640px) 80px, (max-width: 768px) 96px, 112px"
                   />
 
-                  <Image
+                  <img
                      alt=""
                      aria-hidden="true"
                      src="/icons/about-us/small/5.svg"
@@ -323,7 +323,7 @@ const AboutUs = async () => {
                </div>
             </div>
 
-            <Image
+            <img
                alt=""
                aria-hidden="true"
                src="/images/RightFlower.svg"
@@ -337,7 +337,7 @@ const AboutUs = async () => {
             className={sectionClass}
             id="join-our-struggle"
          >
-            <Image
+            <img
                alt=""
                aria-hidden="true"
                src="/images/LeftFlower.svg"
@@ -352,7 +352,7 @@ const AboutUs = async () => {
                      {t("title_4")}
                   </h2>
 
-                  <Image
+                  <img
                      alt=""
                      aria-hidden="true"
                      src="/icons/about-us/Title-Under.svg"
@@ -364,7 +364,7 @@ const AboutUs = async () => {
 
                <div className="flex min-w-0 flex-col items-center gap-10 lg:flex-row lg:gap-14 xl:gap-20">
                   <div className="flex w-full shrink-0 justify-center lg:w-[34%]">
-                     <Image
+                     <img
                         alt=""
                         aria-hidden="true"
                         src="/icons/about-us/small/6.svg"

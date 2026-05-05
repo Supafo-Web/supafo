@@ -26,7 +26,7 @@ const Hamburger = () => {
          >
             {open ? (
                <span className={`rounded-full p-1.5 ${styles.modalCloseButton}`}>
-                  <Image
+                  <img
                      alt=""
                      aria-hidden="true"
                      src="/icons/Close.svg"
@@ -35,7 +35,7 @@ const Hamburger = () => {
                   />
                </span>
             ) : (
-               <Image
+               <img
                   alt=""
                   aria-hidden="true"
                   src="/icons/HamburgerMenu.svg"

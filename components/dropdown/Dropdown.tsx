@@ -7,6 +7,8 @@ import { ReactNode, useEffect, useRef, useState } from "react"
 import LanguageAnimation from "@/public/lottie/Language.json"
 import LanguageAnimationWhite from "@/public/lottie/Language-white.json"
 import dynamic from "next/dynamic"
+import Lottie from "lottie-react"
+import { useLottieRefreshKey } from "@/components/hooks/UseLottieRefreshKey"
 
 interface DropdownProps {
    image?: ReactNode | boolean
@@ -15,10 +17,6 @@ interface DropdownProps {
    href?: string
    language?: boolean
 }
-
-const Lottie = dynamic(() => import("lottie-react"), {
-   ssr: false,
-})
 
 const Dropdown = ({
    image,
@@ -29,6 +27,7 @@ const Dropdown = ({
 }: DropdownProps) => {
    const [open, setOpen] = useState<boolean>(false)
    const dropdownRef = useRef<HTMLDivElement | null>(null)
+   const refreshKey = useLottieRefreshKey()
 
    useEffect(() => {
       const handleClickOutside = (event: MouseEvent) => {
@@ -95,10 +94,13 @@ const Dropdown = ({
                >
                   {image ? image : language && (
                      <Lottie
+                        key={`language-${open ? "white" : "green"}-${refreshKey}`}
                         animationData={open ? LanguageAnimationWhite : LanguageAnimation}
                         loop
-                        aria-hidden='true'
-                        className={`w-7.5 h-7.5`}
+                        autoplay
+                        renderer="svg"
+                        aria-hidden="true"
+                        className="w-7.5 h-7.5"
                      />
                   )}
                </div>

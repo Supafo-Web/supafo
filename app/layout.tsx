@@ -7,6 +7,7 @@ import AppInitializer from "@/components/AppInitializer"
 import { SITE_NAME, SITE_URL } from "@/config/seo"
 import FirebaseAnalyticsProvider from "@/components/firebase/FirebaseAnalyticsProvider"
 import { Suspense } from "react"
+import Loading from "@/components/loading/Loading"
 
 const poppins = Poppins({
    subsets: ["latin"],
@@ -88,7 +89,9 @@ const RootLayout = ({
                   <FirebaseAnalyticsProvider />
                </Suspense>
 
-               {children}
+               <Loading>
+                  {children}
+               </Loading>
             </UIProvider>
          </body>
       </html>

@@ -54,8 +54,7 @@ const FAQ = ({ faq }: { faq: FAQItem[] }) => {
                            {item.question}
                         </span>
 
-                        <Image
-                           alt={isOpen ? "minus-button" : "plus-button"}
+                        <img
                            aria-hidden="true"
                            src={isOpen ? "/icons/Minus.svg" : "/icons/Plus.svg"}
                            width={28}
@@ -64,6 +63,7 @@ const FAQ = ({ faq }: { faq: FAQItem[] }) => {
                               ${styles.faqIcon}
                               ${isOpen ? styles.faqIconActive : ''}
                            `}
+                           alt=""
                         />
                      </Button>
 
@@ -117,8 +117,8 @@ const FAQ = ({ faq }: { faq: FAQItem[] }) => {
                                     {item.question}
                                  </span>
 
-                                 <Image
-                                    alt={isOpen ? "minus-button" : "plus-button"}
+                                 <img
+                                    alt=''
                                     aria-hidden="true"
                                     src={isOpen ? "/icons/Minus.svg" : "/icons/Plus.svg"}
                                     width={28}
@@ -160,8 +160,8 @@ const FAQ = ({ faq }: { faq: FAQItem[] }) => {
                   ${showAll ? styles.downArrowActive : ''}
                `}
             >
-               <Image
-                  alt="down-arrow"
+               <img
+                  alt=""
                   aria-hidden='true'
                   src="/icons/DownArrowGreen.svg"
                   width={24}

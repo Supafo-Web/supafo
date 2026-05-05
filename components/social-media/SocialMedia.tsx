@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image'
 import Button from '@/components/button/Button'
 import { useSocialMedia } from '@/components/utils/SocialMedia'
 
@@ -53,7 +52,7 @@ const SocialButtons = () => {
 
    return (
       <div
-         className="flex my-7.5 justify-center gap-6 md:gap-12"
+         className="flex my-7.5 justify-center gap-6 md:gap-8"
       >
          {socialLink.map((item, index) => (
             <Button
@@ -77,7 +76,7 @@ const SocialButtons = () => {
                      group-hover:transform-[rotateY(180deg)]
                   "
                >
-                  <Image
+                  <img
                      alt=""
                      aria-hidden="true"
                      src={item.icon}
@@ -88,7 +87,7 @@ const SocialButtons = () => {
                         backface-hidden
                      "
                   />
-                  <Image
+                  <img
                      alt=""
                      aria-hidden="true"
                      src={item.icon2}

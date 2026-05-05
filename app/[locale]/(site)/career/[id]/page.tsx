@@ -222,7 +222,7 @@ const CareerDetail = async ({ params }: PageProps) => {
    return (
       <main>
          <section className="relative px-5 py-15 sm:px-10 md:px-20 lg:py-30 2xl:px-30">
-            <Image
+            <img
                alt=""
                aria-hidden="true"
                src="/images/LeftFlower.svg"
@@ -247,7 +247,7 @@ const CareerDetail = async ({ params }: PageProps) => {
                      </div>
 
                      <small className="flex items-center gap-0.5">
-                        <Image
+                        <img
                            alt=""
                            aria-hidden="true"
                            src="/career/Location.svg"
@@ -292,7 +292,7 @@ const CareerDetail = async ({ params }: PageProps) => {
                <CareerApplyForm id={jobId} />
             </div>
 
-            <Image
+            <img
                alt=""
                aria-hidden="true"
                src="/images/RightFlower.svg"

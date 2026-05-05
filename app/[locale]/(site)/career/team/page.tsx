@@ -43,7 +43,7 @@ const CareerTeam = async () => {
          <section
             className="px-10 sm:px-30 lg:px-40 xl:px-50 2xl:px-80 py-30 relative"
          >
-            <Image
+            <img
                alt=""
                aria-hidden="true"
                src="/images/LeftFlower.svg"
@@ -61,7 +61,7 @@ const CareerTeam = async () => {
                   {t('title')}
                </h1>
 
-               <Image
+               <img
                   alt=""
                   aria-hidden="true"
                   src="/icons/about-us/Title-Under.svg"
@@ -103,7 +103,7 @@ const CareerTeam = async () => {
                      src="/career/team/Team.webp"
                      width={385}
                      height={385}
-                     className="h-auto w-full max-w-60 rounded-[20px] border border-[#82B74C] sm:max-w-70 lg:max-w-[320px] xl:max-w-90"
+                     className="h-auto w-full max-w-60 sm:max-w-70 lg:max-w-[320px] xl:max-w-90"
                      sizes="(max-width: 640px) 240px, (max-width: 1024px) 280px, (max-width: 1280px) 320px, 360px"
                      priority
                      fetchPriority="high"
@@ -111,7 +111,7 @@ const CareerTeam = async () => {
                </div>
             </div>
 
-            <Image
+            <img
                alt=""
                aria-hidden="true"
                src="/images/RightFlower.svg"
@@ -133,7 +133,7 @@ const CareerTeam = async () => {
                   {t('application_form')}
                </h2>
 
-               <Image
+               <img
                   alt=""
                   aria-hidden="true"
                   src="/icons/about-us/Title-Under.svg"
@@ -151,7 +151,7 @@ const CareerTeam = async () => {
                   team
                />
 
-               <Image
+               <img
                   alt=""
                   aria-hidden="true"
                   src="/images/LeftFlower.svg"
@@ -173,7 +173,7 @@ const CareerTeam = async () => {
                   />
                </div>
 
-               <Image
+               <img
                   alt=""
                   aria-hidden="true"
                   src="/images/RightFlower.svg"

@@ -33,6 +33,9 @@ const WhatIsFoodWaste = () => {
    const imageBoxClass =
       "w-full max-w-[260px] overflow-hidden rounded-[24px] border border-[#82B74C] sm:max-w-[300px] md:max-w-[320px] lg:max-w-[360px] lg:rounded-[30px] xl:max-w-[400px]"
 
+   const imageBoxClass2 =
+      "w-full max-w-[260px] overflow-hidden sm:max-w-[300px] md:max-w-[320px] lg:max-w-[360px] lg:rounded-[30px] xl:max-w-[400px]"
+
    const imageClass =
       "h-auto w-full object-contain"
 
@@ -42,7 +45,7 @@ const WhatIsFoodWaste = () => {
    return (
       <main className="min-h-screen w-full max-w-full overflow-hidden">
          <section className={sectionClass}>
-            <Image
+            <img
                alt=""
                aria-hidden="true"
                src="/images/LeftFlower.svg"
@@ -80,7 +83,7 @@ const WhatIsFoodWaste = () => {
                </div>
             </div>
 
-            <Image
+            <img
                alt=""
                aria-hidden="true"
                src="/images/RightFlower.svg"
@@ -120,7 +123,7 @@ const WhatIsFoodWaste = () => {
          </section>
 
          <section className={sectionClass}>
-            <Image
+            <img
                alt=""
                aria-hidden="true"
                src="/images/LeftFlower.svg"
@@ -132,7 +135,7 @@ const WhatIsFoodWaste = () => {
             <div className={containerClass}>
                <div className="flex min-w-0 flex-col items-center gap-10 lg:flex-row-reverse lg:gap-14 xl:gap-20">
                   <div className={imageWrapperClass}>
-                     <div className={imageBoxClass}>
+                     <div className={imageBoxClass2}>
                         <Image
                            alt={t("section3ImageAlt")}
                            src="/what-is-food-waste/3.webp"
@@ -156,7 +159,7 @@ const WhatIsFoodWaste = () => {
                </div>
             </div>
 
-            <Image
+            <img
                alt=""
                aria-hidden="true"
                src="/images/RightFlower.svg"
@@ -177,7 +180,7 @@ const WhatIsFoodWaste = () => {
                </p>
             </div>
 
-            <Image
+            <img
                alt=""
                aria-hidden="true"
                src="/images/LeftFlower.svg"

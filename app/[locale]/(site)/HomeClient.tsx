@@ -106,7 +106,7 @@ const HomeClient = () => {
                className={`${sectionClass} ${styles.whatIsSupafo}`}
                id="what-is-supafo"
             >
-               <Image
+               <img
                   alt=""
                   aria-hidden="true"
                   src="/images/LeftFlower.svg"
@@ -150,7 +150,7 @@ const HomeClient = () => {
                   </div>
                </div>
 
-               <Image
+               <img
                   alt=""
                   aria-hidden="true"
                   src="/images/RightFlower.svg"
@@ -162,37 +162,35 @@ const HomeClient = () => {
             </section>
 
             <section
-               className={`${sectionClass} ${styles.howDoesSupafo}`}
+               className={`scroll-mt-24 pt-15 lg:pt-30 ${styles.howDoesSupafo}`}
                id="how-does-supafo-work"
             >
-               <div className={`${containerClass} flex flex-col items-center`}>
-                  <h1 className="text-center">
-                     {t.rich("how_it_works_title", {
-                        highlight: (chunks) => <span>{chunks}</span>,
-                     })}
-                  </h1>
+               <h1 className="text-center">
+                  {t.rich("how_it_works_title", {
+                     highlight: (chunks) => <span>{chunks}</span>,
+                  })}
+               </h1>
 
-                  <video
-                     className={`${styles.media} w-full max-w-full`}
-                     autoPlay
-                     muted
-                     loop
-                     playsInline
-                     preload="metadata"
-                  >
-                     <source
-                        src={`/videos/${locale}/Mockup.mp4`}
-                        type="video/mp4"
-                     />
-                  </video>
-               </div>
+               <video
+                  className={`${styles.media}`}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  preload="metadata"
+               >
+                  <source
+                     src={`/videos/${locale}/Mockup.mp4`}
+                     type="video/mp4"
+                  />
+               </video>
             </section>
 
             <section
                className={`${sectionClass} ${styles.supafoBag}`}
                id="supafo-bag"
             >
-               <Image
+               <img
                   alt=""
                   aria-hidden="true"
                   src="/images/RightFlower.svg"
@@ -272,7 +270,7 @@ const HomeClient = () => {
                   </div>
                </div>
 
-               <Image
+               <img
                   alt=""
                   aria-hidden="true"
                   src="/images/LeftFlower.svg"
@@ -321,7 +319,7 @@ const HomeClient = () => {
                className={`${sectionClass} ${styles.supafoAI}`}
                id="technology-of-the-future"
             >
-               <Image
+               <img
                   alt=""
                   aria-hidden="true"
                   src="/images/RightFlower.svg"
@@ -355,7 +353,7 @@ const HomeClient = () => {
                   </div>
                </div>
 
-               <Image
+               <img
                   alt=""
                   aria-hidden="true"
                   src="/images/LeftFlower.svg"
@@ -411,7 +409,7 @@ const HomeClient = () => {
                      </div>
 
                      <div className="flex w-full shrink-0 justify-center lg:w-[38%]">
-                        <Image
+                        <img
                            alt=""
                            aria-hidden="true"
                            src="/home/6.svg"
@@ -429,7 +427,7 @@ const HomeClient = () => {
                id="faq"
                className={`${sectionClass} mb-10 lg:mb-20 ${styles.faq}`}
             >
-               <Image
+               <img
                   alt=""
                   aria-hidden="true"
                   src="/images/RightFlower.svg"
@@ -439,7 +437,7 @@ const HomeClient = () => {
                   sizes="(max-width: 640px) 36px, (max-width: 768px) 48px, 69px"
                />
 
-               <div className={`${containerClass} max-w-275`}>
+               <div className={`w-full lg:w-8/12 md:w-11/12 mx-auto md:px-5`}>
                   <h1 className="text-center">
                      {t("faq_title")}
                   </h1>
@@ -447,7 +445,7 @@ const HomeClient = () => {
                   <FAQ faq={faq} />
                </div>
 
-               <Image
+               <img
                   alt=""
                   aria-hidden="true"
                   src="/images/LeftFlower.svg"

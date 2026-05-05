@@ -81,8 +81,9 @@ const FileInput = forwardRef<HTMLInputElement, FileInputProps>(
                <span
                   className={styles.fileInputIcon}
                >
-                  <Image
-                     alt='file-upload'
+                  <img
+                     alt=''
+                     aria-hidden='true'
                      src='/career/UploadFile.svg'
                      width={24}
                      height={24}

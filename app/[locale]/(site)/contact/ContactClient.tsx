@@ -27,6 +27,8 @@ const ContactClient = () => {
       message: '',
    })
 
+   const whatsappPhone = settings?.support_phone?.replace(/\D/g, '')
+
    const icons = [
       ...(settings?.is_support_active
          ? [
@@ -34,6 +36,7 @@ const ContactClient = () => {
                id: 1,
                icon: '/icons/contact/Phone.svg',
                text: settings?.support_phone,
+               href: `tel:${settings?.support_phone}`
             },
          ]
          : []),
@@ -43,6 +46,7 @@ const ContactClient = () => {
                id: 2,
                icon: '/icons/contact/Whatsapp.svg',
                text: settings?.support_whatsapp,
+               href: `https://wa.me/${whatsappPhone}`
             },
          ]
          : []),
@@ -50,11 +54,13 @@ const ContactClient = () => {
          id: 3,
          icon: '/icons/contact/Email.svg',
          text: settings?.support_email,
+         href: `mailto:${settings?.support_email}`
       },
       {
          id: 4,
          icon: '/icons/contact/Location.svg',
          text: settings?.address,
+         href: undefined
       },
    ].filter((item) => item.text)
 
@@ -116,7 +122,7 @@ const ContactClient = () => {
    return (
       <main>
          <section className="px-10 sm:px-20 lg:px-20 xl:px-50 2xl:px-80 py-15 lg:py-30 relative">
-            <Image
+            <img
                alt=""
                aria-hidden="true"
                src="/images/LeftFlower.svg"
@@ -130,7 +136,7 @@ const ContactClient = () => {
                   {t('title')}
                </h1>
 
-               <Image
+               <img
                   src="/icons/about-us/Title-Under.svg"
                   alt=""
                   aria-hidden="true"
@@ -143,7 +149,7 @@ const ContactClient = () => {
             <div className="flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-15">
                <div className="w-full lg:w-1/2">
                   <Map
-                     href={settings?.address}
+                     address={settings?.address}
                   />
                </div>
 
@@ -151,28 +157,31 @@ const ContactClient = () => {
                   {icons.map((item) => (
                      <div
                         key={item.id}
-                        className="flex items-center gap-5"
+                        className="flex gap-5"
                      >
                         <span className="relative block w-7 h-7 sm:w-8 sm:h-8 md:w-9.5 md:h-9.5 shrink-0">
-                           <Image
+                           <img
                               alt=""
                               aria-hidden="true"
                               src={item.icon}
-                              fill
                               sizes="38px"
                               className="object-contain"
                            />
                         </span>
 
-                        <p className={styles.contactText}>
+                        <a
+                           href={item.href}
+                           className={styles.contactText}
+                           target='_blank'
+                        >
                            {item.text}
-                        </p>
+                        </a>
                      </div>
                   ))}
                </div>
             </div>
 
-            <Image
+            <img
                alt=""
                aria-hidden="true"
                src="/images/RightFlower.svg"
@@ -188,7 +197,7 @@ const ContactClient = () => {
                   {t('write_us')}
                </h2>
 
-               <Image
+               <img
                   src="/icons/about-us/Title-Under.svg"
                   alt=""
                   aria-hidden="true"
@@ -201,7 +210,7 @@ const ContactClient = () => {
             <div className={`flex w-full lg:w-10/12 xl:w-8/12 mx-auto ${styles.contactArea}`}>
                <form
                   onSubmit={handleSubmit}
-                  className={`w-full 2xl:w-8/12 xl:w-10/12 mx-auto p-6 sm:p-8 md:p-12 lg:p-20 flex flex-col justify-between ${styles.careerDetailArea}`}
+                  className={`w-full p-6 sm:p-8 md:p-12 lg:p-20 flex flex-col justify-between ${styles.careerDetailArea}`}
                >
                   <div className="flex flex-col lg:flex-row gap-8">
                      <div className="w-full flex flex-col justify-between gap-4">

@@ -2,15 +2,21 @@ import Image from "next/image"
 import mapImage from "@/public/contact/Map.webp"
 
 type ContactMapProps = {
+   address?: string
    href?: string
 }
 
 const Map = ({
-   href = "https://www.google.com/maps/search/?api=1&query=Supafo"
+   address = "Supafo",
+   href
 }: ContactMapProps) => {
+   const mapHref =
+      href ||
+      `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`
+
    return (
       <a
-         href={href}
+         href={mapHref}
          target="_blank"
          rel="noopener noreferrer"
          aria-label="Supafo konumunu Google Maps üzerinde aç"

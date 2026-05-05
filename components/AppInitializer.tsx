@@ -7,18 +7,22 @@ import { useEffect } from 'react'
 export default function AppInitializer() {
    const {
       setSettings,
-      setCountries
+      setCountries,
+      setIsLoading,
    } = useUI()
 
    useEffect(() => {
       const initApp = async () => {
          try {
-            const settingsResponse = await getSettings()
+            const [settingsResponse, countriesResponse] = await Promise.all([
+               getSettings(),
+               getCountries(),
+            ])
+
             if (settingsResponse) {
                setSettings(settingsResponse?.settings)
             }
 
-            const countriesResponse = await getCountries()
             if (countriesResponse) {
                setCountries(countriesResponse?.countries)
             }
@@ -26,11 +30,13 @@ export default function AppInitializer() {
             if (process.env.NODE_ENV === 'development') {
                console.error(error)
             }
+         } finally {
+            setIsLoading(true)
          }
       }
 
       initApp()
-   }, [])
+   }, [setSettings, setCountries, setIsLoading])
 
    return null
 }

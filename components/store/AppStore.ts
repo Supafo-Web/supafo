@@ -3,13 +3,9 @@
 import { config } from '@/config'
 
 export const APP_STORE_URL = `https://apps.apple.com/app/${config.iosAppId}`
-
 export const PLAY_STORE_URL = `https://play.google.com/store/apps/details?id=${config.androidPackage}`
-
-export const MAC_APP_STORE_URL = `https://apps.apple.com/app/${config.iosAppId}`
-
+export const MAC_APP_STORE_URL = APP_STORE_URL
 export const WINDOWS_URL = 'https://www.supafo.com/download/windows'
-
 export const DEFAULT_URL = '/download'
 
 export const getDownloadUrl = () => {
@@ -35,7 +31,9 @@ export const getDownloadUrl = () => {
 }
 
 export const handleDownload = () => {
-   window.location.href = getDownloadUrl()
+   if (typeof window === "undefined") return
+
+   window.open(getDownloadUrl(), "_blank", "noopener,noreferrer")
 }
 
 export const data = [
@@ -45,7 +43,7 @@ export const data = [
       alt: 'app store',
       src: '/icons/apple/AppStore.svg',
       icon: '/icons/apple/Apple.svg',
-      href: APP_STORE_URL
+      href: APP_STORE_URL,
    },
    {
       id: 2,
@@ -53,6 +51,6 @@ export const data = [
       alt: 'google play',
       src: '/icons/google/PlayStore.svg',
       icon: '/icons/google/PlayStore.svg',
-      href: PLAY_STORE_URL
-   }
+      href: PLAY_STORE_URL,
+   },
 ]

@@ -58,15 +58,15 @@ export default function GuideInteractive({
          id: "user",
          title: t("audience.buttons.user.title"),
          text: t("audience.buttons.user.text"),
-         icon: "/guide/UserFill.webp",
-         activeIcon: "/guide/User.webp",
+         icon: "/guide/UserFill.svg",
+         activeIcon: "/guide/User.svg",
       },
       {
          id: "partner",
          title: t("audience.buttons.partner.title"),
          text: t("audience.buttons.partner.text"),
-         icon: "/guide/PartnerFill.webp",
-         activeIcon: "/guide/Partner.webp",
+         icon: "/guide/PartnerFill.svg",
+         activeIcon: "/guide/Partner.svg",
       },
    ] as const
 
@@ -76,22 +76,22 @@ export default function GuideInteractive({
          titleKey: "miniGame.answers.waste.title",
          textKey: "miniGame.answers.waste.text",
          altKey: "miniGame.answers.waste.alt",
-         icon: "/guide/game/TrashFill.webp",
-         activeIcon: "/guide/game/Trash.webp",
+         icon: "/guide/game/TrashFill.svg",
+         activeIcon: "/guide/game/Trash.svg",
       },
       {
          id: "supafo",
          titleKey: "miniGame.answers.supafo.title",
          textKey: "miniGame.answers.supafo.text",
          altKey: "miniGame.answers.supafo.alt",
-         icon: "/guide/game/PackageFill.webp",
-         activeIcon: "/guide/game/Package.webp",
+         icon: "/guide/game/PackageFill.svg",
+         activeIcon: "/guide/game/Package.svg",
       },
    ] as const
 
    const mockups = {
-      cart: `/guide/${locale}/Cart.png`,
-      payment: `/guide/${locale}/Payment.png`,
+      cart: `/guide/${locale}/Cart.webp`,
+      payment: `/guide/${locale}/Payment.webp`,
    }
 
    const cartData = [
@@ -112,6 +112,16 @@ export default function GuideInteractive({
       },
    ]
 
+   const moneyCurrency = () => {
+      if (locale === 'tr') {
+         return 'TRY'
+      } else if (locale === 'en') {
+         return 'USD'
+      } else if (locale === 'az') {
+         return 'AZN'
+      }
+   }
+
    return (
       <>
          <section
@@ -123,7 +133,7 @@ export default function GuideInteractive({
                   {t("audience.title")}
                </h2>
 
-               <Image
+               <img
                   src="/icons/about-us/Title-Under.svg"
                   alt=""
                   aria-hidden="true"
@@ -180,7 +190,7 @@ export default function GuideInteractive({
          </section>
 
          <section className={sectionClass}>
-            <Image
+            <img
                alt=""
                aria-hidden="true"
                src="/images/RightFlower.svg"
@@ -194,7 +204,7 @@ export default function GuideInteractive({
                   {t("cartPayment.title")}
                </h2>
 
-               <Image
+               <img
                   src="/icons/about-us/Title-Under.svg"
                   alt=""
                   aria-hidden="true"
@@ -214,10 +224,10 @@ export default function GuideInteractive({
                         alt=""
                         aria-hidden="true"
                         src={mockups.cart}
-                        width={350}
-                        height={312}
+                        width={1400}
+                        height={1648}
                         className="h-auto w-full object-contain"
-                        sizes="(max-width: 640px) 80vw, (max-width: 1024px) 40vw, 360px"
+                        sizes="(max-width: 640px) 80vw, (max-width: 1024px) 40vw, 640px"
                      />
                   </div>
 
@@ -226,10 +236,10 @@ export default function GuideInteractive({
                         alt=""
                         aria-hidden="true"
                         src={mockups.payment}
-                        width={350}
-                        height={412}
+                        width={1400}
+                        height={1648}
                         className="h-auto w-full object-contain"
-                        sizes="(max-width: 640px) 80vw, (max-width: 1024px) 40vw, 360px"
+                        sizes="(max-width: 640px) 80vw, (max-width: 1024px) 40vw, 640px"
                      />
                   </div>
                </div>
@@ -267,7 +277,7 @@ export default function GuideInteractive({
                </div>
             </div>
 
-            <Image
+            <img
                alt=""
                aria-hidden="true"
                src="/images/LeftFlower.svg"
@@ -283,7 +293,7 @@ export default function GuideInteractive({
                   {t("miniGame.title")}
                </h2>
 
-               <Image
+               <img
                   src="/icons/about-us/Title-Under.svg"
                   alt=""
                   aria-hidden="true"
@@ -399,7 +409,7 @@ export default function GuideInteractive({
                      />
 
                      <ImpactCard
-                        value={`AZN ${impact.saving}`}
+                        value={`${moneyCurrency()} ${impact.saving}`}
                         label={t("impactCalculator.cards.saving")}
                      />
                   </div>

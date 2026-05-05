@@ -65,7 +65,7 @@ export default function ProjectsReadMore() {
             </section>
 
             <section className="relative px-5 py-20 sm:px-8 md:px-12 md:py-30 lg:px-20 xl:px-32 2xl:px-60">
-               <Image
+               <img
                   alt=""
                   aria-hidden="true"
                   src="/images/LeftFlower.svg"
@@ -112,7 +112,7 @@ export default function ProjectsReadMore() {
                   </div>
                </div>
 
-               <Image
+               <img
                   alt=""
                   aria-hidden="true"
                   src="/images/RightFlower.svg"
@@ -156,7 +156,7 @@ export default function ProjectsReadMore() {
                   </div>
                </div>
 
-               <Image
+               <img
                   alt=""
                   aria-hidden="true"
                   src="/images/LeftFlower.svg"

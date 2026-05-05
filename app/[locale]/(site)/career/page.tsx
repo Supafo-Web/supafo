@@ -29,7 +29,7 @@ const Career = async () => {
          <section
             className="px-10 sm:px-30 lg:px-40 xl:px-50 2xl:px-80 py-15 lg:py-30 relative"
          >
-            <Image
+            <img
                alt="flower"
                src="/images/LeftFlower.svg"
                width={69}
@@ -46,7 +46,7 @@ const Career = async () => {
                   {t('title')}
                </h1>
 
-               <Image
+               <img
                   alt="title-under"
                   src="/icons/about-us/Title-Under.svg"
                   width={283}
@@ -80,7 +80,7 @@ const Career = async () => {
                </div>
             </div>
 
-            <Image
+            <img
                alt="flower"
                src="/images/RightFlower.svg"
                width={69}
@@ -103,7 +103,7 @@ const Career = async () => {
                   })}
                </h1>
 
-               <Image
+               <img
                   alt="title-under"
                   src="/icons/about-us/Title-Under.svg"
                   width={283}
@@ -123,7 +123,7 @@ const Career = async () => {
                         key={item.id || index}
                         className={`flex flex-col gap-7.5 items-center px-3.5 py-11.25 rounded-[30px] ${styles.whySupafoArea}`}
                      >
-                        <Image
+                        <img
                            alt={item.alt}
                            src={item.icon}
                            width={60}
@@ -144,7 +144,7 @@ const Career = async () => {
          <section
             className="px-10 py-15 lg:pb-30 relative"
          >
-            <Image
+            <img
                alt="flower"
                src="/images/LeftFlower.svg"
                width={69}
@@ -161,7 +161,7 @@ const Career = async () => {
                   {t('positions_title')}
                </h1>
 
-               <Image
+               <img
                   alt="title-under"
                   src="/icons/about-us/Title-Under.svg"
                   width={283}
@@ -176,7 +176,7 @@ const Career = async () => {
                <OpenPositions />
             </div>
 
-            <Image
+            <img
                alt="flower"
                src="/images/RightFlower.svg"
                width={69}
@@ -207,7 +207,7 @@ const Career = async () => {
                               ${isLastOddItem ? 'md:col-span-2' : ''}
                            `}
                         >
-                           <Image
+                           <img
                               alt={item.title}
                               src={item.icon}
                               width={110}
@@ -242,7 +242,7 @@ const Career = async () => {
                />
             </div>
 
-            <Image
+            <img
                alt="flower"
                src="/images/LeftFlower.svg"
                width={69}

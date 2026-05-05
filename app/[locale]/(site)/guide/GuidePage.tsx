@@ -33,7 +33,7 @@ export default async function GuidePage() {
    return (
       <main className="min-h-screen w-full max-w-full overflow-hidden">
          <section className={sectionClass}>
-            <Image
+            <img
                alt=""
                aria-hidden="true"
                src="/images/RightFlower.svg"
@@ -67,7 +67,7 @@ export default async function GuidePage() {
                </div>
 
                <div className="flex w-full justify-center lg:w-1/2 lg:justify-end">
-                  <div className="w-full max-w-90 overflow-hidden rounded-[36px] border border-[#82B74C] sm:max-w-105 sm:rounded-[48px] lg:max-w-115 xl:max-w-130">
+                  <div className="w-full max-w-90 overflow-hidden sm:max-w-105 sm:rounded-[48px] lg:max-w-115 xl:max-w-130">
                      <Image
                         alt={t("hero.imageAlt")}
                         src="/guide/Title.webp"
@@ -82,7 +82,7 @@ export default async function GuidePage() {
                </div>
             </div>
 
-            <Image
+            <img
                alt=""
                aria-hidden="true"
                src="/images/LeftFlower.svg"

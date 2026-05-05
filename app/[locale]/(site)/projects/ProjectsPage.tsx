@@ -23,7 +23,7 @@ const ProjectsPage = async () => {
    return (
       <main className="overflow-hidden">
          <section className="relative px-5 py-15 sm:px-8 md:px-12 lg:px-20 lg:py-30 xl:px-32 2xl:px-60">
-            <Image
+            <img
                alt=""
                aria-hidden="true"
                src="/images/LeftFlower.svg"
@@ -37,7 +37,7 @@ const ProjectsPage = async () => {
                   {t.rich("saplings.title", richText)}
                </h1>
 
-               <Image
+               <img
                   alt=""
                   aria-hidden="true"
                   src="/icons/about-us/Title-Under.svg"
@@ -79,7 +79,7 @@ const ProjectsPage = async () => {
                </div>
             </div>
 
-            <Image
+            <img
                alt=""
                aria-hidden="true"
                src="/images/RightFlower.svg"

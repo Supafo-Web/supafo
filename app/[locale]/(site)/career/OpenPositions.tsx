@@ -40,7 +40,12 @@ const iconMap: Record<string, HeroIcon> = {
 }
 
 const OpenPositions = () => {
-   const { openPositions, setOpenPositions } = useUI()
+   const {
+      openPositions,
+      setOpenPositions,
+      setIsLoading
+   } = useUI()
+
    const locale = useLocale()
    const t = useTranslations('Career')
 
@@ -53,14 +58,16 @@ const OpenPositions = () => {
                setOpenPositions(response.positions)
             }
          } catch (error) {
-            if (process.env.NODE_ENV === "development") {
+            if (process.env.NODE_ENV === 'development') {
                console.error(error)
             }
+         } finally {
+            setIsLoading(true)
          }
       }
 
       fetchData()
-   }, [setOpenPositions])
+   }, [])
 
    const [emblaRef] = useEmblaCarousel({
       align: "start",
@@ -119,7 +126,7 @@ const OpenPositions = () => {
                               <small
                                  className="flex gap-0.5"
                               >
-                                 <Image
+                                 <img
                                     alt="location"
                                     src="/career/Location.svg"
                                     width={20}

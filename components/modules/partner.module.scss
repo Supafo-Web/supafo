@@ -12,15 +12,6 @@
 }
 
 .partnerPortalContainer {
-   border-radius: 30px;
-   background-color: white;
-   box-shadow: 0 5px 10px $primary;
-   overflow: hidden;
-   margin: 0 clamp(40px, 2vw, 20px);
-   padding: clamp(24px, 4vw, 40px) clamp(20px, 5vw, 60px);
-   position: absolute;
-   z-index: -10;
-
    h1 {
       font-family: $fontFamily;
       font-size: clamp(1.375rem, 2vw, 1.5rem);
@@ -30,7 +21,7 @@
       text-align: center;
    }
 
-   h6 {
+   h2 {
       font-family: $fontFamily;
       font-size: clamp(1rem, 1.4vw, 1.125rem);
       font-weight: $medium;
