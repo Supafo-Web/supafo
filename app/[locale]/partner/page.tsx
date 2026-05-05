@@ -4,6 +4,7 @@ import Dropdown from "@/components/dropdown/Dropdown"
 import Button from "@/components/button/Button"
 import { createGenerateMetadata } from "@/lib/createGenerateMetadata"
 import LangSwitch from "@/components/lang/LangSwitch"
+import PartnerClient from "@/app/[locale]/partner/PartnerClient"
 
 export const generateMetadata = createGenerateMetadata("/partner")
 
@@ -67,15 +68,7 @@ const Partner = async () => {
                   sm:px-10 sm:py-12
                "
             >
-               <img
-                  alt=""
-                  aria-hidden="true"
-                  src="/partner/PartnerClock.svg"
-                  width={100}
-                  height={100}
-                  className="h-auto w-20 sm:w-24"
-                  sizes="100px"
-               />
+               <PartnerClient />
 
                <div className={`mt-7 flex flex-col items-center gap-5 text-center ${styles.partnerPortalContainer}`}>
                   <h1 className="text-2xl font-semibold text-[#1F2A1A] sm:text-3xl">
