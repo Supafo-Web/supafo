@@ -1,8 +1,8 @@
-import Image from 'next/image'
-import styles from '@/components/modules/career.module.scss'
-import { getTranslations } from 'next-intl/server'
+import Image from "next/image"
+import styles from "@/components/modules/career.module.scss"
+import { getTranslations } from "next-intl/server"
 import { createGenerateMetadata } from "@/lib/createGenerateMetadata"
-import dynamic from 'next/dynamic'
+import dynamic from "next/dynamic"
 
 export const generateMetadata = createGenerateMetadata("/career/team")
 
@@ -21,7 +21,7 @@ const FAQ = dynamic(
 )
 
 const CareerTeam = async () => {
-   const t = await getTranslations('CareerTeam')
+   const t = await getTranslations("CareerTeam")
 
    const faq = [
       { id: 1, question: t("faq.q1"), answer: t("faq.a1") },
@@ -35,79 +35,80 @@ const CareerTeam = async () => {
       { id: 9, question: t("faq.q9"), answer: t("faq.a9") },
       { id: 10, question: t("faq.q10"), answer: t("faq.a10") },
       { id: 11, question: t("faq.q11"), answer: t("faq.a11") },
-      { id: 12, question: t("faq.q12"), answer: t("faq.a12") }
+      { id: 12, question: t("faq.q12"), answer: t("faq.a12") },
    ]
 
+   const sectionClass =
+      "relative w-full max-w-full px-5 py-15 sm:px-8 sm:py-20 md:px-12 md:py-24 lg:px-20 lg:py-30 xl:px-28 2xl:px-40 3xl:px-60"
+
+   const containerClass =
+      "mx-auto w-full max-w-[1440px] min-w-0 3xl:max-w-[1600px]"
+
+   const titleAreaClass =
+      "mb-10 flex flex-col items-center gap-0 md:mb-12.5 lg:gap-3"
+
+   const flowerClass =
+      "h-auto w-9 sm:w-12 lg:w-17.5"
+
    return (
-      <main>
-         <section
-            className="px-10 sm:px-30 lg:px-40 xl:px-50 2xl:px-80 py-30 relative"
-         >
+      <main className="min-h-screen w-full max-w-full overflow-hidden">
+         <section className={sectionClass}>
             <img
                alt=""
                aria-hidden="true"
                src="/images/LeftFlower.svg"
                width={69}
                height={115}
-               className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.leftFlower4} ${styles.swingLeaf}`}
+               className={`${flowerClass} ${styles.leftFlower4} ${styles.swingLeaf}`}
             />
 
-            <div
-               className="flex flex-col items-center mb-12.5 gap-0 lg:gap-3"
-            >
-               <h1
-                  className={`text-center ${styles.title}`}
-               >
-                  {t('title')}
-               </h1>
+            <div className={containerClass}>
+               <div className={titleAreaClass}>
+                  <h1 className={`text-center ${styles.title}`}>
+                     {t("title")}
+                  </h1>
 
-               <img
-                  alt=""
-                  aria-hidden="true"
-                  src="/icons/about-us/Title-Under.svg"
-                  width={283}
-                  height={40}
-                  sizes="(max-width: 640px) 160px, (max-width: 768px) 208px, (max-width: 1024px) 240px, 283px"
-                  className="mx-auto block h-auto w-70.75 max-w-full"
-               />
-            </div>
-
-            <div
-               className="flex flex-col-reverse items-center lg:items-start lg:flex-row gap-12.5 justify-center"
-            >
-               <div
-                  className={`flex flex-col ${styles.headerTitleArea}`}
-               >
-                  <h2>
-                     {t('hero_text')}
-                  </h2>
-                  <div
-                     className="flex flex-col mt-7.5"
-                  >
-                     <p
-                        className={`${styles.articleTitle}`}
-                     >
-                        {t('about_team')}
-                     </p>
-                     <ul className={`list-disc ps-8 ${styles.articleSubTitle}`}>
-                        <li>{t("team_item_1")}</li>
-                        <li>{t("team_item_2")}</li>
-                        <li>{t("team_item_3")}</li>
-                        <li>{t("team_item_4")}</li>
-                     </ul>
-                  </div>
-               </div>
-               <div className="flex w-full justify-center lg:w-1/2 lg:justify-end">
-                  <Image
-                     alt={t("hero_image_alt")}
-                     src="/career/team/Team.webp"
-                     width={385}
-                     height={385}
-                     className="h-auto w-full max-w-60 sm:max-w-70 lg:max-w-[320px] xl:max-w-90"
-                     sizes="(max-width: 640px) 240px, (max-width: 1024px) 280px, (max-width: 1280px) 320px, 360px"
-                     priority
-                     fetchPriority="high"
+                  <img
+                     alt=""
+                     aria-hidden="true"
+                     src="/icons/about-us/Title-Under.svg"
+                     width={283}
+                     height={40}
+                     sizes="(max-width: 640px) 160px, (max-width: 768px) 208px, (max-width: 1024px) 240px, 283px"
+                     className="mx-auto block h-auto w-70.75 max-w-full"
                   />
+               </div>
+
+               <div className="flex min-w-0 flex-col-reverse items-center gap-10 md:gap-16 lg:flex-row lg:items-start lg:gap-14">
+                  <div className={`flex w-full min-w-0 flex-col ${styles.headerTitleArea}`}>
+                     <h2>{t("hero_text")}</h2>
+
+                     <div className="mt-7.5 flex flex-col">
+                        <p className={styles.articleTitle}>
+                           {t("about_team")}
+                        </p>
+
+                        <ul className={`list-disc ps-8 ${styles.articleSubTitle}`}>
+                           <li>{t("team_item_1")}</li>
+                           <li>{t("team_item_2")}</li>
+                           <li>{t("team_item_3")}</li>
+                           <li>{t("team_item_4")}</li>
+                        </ul>
+                     </div>
+                  </div>
+
+                  <div className="flex w-full shrink-0 justify-center lg:w-auto">
+                     <Image
+                        alt={t("hero_image_alt")}
+                        src="/career/team/Team.webp"
+                        width={385}
+                        height={385}
+                        className="h-auto w-full max-w-[260px] object-contain sm:max-w-[300px] md:max-w-[320px] lg:max-w-[360px]"
+                        sizes="(max-width: 640px) 80vw, (max-width: 1024px) 320px, 400px"
+                        priority
+                        fetchPriority="high"
+                     />
+                  </div>
                </div>
             </div>
 
@@ -117,71 +118,60 @@ const CareerTeam = async () => {
                src="/images/RightFlower.svg"
                width={69}
                height={115}
-               className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.rightFlower4} ${styles.swingLeaf2}`}
+               className={`${flowerClass} ${styles.rightFlower4} ${styles.swingLeaf2}`}
             />
          </section>
 
-         <section
-            className="px-10 pt-20 pb-40 relative"
-         >
-            <div
-               className="flex flex-col items-center mb-12.5 gap-0 lg:gap-3"
-            >
-               <h2
-                  className={`text-center ${styles.title}`}
-               >
-                  {t('application_form')}
-               </h2>
+         <section className={sectionClass}>
+            <img
+               alt=""
+               aria-hidden="true"
+               src="/images/LeftFlower.svg"
+               width={69}
+               height={115}
+               className={`${flowerClass} ${styles.leftFlower5} ${styles.swingLeaf}`}
+            />
 
-               <img
-                  alt=""
-                  aria-hidden="true"
-                  src="/icons/about-us/Title-Under.svg"
-                  width={283}
-                  height={40}
-                  sizes="(max-width: 640px) 160px, (max-width: 768px) 208px, (max-width: 1024px) 240px, 283px"
-                  className="mx-auto block h-auto w-70.75 max-w-full"
-               />
-            </div>
-
-            <div
-               className="flex flex-col gap-7.5"
-            >
-               <CareerApplyForm
-                  team
-               />
-
-               <img
-                  alt=""
-                  aria-hidden="true"
-                  src="/images/LeftFlower.svg"
-                  width={69}
-                  height={115}
-                  className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.leftFlower5} ${styles.swingLeaf}`}
-               />
-
-               <div
-                  className={`w-full lg:w-8/12 md:w-11/12 mx-auto md:px-5 mt-32`}
-               >
-                  <h2
-                     className={`text-center ${styles.faqTitle}`}
-                  >
-                     {t('faq_title')}
+            <div className={containerClass}>
+               <div className={titleAreaClass}>
+                  <h2 className={`text-center ${styles.title}`}>
+                     {t("application_form")}
                   </h2>
-                  <FAQ
-                     faq={faq}
+
+                  <img
+                     alt=""
+                     aria-hidden="true"
+                     src="/icons/about-us/Title-Under.svg"
+                     width={283}
+                     height={40}
+                     sizes="(max-width: 640px) 160px, (max-width: 768px) 208px, (max-width: 1024px) 240px, 283px"
+                     className="mx-auto block h-auto w-70.75 max-w-full"
                   />
                </div>
 
-               <img
-                  alt=""
-                  aria-hidden="true"
-                  src="/images/RightFlower.svg"
-                  width={69}
-                  height={115}
-                  className={`w-10 sm:w-12 lg:w-17.5 h-auto ${styles.rightFlower5} ${styles.swingLeaf2}`}
-               />
+               <div className="relative flex min-w-0 flex-col gap-7.5">
+                  <CareerApplyForm
+                     team
+                  />
+
+                  <div className={`mt-32 w-full 3xl:max-w-400 lg:w-8/12 md:w-11/12 mx-auto md:px-5`}>
+                     <h2 className={`text-center ${styles.faqTitle}`}>
+                        {t("faq_title")}
+                     </h2>
+
+                     <FAQ faq={faq} />
+                  </div>
+               </div>
             </div>
+
+            <img
+               alt=""
+               aria-hidden="true"
+               src="/images/RightFlower.svg"
+               width={69}
+               height={115}
+               className={`${flowerClass} ${styles.rightFlower5} ${styles.swingLeaf2}`}
+            />
          </section>
       </main>
    )

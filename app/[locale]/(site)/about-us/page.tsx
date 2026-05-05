@@ -124,7 +124,7 @@ const AboutUs = async () => {
                         src="/icons/about-us/1-2.svg"
                         width={379}
                         height={398}
-                        className="h-auto w-full max-w-65 xl:max-w-[320px] 2xl:max-w-95"
+                        className="h-auto w-full max-w-65 xl:max-w-[320px]"
                         sizes="(max-width: 1280px) 260px, (max-width: 1536px) 320px, 380px"
                      />
                   </div>
@@ -284,7 +284,7 @@ const AboutUs = async () => {
                         src="/icons/about-us/3-4-5.svg"
                         width={452}
                         height={494}
-                        className="h-auto w-full max-w-75 xl:max-w-95 2xl:max-w-113"
+                        className="h-auto w-full max-w-75 xl:max-w-95"
                         sizes="(max-width: 1280px) 300px, (max-width: 1536px) 380px, 452px"
                      />
                   </div>
@@ -368,9 +368,9 @@ const AboutUs = async () => {
                         alt=""
                         aria-hidden="true"
                         src="/icons/about-us/small/6.svg"
-                        width={420}
-                        height={450}
-                        className="h-auto w-full max-w-45 sm:max-w-60 md:max-w-75 lg:max-w-90 xl:max-w-105"
+                        width={412}
+                        height={404}
+                        className="h-auto w-full max-w-45 sm:max-w-60 md:max-w-75 lg:max-w-90"
                         sizes="(max-width: 640px) 180px, (max-width: 768px) 240px, (max-width: 1024px) 300px, (max-width: 1280px) 360px, 420px"
                      />
                   </div>

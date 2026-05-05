@@ -44,7 +44,7 @@ const HomeClient = () => {
       "h-auto w-9 sm:w-12 lg:w-17.5"
 
    const imageClass =
-      "h-auto w-full max-w-[260px] object-contain sm:max-w-[300px] md:max-w-[340px] lg:max-w-[380px] xl:max-w-[420px]"
+      "h-auto w-full max-w-[260px] object-contain sm:max-w-[300px] md:max-w-[340px] lg:max-w-[380px]"
 
    const textBlockClass =
       "flex w-full min-w-0 flex-col gap-5 text-center lg:text-left"
@@ -123,8 +123,8 @@ const HomeClient = () => {
                            alt=""
                            aria-hidden="true"
                            src="/home/1.webp"
-                           width={350}
-                           height={335}
+                           width={450}
+                           height={435}
                            className={imageClass}
                            sizes="(max-width: 640px) 80vw, (max-width: 1024px) 340px, 420px"
                         />
@@ -340,7 +340,7 @@ const HomeClient = () => {
                      </p>
                   </div>
 
-                  <div className="flex w-full shrink-0 justify-center lg:w-[38%]">
+                  <div className="flex w-full shrink-0 justify-end lg:w-[38%]">
                      <Image
                         alt=""
                         aria-hidden="true"
@@ -373,20 +373,18 @@ const HomeClient = () => {
                      {t("donation_title")}
                   </h1>
 
-                  <div className="flex min-w-0 flex-col items-center gap-10 pt-10 lg:flex-row lg:gap-14 lg:pt-16 xl:gap-20">
-                     <div className="flex w-full shrink-0 justify-center lg:w-[38%]">
-                        <Image
-                           alt=""
-                           aria-hidden="true"
-                           src="/home/Donation.webp"
-                           width={320}
-                           height={264}
-                           className={imageClass}
-                           sizes="(max-width: 640px) 80vw, (max-width: 1024px) 340px, 420px"
-                        />
-                     </div>
+                  <div className="flex flex-col items-center gap-10 pt-10 lg:flex-row lg:gap-14 lg:pt-16 xl:gap-20">
+                     <Image
+                        alt=""
+                        aria-hidden="true"
+                        src="/home/Donation.webp"
+                        width={320}
+                        height={264}
+                        className={imageClass}
+                        sizes="(max-width: 640px) 80vw, (max-width: 1024px) 340px, 420px"
+                     />
 
-                     <div className="flex w-full min-w-0 flex-col">
+                     <div className="flex flex-col">
                         <h2 className="text-center lg:text-left">
                            {t("donation_heading_1")}
                         </h2>
@@ -408,7 +406,7 @@ const HomeClient = () => {
                         </p>
                      </div>
 
-                     <div className="flex w-full shrink-0 justify-center lg:w-[38%]">
+                     <div className="flex w-full shrink-0 justify-end lg:w-[38%]">
                         <img
                            alt=""
                            aria-hidden="true"
@@ -437,7 +435,7 @@ const HomeClient = () => {
                   sizes="(max-width: 640px) 36px, (max-width: 768px) 48px, 69px"
                />
 
-               <div className={`w-full lg:w-8/12 md:w-11/12 mx-auto md:px-5`}>
+               <div className={`w-full 3xl:max-w-400 lg:w-8/12 md:w-11/12 mx-auto md:px-5`}>
                   <h1 className="text-center">
                      {t("faq_title")}
                   </h1>

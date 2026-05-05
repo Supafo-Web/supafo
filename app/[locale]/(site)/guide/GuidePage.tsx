@@ -67,7 +67,7 @@ export default async function GuidePage() {
                </div>
 
                <div className="flex w-full justify-center lg:w-1/2 lg:justify-end">
-                  <div className="w-full max-w-90 overflow-hidden sm:max-w-105 sm:rounded-[48px] lg:max-w-115 xl:max-w-130">
+                  <div className="w-full max-w-90 overflow-hidden sm:max-w-105 sm:rounded-[48px] lg:max-w-105.5">
                      <Image
                         alt={t("hero.imageAlt")}
                         src="/guide/Title.webp"

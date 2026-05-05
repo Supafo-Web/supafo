@@ -28,13 +28,13 @@ const WhatIsFoodWaste = () => {
       "h-auto w-9 sm:w-12 lg:w-17.5"
 
    const imageWrapperClass =
-      "flex w-full shrink-0 justify-center lg:w-[36%] xl:w-[34%]"
+      "w-full shrink-0 lg:w-auto"
 
    const imageBoxClass =
-      "w-full max-w-[260px] overflow-hidden rounded-[24px] border border-[#82B74C] sm:max-w-[300px] md:max-w-[320px] lg:max-w-[360px] lg:rounded-[30px] xl:max-w-[400px]"
+      "w-full max-w-[260px] overflow-hidden rounded-[24px] border border-[#82B74C] sm:max-w-[300px] md:max-w-[320px] lg:max-w-[360px] lg:rounded-[30px]"
 
    const imageBoxClass2 =
-      "w-full max-w-[260px] overflow-hidden sm:max-w-[300px] md:max-w-[320px] lg:max-w-[360px] lg:rounded-[30px] xl:max-w-[400px]"
+      "w-full max-w-[260px] overflow-hidden sm:max-w-[300px] md:max-w-[320px] lg:max-w-[360px] lg:rounded-[30px]"
 
    const imageClass =
       "h-auto w-full object-contain"
@@ -55,7 +55,7 @@ const WhatIsFoodWaste = () => {
             />
 
             <div className={containerClass}>
-               <div className="flex min-w-0 flex-col items-center gap-10 lg:flex-row-reverse lg:gap-14 xl:gap-20">
+               <div className="flex min-w-0 flex-col items-center gap-10 lg:flex-row-reverse lg:gap-14">
                   <div className={imageWrapperClass}>
                      <div className={imageBoxClass}>
                         <Image
@@ -95,7 +95,7 @@ const WhatIsFoodWaste = () => {
 
          <section className={sectionClass}>
             <div className={containerClass}>
-               <div className="flex min-w-0 flex-col items-center gap-10 lg:flex-row lg:gap-14 xl:gap-20">
+               <div className="flex min-w-0 flex-col items-center gap-10 lg:flex-row lg:gap-14">
                   <div className={imageWrapperClass}>
                      <div className={imageBoxClass}>
                         <Image
@@ -133,7 +133,7 @@ const WhatIsFoodWaste = () => {
             />
 
             <div className={containerClass}>
-               <div className="flex min-w-0 flex-col items-center gap-10 lg:flex-row-reverse lg:gap-14 xl:gap-20">
+               <div className="flex min-w-0 flex-col items-center gap-10 lg:flex-row-reverse lg:gap-14">
                   <div className={imageWrapperClass}>
                      <div className={imageBoxClass2}>
                         <Image

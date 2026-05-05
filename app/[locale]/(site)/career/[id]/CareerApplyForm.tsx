@@ -236,7 +236,7 @@ const CareerApplyForm = ({ id, team }: CareerProps) => {
    return (
       <form
          onSubmit={handleSubmit}
-         className={`mx-auto flex w-full max-w-275 min-w-0 flex-col justify-between p-5 sm:p-8 md:p-10 lg:p-14 xl:p-16 ${styles.careerDetailArea}`}
+         className={`mx-auto flex w-full flex-col justify-between p-5 sm:p-8 md:p-10 lg:p-14 xl:p-16 ${styles.careerDetailArea}`}
       >
          <div className="grid min-w-0 grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-10">
             <div className="flex min-w-0 flex-col gap-4 lg:gap-6">
